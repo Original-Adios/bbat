@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Node>
+  <Option>
+    <Server Description="服务器设置">
+      <Type Control="ComboBox" Elements="SQL,MYSQL" Description="Server type Select 服务器类型选择 in &lt;Option&gt;">SQL</Type>
+      <Server></Server>
+      <Database></Database>
+      <User></User>
+      <Password></Password>
+      <ServerDriver Description="假设MYSQL服务器，需设驱动">MySQL ODBC 5.3 Unicode Driver</ServerDriver>
+    </Server>   
+  </Option>
+  <Param>
+  </Param>
+</Node>

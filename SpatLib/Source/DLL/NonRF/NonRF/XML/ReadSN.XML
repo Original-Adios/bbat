@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Node>
+	<Option>
+		<SN1 Control="CheckBox">1</SN1>
+    <SN2 Control="CheckBox">0</SN2>
+	</Option>
+	<Param>
+	</Param>
+</Node>

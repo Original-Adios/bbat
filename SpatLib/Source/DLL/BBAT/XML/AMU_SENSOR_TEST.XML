@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Node>
+  <Option>
+    <Acc_Sensor Description="加速传感器测试">
+  <Accelerometer Control="CheckBox" >1</Accelerometer>
+    <X_Axis Control="EditBox" Description="X轴">0.0</X_Axis>
+    <Y_Axis Control="EditBox" Description="Y轴">0.0</Y_Axis>
+    <Z_Axis Control="EditBox" Description="Z轴">0.0</Z_Axis>
+    <Offset Control="EditBox" Description="偏移量">0.0</Offset>
+    </Acc_Sensor>
+    <Mag_Sensor Description="磁传感器测试">
+  <Magnetic Control="CheckBox" Description="磁传感器测试">0</Magnetic>
+    </Mag_Sensor>
+    <Gyr_Sensor Description="陀螺仪传感器">
+  <Gyroscope Control="CheckBox" Description="陀螺仪传感器">0</Gyroscope>
+    </Gyr_Sensor>
+    
+    <Light_Sensor Description="环境光，距离光测试">
+  <Light_Dis Control="CheckBox" Description="环境光，距离光测试">0</Light_Dis>
+      <Noise_Value Control="EditBox" Description="距离光底噪值">0</Noise_Value>
+      <Light_Int Control="CheckBox" Description="环境光，距离光测试">0</Light_Int>
+      <Int_Value Control="EditBox" Description="距离光底噪值">0</Int_Value>
+    </Light_Sensor>
+
+  </Option>
+    <Param>
+    </Param>
+</Node>

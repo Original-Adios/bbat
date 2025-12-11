@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Node>
+	<Option>
+    <MaxChargeCurrent Description="设置最大充电电流，Unit:mA">500</MaxChargeCurrent>
+	</Option>
+	<Param>
+  </Param>
+</Node>

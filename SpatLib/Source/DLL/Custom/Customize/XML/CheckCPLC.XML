@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Node>
+  <Option>
+    <CPLC Description="Card Product Life Cycle History File Identifiers">1</CPLC>
+    <CompareCPLC Control="CheckBox">1</CompareCPLC>
+  </Option>
+  <Param>
+  </Param>
+</Node>

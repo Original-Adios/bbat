@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Node>
+	<Option>
+		<BenchMark Description="格式：T*D??, *: 测试时间（单位秒）, ??: 测试分数波动范围（百分比)&#x0D;&#x0A;Example: T5D10 测试5秒，分数波动范围10%">T5D10</BenchMark>
+	</Option>
+	<Param>
+	</Param>
+</Node>

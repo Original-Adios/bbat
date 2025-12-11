@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Node>
+  <Option>
+    <ADCI2>
+		<Select Control="CheckBox">0</Select>
+		<Upspec Description="电压上限">3000</Upspec>
+		<Downspec Description="电压下限">100</Downspec>
+	</ADCI2>
+    <ADCI4>
+		<Select Control="CheckBox">0</Select>
+		<Upspec Description="电压上限">3000</Upspec>
+		<Downspec Description="电压下限">100</Downspec>
+	</ADCI4>
+    <ADCI6>
+		<Select Control="CheckBox">0</Select>
+		<Upspec Description="电压上限">3000</Upspec>
+		<Downspec Description="电压下限">100</Downspec>
+	</ADCI6>
+</Option>
+  <Param>
+  </Param>
+</Node>

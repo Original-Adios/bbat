@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Node>
+  <Option>
+    <UART_ADC Control="CheckBox" Description="测试UART-ADC通路">1</UART_ADC>
+    <LED Control="CheckBox" Description="测试LED GPIO">1</LED>
+    <PA_LNA Control="CheckBox" Description="测试PA_LNA通路">1</PA_LNA>
+</Option>
+  <Param>
+  </Param>
+</Node>

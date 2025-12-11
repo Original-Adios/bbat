@@ -1,0 +1,161 @@
+// Microsoft Visual C++ generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#include "afxres.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// 中文(简体，中国) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_CHS)
+LANGUAGE LANG_CHINESE, SUBLANG_CHINESE_SIMPLIFIED
+#pragma code_page(936)
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE 
+BEGIN
+    "#include ""afxres.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE 
+BEGIN
+    "\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Version
+//
+
+VS_VERSION_INFO VERSIONINFO
+ FILEVERSION 9,25,20,53
+ PRODUCTVERSION 9,25,20,53
+ FILEFLAGSMASK 0x17L
+#ifdef _DEBUG
+ FILEFLAGS 0x1L
+#else
+ FILEFLAGS 0x0L
+#endif
+ FILEOS 0x4L
+ FILETYPE 0x2L
+ FILESUBTYPE 0x0L
+BEGIN
+    BLOCK "StringFileInfo"
+    BEGIN
+        BLOCK "080404b0"
+        BEGIN
+            VALUE "CompanyName", "UNISOC TECHNOLOGIES INC."
+            VALUE "FileDescription", "SpatLib WcnFT Library"
+            VALUE "FileVersion", "9, 25, 20, 53"
+            VALUE "InternalName", "WcnFT"
+            VALUE "LegalCopyright", "COPYRIGHT (C) 2019 UNISOC TECHNOLOGIES INC."
+            VALUE "OriginalFilename", "WcnFT.dll"
+            VALUE "ProductName", "SpatLib WcnFT Library"
+            VALUE "ProductVersion", "9, 25, 20, 53"
+        END
+    END
+    BLOCK "VarFileInfo"
+    BEGIN
+        VALUE "Translation", 0x804, 1200
+    END
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// XML
+//
+
+IDR_XML_DUMMY           XML                     "XML\\Dummy.XML"
+IDR_XML_WCN             XML                     "XML\\WcnFT.XML"
+IDR_XML_BT              XML                     "XML\\BlueToothFT.XML"
+IDR_XML_BT_GENERAL      XML                     "XML\\BlueToothFTGeneral.XML"
+IDR_XML_GPSFM           XML                     "XML\\GPSFT.XML"
+IDR_XML_LOG             XML                     "XML\\LogEnable.XML"
+IDR_XML_WCN_OS_80       XML                     "XML\\WCNFT_ANDROID80.XML"
+IDR_XML_WCN_OS_80_PROBE XML                     "XML\\WCNFT_PROBE.XML"
+IDR_XML_WCN_OS_80_MIMO  XML                     "XML\\WCNFT_ANDROID80_Mimo.XML"
+IDR_XML_WCN_CW          XML                     "XML\\WCNFT_CW.XML"
+IDR_XML_BT_PROBE        XML                     "XML\\BlueToothProbe.XML"
+IDR_XML_WCN_FT_GPS_LOSS        XML                     "XML\\GPSFT_Loss.XML"
+IDR_XML_WCN_LOSS        XML                     "XML\\WCNFT_Loss.XML"
+IDR_XML_BT_GENERAL_Loss XML                     "XML\\BlueToothFTGeneral_Loss.XML"
+IDR_XML_WCN_LOSS_V2     XML                     "XML\\WCNFT_ANDROID80_Loss.XML"
+IDR_XML_GPSFM_V2        XML                     "XML\\GPSFT_V2.XML"
+IDR_XML_GPSFM_BeiDou    XML                     "XML\\GPSFT_BeiDou.XML"
+IDR_XML_GPSFM_MSLT      XML                     "XML\\GPSFT_MSLT.XML"
+IDR_XML_WCN_UDS710      XML                     "XML\\WCNFT_UDS710.XML"
+IDR_XML_BT_UDS710       XML                     "XML\\BlueToothFTUDS710.XML"
+IDR_XML_WCN_SONGSHAN_W6 XML                     "XML\\WCNFT_SONGSHAN_W6.XML"
+IDR_XML_BT_BLE53        XML                     "XML\\BlueToothFT_BLE53.XML"
+IDR_XML_HCI_BT          XML                     "XML\\BlueToothHCIFT.XML"
+IDR_XML_HCI_BT_WADDR    XML                     "XML\\HciBtWriteAddr.XML"
+IDR_XML_HCI_BT_RADDR    XML                     "XML\\HciBtCheckAddr.XML"
+IDR_XML_BT_V2_EX        XML						"XML\\BlueToothFTV2EX.XML"
+IDR_XML_WCN_LOSS_W6     XML                     "XML\\WCNFT_Loss_SC266X(W6).XML"
+IDR_XML_BT_CW           XML                     "XML\\BlueToothFTCW.XML"
+IDR_XML_WCN_UID         XML                     "XML\\CheckWcnUid.XML"
+IDR_XML_GPSFM_V3        XML                     "XML\\GPSFT_V3.XML"
+IDR_XML_GPSFM_GLO       XML                     "XML\\GPSFT_GLO.XML"
+IDR_XML_GPSFM_AUTO      XML                     "XML\\GPSFT_Auto.XML"
+IDR_XML_BT_INF_WCN      XML                     "XML\\WCNFT_BT_INF_WIFI.XML"
+IDR_XML_WCN_SONGSHAN_W6DL XML                   "XML\\WCNFT_SONGSHAN_W6DL.XML"
+#endif    // 中文(简体，中国) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+/////////////////////////////////////////////////////////////////////////////
+// 英语(美国) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)
+LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
+#pragma code_page(1252)
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// XML
+//
+
+IDR_XML_WCN_DEV         XML                     "XML\\WCNFT_DEV.XML"
+IDR_XML_WCN_WEAR        XML                     "XML\\WCNFT_WEAR.XML"
+IDR_XML_WCN_WEAR_AT     XML                     "XML\\WCNFT_WEAR_AT.XML"
+IDR_XML_WCN_WEAR_AT_EX  XML                     "XML\\WCNFT_WEAR_AT_Ex.XML"
+IDR_XML_WCN_WEAR_CW     XML                     "XML\\WCNFT_WEAR_CW.XML"
+#endif    // 英语(美国) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+

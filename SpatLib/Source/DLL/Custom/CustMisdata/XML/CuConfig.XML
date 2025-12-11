@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Node>
+	<Option>
+    <CuEdit Control="BoolComboBox" CtrlNode="Enable">
+      <Enable Control="ComboBox" Elements="UnShow,Show">UnShow</Enable>
+      <Cu></Cu>
+  </CuEdit>
+  </Option>
+	<Param>
+	</Param>
+</Node>

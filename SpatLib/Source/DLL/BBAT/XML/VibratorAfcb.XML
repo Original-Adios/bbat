@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Node>
+  <Option>
+	<FP Description="功能机需勾选" Control="CheckBox">0</FP>
+	<UpSpec Description="电流上限" Control="EditBox">300</UpSpec>
+	<DownSpec Description="电流下限" Control="EditBox">100</DownSpec>
+</Option>
+  <Param>
+  </Param>
+</Node>

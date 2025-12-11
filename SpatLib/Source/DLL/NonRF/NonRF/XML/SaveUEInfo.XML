@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Node>
+	<Option>
+	  <SaveFile Control="CheckBox" Description="将SN、EID、ICCID、IMMEI等数据保存到指定本地文件">1</SaveFile>
+    <FilePath Control="SaveFileDialog" Filter="data file(*.csv)|*.csv|All Files (*.*)|*.*">..\..\UserData\ueinfo.csv</FilePath>
+	</Option>
+	<Param>
+  </Param>
+</Node>

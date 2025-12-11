@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Node>
+  <Option>
+    <NetMode Description="Specifies which netmode to select" Tag="Show">
+      <DMR-CAL Control="CheckBox">0</DMR-CAL>
+      <DMR-FT Control="CheckBox">0</DMR-FT>
+    </NetMode>
+  </Option>
+  <Param>
+    <PreLoss Description="预置线损">0.0</PreLoss>
+    <Loss_Val_Spec Description="Loss_Val_Spec can be configured with one parameter or two parameters, one parameter represents the upper limit, and two represents the lower limit and the upper limit.">3.0</Loss_Val_Spec>
+  </Param>  
+</Node>

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Node>
+	<Option>
+   <Ant Description="Chain 0 or 1" Control="ComboBox" Elements="Ant1st,Ant2nd">Ant1st</Ant>
+	 <TCH Description="Calibrate channel">1</TCH>
+     <RefLVL Description="Reference level for tx measure. Unit:dBm">20</RefLVL>
+	 <Modulation Description="Different modulation type with differrent data rate, the matching map is DSSS-1:1.0Mbps,DSSS-2:2.0Mbps,CCK-5.5:5.5Mbps,CCK-11:11.0Mbps" Control="ComboBox" Elements="DSSS-1,DSSS-2,CCK-5.5,CCK-11">CCK-11</Modulation>
+	 <CDAC1 Description="Limit:0~63">21</CDAC1>
+     <CDAC2 Description="Limit:0~63">40</CDAC2>
+	 <FERLimit Description="Unit:KHZ">300</FERLimit>
+  </Option>
+	<Param>
+    <EFUSELimit Description="Limit:0~3">2</EFUSELimit>
+	</Param>
+</Node>

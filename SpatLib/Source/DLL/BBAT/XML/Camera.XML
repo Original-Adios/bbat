@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Node>
+  <Option>
+    <Camera_Open Control="CheckBox" Description="打开摄像头">1</Camera_Open>
+    <Camera_Read Control="CheckBox" Description="拍照">1</Camera_Read>
+    <Camera_Close Control="CheckBox" Description="关闭摄像头">1</Camera_Close>
+    <Camera_Id Control="EditBox" Description="摄像头id0~5">0</Camera_Id>
+</Option>
+  <Param>
+	<Camera_Open_Delay Description="打开摄像头后延时">2500</Camera_Open_Delay>
+  </Param>
+</Node>

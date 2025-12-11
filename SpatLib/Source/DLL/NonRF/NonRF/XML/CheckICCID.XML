@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Node>
+	<Option>
+    <ICCID Description="设置检查的目标ICCID，如果设置为空，则不检查"></ICCID>
+	</Option>
+	<Param>
+  </Param>
+</Node>

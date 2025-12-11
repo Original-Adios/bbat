@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Node>
+	<Option>
+    <BinFilePath Control="FileDialog" Filter="Bin file(*.bin)|*.bin"></BinFilePath>
+	</Option>
+	<Param>  
+	</Param>
+</Node>

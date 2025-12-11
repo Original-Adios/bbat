@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Node>
+  <Option>
+    <LCD_ID Control="CheckBox" Description="LCD_ID">1</LCD_ID>
+    <TP_VALUE Control="CheckBox" Description="TP_VALUE">1</TP_VALUE>
+    <TP_ID Control="CheckBox" Description="TP_ID">1</TP_ID>
+	<RF_ID Control="CheckBox" Description="RF_ID">1</RF_ID>
+    <FINGER_ID Control="CheckBox" Description="FINGER_ID">1</FINGER_ID>
+    
+</Option>
+  <Param>
+  </Param>
+</Node>

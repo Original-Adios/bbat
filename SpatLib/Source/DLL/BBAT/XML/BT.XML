@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Node>
+  <Option>
+    <BT_OPEN Control="CheckBox">1</BT_OPEN>
+    <BT_SEARCH Control="CheckBox">1</BT_SEARCH>
+    <BT_CLOSE Control="CheckBox">1</BT_CLOSE>
+    <SEARCH_TIMES Control="EditBox">2</SEARCH_TIMES>
+    <Min_AP_Number Description="最小AP数量">3</Min_AP_Number>
+    <Min_RSSI_Number Description="读Rssi">-85</Min_RSSI_Number>
+</Option>
+  <Param>
+  </Param>
+</Node>

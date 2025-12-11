@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Node>
+  <Option>  	
+    <UART Description="UART号码">0</UART>
+    <Baudrate Description="波特率">9600</Baudrate>
+</Option>
+  <Param>
+  </Param>
+</Node>

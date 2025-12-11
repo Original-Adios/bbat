@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Node>
+  <Option>
+    <MMIFlag Property="InVisible" Tag="Show">
+      <WholeMMI Control="CheckBox" Description="Check whole MMI">0</WholeMMI>
+      <PCBAMMI Control="CheckBox" Description="Check whole MMI">0</PCBAMMI>
+    </MMIFlag>
+    <BBATFlag Property="InVisible" Tag="Show">
+      <BBAT Control="CheckBox" Description="Check whole MMI">0</BBAT>
+    </BBATFlag>
+    <CaliFlag Tag="Show">
+      <NBIOT_CALIB_AFC Control="CheckBox">0</NBIOT_CALIB_AFC>
+      <NBIOT_CALIB_AGC Control="CheckBox">0</NBIOT_CALIB_AGC>
+      <NBIOT_CALIB_APC Control="CheckBox">0</NBIOT_CALIB_APC>
+      <NBIOT_FT Control="CheckBox">0</NBIOT_FT>
+      <NBIOT_CALIB_RXFAT Control="CheckBox">0</NBIOT_CALIB_RXFAT>
+      <NBIOT_CALIB_TXFAT Control="CheckBox">0</NBIOT_CALIB_TXFAT>
+    </CaliFlag>
+  </Option>
+  <Param>
+  </Param>
+</Node>

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Node>
+	<Option>
+    <Fixnv Control="CheckBox">1</Fixnv>
+    <Prodnv Control="CheckBox">1</Prodnv>
+    <Miscdata Control="CheckBox">1</Miscdata>    
+    <NvFile Control="FileDialog" Filter="BIN file(*.bin)|*.bin"></NvFile>
+    <NvFileFolder Control="FolderDialog"></NvFileFolder>
+    <ClearNvVerFlag Control="CheckBox">0</ClearNvVerFlag>    
+	</Option>
+	<Param>
+	</Param>
+</Node>

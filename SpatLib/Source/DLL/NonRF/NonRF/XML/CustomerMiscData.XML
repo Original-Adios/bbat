@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Node>
+	<Option>
+		<Offset Description="[0B - 1024*1024B]">768432</Offset>
+		<Size Description="Bytes">266144</Size>
+		<Data Control="ComboBox" Elements="All_1,All_0,Increasing,Custom" Description="Increasing: 0,1,2,3...255">Increasing</Data>
+    <Custom Description="custom string">on</Custom>
+	</Option>
+	<Param>
+  </Param>
+</Node>

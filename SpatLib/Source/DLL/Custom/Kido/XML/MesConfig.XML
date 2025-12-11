@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Node>
+	<Option>
+    <Mes>
+    <Type Description="Input Range: [0 - 1]">1</Type>
+    <ProductName></ProductName>
+    <Batch></Batch>
+    <Station></Station>
+    <LineNumber></LineNumber>
+    <Operator></Operator>
+    </Mes>
+	</Option>
+	<Param>
+	</Param>
+</Node>

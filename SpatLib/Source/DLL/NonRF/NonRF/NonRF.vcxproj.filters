@@ -1,0 +1,992 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="02.Imp">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+      <ParseFiles>false</ParseFiles>
+    </Filter>
+    <Filter Include="02.Imp\01.SwVer">
+      <UniqueIdentifier>{ccd8d0cc-1e86-4152-80ae-7f4abcd389fe}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="02.Imp\03.TestMode">
+      <UniqueIdentifier>{6e29a4fe-ab05-42ed-9933-2e65c305d03e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="02.Imp\04.SaveToFlash">
+      <UniqueIdentifier>{a9238533-26a3-44cb-844f-050166ebebd4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="02.Imp\06.SwitchOff">
+      <UniqueIdentifier>{23094e9d-9ef5-4795-800f-ebc3387ec25f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="02.Imp\07.Sleep">
+      <UniqueIdentifier>{32b18669-b9e8-4c65-9d17-81a1c60d0cc8}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="02.Imp\08.IMEI">
+      <UniqueIdentifier>{8744f0d1-2ed3-46a1-82b0-5c96f4a03ebd}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="02.Imp\09.CalFlag">
+      <UniqueIdentifier>{39824872-709f-4cdf-9ad6-7095652e61a9}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="02.Imp\10.PhaseCheck">
+      <UniqueIdentifier>{150deabb-449c-45cd-964d-4c98767b192e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="02.Imp\11.Peripheral">
+      <UniqueIdentifier>{a1fe1743-045b-426c-9c14-5383c78c62cd}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="01.Interface">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="09.RC">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav</Extensions>
+    </Filter>
+    <Filter Include="03.App">
+      <UniqueIdentifier>{cffdb1d2-f632-4f0d-9adb-069825acc76a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="05.Utility">
+      <UniqueIdentifier>{916b5786-f190-4c20-851f-9b3c28401054}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="04.XML">
+      <UniqueIdentifier>{19f1a517-ab8e-42e9-8e53-6053d3e8f62b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="02.Imp\20.ReadNVID">
+      <UniqueIdentifier>{ca50b857-472f-489f-a62a-a9a92c84754e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="02.Imp\21.CustomMiscData">
+      <UniqueIdentifier>{7718af98-090d-47b7-ac01-d4eed65bea95}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="02.Imp\22.CheckGoldenSample">
+      <UniqueIdentifier>{6144df0f-2e2b-470f-926d-9c68013fd949}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="02.Imp\23.RestartPhone">
+      <UniqueIdentifier>{2545da23-e7f4-4af4-afb7-8f87a64f5abf}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="02.Imp\24.ICCID">
+      <UniqueIdentifier>{fffd05d1-27a2-4a31-acac-16a27a4d78fa}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="02.Imp\26.IMSI">
+      <UniqueIdentifier>{b38f6057-8d85-4edd-85f1-6e0ed7ff7383}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="02.Imp\27.EID">
+      <UniqueIdentifier>{9ad9bdcf-cdc3-4874-b35c-48b8df9e034b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="02.Imp\28.BatteryCapacity">
+      <UniqueIdentifier>{e9595cea-1905-4e48-ad7c-8427a3bcac08}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="02.Imp\29.MacAddr.">
+      <UniqueIdentifier>{60af5359-cf71-4789-8263-23cab402a780}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="02.Imp\14.Assert">
+      <UniqueIdentifier>{bc5b9c33-0daa-4438-b1fb-51dd079044ac}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="02.Imp\15.FactoryReset">
+      <UniqueIdentifier>{710cb34b-4e64-4ee3-8ef4-a62737249ccd}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="02.Imp\30.AT">
+      <UniqueIdentifier>{dc823c9b-a2a8-4d90-93d2-b788362aed69}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="02.Imp\31.SaveProdInfo">
+      <UniqueIdentifier>{e5b749af-09f3-4249-9b0b-e3ce3c5c1578}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="02.Imp\32.CustomControl">
+      <UniqueIdentifier>{b3611d15-6f1f-4162-9d12-5041dbb87d5c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="02.Imp\33.WidevineDeviceID">
+      <UniqueIdentifier>{10190cf1-8162-4205-9aa8-610005060471}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="02.Imp\12.Port">
+      <UniqueIdentifier>{79151e9e-71d1-42bf-8827-a7867ef83516}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="02.Imp\35.ChipID">
+      <UniqueIdentifier>{632ea279-8477-4dcb-9fae-a140af137bcd}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="02.Imp\36.SwitchDC">
+      <UniqueIdentifier>{fdf7dba9-cf12-472a-883e-e305f1158754}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="02.Imp\34.CheckPacName">
+      <UniqueIdentifier>{e7c4d7c3-52d3-4967-b2e7-63e817925228}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="02.Imp\17.SSID">
+      <UniqueIdentifier>{365a72f6-8a8b-4b73-95ea-a772257a3456}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="02.Imp\18.SetConnMode">
+      <UniqueIdentifier>{d3f30dc8-1b04-4603-93dd-5c9cc94aaebb}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="02.Imp\37.BenchMark">
+      <UniqueIdentifier>{6035fcf6-9a23-4575-85ed-bc1b25c9fad7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="02.Imp\38.Finalize">
+      <UniqueIdentifier>{ff9ed836-14e0-49d5-92a9-5039b4e29acb}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="06.MES">
+      <UniqueIdentifier>{6dbb1aa7-893e-4293-bb69-71a339c1347a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="02.Imp\02.SN">
+      <UniqueIdentifier>{bce7ab19-9b63-4ece-adb5-aba6f8404d15}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="02.Imp\24.ICCID\25.UID">
+      <UniqueIdentifier>{bfbb8167-1d65-444c-97c2-ac7fcd3f97c0}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="02.Imp\39.LoadMIPI">
+      <UniqueIdentifier>{8d52217a-1ae1-41b4-ba09-97046ca32f2a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="02.Imp\40.Armlog">
+      <UniqueIdentifier>{1d758dc6-33e6-4488-a122-77ab9387e18f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="02.Imp\41.LockSeq">
+      <UniqueIdentifier>{11a0603e-d0c2-46e8-8b99-526681ac66a1}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="02.Imp\42.ModemVersion">
+      <UniqueIdentifier>{7c162fa7-f72f-4bf4-b717-338c07eff6ec}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="02.Imp\43.Check32kCrystalFreqOffset">
+      <UniqueIdentifier>{544108b6-c2f6-4605-86c2-db642997d0f9}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\..\..\Common\SpatBase.cpp">
+      <Filter>02.Imp</Filter>
+    </ClCompile>
+    <ClCompile Include="Impl\ReadSwVer.cpp">
+      <Filter>02.Imp\01.SwVer</Filter>
+    </ClCompile>
+    <ClCompile Include="Impl\EnterMode.cpp">
+      <Filter>02.Imp\03.TestMode</Filter>
+    </ClCompile>
+    <ClCompile Include="Impl\ModeChange.cpp">
+      <Filter>02.Imp\03.TestMode</Filter>
+    </ClCompile>
+    <ClCompile Include="Impl\SaveToFlash.cpp">
+      <Filter>02.Imp\04.SaveToFlash</Filter>
+    </ClCompile>
+    <ClCompile Include="Impl\SwitchOff.cpp">
+      <Filter>02.Imp\06.SwitchOff</Filter>
+    </ClCompile>
+    <ClCompile Include="Impl\Sleep.cpp">
+      <Filter>02.Imp\07.Sleep</Filter>
+    </ClCompile>
+    <ClCompile Include="Impl\ReadIMEI.cpp">
+      <Filter>02.Imp\08.IMEI</Filter>
+    </ClCompile>
+    <ClCompile Include="Impl\CheckCalFlag.cpp">
+      <Filter>02.Imp\09.CalFlag</Filter>
+    </ClCompile>
+    <ClCompile Include="Impl\PhaseCheck\CheckAllStation.cpp">
+      <Filter>02.Imp\10.PhaseCheck</Filter>
+    </ClCompile>
+    <ClCompile Include="Impl\PhaseCheck\CheckStation.cpp">
+      <Filter>02.Imp\10.PhaseCheck</Filter>
+    </ClCompile>
+    <ClCompile Include="Impl\PhaseCheck\UpdateStation.cpp">
+      <Filter>02.Imp\10.PhaseCheck</Filter>
+    </ClCompile>
+    <ClCompile Include="Impl\OpenPort.cpp">
+      <Filter>02.Imp\12.Port</Filter>
+    </ClCompile>
+    <ClCompile Include="stdafx.cpp">
+      <Filter>09.RC</Filter>
+    </ClCompile>
+    <ClCompile Include="Impl\ActionApp.cpp">
+      <Filter>03.App</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Common\ApiExport.cpp">
+      <Filter>03.App</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Common\ModeSwitch.cpp">
+      <Filter>03.App</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Common\SpatRuntimeClass.cpp">
+      <Filter>03.App</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\Common\UtilFn\AppVer.cpp">
+      <Filter>05.Utility</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\Common\lock\CLocks.cpp">
+      <Filter>05.Utility</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\Common\lock\CSimpleLock.cpp">
+      <Filter>05.Utility</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\Common\Tr\Tr.cpp">
+      <Filter>05.Utility</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\Common\UtilFn\Utility.cpp">
+      <Filter>05.Utility</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\Common\UtilFn\LteUtility.cpp">
+      <Filter>05.Utility</Filter>
+    </ClCompile>
+    <ClCompile Include="Impl\AssertUE.cpp">
+      <Filter>02.Imp\14.Assert</Filter>
+    </ClCompile>
+    <ClCompile Include="Impl\FactoryReset.cpp">
+      <Filter>02.Imp\15.FactoryReset</Filter>
+    </ClCompile>
+    <ClCompile Include="Impl\SaveAntennaFlag.cpp">
+      <Filter>02.Imp\09.CalFlag</Filter>
+    </ClCompile>
+    <ClCompile Include="Impl\ReadNVID.cpp">
+      <Filter>02.Imp\20.ReadNVID</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Common\ExtraLogFile.cpp">
+      <Filter>05.Utility</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\Common\UtilFn\LogFile.cpp">
+      <Filter>05.Utility</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\Common\dlmalloc\dlmalloc.c">
+      <Filter>05.Utility</Filter>
+    </ClCompile>
+    <ClCompile Include="Impl\CustomMiscData.cpp">
+      <Filter>02.Imp\21.CustomMiscData</Filter>
+    </ClCompile>
+    <ClCompile Include="Impl\CheckGoldenSample.cpp">
+      <Filter>02.Imp\22.CheckGoldenSample</Filter>
+    </ClCompile>
+    <ClCompile Include="Impl\RestartPhone.cpp">
+      <Filter>02.Imp\23.RestartPhone</Filter>
+    </ClCompile>
+    <ClCompile Include="Impl\LoadICCID.cpp">
+      <Filter>02.Imp\24.ICCID</Filter>
+    </ClCompile>
+    <ClCompile Include="Impl\CheckUID.cpp">
+      <Filter>02.Imp\24.ICCID\25.UID</Filter>
+    </ClCompile>
+    <ClCompile Include="Impl\LoadIMSI.cpp">
+      <Filter>02.Imp\26.IMSI</Filter>
+    </ClCompile>
+    <ClCompile Include="Impl\LoadEID.cpp">
+      <Filter>02.Imp\27.EID</Filter>
+    </ClCompile>
+    <ClCompile Include="Impl\CheckBatteryCapacity.cpp">
+      <Filter>02.Imp\28.BatteryCapacity</Filter>
+    </ClCompile>
+    <ClCompile Include="Impl\NormalModeToCalMode.cpp">
+      <Filter>02.Imp\03.TestMode</Filter>
+    </ClCompile>
+    <ClCompile Include="Impl\LoadMacAddr.cpp">
+      <Filter>02.Imp\29.MacAddr.</Filter>
+    </ClCompile>
+    <ClCompile Include="Impl\CheckSimCard.cpp">
+      <Filter>02.Imp\11.Peripheral</Filter>
+    </ClCompile>
+    <ClCompile Include="Impl\CheckMemory.cpp">
+      <Filter>02.Imp\11.Peripheral</Filter>
+    </ClCompile>
+    <ClCompile Include="Impl\CheckTCard.cpp">
+      <Filter>02.Imp\11.Peripheral</Filter>
+    </ClCompile>
+    <ClCompile Include="Impl\AT.cpp">
+      <Filter>02.Imp\30.AT</Filter>
+    </ClCompile>
+    <ClCompile Include="Impl\CheckCaliMMIFlag.cpp">
+      <Filter>02.Imp\09.CalFlag</Filter>
+    </ClCompile>
+    <ClCompile Include="Impl\SaveUEInfo.cpp">
+      <Filter>02.Imp\31.SaveProdInfo</Filter>
+    </ClCompile>
+    <ClCompile Include="Impl\CustomControl.cpp">
+      <Filter>02.Imp\32.CustomControl</Filter>
+    </ClCompile>
+    <ClCompile Include="Impl\LoadWidevineDeviceID.cpp">
+      <Filter>02.Imp\33.WidevineDeviceID</Filter>
+    </ClCompile>
+    <ClCompile Include="Impl\PhaseCheck\InitPhase.cpp">
+      <Filter>02.Imp\10.PhaseCheck</Filter>
+    </ClCompile>
+    <ClCompile Include="Impl\CheckSimCato.cpp">
+      <Filter>02.Imp\11.Peripheral</Filter>
+    </ClCompile>
+    <ClCompile Include="Impl\ChargeOff.cpp">
+      <Filter>02.Imp\11.Peripheral</Filter>
+    </ClCompile>
+    <ClCompile Include="Impl\ChargeOn.cpp">
+      <Filter>02.Imp\11.Peripheral</Filter>
+    </ClCompile>
+    <ClCompile Include="Impl\CheckMemoryRange.cpp">
+      <Filter>02.Imp\11.Peripheral</Filter>
+    </ClCompile>
+    <ClCompile Include="Impl\CheckCaliMMIFlagUIS8910.cpp">
+      <Filter>02.Imp\09.CalFlag</Filter>
+    </ClCompile>
+    <ClCompile Include="Impl\PhaseCheck\ResetStations.cpp">
+      <Filter>02.Imp\10.PhaseCheck</Filter>
+    </ClCompile>
+    <ClCompile Include="Impl\LoadPMICID.cpp">
+      <Filter>02.Imp\35.ChipID</Filter>
+    </ClCompile>
+    <ClCompile Include="Impl\QueryCurrMode.cpp">
+      <Filter>02.Imp\03.TestMode</Filter>
+    </ClCompile>
+    <ClCompile Include="Impl\SetupNextMode.cpp">
+      <Filter>02.Imp\03.TestMode</Filter>
+    </ClCompile>
+    <ClCompile Include="Impl\PhaseCheck\CheckStationExist.cpp">
+      <Filter>02.Imp\10.PhaseCheck</Filter>
+    </ClCompile>
+    <ClCompile Include="Impl\SwitchDC.cpp">
+      <Filter>02.Imp\36.SwitchDC</Filter>
+    </ClCompile>
+    <ClCompile Include="Impl\CheckDiagConnect.cpp">
+      <Filter>02.Imp\03.TestMode</Filter>
+    </ClCompile>
+    <ClCompile Include="Impl\ClosePort.cpp">
+      <Filter>02.Imp\12.Port</Filter>
+    </ClCompile>
+    <ClCompile Include="Impl\OpenSocket.cpp">
+      <Filter>02.Imp\12.Port</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\Common\UtilFn\RunMode.cpp">
+      <Filter>02.Imp\03.TestMode</Filter>
+    </ClCompile>
+    <ClCompile Include="Impl\LoadBBID.cpp">
+      <Filter>02.Imp\35.ChipID</Filter>
+    </ClCompile>
+    <ClCompile Include="Impl\LoadWCNID.cpp">
+      <Filter>02.Imp\35.ChipID</Filter>
+    </ClCompile>
+    <ClCompile Include="Impl\CheckPacName.cpp">
+      <Filter>02.Imp\34.CheckPacName</Filter>
+    </ClCompile>
+    <ClCompile Include="Impl\WaitForAT.cpp">
+      <Filter>02.Imp\30.AT</Filter>
+    </ClCompile>
+    <ClCompile Include="Impl\SetMode.cpp">
+      <Filter>02.Imp\03.TestMode</Filter>
+    </ClCompile>
+    <ClCompile Include="Impl\SetSSID.cpp">
+      <Filter>02.Imp\17.SSID</Filter>
+    </ClCompile>
+    <ClCompile Include="Impl\SetupConnMode.cpp">
+      <Filter>02.Imp\18.SetConnMode</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\Common\UtilFn\NetUtility.cpp">
+      <Filter>05.Utility</Filter>
+    </ClCompile>
+    <ClCompile Include="Impl\CheckNonTCard.cpp">
+      <Filter>02.Imp\11.Peripheral</Filter>
+    </ClCompile>
+    <ClCompile Include="Impl\CheckBenchMark.cpp">
+      <Filter>02.Imp\37.BenchMark</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\Common\thread\Thread.cpp">
+      <Filter>05.Utility</Filter>
+    </ClCompile>
+    <ClCompile Include="Impl\AudioSaveRecorder.cpp">
+      <Filter>02.Imp\11.Peripheral</Filter>
+    </ClCompile>
+    <ClCompile Include="Impl\Finalize.cpp">
+      <Filter>02.Imp\38.Finalize</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\Common\UtilFn\NrUtility.cpp">
+      <Filter>05.Utility</Filter>
+    </ClCompile>
+    <ClCompile Include="Impl\ImpBase.cpp">
+      <Filter>02.Imp</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\Common\UnisocMesDrv\MesDriver.cpp">
+      <Filter>06.MES</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\Common\UnisocMesDrv\MesHelper.cpp">
+      <Filter>06.MES</Filter>
+    </ClCompile>
+    <ClCompile Include="Impl\ReadSN.cpp">
+      <Filter>02.Imp\02.SN</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\Common\UtilFn\BarCodeUtility.cpp">
+      <Filter>05.Utility</Filter>
+    </ClCompile>
+    <ClCompile Include="Impl\OpenDut.cpp">
+      <Filter>02.Imp\12.Port</Filter>
+    </ClCompile>
+    <ClCompile Include="Impl\lockSeq.cpp">
+      <Filter>02.Imp\41.LockSeq</Filter>
+    </ClCompile>
+    <ClCompile Include="Impl\UnlockSeq.cpp">
+      <Filter>02.Imp\41.LockSeq</Filter>
+    </ClCompile>
+    <ClCompile Include="Impl\CheckCrystal32K.cpp">
+      <Filter>02.Imp\11.Peripheral</Filter>
+    </ClCompile>
+    <ClCompile Include="Impl\CheckCaliMMIFlagUIS8811.cpp">
+      <Filter>02.Imp\09.CalFlag</Filter>
+    </ClCompile>
+    <ClCompile Include="Impl\ClearAllCaliCrc.cpp">
+      <Filter>02.Imp\09.CalFlag</Filter>
+    </ClCompile>
+    <ClCompile Include="Impl\LoadMIPI.cpp">
+      <Filter>02.Imp\39.LoadMIPI</Filter>
+    </ClCompile>
+    <ClCompile Include="Impl\WaitOpenPort.cpp">
+      <Filter>02.Imp\12.Port</Filter>
+    </ClCompile>
+    <ClCompile Include="Impl\CheckGoldenSampleUIS8910.cpp">
+      <Filter>02.Imp\22.CheckGoldenSample</Filter>
+    </ClCompile>
+    <ClCompile Include="Impl\CheckCaliFlagV3.cpp">
+      <Filter>02.Imp\09.CalFlag</Filter>
+    </ClCompile>
+    <ClCompile Include="Impl\OpenPortByParity.cpp">
+      <Filter>02.Imp\12.Port</Filter>
+    </ClCompile>
+    <ClCompile Include="Impl\CheckCaliFlagV5.cpp">
+      <Filter>02.Imp</Filter>
+    </ClCompile>
+    <ClCompile Include="Impl\ActiveArmLog.cpp">
+      <Filter>02.Imp\40.Armlog</Filter>
+    </ClCompile>
+    <ClCompile Include="Impl\DeActiveArmLog.cpp">
+      <Filter>02.Imp\40.Armlog</Filter>
+    </ClCompile>
+    <ClCompile Include="Impl\SyncTime.cpp">
+      <Filter>02.Imp\30.AT</Filter>
+    </ClCompile>
+    <ClCompile Include="Impl\ReadModemVersion.cpp">
+      <Filter>02.Imp\42.ModemVersion</Filter>
+    </ClCompile>
+    <ClCompile Include="Impl\Check32kCrystalFreqOffset.cpp">
+      <Filter>02.Imp\43.Check32kCrystalFreqOffset</Filter>
+    </ClCompile>
+    <ClCompile Include="Impl\ReadHwVer.cpp">
+      <Filter>02.Imp\01.SwVer</Filter>
+    </ClCompile>
+    <ClCompile Include="Impl\ReadMcuVer.cpp">
+      <Filter>02.Imp\01.SwVer</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\..\..\Common\SpatBase.h">
+      <Filter>02.Imp</Filter>
+    </ClInclude>
+    <ClInclude Include="Impl\ReadSwVer.h">
+      <Filter>02.Imp\01.SwVer</Filter>
+    </ClInclude>
+    <ClInclude Include="Impl\EnterMode.h">
+      <Filter>02.Imp\03.TestMode</Filter>
+    </ClInclude>
+    <ClInclude Include="Impl\ModeChange.h">
+      <Filter>02.Imp\03.TestMode</Filter>
+    </ClInclude>
+    <ClInclude Include="Impl\SaveToFlash.h">
+      <Filter>02.Imp\04.SaveToFlash</Filter>
+    </ClInclude>
+    <ClInclude Include="Impl\SwitchOff.h">
+      <Filter>02.Imp\06.SwitchOff</Filter>
+    </ClInclude>
+    <ClInclude Include="Impl\Sleep.h">
+      <Filter>02.Imp\07.Sleep</Filter>
+    </ClInclude>
+    <ClInclude Include="Impl\ReadIMEI.h">
+      <Filter>02.Imp\08.IMEI</Filter>
+    </ClInclude>
+    <ClInclude Include="Impl\CheckCalFlag.h">
+      <Filter>02.Imp\09.CalFlag</Filter>
+    </ClInclude>
+    <ClInclude Include="Impl\PhaseCheck\CheckAllStation.h">
+      <Filter>02.Imp\10.PhaseCheck</Filter>
+    </ClInclude>
+    <ClInclude Include="Impl\PhaseCheck\CheckStation.h">
+      <Filter>02.Imp\10.PhaseCheck</Filter>
+    </ClInclude>
+    <ClInclude Include="Impl\PhaseCheck\UpdateStation.h">
+      <Filter>02.Imp\10.PhaseCheck</Filter>
+    </ClInclude>
+    <ClInclude Include="Impl\OpenPort.h">
+      <Filter>02.Imp\12.Port</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\Common\Include\SpatLibExport.h">
+      <Filter>01.Interface</Filter>
+    </ClInclude>
+    <ClInclude Include="resource.h">
+      <Filter>09.RC</Filter>
+    </ClInclude>
+    <ClInclude Include="stdafx.h">
+      <Filter>09.RC</Filter>
+    </ClInclude>
+    <ClInclude Include="targetver.h">
+      <Filter>09.RC</Filter>
+    </ClInclude>
+    <ClInclude Include="Impl\ActionApp.h">
+      <Filter>03.App</Filter>
+    </ClInclude>
+    <ClInclude Include="Impl\ActionList.h">
+      <Filter>03.App</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Common\ModeSwitch.h">
+      <Filter>03.App</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Common\SpatRuntimeClass.h">
+      <Filter>03.App</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\Common\UtilFn\AppVer.h">
+      <Filter>05.Utility</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\Common\lock\CLocks.h">
+      <Filter>05.Utility</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\Common\lock\CSimpleLock.h">
+      <Filter>05.Utility</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\Common\Tr\Tr.h">
+      <Filter>05.Utility</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\Common\UtilFn\Utility.h">
+      <Filter>05.Utility</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\Common\UtilFn\LteUtility.h">
+      <Filter>05.Utility</Filter>
+    </ClInclude>
+    <ClInclude Include="Impl\AssertUE.h">
+      <Filter>02.Imp\14.Assert</Filter>
+    </ClInclude>
+    <ClInclude Include="Impl\FactoryReset.h">
+      <Filter>02.Imp\15.FactoryReset</Filter>
+    </ClInclude>
+    <ClInclude Include="Impl\SaveAntennaFlag.h">
+      <Filter>02.Imp\09.CalFlag</Filter>
+    </ClInclude>
+    <ClInclude Include="Impl\ReadNVID.h">
+      <Filter>02.Imp\20.ReadNVID</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Common\ExtraLogFile.h">
+      <Filter>05.Utility</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\Common\UtilFn\LogFile.h">
+      <Filter>05.Utility</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\Common\dlmalloc\dlmalloc.h">
+      <Filter>05.Utility</Filter>
+    </ClInclude>
+    <ClInclude Include="Impl\CustomMiscData.h">
+      <Filter>02.Imp\21.CustomMiscData</Filter>
+    </ClInclude>
+    <ClInclude Include="Impl\CheckGoldenSample.h">
+      <Filter>02.Imp\22.CheckGoldenSample</Filter>
+    </ClInclude>
+    <ClInclude Include="Impl\RestartPhone.h">
+      <Filter>02.Imp\23.RestartPhone</Filter>
+    </ClInclude>
+    <ClInclude Include="Impl\LoadICCID.h">
+      <Filter>02.Imp\24.ICCID</Filter>
+    </ClInclude>
+    <ClInclude Include="Impl\CheckUID.h">
+      <Filter>02.Imp\24.ICCID\25.UID</Filter>
+    </ClInclude>
+    <ClInclude Include="Impl\LoadIMSI.h">
+      <Filter>02.Imp\26.IMSI</Filter>
+    </ClInclude>
+    <ClInclude Include="Impl\LoadEID.h">
+      <Filter>02.Imp\27.EID</Filter>
+    </ClInclude>
+    <ClInclude Include="Impl\CheckBatteryCapacity.h">
+      <Filter>02.Imp\28.BatteryCapacity</Filter>
+    </ClInclude>
+    <ClInclude Include="Impl\NormalModeToCalMode.h">
+      <Filter>02.Imp\03.TestMode</Filter>
+    </ClInclude>
+    <ClInclude Include="Impl\LoadMacAddr.h">
+      <Filter>02.Imp\29.MacAddr.</Filter>
+    </ClInclude>
+    <ClInclude Include="Impl\CheckSimCard.h">
+      <Filter>02.Imp\11.Peripheral</Filter>
+    </ClInclude>
+    <ClInclude Include="Impl\CheckMemory.h">
+      <Filter>02.Imp\11.Peripheral</Filter>
+    </ClInclude>
+    <ClInclude Include="Impl\CheckTCard.h">
+      <Filter>02.Imp\11.Peripheral</Filter>
+    </ClInclude>
+    <ClInclude Include="Impl\AT.h">
+      <Filter>02.Imp\30.AT</Filter>
+    </ClInclude>
+    <ClInclude Include="Impl\CheckCaliMMIFlag.h">
+      <Filter>02.Imp\09.CalFlag</Filter>
+    </ClInclude>
+    <ClInclude Include="Impl\SaveUEInfo.h">
+      <Filter>02.Imp\31.SaveProdInfo</Filter>
+    </ClInclude>
+    <ClInclude Include="Impl\CustomControl.h">
+      <Filter>02.Imp\32.CustomControl</Filter>
+    </ClInclude>
+    <ClInclude Include="Impl\LoadWidevineDeviceID.h">
+      <Filter>02.Imp\33.WidevineDeviceID</Filter>
+    </ClInclude>
+    <ClInclude Include="Impl\PhaseCheck\InitPhase.h">
+      <Filter>02.Imp\10.PhaseCheck</Filter>
+    </ClInclude>
+    <ClInclude Include="Impl\CheckSimCato.h">
+      <Filter>02.Imp\11.Peripheral</Filter>
+    </ClInclude>
+    <ClInclude Include="Impl\ChargeOff.h">
+      <Filter>02.Imp\11.Peripheral</Filter>
+    </ClInclude>
+    <ClInclude Include="Impl\ChargeOn.h">
+      <Filter>02.Imp\11.Peripheral</Filter>
+    </ClInclude>
+    <ClInclude Include="Impl\CheckMemoryRange.h">
+      <Filter>02.Imp\11.Peripheral</Filter>
+    </ClInclude>
+    <ClInclude Include="Impl\CheckCaliMMIFlagUIS8910.h">
+      <Filter>02.Imp\09.CalFlag</Filter>
+    </ClInclude>
+    <ClInclude Include="Impl\PhaseCheck\ResetStations.h">
+      <Filter>02.Imp\10.PhaseCheck</Filter>
+    </ClInclude>
+    <ClInclude Include="Impl\LoadPMICID.h">
+      <Filter>02.Imp\35.ChipID</Filter>
+    </ClInclude>
+    <ClInclude Include="Impl\QueryCurrMode.h">
+      <Filter>02.Imp\03.TestMode</Filter>
+    </ClInclude>
+    <ClInclude Include="Impl\SetupNextMode.h">
+      <Filter>02.Imp\03.TestMode</Filter>
+    </ClInclude>
+    <ClInclude Include="Impl\PhaseCheck\CheckStationExist.h">
+      <Filter>02.Imp\10.PhaseCheck</Filter>
+    </ClInclude>
+    <ClInclude Include="Impl\SwitchDC.h">
+      <Filter>02.Imp\36.SwitchDC</Filter>
+    </ClInclude>
+    <ClInclude Include="Impl\CheckDiagConnect.h">
+      <Filter>02.Imp\03.TestMode</Filter>
+    </ClInclude>
+    <ClInclude Include="Impl\ClosePort.h">
+      <Filter>02.Imp\12.Port</Filter>
+    </ClInclude>
+    <ClInclude Include="Impl\OpenSocket.h">
+      <Filter>02.Imp\12.Port</Filter>
+    </ClInclude>
+    <ClInclude Include="Impl\LoadBBID.h">
+      <Filter>02.Imp\35.ChipID</Filter>
+    </ClInclude>
+    <ClInclude Include="Impl\LoadWCNID.h">
+      <Filter>02.Imp\35.ChipID</Filter>
+    </ClInclude>
+    <ClInclude Include="Impl\CheckPacName.h">
+      <Filter>02.Imp\34.CheckPacName</Filter>
+    </ClInclude>
+    <ClInclude Include="Impl\WaitForAT.h">
+      <Filter>02.Imp\30.AT</Filter>
+    </ClInclude>
+    <ClInclude Include="Impl\SetMode.h">
+      <Filter>02.Imp\03.TestMode</Filter>
+    </ClInclude>
+    <ClInclude Include="Impl\SetSSID.h">
+      <Filter>02.Imp\17.SSID</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\Common\UtilFn\RunMode.h">
+      <Filter>02.Imp\03.TestMode</Filter>
+    </ClInclude>
+    <ClInclude Include="Impl\SetupConnMode.h">
+      <Filter>02.Imp\18.SetConnMode</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\Common\UtilFn\NetUtility.h">
+      <Filter>05.Utility</Filter>
+    </ClInclude>
+    <ClInclude Include="Impl\CheckNonTCard.h">
+      <Filter>02.Imp\11.Peripheral</Filter>
+    </ClInclude>
+    <ClInclude Include="Impl\CheckBenchMark.h">
+      <Filter>02.Imp\37.BenchMark</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\Common\thread\Thread.h">
+      <Filter>05.Utility</Filter>
+    </ClInclude>
+    <ClInclude Include="Impl\AudioSaveRecorder.h">
+      <Filter>02.Imp\11.Peripheral</Filter>
+    </ClInclude>
+    <ClInclude Include="Impl\Finalize.h">
+      <Filter>02.Imp\38.Finalize</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\Common\UtilFn\NrUtility.h">
+      <Filter>05.Utility</Filter>
+    </ClInclude>
+    <ClInclude Include="Impl\ImpBase.h">
+      <Filter>02.Imp</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\Common\UnisocMesDrv\MesDriver.h">
+      <Filter>06.MES</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\Common\UnisocMesDrv\MesHelper.h">
+      <Filter>06.MES</Filter>
+    </ClInclude>
+    <ClInclude Include="Impl\ReadSN.h">
+      <Filter>02.Imp\02.SN</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\Common\UtilFn\BarCodeUtility.h">
+      <Filter>05.Utility</Filter>
+    </ClInclude>
+    <ClInclude Include="Impl\OpenDut.h">
+      <Filter>02.Imp\12.Port</Filter>
+    </ClInclude>
+    <ClInclude Include="Impl\lockSeq.h">
+      <Filter>02.Imp\41.LockSeq</Filter>
+    </ClInclude>
+    <ClInclude Include="Impl\UnlockSeq.h">
+      <Filter>02.Imp\41.LockSeq</Filter>
+    </ClInclude>
+    <ClInclude Include="Impl\CheckCrystal32K.h">
+      <Filter>02.Imp\11.Peripheral</Filter>
+    </ClInclude>
+    <ClInclude Include="Impl\CheckCaliMMIFlagUIS8811.h">
+      <Filter>02.Imp\09.CalFlag</Filter>
+    </ClInclude>
+    <ClInclude Include="Impl\ClearAllCaliCrc.h">
+      <Filter>02.Imp\09.CalFlag</Filter>
+    </ClInclude>
+    <ClInclude Include="Impl\LoadMIPI.h">
+      <Filter>02.Imp\39.LoadMIPI</Filter>
+    </ClInclude>
+    <ClInclude Include="Impl\WaitOpenPort.h">
+      <Filter>02.Imp\12.Port</Filter>
+    </ClInclude>
+    <ClInclude Include="Impl\CheckGoldenSampleUIS8910.h">
+      <Filter>02.Imp\22.CheckGoldenSample</Filter>
+    </ClInclude>
+    <ClInclude Include="Impl\CheckCaliFlagV3.h">
+      <Filter>02.Imp\09.CalFlag</Filter>
+    </ClInclude>
+    <ClInclude Include="Impl\ActionContainer.h">
+      <Filter>03.App</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Common\SpatContainer.hpp">
+      <Filter>03.App</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Common\RuntimeContainer.hpp">
+      <Filter>03.App</Filter>
+    </ClInclude>
+    <ClInclude Include="Impl\OpenPortByParity.h">
+      <Filter>02.Imp\12.Port</Filter>
+    </ClInclude>
+    <ClInclude Include="Impl\CheckCaliFlagV5.h">
+      <Filter>01.Interface</Filter>
+    </ClInclude>
+    <ClInclude Include="Impl\ActiveArmlog.h">
+      <Filter>02.Imp\40.Armlog</Filter>
+    </ClInclude>
+    <ClInclude Include="Impl\DeActiveArmlog.h">
+      <Filter>02.Imp\40.Armlog</Filter>
+    </ClInclude>
+    <ClInclude Include="Impl\SyncTime.h">
+      <Filter>02.Imp\30.AT</Filter>
+    </ClInclude>
+    <ClInclude Include="Impl\ReadModemVersion.h">
+      <Filter>02.Imp\42.ModemVersion</Filter>
+    </ClInclude>
+    <ClInclude Include="Impl\Check32kCrystalFreqOffset.h">
+      <Filter>02.Imp\43.Check32kCrystalFreqOffset</Filter>
+    </ClInclude>
+    <ClInclude Include="Impl\ReadHwVer.h">
+      <Filter>02.Imp\01.SwVer</Filter>
+    </ClInclude>
+    <ClInclude Include="Impl\ReadMcuVer.h">
+      <Filter>02.Imp\01.SwVer</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="NonRF.rc">
+      <Filter>09.RC</Filter>
+    </ResourceCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="XML\CheckAllStation.XML">
+      <Filter>04.XML</Filter>
+    </None>
+    <None Include="XML\CheckCalFlag.XML">
+      <Filter>04.XML</Filter>
+    </None>
+    <None Include="XML\CheckPeripheral.XML">
+      <Filter>04.XML</Filter>
+    </None>
+    <None Include="XML\OpenPort.XML">
+      <Filter>04.XML</Filter>
+    </None>
+    <None Include="XML\Dummy.XML">
+      <Filter>04.XML</Filter>
+    </None>
+    <None Include="XML\PhaseCheck.XML">
+      <Filter>04.XML</Filter>
+    </None>
+    <None Include="XML\ReadIMEI.XML">
+      <Filter>04.XML</Filter>
+    </None>
+    <None Include="XML\ReadSN.XML">
+      <Filter>04.XML</Filter>
+    </None>
+    <None Include="XML\ReadSwVer.XML">
+      <Filter>04.XML</Filter>
+    </None>
+    <None Include="XML\SaveToFlash.XML">
+      <Filter>04.XML</Filter>
+    </None>
+    <None Include="XML\Sleep.XML">
+      <Filter>04.XML</Filter>
+    </None>
+    <None Include="XML\SwitchOff.XML">
+      <Filter>04.XML</Filter>
+    </None>
+    <None Include="XML\TestModeX.XML">
+      <Filter>04.XML</Filter>
+    </None>
+    <None Include="ReadMe.txt" />
+    <None Include="XML\AtCmd.XML">
+      <Filter>04.XML</Filter>
+    </None>
+    <None Include="XML\CheckMemory.XML">
+      <Filter>04.XML</Filter>
+    </None>
+    <None Include="XML\CheckCaliMMIFlag.XML">
+      <Filter>04.XML</Filter>
+    </None>
+    <None Include="XML\CheckUID.XML">
+      <Filter>04.XML</Filter>
+    </None>
+    <None Include="XML\ReadNVID.XML">
+      <Filter>04.XML</Filter>
+    </None>
+    <None Include="XML\CheckCalFlag_DMR.XML">
+      <Filter>04.XML</Filter>
+    </None>
+    <None Include="XML\CheckICCID.XML">
+      <Filter>04.XML</Filter>
+    </None>
+    <None Include="XML\EID.XML">
+      <Filter>04.XML</Filter>
+    </None>
+    <None Include="XML\CheckBatteryCapacity.XML">
+      <Filter>04.XML</Filter>
+    </None>
+    <None Include="XML\CalToNormalMode.XML">
+      <Filter>04.XML</Filter>
+    </None>
+    <None Include="XML\NormalToCalMode.XML">
+      <Filter>04.XML</Filter>
+    </None>
+    <None Include="XML\MacAddr.XML">
+      <Filter>04.XML</Filter>
+    </None>
+    <None Include="XML\SaveUEInfo.XML">
+      <Filter>04.XML</Filter>
+    </None>
+    <None Include="XML\CheckSimCard.xml">
+      <Filter>04.XML</Filter>
+    </None>
+    <None Include="XML\CustomControl.XML">
+      <Filter>04.XML</Filter>
+    </None>
+    <None Include="XML\LoadWidevineDeviceID.XML">
+      <Filter>04.XML</Filter>
+    </None>
+    <None Include="XML\Charger.XML">
+      <Filter>04.XML</Filter>
+    </None>
+    <None Include="XML\CheckMemoryRange.XML">
+      <Filter>04.XML</Filter>
+    </None>
+    <None Include="XML\OpenSocket.XML">
+      <Filter>04.XML</Filter>
+    </None>
+    <None Include="XML\CheckCaliMMIFlagUIS8910.XML">
+      <Filter>04.XML</Filter>
+    </None>
+    <None Include="XML\ResetStations.XML">
+      <Filter>04.XML</Filter>
+    </None>
+    <None Include="XML\CheckBBID.XML">
+      <Filter>04.XML</Filter>
+    </None>
+    <None Include="XML\CheckPMICID.XML">
+      <Filter>04.XML</Filter>
+    </None>
+    <None Include="XML\RunMode.XML">
+      <Filter>04.XML</Filter>
+    </None>
+    <None Include="XML\CheckStationExist.XML">
+      <Filter>04.XML</Filter>
+    </None>
+    <None Include="XML\CheckDiagConnect.XML">
+      <Filter>04.XML</Filter>
+    </None>
+    <None Include="XML\UpdatePhase.XML">
+      <Filter>04.XML</Filter>
+    </None>
+    <None Include="XML\CheckWCNID.xml">
+      <Filter>04.XML</Filter>
+    </None>
+    <None Include="XML\CheckPackName.XML">
+      <Filter>04.XML</Filter>
+    </None>
+    <None Include="XML\WaitForAT.XML">
+      <Filter>04.XML</Filter>
+    </None>
+    <None Include="XML\SSID.XML">
+      <Filter>04.XML</Filter>
+    </None>
+    <None Include="XML\SetupConnMode.XML">
+      <Filter>04.XML</Filter>
+    </None>
+    <None Include="XML\CheckBenchMark.XML">
+      <Filter>04.XML</Filter>
+    </None>
+    <None Include="XML\AudioSaveRecorder.xml">
+      <Filter>04.XML</Filter>
+    </None>
+    <None Include="XML\Finalize.XML">
+      <Filter>04.XML</Filter>
+    </None>
+    <None Include="XML\CheckCalFlagV3.XML">
+      <Filter>04.XML</Filter>
+    </None>
+    <None Include="XML\CustomerMiscData.XML">
+      <Filter>04.XML</Filter>
+    </None>
+    <None Include="XML\OpenDut.XML">
+      <Filter>04.XML</Filter>
+    </None>
+    <None Include="XML\CheckCaliMMIFlagUIS1930.XML">
+      <Filter>04.XML</Filter>
+    </None>
+    <None Include="XML\CheckCrystal32K.xml">
+      <Filter>04.XML</Filter>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Xml Include="XML\CheckCaliMMIFlagUIS8811.XML">
+      <Filter>04.XML</Filter>
+    </Xml>
+    <Xml Include="XML\CheckCaliMMIFlagUIS8850.XML">
+      <Filter>04.XML</Filter>
+    </Xml>
+    <Xml Include="XML\CheckGoldenUIS8850.XML">
+      <Filter>04.XML</Filter>
+    </Xml>
+    <Xml Include="XML\CheckGoldenUIS8910.XML">
+      <Filter>04.XML</Filter>
+    </Xml>
+    <Xml Include="XML\CheckCaliMMIFlagUIS891C.XML">
+      <Filter>04.XML</Filter>
+    </Xml>
+    <Xml Include="XML\CheckCaliMMIFlagUIS8910FF_L.XML">
+      <Filter>04.XML</Filter>
+    </Xml>
+    <Xml Include="XML\OpenPortByParity.XML">
+      <Filter>04.XML</Filter>
+    </Xml>
+    <Xml Include="XML\ImpReadVersion.XML">
+      <Filter>04.XML</Filter>
+    </Xml>
+    <Xml Include="XML\ChangeMode.XML">
+      <Filter>04.XML</Filter>
+    </Xml>
+    <Xml Include="XML\Check32kCrystalFreqOffset.XML">
+      <Filter>04.XML</Filter>
+    </Xml>
+    <Xml Include="XML\ReadHwVer.XML">
+      <Filter>04.XML</Filter>
+    </Xml>
+    <Xml Include="XML\ReadMcuVer.XML">
+      <Filter>04.XML</Filter>
+    </Xml>
+  </ItemGroup>
+</Project>

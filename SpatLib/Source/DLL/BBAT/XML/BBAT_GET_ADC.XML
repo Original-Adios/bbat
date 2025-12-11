@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Node>
+  <Option>  	
+    <Channel Control="ComboBox" Description="ADC Channel Number" Elements="ADC0,ADC1,ADC2,ADC3,ADC4,ADC5,ADC6,ADC7,ADC8,ADC9,ADC10,ADC11,ADC12,ADC13,ADC14,ADC15,ADC16,ADC17,ADC18,ADC19,ADC20,ADC21,ADC22,ADC23,ADC24,ADC25,ADC26,ADC27,ADC28,ADC29,ADC30,ADC31,">ADC0</Channel>
+    <UpSpec Description="测试上限">3000</UpSpec>
+    <DownSpec Description="测试下限">1000</DownSpec>
+</Option>
+  <Param>
+  </Param>
+</Node>

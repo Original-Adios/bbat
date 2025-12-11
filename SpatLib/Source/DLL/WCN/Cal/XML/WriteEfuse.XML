@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Node>
+  <Option>
+    <WriteOTTSN Description="write ottsn efuse" Control="CheckBox">0</WriteOTTSN>
+    <WriteMAC Description="write mac efuse" Control="CheckBox">1</WriteMAC>
+    <WriteAFC Description="write afc efuse" Control="CheckBox">1</WriteAFC>
+    <WriteAPC Description="write apc efuse" Control="CheckBox">1</WriteAPC>
+  </Option>
+  <Param>
+    <EFUSELimit Description="Limit:1~2">2</EFUSELimit>
+  </Param>
+</Node>

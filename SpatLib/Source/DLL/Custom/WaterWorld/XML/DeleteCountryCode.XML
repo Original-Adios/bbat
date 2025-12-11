@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Node>
+  <Option>
+    <SoftwarePN Description="Input SoftwarePN, max. length is 16 characters"></SoftwarePN>
+    <MO Description="Input MO, max. length is 16 characters"></MO>
+  </Option>
+  <Param>
+  </Param>
+</Node>

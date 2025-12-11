@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Node>
+	<Option>
+	<!--MaxBarcodeNum Description="Maximun barcode number listed in xml: [1-10]">10</MaxBarcodeNum-->
+    <ChecXMode Control="CheckBox" Property="InVisible" >1</ChecXMode>
+    <SN1>
+      <Enable Control="CheckBox" Description="Input or not">1</Enable>
+      <GenerateType Property="InVisible" Control="ComboBox" Elements="ManualInput">ManualInput</GenerateType>
+	  <Length Description="Maximum input length: [6 - 20]">20</Length>
+	  <Prefix Description="1.For checking manual input. 2 Be used by auto generate"></Prefix>
+    </SN1>
+    <SN2>
+      <Enable Control="CheckBox" Description="Input or not">1</Enable>
+      <GenerateType Property="InVisible" Control="ComboBox" Elements="ManualInput">ManualInput</GenerateType>
+	  <Length Description="Maximum input length: [1 - 64]">20</Length>
+	  <Prefix Description="1.For checking manual input. 2 Be used by auto generate"></Prefix>
+    </SN2>
+    <SameIMEI Control="CheckBox" Property="InVisible" Description="Check Imei1 and Imei2 Not the Same" >0</SameIMEI>
+    <CheckIMEI15 Control="CheckBox" Property="InVisible" Description="Check IMEI15">0</CheckIMEI15>
+	  <IMEI1>
+      <Enable Control="CheckBox" Description="Input or not">1</Enable>
+      <GenerateType Property="InVisible" Control="ComboBox" Elements="ManualInput">ManualInput</GenerateType>
+      <Length Property="InVisible" Description="Maximum input length: 15">15</Length>  
+	  <Prefix Description="1.For checking manual input. 2 Be used by auto generate"></Prefix>
+    </IMEI1>
+    <IMEI2>
+      <Enable Control="CheckBox" Description="Input or not">1</Enable>
+      <GenerateType Property="InVisible" Control="ComboBox" Elements="ManualInput">ManualInput</GenerateType>
+      <Length  Property="InVisible" Description="Maximum input length: 15">15</Length>    
+	  <Prefix Description="1.For checking manual input. 2 Be used by auto generate"></Prefix>
+    </IMEI2>
+	  <WIFI>
+      <Enable Control="CheckBox" Description="Input or not">1</Enable>
+      <GenerateType Property="InVisible" Control="ComboBox" Elements="ManualInput">ManualInput</GenerateType>
+      <Length  Property="InVisible" Description="Maximum input length: 12">12</Length>
+	  <Prefix Description="1.For checking manual input. 2 Be used by auto generate"></Prefix>
+    </WIFI>	
+    <BT>
+      <Enable Control="CheckBox" Description="Input or not">1</Enable>
+	    <GenerateType Property="InVisible" Control="ComboBox" Elements="ManualInput">ManualInput</GenerateType>
+      <Length  Property="InVisible" Description="Maximum input length: 12">12</Length>
+	  <Prefix Description="1.For checking manual input. 2 Be used by auto generate"></Prefix>
+    </BT>
+	<!--<MEID1>
+      <Enable Control="CheckBox" Description="Input or not">1</Enable>
+      <GenerateType Property="InVisible" Control="ComboBox" Elements="ManualInput">ManualInput</GenerateType>
+      <Length Property="InVisible" Description="Maximum input length: 15">15</Length>
+      <Prefix Description="1.For checking manual input. 2 Be used by auto generate"></Prefix>
+    </MEID1>-->
+	</Option>
+	<Param>
+        <SN1>
+            <Validation Description="Validate input barcode with special rule"></Validation>
+        </SN1>
+        <SN2>
+            <Validation Description="Validate input barcode with special rule"></Validation>
+        </SN2>
+        <IMEI1>
+            <Validation Description="Validate input barcode with special rule"></Validation>
+        </IMEI1>
+        <IMEI2>
+            <Validation Description="Validate input barcode with special rule"></Validation>
+        </IMEI2>
+        <WIFI>
+            <Validation Description="Validate input barcode with special rule"></Validation>
+        </WIFI>
+        <BT>
+            <Validation Description="Validate input barcode with special rule"></Validation>
+        </BT>        
+	</Param>
+</Node>

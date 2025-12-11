@@ -1,0 +1,473 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="02.Impl">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="02.Impl\Func">
+      <UniqueIdentifier>{9124c62c-188e-47d6-a479-666dc48842c2}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="02.Impl\Func\LTE">
+      <UniqueIdentifier>{1b1549fa-e84a-4fa5-9a5e-43fa48e1f564}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="02.Impl\Func\LTE\Func">
+      <UniqueIdentifier>{b0b7c0db-e134-425f-8aac-79610d245f32}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="02.Impl\Func\LTE\Api">
+      <UniqueIdentifier>{155c5729-83ce-4100-8a4a-4dd7a689c8f3}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="02.Impl\Func\LTE\FuncCenter">
+      <UniqueIdentifier>{a9a1c11a-4f83-484a-8d49-c2d122ba4fa0}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="02.Impl\Func\LTE\Seq">
+      <UniqueIdentifier>{9302d32a-01b3-4c9a-bb1c-7ad52c82b96c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="02.Impl\Func\LTE\NV">
+      <UniqueIdentifier>{13a88487-913f-4a7f-9429-f595506266f4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="02.Impl\Func\LTE\FileConfig">
+      <UniqueIdentifier>{34c3d02f-e067-426e-bae1-2bdb9056da0a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="02.Impl\Func\LTE\NAL">
+      <UniqueIdentifier>{dd5fc5fc-9eda-4606-a5c4-68b6f3212e95}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="02.Impl\Func\LTE\Algo">
+      <UniqueIdentifier>{cf38ef76-9daf-476b-9df2-aa705452c6b4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="02.Impl\Func\LTE\Algo\Gs">
+      <UniqueIdentifier>{a1a28a6c-9924-4615-b89d-03743b473cda}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="02.Impl\Func\LTE\Algo\Clc">
+      <UniqueIdentifier>{30a2e8af-bc76-4ace-882d-e71280243e04}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="02.Impl\Func\GSM">
+      <UniqueIdentifier>{c60638f4-236b-4285-ad82-2b89959adfb1}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="02.Impl\Seq">
+      <UniqueIdentifier>{9a4c0069-b732-4829-b891-1f9f839f1b4e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="02.Impl\Seq\MakeGS">
+      <UniqueIdentifier>{09319b4f-7715-403e-b2e3-a9c7003882ce}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="02.Impl\Seq\CalcLS">
+      <UniqueIdentifier>{b5630762-b2c9-4dc3-8f41-68547d86e897}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="03.App">
+      <UniqueIdentifier>{4168466f-414d-4623-921a-41a59fc814df}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="04.XML">
+      <UniqueIdentifier>{687c8200-ec8f-4a18-a8e9-834fc871aa35}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="01.Interface">
+      <UniqueIdentifier>{b649e0ee-e1b5-45a8-b50b-6179d81d9720}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="09.RC">
+      <UniqueIdentifier>{6108237f-9397-4601-8208-c438351737e1}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="05.Utility">
+      <UniqueIdentifier>{38fc8682-f108-4fea-a93f-b80444734b5b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="02.Impl\Func\WCN">
+      <UniqueIdentifier>{2ec9db52-3ba4-4ccc-b751-39d66081f0ce}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="02.Impl\Func\LTE\Api\UIS8910">
+      <UniqueIdentifier>{cad230a2-8722-4c17-8612-dfca1daebc7f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="02.Impl\Func\LTE\FileConfig\UIS8910">
+      <UniqueIdentifier>{e479a96d-7210-4323-95ee-73be0b3ed8d8}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="02.Impl\Func\LTE\NAL\UIS8910">
+      <UniqueIdentifier>{add0dc85-4901-4baf-a536-332fe2556146}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="02.Impl\Func\LTE\NV\UIS8910">
+      <UniqueIdentifier>{efe6be5f-4668-4bdd-9cb5-af84b920b500}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="02.Impl\Func\LTE\Seq\UIS8910">
+      <UniqueIdentifier>{b96216db-ec2c-45e9-8f24-313c01b27a24}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="02.Impl\Seq\CalcLS\UIS8910">
+      <UniqueIdentifier>{8ef7613f-349a-432f-acf9-d47d565ff1ce}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="02.Impl\Seq\MakeGS\UIS8910">
+      <UniqueIdentifier>{1624a130-a82f-461a-8344-007141f3055a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="02.Impl\Func\LTE\Api\UIS8850">
+      <UniqueIdentifier>{21f7df66-4d38-40b3-86dd-27b58bf5ac68}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="02.Impl\Func\LTE\Seq\UIS8850">
+      <UniqueIdentifier>{3f8e2dc3-d4ad-4789-b1aa-886d4a86cd9a}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Impl\ComDef.h">
+      <Filter>02.Impl</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\..\Common\UtilFn\LteUtility.h">
+      <Filter>02.Impl\Func\LTE</Filter>
+    </ClInclude>
+    <ClInclude Include="Impl\Func\AlgoGsRx.h">
+      <Filter>02.Impl\Func\LTE\Algo\Gs</Filter>
+    </ClInclude>
+    <ClInclude Include="Impl\Func\AlgoGsTx.h">
+      <Filter>02.Impl\Func\LTE\Algo\Gs</Filter>
+    </ClInclude>
+    <ClInclude Include="Impl\Func\AlgoClcRx.h">
+      <Filter>02.Impl\Func\LTE\Algo\Clc</Filter>
+    </ClInclude>
+    <ClInclude Include="Impl\Func\AlgoClcTx.h">
+      <Filter>02.Impl\Func\LTE\Algo\Clc</Filter>
+    </ClInclude>
+    <ClInclude Include="Impl\Func\GsmClc.h">
+      <Filter>02.Impl\Func\GSM</Filter>
+    </ClInclude>
+    <ClInclude Include="Impl\Func\GsmGs.h">
+      <Filter>02.Impl\Func\GSM</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\..\Common\UtilFn\gsmUtility.h">
+      <Filter>02.Impl\Func\GSM</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\Common\SpatBase.h">
+      <Filter>02.Impl\Seq</Filter>
+    </ClInclude>
+    <ClInclude Include="Impl\ActionApp.h">
+      <Filter>03.App</Filter>
+    </ClInclude>
+    <ClInclude Include="Impl\ActionList.h">
+      <Filter>03.App</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\Common\SpatRuntimeClass.h">
+      <Filter>03.App</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\..\Common\Include\SpatLibExport.h">
+      <Filter>01.Interface</Filter>
+    </ClInclude>
+    <ClInclude Include="resource.h">
+      <Filter>09.RC</Filter>
+    </ClInclude>
+    <ClInclude Include="stdafx.h">
+      <Filter>09.RC</Filter>
+    </ClInclude>
+    <ClInclude Include="targetver.h">
+      <Filter>09.RC</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\..\Common\UtilFn\AppVer.h">
+      <Filter>05.Utility</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\..\Common\lock\CLocks.h">
+      <Filter>05.Utility</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\..\Common\lock\CSimpleLock.h">
+      <Filter>05.Utility</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\..\Common\dlmalloc\dlmalloc.h">
+      <Filter>05.Utility</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\Common\ExtraLogFile.h">
+      <Filter>05.Utility</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\..\Common\UtilFn\LogFile.h">
+      <Filter>05.Utility</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\Common\ModeSwitch.h">
+      <Filter>05.Utility</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\Common\ScanConfig.h">
+      <Filter>05.Utility</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\..\Common\Tr\Tr.h">
+      <Filter>05.Utility</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\..\Common\UtilFn\Utility.h">
+      <Filter>05.Utility</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\..\Common\API\BTApiAT.h">
+      <Filter>02.Impl\Func\WCN</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\..\Common\API\GPSApiAT.h">
+      <Filter>02.Impl\Func\WCN</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\..\Common\API\IBTApi.h">
+      <Filter>02.Impl\Func\WCN</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\..\Common\API\IWlanApi.h">
+      <Filter>02.Impl\Func\WCN</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\..\Common\API\WlanApiAT.h">
+      <Filter>02.Impl\Func\WCN</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\..\Common\UtilFn\wcnUtility.h">
+      <Filter>02.Impl\Func\WCN</Filter>
+    </ClInclude>
+    <ClInclude Include="Impl\Func\WCNMeasurePower.h">
+      <Filter>02.Impl\Func\WCN</Filter>
+    </ClInclude>
+    <ClInclude Include="Impl\Func\WCNGS.h">
+      <Filter>02.Impl\Func\WCN</Filter>
+    </ClInclude>
+    <ClInclude Include="Impl\Func\WCNCLC.h">
+      <Filter>02.Impl\Func\WCN</Filter>
+    </ClInclude>
+    <ClInclude Include="Impl\ImpBaseUIS8910.h">
+      <Filter>02.Impl\Seq</Filter>
+    </ClInclude>
+    <ClInclude Include="Impl\Func\FileConfig_UIS8910.h">
+      <Filter>02.Impl\Func\LTE\FileConfig\UIS8910</Filter>
+    </ClInclude>
+    <ClInclude Include="Impl\Func\NalGs_UIS8910.h">
+      <Filter>02.Impl\Func\LTE\NAL\UIS8910</Filter>
+    </ClInclude>
+    <ClInclude Include="Impl\Func\Nv_UIS8910.h">
+      <Filter>02.Impl\Func\LTE\NV\UIS8910</Filter>
+    </ClInclude>
+    <ClInclude Include="Impl\Func\LteClc_UIS8910.h">
+      <Filter>02.Impl\Func\LTE\Seq\UIS8910</Filter>
+    </ClInclude>
+    <ClInclude Include="Impl\Func\LteGs_UIS8910.h">
+      <Filter>02.Impl\Func\LTE\Seq\UIS8910</Filter>
+    </ClInclude>
+    <ClInclude Include="Impl\CalcLSUIS8910.h">
+      <Filter>02.Impl\Seq\CalcLS\UIS8910</Filter>
+    </ClInclude>
+    <ClInclude Include="Impl\MakeGSUIS8910.h">
+      <Filter>02.Impl\Seq\MakeGS\UIS8910</Filter>
+    </ClInclude>
+    <ClInclude Include="Impl\Func\ILossFunc_UIS8910.h">
+      <Filter>02.Impl\Func</Filter>
+    </ClInclude>
+    <ClInclude Include="..\lte891xCal\Impl\FuncBase.h">
+      <Filter>02.Impl\Func\LTE\Func</Filter>
+    </ClInclude>
+    <ClInclude Include="..\lte891xCal\Impl\FuncCenter.h">
+      <Filter>02.Impl\Func\LTE\FuncCenter</Filter>
+    </ClInclude>
+    <ClInclude Include="..\lte891xCal\Impl\ApiBase.h">
+      <Filter>02.Impl\Func\LTE\Api</Filter>
+    </ClInclude>
+    <ClInclude Include="..\lte891xCal\Impl\IAlgo.h">
+      <Filter>02.Impl\Func\LTE\Algo</Filter>
+    </ClInclude>
+    <ClInclude Include="..\lte891xCal\Impl\GlobalDefine.h">
+      <Filter>02.Impl\Func\LTE</Filter>
+    </ClInclude>
+    <ClInclude Include="..\lte891xCal\Impl\ApiRxUIS8910.h">
+      <Filter>02.Impl\Func\LTE\Api\UIS8910</Filter>
+    </ClInclude>
+    <ClInclude Include="..\lte891xCal\Impl\ApiTxUIS8910.h">
+      <Filter>02.Impl\Func\LTE\Api\UIS8910</Filter>
+    </ClInclude>
+    <ClInclude Include="Impl\Func\NalClc_UIS8910.h">
+      <Filter>02.Impl\Func\LTE\NAL\UIS8910</Filter>
+    </ClInclude>
+    <ClInclude Include="Impl\Func\FunUIS8910.h">
+      <Filter>02.Impl\Func\GSM</Filter>
+    </ClInclude>
+    <ClInclude Include="..\lte891xCal\Impl\ApiRxUIS8850.h">
+      <Filter>02.Impl\Func\LTE\Api\UIS8850</Filter>
+    </ClInclude>
+    <ClInclude Include="..\lte891xCal\Impl\ApiTxUIS8850.h">
+      <Filter>02.Impl\Func\LTE\Api\UIS8850</Filter>
+    </ClInclude>
+    <ClInclude Include="Impl\Func\LteClc_UIS8850.h">
+      <Filter>02.Impl\Func\LTE\Seq\UIS8850</Filter>
+    </ClInclude>
+    <ClInclude Include="Impl\Func\LteGs_UIS8850.h">
+      <Filter>02.Impl\Func\LTE\Seq\UIS8850</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\..\..\..\..\..\Common\UtilFn\LteUtility.cpp">
+      <Filter>02.Impl\Func\LTE</Filter>
+    </ClCompile>
+    <ClCompile Include="Impl\Func\AlgoGsRx.cpp">
+      <Filter>02.Impl\Func\LTE\Algo\Gs</Filter>
+    </ClCompile>
+    <ClCompile Include="Impl\Func\AlgoGsTx.cpp">
+      <Filter>02.Impl\Func\LTE\Algo\Gs</Filter>
+    </ClCompile>
+    <ClCompile Include="Impl\Func\AlgoClcRx.cpp">
+      <Filter>02.Impl\Func\LTE\Algo\Clc</Filter>
+    </ClCompile>
+    <ClCompile Include="Impl\Func\AlgoClcTx.cpp">
+      <Filter>02.Impl\Func\LTE\Algo\Clc</Filter>
+    </ClCompile>
+    <ClCompile Include="Impl\Func\GsmClc.cpp">
+      <Filter>02.Impl\Func\GSM</Filter>
+    </ClCompile>
+    <ClCompile Include="Impl\Func\GsmGs.cpp">
+      <Filter>02.Impl\Func\GSM</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\..\Common\UtilFn\gsmUtility.cpp">
+      <Filter>02.Impl\Func\GSM</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\Common\SpatBase.cpp">
+      <Filter>02.Impl\Seq</Filter>
+    </ClCompile>
+    <ClCompile Include="Impl\ActionApp.cpp">
+      <Filter>03.App</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\Common\ApiExport.cpp">
+      <Filter>03.App</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\Common\SpatRuntimeClass.cpp">
+      <Filter>03.App</Filter>
+    </ClCompile>
+    <ClCompile Include="stdafx.cpp">
+      <Filter>09.RC</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\..\Common\UtilFn\AppVer.cpp">
+      <Filter>05.Utility</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\..\Common\lock\CLocks.cpp">
+      <Filter>05.Utility</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\..\Common\lock\CSimpleLock.cpp">
+      <Filter>05.Utility</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\..\Common\dlmalloc\dlmalloc.c">
+      <Filter>05.Utility</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\Common\ExtraLogFile.cpp">
+      <Filter>05.Utility</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\..\Common\UtilFn\LogFile.cpp">
+      <Filter>05.Utility</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\Common\ModeSwitch.cpp">
+      <Filter>05.Utility</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\Common\ScanConfig.cpp">
+      <Filter>05.Utility</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\..\Common\Tr\Tr.cpp">
+      <Filter>05.Utility</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\..\Common\UtilFn\Utility.cpp">
+      <Filter>05.Utility</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\..\Common\API\BTApiAT.cpp">
+      <Filter>02.Impl\Func\WCN</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\..\Common\API\GPSApiAT.cpp">
+      <Filter>02.Impl\Func\WCN</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\..\Common\API\WlanApiAT.cpp">
+      <Filter>02.Impl\Func\WCN</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\..\Common\UtilFn\wcnUtility.cpp">
+      <Filter>02.Impl\Func\WCN</Filter>
+    </ClCompile>
+    <ClCompile Include="Impl\Func\WCNMeasurePower.cpp">
+      <Filter>02.Impl\Func\WCN</Filter>
+    </ClCompile>
+    <ClCompile Include="Impl\Func\WCNGS.cpp">
+      <Filter>02.Impl\Func\WCN</Filter>
+    </ClCompile>
+    <ClCompile Include="Impl\Func\WCNCLC.cpp">
+      <Filter>02.Impl\Func\WCN</Filter>
+    </ClCompile>
+    <ClCompile Include="Impl\ImpBaseUIS8910.cpp">
+      <Filter>02.Impl\Seq</Filter>
+    </ClCompile>
+    <ClCompile Include="Impl\Func\FileConfig_UIS8910.cpp">
+      <Filter>02.Impl\Func\LTE\FileConfig\UIS8910</Filter>
+    </ClCompile>
+    <ClCompile Include="Impl\Func\NalGs_UIS8910.cpp">
+      <Filter>02.Impl\Func\LTE\NAL\UIS8910</Filter>
+    </ClCompile>
+    <ClCompile Include="Impl\Func\Nv_UIS8910.cpp">
+      <Filter>02.Impl\Func\LTE\NV\UIS8910</Filter>
+    </ClCompile>
+    <ClCompile Include="Impl\Func\LteClc_UIS8910.cpp">
+      <Filter>02.Impl\Func\LTE\Seq\UIS8910</Filter>
+    </ClCompile>
+    <ClCompile Include="Impl\Func\LteGs_UIS8910.cpp">
+      <Filter>02.Impl\Func\LTE\Seq\UIS8910</Filter>
+    </ClCompile>
+    <ClCompile Include="Impl\CalcLSUIS8910.cpp">
+      <Filter>02.Impl\Seq\CalcLS\UIS8910</Filter>
+    </ClCompile>
+    <ClCompile Include="Impl\MakeGSUIS8910.cpp">
+      <Filter>02.Impl\Seq\MakeGS\UIS8910</Filter>
+    </ClCompile>
+    <ClCompile Include="Impl\Func\ILossFunc_UIS8910.cpp">
+      <Filter>02.Impl\Func</Filter>
+    </ClCompile>
+    <ClCompile Include="..\lte891xCal\Impl\FuncBase.cpp">
+      <Filter>02.Impl\Func\LTE\Func</Filter>
+    </ClCompile>
+    <ClCompile Include="..\lte891xCal\Impl\FuncCenter.cpp">
+      <Filter>02.Impl\Func\LTE\FuncCenter</Filter>
+    </ClCompile>
+    <ClCompile Include="..\lte891xCal\Impl\ApiBase.cpp">
+      <Filter>02.Impl\Func\LTE\Api</Filter>
+    </ClCompile>
+    <ClCompile Include="..\lte891xCal\Impl\ApiRxUIS8910.cpp">
+      <Filter>02.Impl\Func\LTE\Api\UIS8910</Filter>
+    </ClCompile>
+    <ClCompile Include="..\lte891xCal\Impl\ApiTxUIS8910.cpp">
+      <Filter>02.Impl\Func\LTE\Api\UIS8910</Filter>
+    </ClCompile>
+    <ClCompile Include="Impl\Func\NalClc_UIS8910.cpp">
+      <Filter>02.Impl\Func\LTE\NAL\UIS8910</Filter>
+    </ClCompile>
+    <ClCompile Include="Impl\Func\FunUIS8910.cpp">
+      <Filter>02.Impl\Func\GSM</Filter>
+    </ClCompile>
+    <ClCompile Include="..\lte891xCal\Impl\ApiRxUIS8850.cpp">
+      <Filter>02.Impl\Func\LTE\Api\UIS8850</Filter>
+    </ClCompile>
+    <ClCompile Include="..\lte891xCal\Impl\ApiTxUIS8850.cpp">
+      <Filter>02.Impl\Func\LTE\Api\UIS8850</Filter>
+    </ClCompile>
+    <ClCompile Include="Impl\Func\LteClc_UIS8850.cpp">
+      <Filter>02.Impl\Func\LTE\Seq\UIS8850</Filter>
+    </ClCompile>
+    <ClCompile Include="Impl\Func\LteGs_UIS8850.cpp">
+      <Filter>02.Impl\Func\LTE\Seq\UIS8850</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="ReadMe.txt" />
+    <None Include="XML\CalcLS_UIS8910.XML">
+      <Filter>04.XML</Filter>
+    </None>
+    <None Include="XML\MakeGS_UIS8910.XML">
+      <Filter>04.XML</Filter>
+    </None>
+    <None Include="XML\Dummy.XML">
+      <Filter>04.XML</Filter>
+    </None>
+    <None Include="XML\CalcLS_UIS1930.XML">
+      <Filter>04.XML</Filter>
+    </None>
+    <None Include="XML\MakeGS_UIS1930.XML">
+      <Filter>04.XML</Filter>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="Loss891xCal.rc">
+      <Filter>09.RC</Filter>
+    </ResourceCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <Xml Include="XML\CalcLS_UIS8850.XML">
+      <Filter>04.XML</Filter>
+    </Xml>
+    <Xml Include="XML\MakeGS_UIS8850.XML">
+      <Filter>04.XML</Filter>
+    </Xml>
+    <Xml Include="XML\CalcLS_UIS891C.XML">
+      <Filter>04.XML</Filter>
+    </Xml>
+    <Xml Include="XML\MakeGS_UIS891C.XML">
+      <Filter>04.XML</Filter>
+    </Xml>
+    <Xml Include="XML\CalcLS_UIS8910FF_L.XML">
+      <Filter>04.XML</Filter>
+    </Xml>
+    <Xml Include="XML\MakeGS_UIS8910FF_L.XML">
+      <Filter>04.XML</Filter>
+    </Xml>
+  </ItemGroup>
+</Project>

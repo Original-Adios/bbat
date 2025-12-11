@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Node>
+  <Option>
+	<IOT Control="CheckBox" Description="物联网芯片，不支持GSM">0</IOT>
+	<PhoneNumber Control="ComboBox" Elements="112,10086,10010">112</PhoneNumber>
+    <Spec_Down Control="EditBox">5</Spec_Down>
+    <Spec_Up Control="EditBox">31</Spec_Up>
+    <Gsm_Only Control="CheckBox" Description="切换到GSM Only模式，可加快网络注册">1</Gsm_Only>
+    <Sleep Description="拨打电话后延时(ms)" Control="EditBox">5000</Sleep>
+  </Option>
+  <Param>
+    <Sleep1_ms Description="打开SIM卡后延时">2000</Sleep1_ms>
+    <Sleep2_ms Description="打开协议栈后延时">2000</Sleep2_ms>
+  </Param>
+</Node>

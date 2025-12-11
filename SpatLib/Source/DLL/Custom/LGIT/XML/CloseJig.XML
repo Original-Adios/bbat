@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Node>
+	<Option>
+    <StableTime Description="Unit: millisecond">4000</StableTime>
+	</Option>
+	<Param>
+	</Param>
+</Node>

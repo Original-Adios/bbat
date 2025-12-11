@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Node>
+  <Option>
+    <!--MaxBarcodeNum Description="Maximun barcode number listed in xml: [1-10]">10</MaxBarcodeNum-->
+    <OTTSN>
+      <Enable Control="CheckBox" Description="Input or not">0</Enable>
+      <GenerateType Control="ComboBox" Elements="ManualInput,AutoGenerate,Section">ManualInput</GenerateType>
+      <Length  Property="InVisible" Description="Maximum input length: 12">12</Length>
+      <Prefix Description="1.For checking manual input. 2 Be used by auto generate"></Prefix>
+      <SectionStart Description="1. Section Start number when generate type is Section mode, Hex Input">1</SectionStart>
+      <SectionEnd Description="1. Section End number when generate type is Section mode, Hex Input">9999</SectionEnd>
+    </OTTSN>
+    <WIFI>
+      <Enable Control="CheckBox" Property="ReadOnly" Description="Input or not">1</Enable>
+      <GenerateType Control="ComboBox" Elements="ManualInput,AutoGenerate,Section">ManualInput</GenerateType>
+      <Length  Property="InVisible" Description="Maximum input length: 12">12</Length>
+      <Prefix Description="1.For checking manual input. 2 Be used by auto generate"></Prefix>
+      <SectionStart Description="1. Section Start number when generate type is Section mode, Hex Input">1</SectionStart>
+      <SectionEnd Description="1. Section End number when generate type is Section mode, Hex Input">9999</SectionEnd>
+    </WIFI>
+    <BT>
+      <Enable Control="CheckBox" Property="ReadOnly" Description="Input or not">1</Enable>
+      <GenerateType Control="ComboBox" Elements="ManualInput,AutoGenerate,Section">ManualInput</GenerateType>
+      <Length  Property="InVisible" Description="Maximum input length: 12">12</Length>
+      <Prefix Description="1.For checking manual input. 2 Be used by auto generate"></Prefix>
+      <SectionStart Description="1. Section Start number when generate type is Section mode, Hex Input">1</SectionStart>
+      <SectionEnd Description="1. Section End number when generate type is Section mode, Hex Input">9999</SectionEnd>
+    </BT>
+	</Option>
+  <Param>
+    <OTTSN>
+      <Validation Description="Validate input barcode with special rule"></Validation>
+    </OTTSN>
+    <WIFI>
+      <Validation Description="Validate input barcode with special rule"></Validation>
+    </WIFI>
+    <BT>
+      <Validation Description="Validate input barcode with special rule"></Validation>
+    </BT>
+  </Param>
+</Node>

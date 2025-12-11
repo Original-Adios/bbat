@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Node>
+	<Option>
+    <EMMC_DDR Description="Unit: G,eg : 3G+32G">3G+32G</EMMC_DDR>
+	</Option>
+	<Param>
+  </Param>
+</Node>

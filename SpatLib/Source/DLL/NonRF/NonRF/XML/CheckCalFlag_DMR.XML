@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Node>
+  <Option>
+    <CaliFlag>
+      <ADC Control="CheckBox">0</ADC>
+      <AFC Property="InVisible" Control="CheckBox">0</AFC>
+      <GSM Property="InVisible">
+        <EGSM900>
+          <AGC Control="CheckBox">0</AGC>
+          <APC Control="CheckBox">0</APC>
+          <FT Control="CheckBox">0</FT>
+        </EGSM900>
+        <DCS1800>
+          <AGC Control="CheckBox">0</AGC>
+          <APC Control="CheckBox">0</APC>
+          <FT Control="CheckBox">0</FT>
+        </DCS1800>
+        <PCS1900>
+          <AGC Control="CheckBox">0</AGC>
+          <APC Control="CheckBox">0</APC>
+          <FT Control="CheckBox">0</FT>
+        </PCS1900>
+        <GSM850>
+          <AGC Control="CheckBox">0</AGC>
+          <APC Control="CheckBox">0</APC>
+          <FT Control="CheckBox">0</FT>
+        </GSM850>
+      </GSM>
+      <EDGE Property="InVisible">
+        <CALI Control="CheckBox">0</CALI>
+        <FT Control="CheckBox">0</FT>
+      </EDGE>
+      <TD Property="InVisible">
+        <CALI Control="CheckBox">0</CALI>
+        <FT Control="CheckBox">0</FT>
+      </TD>
+      <WCDMA Property="InVisible">
+        <BANDI>
+          <CALI Control="CheckBox">0</CALI>
+        </BANDI>
+        <BANDII>
+          <CALI Control="CheckBox">0</CALI>
+        </BANDII>
+        <BANDIV>
+          <CALI Control="CheckBox">0</CALI>
+        </BANDIV>
+        <BANDV>
+          <CALI Control="CheckBox">0</CALI>
+        </BANDV>
+        <BANDVI>
+          <CALI Control="CheckBox">0</CALI>
+        </BANDVI>
+        <BANDXIX>
+          <CALI Control="CheckBox">0</CALI>
+        </BANDXIX>
+        <FT Control="CheckBox">1</FT>
+      </WCDMA>
+      <LTE Property="InVisible">
+        <TDD>
+          <AGC Control="CheckBox">0</AGC>
+          <APC Control="CheckBox">0</APC>
+          <FT Control="CheckBox">0</FT>
+        </TDD>
+        <FDD>
+          <CALI Control="CheckBox">0</CALI>
+          <FT Control="CheckBox">0</FT>
+        </FDD>
+      </LTE>
+      <Antenna  Property="InVisible" Control="CheckBox">0</Antenna>
+      <MMI  Property="InVisible" Control="CheckBox">0</MMI>
+      <DMR>
+        <AFC Control="CheckBox">1</AFC>
+        <APC Control="CheckBox">1</APC>
+        <AGC Control="CheckBox">1</AGC>
+        <FT Control="CheckBox">1</FT>
+      </DMR>
+    </CaliFlag>
+  </Option>
+  <Param>
+  </Param>
+</Node>

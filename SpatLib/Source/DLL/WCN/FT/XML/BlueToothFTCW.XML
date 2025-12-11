@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Node>
+  <Option>
+    <Mode>
+      <BDR Description="BDR measurement switcher, if checkbox is enabled, measurement will be performed or not" Control="CheckBox">1</BDR>
+      <EDR Description="EDR measurement switcher, if checkbox is enabled, measurement will be performed or not" Control="CheckBox">1</EDR>
+        <!--BLE5.0 Description="BLE 5.0 measurement switcher, if checkbox is enabled, measurement will be performed or not" Control="CheckBox">1</BLE5.0-->
+    </Mode>
+    <Ant>
+      <StandAlone Description="Primary RF path" Control="CheckBox">1</StandAlone>
+      <RfSwitchPrimaryAnt Description="Outer Customer Rf Switch Primary Ant">0</RfSwitchPrimaryAnt>
+      <Shared Description="Diversity RF path" Control="CheckBox">0</Shared>
+      <RfSwitchDiversityAnt Description="Outer Customer Rf Switch Diversity Ant">0</RfSwitchDiversityAnt>
+    </Ant>
+  </Option>
+  <Param>
+    <Common>
+      <AvgCount Description="Average Count for Measurements">3</AvgCount>
+    </Common>
+    <BDR Description="BDR" Control="Group">
+      <GroupCount>1</GroupCount>
+      <Group1>
+        <TCH Description="Transmit channel 0~78 is available">0,39,78</TCH>
+        <PacketType Description="Different packet type with differrent packet length, the matching map is DH1,DH3,DH5" Control="ComboBox" Elements="DH1,DH3,DH5">DH5</PacketType>
+        <RefLVL Description="Reference level for tx measure. Unit:dBm">18</RefLVL>
+        <TestItem>
+          <TXP Description="Output power" Control="CheckBox">1</TXP>
+        </TestItem>
+      </Group1>
+      <Specification Description="Configure the test tolerance and specification">
+        <TXP Description="TX Power, Unit: dBm">2,20</TXP>
+          <!--TXPShared Description="TX Power, Unit: dBm">7,17</TXPShared-->
+      </Specification>
+    </BDR>
+    <EDR Description="EDR Band" Control="Group">
+      <GroupCount>1</GroupCount>
+      <Group1>
+        <TCH Description="Transmit channel 0~78 is available">0,39,78</TCH>
+        <PacketType Description="Different packet type with different packet length, the matching map is 2-DH1,2-DH3,2-DH5,3-DH1,3-DH3,3-DH5" Control="ComboBox" Elements="2-DH1,2-DH3,2-DH5,3-DH1,3-DH3,3-DH5">2-DH5</PacketType>
+        <RefLVL Description="Reference level for tx measure. Unit:dBm">18</RefLVL>
+        <TestItem>
+          <TXP Description="Output power" Control="CheckBox">1</TXP>
+        </TestItem>
+      </Group1>
+      <Specification Description="Configure the test tolerance and specification">
+        <TXP Description="TX Power, Unit: dBm">2,20</TXP>
+          <!--TXPShared Description="TX Power, Unit: dBm">6,16</TXPShared-->
+      </Specification>
+    </EDR>
+      <!--BLE5.0 Description="BLE 5.0 Band" Control="Group">
+      <GroupCount>1</GroupCount>
+      <Group1>
+        <TCH Description="Transmit channel 0~38 is available">0,19,38</TCH>
+        <PacketType Description="Packet type" Control="ComboBox" Elements="RF_PHY_1M,RF_PHY_2M,RF_PHY_S2,RF_PHY_S8">RF_PHY_2M</PacketType>
+        <RefLVL Description="Reference level for tx measure. Unit:dBm">12</RefLVL>
+        <TestItem>
+          <TXP Description="Output power" Control="CheckBox">1</TXP>
+        </TestItem>
+      </Group1>
+      <Specification Description="Configure the test tolerance and specification">
+        <TXP Description="TX Power, Unit: dBm">-20,10</TXP>
+        <TXPShared Description="TX Power, Unit: dBm">-20,10</TXPShared>
+      </Specification>
+    </BLE5.0-->
+  </Param>
+</Node>

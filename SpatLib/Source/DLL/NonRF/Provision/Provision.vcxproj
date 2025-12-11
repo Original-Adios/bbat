@@ -1,0 +1,200 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{C7595DBC-EA73-4C88-ADB9-2A1B90808786}</ProjectGuid>
+    <RootNamespace>Provision</RootNamespace>
+    <Keyword>Win32Proj</Keyword>
+    <WindowsTargetPlatformVersion>10.0.17763.0</WindowsTargetPlatformVersion>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <CharacterSet>Unicode</CharacterSet>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <PlatformToolset>v142</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <CharacterSet>Unicode</CharacterSet>
+    <PlatformToolset>v142</PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <_ProjectFileVersion>10.0.30319.1</_ProjectFileVersion>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">../../../../../../Bin/App/SpatLib\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(Configuration)\</IntDir>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</LinkIncremental>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">../../../../../../Bin/App/SpatLib\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(Configuration)\</IntDir>
+    <CodeAnalysisRuleSet Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">AllRules.ruleset</CodeAnalysisRuleSet>
+    <CodeAnalysisRules Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" />
+    <CodeAnalysisRuleAssemblies Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" />
+    <CodeAnalysisRuleSet Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">AllRules.ruleset</CodeAnalysisRuleSet>
+    <CodeAnalysisRules Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" />
+    <CodeAnalysisRuleAssemblies Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" />
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <Optimization>Disabled</Optimization>
+      <AdditionalIncludeDirectories>$(ProjectDir);../../../Common;../../../../../Common/Include;../../../../../Common/Tr;../../../../../Common/dlmalloc;../../../../../Common/lock;../../../../../Common/UtilFn;../../../../../Common/Include/device;../../../../../Common/UnisocMesDrv;../../../../../Common/Uni_Define;../../../../../Common/Uni_Dependence;../../../../../Common/Uni_Include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_WINDOWS;_USRDLL;_SPATLIB_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <MinimalRebuild>false</MinimalRebuild>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <WarningLevel>Level4</WarningLevel>
+      <DebugInformationFormat>EditAndContinue</DebugInformationFormat>
+    </ClCompile>
+    <Link>
+      <OutputFile>$(OutDir)Provision.dll</OutputFile>
+      <AdditionalLibraryDirectories>../../../../../Common/Lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <ImportLibrary>$(OutDir)Provision.lib</ImportLibrary>
+      <ProgramDatabaseFile>../../../../../../Source\Common\pdb\$(TargetName).pdb</ProgramDatabaseFile>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>$(ProjectDir);../../../Common;../../../../../Common/Include;../../../../../Common/Tr;../../../../../Common/dlmalloc;../../../../../Common/lock;../../../../../Common/UtilFn;../../../../../Common/Include/device;../../../../../Common/UnisocMesDrv;../../../../../Common/Uni_Define;../../../../../Common/Uni_Dependence;../../../../../Common/Uni_Include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_WINDOWS;_USRDLL;_SPATLIB_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <WarningLevel>Level4</WarningLevel>
+    </ClCompile>
+    <Link>
+      <OutputFile>$(OutDir)Provision.dll</OutputFile>
+      <AdditionalLibraryDirectories>../../../../../Common/Lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <ImportLibrary>$(OutDir)Provision.lib</ImportLibrary>
+      <ProgramDatabaseFile>../../../../../../Source\Common\pdb\$(TargetName).pdb</ProgramDatabaseFile>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="..\..\..\..\..\Common\UnisocMesDrv\MesDriver.cpp" />
+    <ClCompile Include="..\..\..\..\..\Common\UnisocMesDrv\MesHelper.cpp" />
+    <ClCompile Include="..\..\..\..\..\Common\UtilFn\BarCodeUtility.cpp" />
+    <ClCompile Include="..\..\..\Common\GenCodes.cpp" />
+    <ClCompile Include="..\..\..\Common\ScanConfig.cpp" />
+    <ClCompile Include="DBHelper.cpp" />
+    <ClCompile Include="Impl\CheckCodes.cpp" />
+    <ClCompile Include="Impl\CheckCodesEx.cpp" />
+    <ClCompile Include="Impl\CustomizeQRCode.cpp" />
+    <ClCompile Include="Impl\Ethernet_CheckCodes.cpp" />
+    <ClCompile Include="Impl\Ethernet_WriteCodes.cpp" />
+    <ClCompile Include="Impl\HciBtInputCode.cpp" />
+    <ClCompile Include="Impl\ImpBase.cpp" />
+    <ClCompile Include="..\..\..\Common\SpatBase.cpp" />
+    <ClCompile Include="Impl\InputCodes.cpp" />
+    <ClCompile Include="Impl\InputCodesV2.cpp" />
+    <ClCompile Include="Impl\InputQRCode.cpp" />
+    <ClCompile Include="Impl\Timer.cpp" />
+    <ClCompile Include="Impl\UeHelper.cpp" />
+    <ClCompile Include="Impl\WCNInputCodes.cpp" />
+    <ClCompile Include="Impl\WriteCodes.cpp" />
+    <ClCompile Include="Impl\WriteCodesEx.cpp" />
+    <ClCompile Include="Impl\WriteRtc.cpp" />
+    <ClCompile Include="Impl\WriteSNFromRobot.cpp" />
+    <ClCompile Include="Impl\WriteSN_MGB_GSM.cpp" />
+    <ClCompile Include="stdafx.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Create</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Create</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="Impl\ActionApp.cpp" />
+    <ClCompile Include="..\..\..\Common\ApiExport.cpp" />
+    <ClCompile Include="..\..\..\Common\SpatRuntimeClass.cpp" />
+    <ClCompile Include="..\..\..\..\..\Common\UtilFn\AppVer.cpp" />
+    <ClCompile Include="..\..\..\..\..\Common\lock\CLocks.cpp" />
+    <ClCompile Include="..\..\..\..\..\Common\lock\CSimpleLock.cpp" />
+    <ClCompile Include="..\..\..\..\..\Common\Json\JsonUtil.cpp" />
+    <ClCompile Include="..\..\..\Common\ModeSwitch.cpp" />
+    <ClCompile Include="..\..\..\..\..\Common\Tr\Tr.cpp" />
+    <ClCompile Include="..\..\..\..\..\Common\UtilFn\Utility.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\..\..\..\..\Common\UnisocMesDrv\drvdef.h" />
+    <ClInclude Include="..\..\..\..\..\Common\UnisocMesDrv\MesDriver.h" />
+    <ClInclude Include="..\..\..\..\..\Common\UnisocMesDrv\MesHelper.h" />
+    <ClInclude Include="..\..\..\..\..\Common\UnisocMesDrv\Unisoc_Solution_MES.h" />
+    <ClInclude Include="..\..\..\..\..\Common\UtilFn\BarCodeUtility.h" />
+    <ClInclude Include="..\..\..\Common\GenCodes.h" />
+    <ClInclude Include="..\..\..\Common\ScanConfig.h" />
+    <ClInclude Include="DBHelper.h" />
+    <ClInclude Include="Impl\ActionContainer.h" />
+    <ClInclude Include="Impl\CheckCodes.h" />
+    <ClInclude Include="Impl\CheckCodesEx.h" />
+    <ClInclude Include="Impl\CustomizeQRCode.h" />
+    <ClInclude Include="Impl\Ethernet_CheckCodes.h" />
+    <ClInclude Include="Impl\Ethernet_WriteCodes.h" />
+    <ClInclude Include="Impl\HciBtInputCode.h" />
+    <ClInclude Include="Impl\ImpBase.h" />
+    <ClInclude Include="..\..\..\Common\SpatBase.h" />
+    <ClInclude Include="Impl\InputCodes.h" />
+    <ClInclude Include="Impl\InputCodesV2.h" />
+    <ClInclude Include="Impl\InputQRCode.h" />
+    <ClInclude Include="Impl\Timer.h" />
+    <ClInclude Include="Impl\UeHelper.h" />
+    <ClInclude Include="Impl\WCNInputCodes.h" />
+    <ClInclude Include="Impl\WriteCodes.h" />
+    <ClInclude Include="..\..\..\..\..\Common\Include\SpatLibExport.h" />
+    <ClInclude Include="Impl\WriteCodesEx.h" />
+    <ClInclude Include="Impl\WriteRtc.h" />
+    <ClInclude Include="Impl\WriteSNFromRobot.h" />
+    <ClInclude Include="Impl\WriteSN_MGB_GSM.h" />
+    <ClInclude Include="resource.h" />
+    <ClInclude Include="stdafx.h" />
+    <ClInclude Include="targetver.h" />
+    <ClInclude Include="Impl\ActionApp.h" />
+    <ClInclude Include="Impl\ActionList.h" />
+    <ClInclude Include="..\..\..\Common\SpatRuntimeClass.h" />
+    <ClInclude Include="..\..\..\..\..\Common\UtilFn\AppVer.h" />
+    <ClInclude Include="..\..\..\..\..\Common\lock\CLocks.h" />
+    <ClInclude Include="..\..\..\..\..\Common\lock\CSimpleLock.h" />
+    <ClInclude Include="..\..\..\..\..\Common\Json\JsonUtil.h" />
+    <ClInclude Include="..\..\..\Common\ModeSwitch.h" />
+    <ClInclude Include="..\..\..\..\..\Common\Tr\Tr.h" />
+    <ClInclude Include="..\..\..\..\..\Common\UtilFn\Utility.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="Provision.rc" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="XML\CheckCodes.XML" />
+    <None Include="XML\CheckXInputCodes.XML" />
+    <None Include="XML\Dummy.XML" />
+    <None Include="ReadMe.txt" />
+    <None Include="XML\Ethernet_InputCodes.XML">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="XML\Ethernet_WriteCodes.XML" />
+    <None Include="XML\InputQRCode.XML" />
+    <None Include="XML\WCNInputCodes.XML" />
+    <None Include="XML\WriteCodeEx.XML" />
+    <None Include="XML\WriteX.XML" />
+    <None Include="XML\WriteXInputCodes.XML" />
+  </ItemGroup>
+  <ItemGroup>
+    <Xml Include="..\Security\XML\WriteImei.XML" />
+    <Xml Include="XML\CustomizeQRCode.XML" />
+    <Xml Include="XML\HciBtInputCode.XML" />
+    <Xml Include="XML\WriteXInputCodes2.XML" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

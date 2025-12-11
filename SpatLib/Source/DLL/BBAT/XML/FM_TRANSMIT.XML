@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Node>
+  <Option>
+	    <Freq1 Control="EditBox" Description="DUT1 FM频率">87.5</Freq1>
+      <Freq2 Control="EditBox" Description="DUT2 FM频率">87.5</Freq2>
+      <Freq3 Control="EditBox" Description="DUT3 FM频率">87.5</Freq3>
+      <Freq4 Control="EditBox" Description="DUT4 FM频率">87.5</Freq4>
+      <SNR Control="EditBox" Description="信噪比">20</SNR>
+	    <Peak Control="EditBox" Description="波形最大值">5000</Peak>
+      <SleepTime Control="EditBox" Description="打开FM到读取波形之间的延时（ms）">5000</SleepTime>
+  </Option>
+  <Param>
+  </Param>
+</Node>

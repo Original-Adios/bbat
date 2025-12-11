@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Node>
+  <Option>
+    <Mic Control="ComboBox" Description="设置Mic" Elements="MainMic,HeadSetMic,SubMic,MidMic">MainMic</Mic>
+    <Speaker Control="ComboBox" Description="设置Speaker" Elements="MainSpeaker,MainReceiver,HeadSet" >MainSpeaker</Speaker>
+    <SNR Control="EditBox" Description="配置SNR">20</SNR>
+    <Peak Control="EditBox" Description="配置Peak">5000</Peak>
+    <Mic_8K Control="CheckBox" Description="Mic 8K">0</Mic_8K>
+    <MicReadDataRetry >
+      <Retry Control="CheckBox">0</Retry>
+      <LoopCount Control="EditBox">0</LoopCount>
+    </MicReadDataRetry>
+  </Option>
+  <Param>
+  </Param>
+</Node>

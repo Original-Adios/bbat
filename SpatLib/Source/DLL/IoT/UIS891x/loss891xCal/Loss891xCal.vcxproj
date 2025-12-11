@@ -1,0 +1,258 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{14525FBC-0DF3-4DC3-AA03-77A8F5509C05}</ProjectGuid>
+    <RootNamespace>Loss891xCal</RootNamespace>
+    <Keyword>Win32Proj</Keyword>
+    <WindowsTargetPlatformVersion>10.0.17763.0</WindowsTargetPlatformVersion>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <CharacterSet>Unicode</CharacterSet>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <PlatformToolset>v142</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <CharacterSet>Unicode</CharacterSet>
+    <PlatformToolset>v142</PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <_ProjectFileVersion>10.0.30319.1</_ProjectFileVersion>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">../../../../../../../Bin/App/SpatLib\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(Configuration)\</IntDir>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">false</LinkIncremental>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">../../../../../../../Bin/App/SpatLib\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(Configuration)\</IntDir>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">false</LinkIncremental>
+    <CodeAnalysisRuleSet Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">AllRules.ruleset</CodeAnalysisRuleSet>
+    <CodeAnalysisRules Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" />
+    <CodeAnalysisRuleAssemblies Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" />
+    <CodeAnalysisRuleSet Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">AllRules.ruleset</CodeAnalysisRuleSet>
+    <CodeAnalysisRules Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" />
+    <CodeAnalysisRuleAssemblies Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" />
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <Optimization>Disabled</Optimization>
+      <AdditionalIncludeDirectories>$(ProjectDir);../../../../Common;../../../../../../Common/Include;../../../../../../Common/Tr;../../../../../../Common/dlmalloc;../../../../../../Common/lock;../../../../../../Common/UtilFn;./Impl;./Impl/Func;../../../../../../Common/Include/device;../gsm891xCal/Impl;../lte891xCal/Impl;../../../../../../Common/API;../../../../../../Common/Uni_Define;../../../../../../Common/Uni_Define/Global;../../../../../../Common/Uni_Define/PhoneCommand;../../../../../../Common/Uni_Include;../../../../../../Common/Uni_Dependence;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_WINDOWS;_USRDLL;_SPATLIB_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <MinimalRebuild>true</MinimalRebuild>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <WarningLevel>Level4</WarningLevel>
+      <DebugInformationFormat>EditAndContinue</DebugInformationFormat>
+    </ClCompile>
+    <Link>
+      <OutputFile>$(OutDir)Loss891xCal.dll</OutputFile>
+      <AdditionalLibraryDirectories>../../../../../../Common/Lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <SubSystem>Windows</SubSystem>
+      <ImportLibrary>$(OutDir)Loss891xCal.lib</ImportLibrary>
+      <TargetMachine>MachineX86</TargetMachine>
+      <ProgramDatabaseFile>../../../../../../../Source\Common\pdb\$(TargetName).pdb</ProgramDatabaseFile>
+      <GenerateMapFile>true</GenerateMapFile>
+      <MapFileName>../../../../../../../Source\Common\pdb\$(TargetName).map</MapFileName>
+      <MapExports>true</MapExports>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <Optimization>MaxSpeed</Optimization>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <AdditionalIncludeDirectories>$(ProjectDir);../../../../Common;../../../../../../Common/Include;../../../../../../Common/Tr;../../../../../../Common/dlmalloc;../../../../../../Common/lock;../../../../../../Common/UtilFn;./Impl;./Impl/Func;../../../../../../Common/Include/device;../gsm891xCal/Impl;../lte891xCal/Impl;../../../../../../Common/API;../../../../../../Common/Uni_Define;../../../../../../Common/Uni_Define/Global;../../../../../../Common/Uni_Define/PhoneCommand;../../../../../../Common/Uni_Include;../../../../../../Common/Uni_Dependence;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_WINDOWS;_USRDLL;_SPATLIB_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <WarningLevel>Level4</WarningLevel>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <WholeProgramOptimization>true</WholeProgramOptimization>
+    </ClCompile>
+    <Link>
+      <OutputFile>$(OutDir)Loss891xCal.dll</OutputFile>
+      <AdditionalLibraryDirectories>../../../../../../Common/Lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <SubSystem>Windows</SubSystem>
+      <OptimizeReferences>true</OptimizeReferences>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <ImportLibrary>$(OutDir)Loss891xCal.lib</ImportLibrary>
+      <TargetMachine>MachineX86</TargetMachine>
+      <ProgramDatabaseFile>../../../../../../../Source\Common\pdb\$(TargetName).pdb</ProgramDatabaseFile>
+      <GenerateMapFile>true</GenerateMapFile>
+      <MapFileName>../../../../../../../Source\Common\pdb\$(TargetName).map</MapFileName>
+      <MapExports>true</MapExports>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClInclude Include="..\..\..\..\..\..\Common\API\BTApiAT.h" />
+    <ClInclude Include="..\..\..\..\..\..\Common\API\GPSApiAT.h" />
+    <ClInclude Include="..\..\..\..\..\..\Common\API\IBTApi.h" />
+    <ClInclude Include="..\..\..\..\..\..\Common\API\IWlanApi.h" />
+    <ClInclude Include="..\..\..\..\..\..\Common\API\WlanApiAT.h" />
+    <ClInclude Include="..\..\..\..\..\..\Common\UtilFn\wcnUtility.h" />
+    <ClInclude Include="..\lte891xCal\Impl\ApiBase.h" />
+    <ClInclude Include="..\lte891xCal\Impl\ApiRxUIS8850.h" />
+    <ClInclude Include="..\lte891xCal\Impl\ApiRxUIS8910.h" />
+    <ClInclude Include="..\lte891xCal\Impl\ApiTxUIS8850.h" />
+    <ClInclude Include="..\lte891xCal\Impl\ApiTxUIS8910.h" />
+    <ClInclude Include="..\lte891xCal\Impl\FuncBase.h" />
+    <ClInclude Include="..\lte891xCal\Impl\FuncCenter.h" />
+    <ClInclude Include="..\lte891xCal\Impl\GlobalDefine.h" />
+    <ClInclude Include="..\lte891xCal\Impl\IAlgo.h" />
+    <ClInclude Include="Impl\CalcLSUIS8910.h" />
+    <ClInclude Include="Impl\ComDef.h" />
+    <ClInclude Include="Impl\Func\FileConfig_UIS8910.h" />
+    <ClInclude Include="..\..\..\..\..\..\Common\UtilFn\LteUtility.h" />
+    <ClInclude Include="Impl\Func\FunUIS8910.h" />
+    <ClInclude Include="Impl\Func\ILossFunc_UIS8910.h" />
+    <ClInclude Include="Impl\Func\LteClc_UIS8850.h" />
+    <ClInclude Include="Impl\Func\LteClc_UIS8910.h" />
+    <ClInclude Include="Impl\Func\LteGs_UIS8850.h" />
+    <ClInclude Include="Impl\Func\LteGs_UIS8910.h" />
+    <ClInclude Include="Impl\Func\NalClc_UIS8910.h" />
+    <ClInclude Include="Impl\Func\NalGs_UIS8910.h" />
+    <ClInclude Include="Impl\Func\AlgoGsRx.h" />
+    <ClInclude Include="Impl\Func\AlgoGsTx.h" />
+    <ClInclude Include="Impl\Func\AlgoClcRx.h" />
+    <ClInclude Include="Impl\Func\AlgoClcTx.h" />
+    <ClInclude Include="Impl\Func\GsmClc.h" />
+    <ClInclude Include="Impl\Func\GsmGs.h" />
+    <ClInclude Include="..\..\..\..\..\..\Common\UtilFn\gsmUtility.h" />
+    <ClInclude Include="Impl\Func\Nv_UIS8910.h" />
+    <ClInclude Include="Impl\Func\WCNCLC.h" />
+    <ClInclude Include="Impl\Func\WCNGS.h" />
+    <ClInclude Include="Impl\Func\WCNMeasurePower.h" />
+    <ClInclude Include="..\..\..\..\Common\SpatBase.h" />
+    <ClInclude Include="Impl\ImpBaseUIS8910.h" />
+    <ClInclude Include="Impl\ActionApp.h" />
+    <ClInclude Include="Impl\ActionList.h" />
+    <ClInclude Include="..\..\..\..\Common\SpatRuntimeClass.h" />
+    <ClInclude Include="..\..\..\..\..\..\Common\Include\SpatLibExport.h" />
+    <ClInclude Include="Impl\MakeGSUIS8910.h" />
+    <ClInclude Include="resource.h" />
+    <ClInclude Include="stdafx.h" />
+    <ClInclude Include="targetver.h" />
+    <ClInclude Include="..\..\..\..\..\..\Common\UtilFn\AppVer.h" />
+    <ClInclude Include="..\..\..\..\..\..\Common\lock\CLocks.h" />
+    <ClInclude Include="..\..\..\..\..\..\Common\lock\CSimpleLock.h" />
+    <ClInclude Include="..\..\..\..\..\..\Common\dlmalloc\dlmalloc.h" />
+    <ClInclude Include="..\..\..\..\Common\ExtraLogFile.h" />
+    <ClInclude Include="..\..\..\..\..\..\Common\UtilFn\LogFile.h" />
+    <ClInclude Include="..\..\..\..\Common\ModeSwitch.h" />
+    <ClInclude Include="..\..\..\..\Common\ScanConfig.h" />
+    <ClInclude Include="..\..\..\..\..\..\Common\Tr\Tr.h" />
+    <ClInclude Include="..\..\..\..\..\..\Common\UtilFn\Utility.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\..\..\..\..\..\Common\API\BTApiAT.cpp" />
+    <ClCompile Include="..\..\..\..\..\..\Common\API\GPSApiAT.cpp" />
+    <ClCompile Include="..\..\..\..\..\..\Common\API\WlanApiAT.cpp" />
+    <ClCompile Include="..\..\..\..\..\..\Common\UtilFn\wcnUtility.cpp" />
+    <ClCompile Include="..\lte891xCal\Impl\ApiBase.cpp" />
+    <ClCompile Include="..\lte891xCal\Impl\ApiRxUIS8850.cpp" />
+    <ClCompile Include="..\lte891xCal\Impl\ApiRxUIS8910.cpp" />
+    <ClCompile Include="..\lte891xCal\Impl\ApiTxUIS8850.cpp" />
+    <ClCompile Include="..\lte891xCal\Impl\ApiTxUIS8910.cpp" />
+    <ClCompile Include="..\lte891xCal\Impl\FuncBase.cpp" />
+    <ClCompile Include="..\lte891xCal\Impl\FuncCenter.cpp" />
+    <ClCompile Include="Impl\CalcLSUIS8910.cpp" />
+    <ClCompile Include="Impl\Func\FileConfig_UIS8910.cpp" />
+    <ClCompile Include="..\..\..\..\..\..\Common\UtilFn\LteUtility.cpp" />
+    <ClCompile Include="Impl\Func\FunUIS8910.cpp" />
+    <ClCompile Include="Impl\Func\ILossFunc_UIS8910.cpp" />
+    <ClCompile Include="Impl\Func\LteClc_UIS8850.cpp" />
+    <ClCompile Include="Impl\Func\LteClc_UIS8910.cpp" />
+    <ClCompile Include="Impl\Func\LteGs_UIS8850.cpp" />
+    <ClCompile Include="Impl\Func\LteGs_UIS8910.cpp" />
+    <ClCompile Include="Impl\Func\NalClc_UIS8910.cpp" />
+    <ClCompile Include="Impl\Func\NalGs_UIS8910.cpp" />
+    <ClCompile Include="Impl\Func\AlgoGsRx.cpp" />
+    <ClCompile Include="Impl\Func\AlgoGsTx.cpp" />
+    <ClCompile Include="Impl\Func\AlgoClcRx.cpp" />
+    <ClCompile Include="Impl\Func\AlgoClcTx.cpp" />
+    <ClCompile Include="Impl\Func\GsmClc.cpp" />
+    <ClCompile Include="Impl\Func\GsmGs.cpp" />
+    <ClCompile Include="..\..\..\..\..\..\Common\UtilFn\gsmUtility.cpp" />
+    <ClCompile Include="Impl\Func\Nv_UIS8910.cpp" />
+    <ClCompile Include="Impl\Func\WCNCLC.cpp" />
+    <ClCompile Include="Impl\Func\WCNGS.cpp" />
+    <ClCompile Include="Impl\Func\WCNMeasurePower.cpp" />
+    <ClCompile Include="..\..\..\..\Common\SpatBase.cpp" />
+    <ClCompile Include="Impl\ImpBaseUIS8910.cpp" />
+    <ClCompile Include="Impl\ActionApp.cpp" />
+    <ClCompile Include="..\..\..\..\Common\ApiExport.cpp" />
+    <ClCompile Include="..\..\..\..\Common\SpatRuntimeClass.cpp" />
+    <ClCompile Include="Impl\MakeGSUIS8910.cpp" />
+    <ClCompile Include="stdafx.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Create</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Create</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\..\Common\UtilFn\AppVer.cpp" />
+    <ClCompile Include="..\..\..\..\..\..\Common\lock\CLocks.cpp" />
+    <ClCompile Include="..\..\..\..\..\..\Common\lock\CSimpleLock.cpp" />
+    <ClCompile Include="..\..\..\..\..\..\Common\dlmalloc\dlmalloc.c">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+      </PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+      </PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\Common\ExtraLogFile.cpp" />
+    <ClCompile Include="..\..\..\..\..\..\Common\UtilFn\LogFile.cpp" />
+    <ClCompile Include="..\..\..\..\Common\ModeSwitch.cpp" />
+    <ClCompile Include="..\..\..\..\Common\ScanConfig.cpp" />
+    <ClCompile Include="..\..\..\..\..\..\Common\Tr\Tr.cpp" />
+    <ClCompile Include="..\..\..\..\..\..\Common\UtilFn\Utility.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="XML\CalcLS_UIS1930.XML">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="XML\CalcLS_UIS8910.XML" />
+    <None Include="ReadMe.txt" />
+    <None Include="XML\Dummy.XML" />
+    <None Include="XML\MakeGS_UIS1930.XML" />
+    <None Include="XML\MakeGS_UIS8910.XML" />
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="Loss891xCal.rc" />
+  </ItemGroup>
+  <ItemGroup>
+    <Xml Include="XML\CalcLS_UIS8850.XML" />
+    <Xml Include="XML\CalcLS_UIS8910FF_L.XML" />
+    <Xml Include="XML\CalcLS_UIS891C.XML" />
+    <Xml Include="XML\MakeGS_UIS8850.XML" />
+    <Xml Include="XML\MakeGS_UIS8910FF_L.XML" />
+    <Xml Include="XML\MakeGS_UIS891C.XML" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+  <ProjectExtensions>
+    <VisualStudio>
+      <UserProperties RESOURCE_FILE="Loss891xCal.rc" />
+    </VisualStudio>
+  </ProjectExtensions>
+</Project>

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Node>
+	<Option>
+		<CheckCmd Control="ComboBox" Elements="LoadSwVer,AT">LoadSwVer</CheckCmd>
+		<TimeOut Description="Unit: ms">60000</TimeOut>
+	</Option>
+	<Param>
+	</Param>
+</Node>

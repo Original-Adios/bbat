@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Node>
+	<Option>
+    <SN1>
+      <Active Control="CheckBox">1</Active>
+      <MaxLength Description="SN length: [1 - 23]">14</MaxLength>
+      <Prefix Description="Check prefix of ManualInput [检查输入的SN前缀]"></Prefix>
+    </SN1>
+    <CustFixed>
+      <Active Control="CheckBox">1</Active>
+      <MaxLength Description="CustFixed length: [1 - 23]">14</MaxLength>
+      <Prefix Description="Check prefix of ManualInput [检查输入的CustFixed前缀]"></Prefix>
+    </CustFixed>
+    </Option>
+	<Param>
+        <SN1>
+            <Validation Description="Validate input barcode with special rule"></Validation>
+        </SN1>
+        <CustFixed Property="InVisible">
+            <Validation Description="Validate input barcode with special rule"></Validation>
+        </CustFixed>
+  </Param>
+</Node>

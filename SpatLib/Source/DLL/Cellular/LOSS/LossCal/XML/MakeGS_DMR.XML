@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Node>
+  <Option>
+    <DMR Description="Specifies which frequency to do loss calibrate" Tag="Show">
+      <DMR-CAL Control="CheckBox">0</DMR-CAL>
+      <DMR-FT Control="CheckBox">0</DMR-FT>
+    </DMR>
+    <DMR_Param>
+      <Freq >400,430,470</Freq>
+      <TargetPower> 30.0 </TargetPower>
+      <PCL>0</PCL>
+    </DMR_Param>
+  </Option>
+  <Param>
+  </Param>
+</Node>

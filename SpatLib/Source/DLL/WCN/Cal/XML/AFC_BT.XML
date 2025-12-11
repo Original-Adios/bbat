@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Node>
+  <Option>
+    <FERLimit Description="Unit:KHZ">50</FERLimit>
+  </Option>
+  <Param>
+    <CDAC_START Description="Limit:0~63">0</CDAC_START>
+    <CDAC_END Description="Limit:0~63">63</CDAC_END>
+    <RFPath Description="RF Path, no path select none" Control="ComboBox" Elements="StandAlone,Shared, NONE">Shared</RFPath>
+    <TSX_Enable Control="CheckBox" Property="InVisible" Description="TSX Enable">0</TSX_Enable>
+    <TSX_Start Control="CheckBox" Property="InVisible" Description="">1</TSX_Start>
+  </Param>
+</Node>

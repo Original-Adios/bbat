@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Node>
+  <Option>
+    <CheckCodesByInput Control="ComboBox" Elements="0,1" Description="1:检查串号通过扫描在MES Online时">0</CheckCodesByInput>
+  </Option>
+  <Param>
+  </Param>
+</Node>

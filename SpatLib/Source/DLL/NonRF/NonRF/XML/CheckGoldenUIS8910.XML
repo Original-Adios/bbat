@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Node>
+  <Option>
+      <DUTType Property="InVisible">
+          <UEType Description="UE type code.">0x8910</UEType>
+      </DUTType>
+      <GoldenPass Control="CheckBox">0</GoldenPass>
+      <UeBootUpWaitTime>5000</UeBootUpWaitTime>
+  </Option>
+  <Param>
+  </Param>
+</Node>

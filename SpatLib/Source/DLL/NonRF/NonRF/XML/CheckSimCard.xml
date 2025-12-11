@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Node>
+	<Option>
+		<SimCard1 Control="CheckBox">1</SimCard1>
+    <SimCard1CheckType Control="ComboBox" Elements="Existence,Inexistence">Existence</SimCard1CheckType>
+    <SimCard2 Control="CheckBox">0</SimCard2>
+    <SimCard2CheckType Control="ComboBox" Elements="Existence,Inexistence">Existence</SimCard2CheckType>
+	</Option>
+	<Param>
+	</Param>
+</Node>

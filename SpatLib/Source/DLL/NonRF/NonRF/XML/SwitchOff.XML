@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Node>
+	<Option>
+    <Mode Control="ComboBox" Elements="Auto,Command" Description="Auto: 优先控制程控电源断电, Command: 命令断电">Auto</Mode>
+    <DelayTime Description="Sleep time after power off">1000</DelayTime>
+	</Option>
+	<Param>
+	</Param>
+</Node>

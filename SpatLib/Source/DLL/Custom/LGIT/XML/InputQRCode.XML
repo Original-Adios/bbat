@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Node>
+	<Option>
+    <QRCode Control="BoolComboBox" CtrlNode="GenerateType">
+      <Format Control="ComboBox" Elements="V1">V1</Format>
+      <GenerateType Control="ComboBox" Elements="ScanCode,FixCode">ScanCode</GenerateType>
+      <FixCode>8928.800.316,355391090035308,01I_T4CHU</FixCode>
+    </QRCode>
+	</Option>
+	<Param>
+	</Param>
+</Node>

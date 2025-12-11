@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Node>
+  <Option>
+	</Option>
+	<Param>
+		<AudioLoop Control="Group">
+			<GroupCount>2</GroupCount>
+			<Group1>
+				<Type Control="ComboBox" Description="非贴片mic选择AudioLoop_G3,贴片mic选择AudioLoop_PA" Elements="AudioLoop_PA,AudioLoop_G3">AudioLoop_G3</Type>
+                <Speaker Control="ComboBox" Description="设置Speaker" Elements="MainSpeaker,MainReceiver,HeadSet,SubSpeaker,FP_Speaker,FP_Receiver">MainSpeaker</Speaker>        
+                <Mic Control="ComboBox" Description="设置Mic" Elements="MainMic,SubMic,FP_MainMic">MainMic</Mic>	
+				<LoopSelect>
+					<LoopIn Description="G3音频输入通道，MainSpeaker,MainReceiver,HeadSet,SubSpeaker,FP_Speaker,FP_Receiver分别为1/3/2/2/1/3" Control="ComboBox" Elements="1,2,3">1</LoopIn>
+					<LoopOut Description="G3音频输出通道，Main_Mic/Sub_Mic/FP_MainMic/PA分别为1/2/1/3" Control="ComboBox" Elements="1,2,3">1</LoopOut>
+				</LoopSelect>
+				<PA Description="LoopOut为3时生效，贴片主Mic设置0，贴片辅Mic设置1" Control="ComboBox" Elements="0,1">1</PA>
+				<SNR Control="EditBox" Description="配置SNR">20</SNR>
+				<Peak Control="EditBox" Description="配置Peak">5000</Peak>
+				<Mic_8K Control="CheckBox" Description="Mic 8K">0</Mic_8K>
+				<Voltage>
+					<VoltagePDown Description="Mic P端电压下限">1500</VoltagePDown>
+					<VoltageNUp Description="Mic N端电压上限">200</VoltageNUp>
+				</Voltage>
+			</Group1>
+			<Group2>
+				<Type Control="ComboBox" Description="非贴片mic选择AudioLoop_G3,贴片mic选择AudioLoop_PA" Elements="AudioLoop_PA,AudioLoop_G3">AudioLoop_G3</Type>
+                <Speaker Control="ComboBox" Description="设置Speaker" Elements="MainSpeaker,MainReceiver,HeadSet,SubSpeaker,FP_Speaker,FP_Receiver">MainSpeaker</Speaker>
+                <Mic Control="ComboBox" Description="设置Mic" Elements="MainMic,SubMic,FP_MainMic">MainMic</Mic>
+				<LoopSelect>
+					<LoopIn Description="G3音频输入通道，MainSpeaker,MainReceiver,HeadSet,SubSpeaker,FP_Speaker,FP_Receiver分别为1/3/2/2/1/3" Control="ComboBox" Elements="1,2,3">1</LoopIn>
+					<LoopOut Description="G3音频输出通道，Main_Mic/Sub_Mic/FP_MainMic/PA分别为1/2/1/3" Control="ComboBox" Elements="1,2,3">1</LoopOut>
+				</LoopSelect>
+				<PA Description="LoopOut为3时生效，贴片主Mic设置0，贴片辅Mic设置1" Control="ComboBox" Elements="0,1">1</PA>
+				<SNR Control="EditBox" Description="配置SNR">20</SNR>
+				<Peak Control="EditBox" Description="配置Peak">5000</Peak>
+				<Mic_8K Control="CheckBox" Description="Mic 8K">0</Mic_8K>
+				<Voltage>
+					<VoltagePDown Description="Mic P端电压下限">1500</VoltagePDown>
+					<VoltageNUp Description="Mic N端电压上限">200</VoltageNUp>
+				</Voltage>
+			</Group2>
+
+
+		</AudioLoop>
+  </Param>
+</Node>

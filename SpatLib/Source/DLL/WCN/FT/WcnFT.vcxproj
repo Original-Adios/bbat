@@ -1,0 +1,384 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectName>WcnFT</ProjectName>
+    <ProjectGuid>{300F46DB-8A9D-425A-AC00-73A799C2CED5}</ProjectGuid>
+    <RootNamespace>WcnFT</RootNamespace>
+    <Keyword>Win32Proj</Keyword>
+    <WindowsTargetPlatformVersion>10.0.17763.0</WindowsTargetPlatformVersion>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <CharacterSet>Unicode</CharacterSet>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <PlatformToolset>v142</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <CharacterSet>Unicode</CharacterSet>
+    <PlatformToolset>v142</PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <_ProjectFileVersion>10.0.30319.1</_ProjectFileVersion>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">../../../../../../Bin/App/SpatLib\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(Configuration)\</IntDir>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</LinkIncremental>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">../../../../../../Bin/App/SpatLib\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(Configuration)\</IntDir>
+    <CodeAnalysisRuleSet Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">AllRules.ruleset</CodeAnalysisRuleSet>
+    <CodeAnalysisRules Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" />
+    <CodeAnalysisRuleAssemblies Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" />
+    <CodeAnalysisRuleSet Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">AllRules.ruleset</CodeAnalysisRuleSet>
+    <CodeAnalysisRules Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" />
+    <CodeAnalysisRuleAssemblies Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" />
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <Optimization>Disabled</Optimization>
+      <AdditionalIncludeDirectories>$(ProjectDir);../../../../../Common/Include/Device;../../../../../Common;../../../../../Common/Include;../../../../../Common/Tr;../../../../../Common/dlmalloc;../../../Common;../../../../../Common/lock;../../../../../Common/UtilFn;../../../../../Common/API;../../../../../Common/Uni_Define/Global;../../../../../Common/Uni_Dependence;../../../../../Common/Uni_Include;../../../../../Common/Uni_Define;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_WINDOWS;_USRDLL;_SPATLIB_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <MinimalRebuild>true</MinimalRebuild>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <WarningLevel>Level4</WarningLevel>
+      <DebugInformationFormat>EditAndContinue</DebugInformationFormat>
+    </ClCompile>
+    <Link>
+      <OutputFile>$(OutDir)WcnFT.dll</OutputFile>
+      <AdditionalLibraryDirectories>../../../../../Common/Lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <ImportLibrary>$(OutDir)WcnFT.lib</ImportLibrary>
+      <MergeSections>
+      </MergeSections>
+      <ProgramDatabaseFile>../../../../../../Source\Common\pdb\$(TargetName).pdb</ProgramDatabaseFile>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>$(ProjectDir);../../../../../Common/Include/Device;../../../../../Common;../../../../../Common/Include;../../../../../Common/Tr;../../../../../Common/dlmalloc;../../../Common;../../../../../Common/lock;../../../../../Common/UtilFn;../../../../../Common/API;../../../../../Common/Uni_Define/Global;../../../../../Common/Uni_Dependence;../../../../../Common/Uni_Include;../../../../../Common/Uni_Define;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_WINDOWS;_USRDLL;_SPATLIB_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <WarningLevel>Level4</WarningLevel>
+      <WholeProgramOptimization>true</WholeProgramOptimization>
+      <Optimization>MinSpace</Optimization>
+    </ClCompile>
+    <Link>
+      <OutputFile>$(OutDir)WcnFT.dll</OutputFile>
+      <AdditionalLibraryDirectories>../../../../../Common/Lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <ImportLibrary>$(OutDir)WcnFT.lib</ImportLibrary>
+      <ProgramDatabaseFile>../../../../../../Source\Common\pdb\$(TargetName).pdb</ProgramDatabaseFile>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClInclude Include="..\..\..\..\..\Common\API\BTApiAT.h" />
+    <ClInclude Include="..\..\..\..\..\Common\API\BTApiDiag.h" />
+    <ClInclude Include="..\..\..\..\..\Common\API\BTApiHCI.h" />
+    <ClInclude Include="..\..\..\..\..\Common\API\GPSApiAT.h" />
+    <ClInclude Include="..\..\..\..\..\Common\API\IBTApi.h" />
+    <ClInclude Include="..\..\..\..\..\Common\API\IWlanApi.h" />
+    <ClInclude Include="..\..\..\..\..\Common\API\WlanApiAT.h" />
+    <ClInclude Include="..\..\..\..\..\Common\API\WlanApiDiag.h" />
+    <ClInclude Include="..\..\..\..\..\Common\Include\SpatLibExport.h" />
+    <ClInclude Include="..\..\..\Common\CustomizedBase.h" />
+    <ClInclude Include="..\..\..\Common\LossHelper.h" />
+    <ClInclude Include="FuncImp\BtCommonDef.h" />
+    <ClInclude Include="FuncImp\BTGeneralLoadLossXML.h" />
+    <ClInclude Include="FuncImp\BTGeneralLoadXML.h" />
+    <ClInclude Include="FuncImp\BTGeneralMeasBDR.h" />
+    <ClInclude Include="FuncImp\BTGeneralMeasBLE.h" />
+    <ClInclude Include="FuncImp\BTGeneralMeasEDR.h" />
+    <ClInclude Include="FuncImp\BTLoadXMLCW.h" />
+    <ClInclude Include="FuncImp\BTLoadXMLProbe.h" />
+    <ClInclude Include="FuncImp\BTLoadXMLUDS710.h" />
+    <ClInclude Include="FuncImp\BTLoadXML_BLE53.h" />
+    <ClInclude Include="FuncImp\BTMeasBDRUDS710.h" />
+    <ClInclude Include="FuncImp\BTMeasBLE_BLE53.h" />
+    <ClInclude Include="FuncImp\BTMeasBLE_EXUDS710.h" />
+    <ClInclude Include="FuncImp\BTMeasCW.h" />
+    <ClInclude Include="FuncImp\BTMeasEDRUDS710.h" />
+    <ClInclude Include="FuncImp\BTMeasSysV1.h" />
+    <ClInclude Include="FuncImp\BTMeasBLE_EX.h" />
+    <ClInclude Include="FuncImp\BTMeasSysV1Loss.h" />
+    <ClInclude Include="FuncImp\BTRFPathSwitch.h" />
+    <ClInclude Include="FuncImp\BTTestSysCW.h" />
+    <ClInclude Include="FuncImp\BTTestSysHCI.h" />
+    <ClInclude Include="FuncImp\BTTestSysProbe.h" />
+    <ClInclude Include="FuncImp\BTTestSysUDS710.h" />
+    <ClInclude Include="FuncImp\BTTestSysSongShan.h" />
+    <ClInclude Include="FuncImp\CalCNR.h" />
+    <ClInclude Include="FuncImp\CheckWcnUid.h" />
+    <ClInclude Include="FuncImp\GPSAutoModeTestSys.h" />
+    <ClInclude Include="FuncImp\GPSTestLoss.h" />
+    <ClInclude Include="FuncImp\GPSTestSysBeiDou.h" />
+    <ClInclude Include="FuncImp\GPSTestSysGlonass.h" />
+    <ClInclude Include="FuncImp\GPSTestSysMslt.h" />
+    <ClInclude Include="FuncImp\GPSTestSysV2.h" />
+    <ClInclude Include="FuncImp\GPSTestSysV3.h" />
+    <ClInclude Include="FuncImp\HciBtCheckAddr.h" />
+    <ClInclude Include="FuncImp\HciBtWriteAddr.h" />
+    <ClInclude Include="FuncImp\LogEnable.h" />
+    <ClInclude Include="FuncImp\WcnTestSysWearAT.h" />
+    <ClInclude Include="FuncImp\WcnTestSysWearATEx.h" />
+    <ClInclude Include="FuncImp\WcnTestSysWearCW.h" />
+    <ClInclude Include="FuncImp\WlanAntSwitch.h" />
+    <ClInclude Include="FuncImp\WlanBerProbe.h" />
+    <ClInclude Include="FuncImp\WlanCommonDef.h" />
+    <ClInclude Include="FuncImp\WlanLoadLossXML.h" />
+    <ClInclude Include="FuncImp\WlanLoadXMLCW.h" />
+    <ClInclude Include="FuncImp\WlanLoadXMLOS80.h" />
+    <ClInclude Include="FuncImp\WlanLoadXMLSongShanW6.h" />
+    <ClInclude Include="FuncImp\WlanLoadXMLUDS710.h" />
+    <ClInclude Include="FuncImp\WlanMeasBaseProbe.h" />
+    <ClInclude Include="FuncImp\WlanMeasCW.h" />
+    <ClInclude Include="FuncImp\WlanMeasMimo.h" />
+    <ClInclude Include="FuncImp\WlanMeasMimoBase.h" />
+    <ClInclude Include="FuncImp\WlanMeasOS80.h" />
+    <ClInclude Include="FuncImp\WlanMeasSongShanW6.h" />
+    <ClInclude Include="FuncImp\WlanMeasSongShanW6DL.h" />
+    <ClInclude Include="FuncImp\WlanMeasUDS710.h" />
+    <ClInclude Include="FuncImp\WlanProbeLoadXML.h" />
+    <ClInclude Include="FuncImp\WlanRxSearchOS80.h" />
+    <ClInclude Include="FuncImp\WlanTestSysAntLoss.h" />
+    <ClInclude Include="FuncImp\WlanTestSysAntLossSC266X.h" />
+    <ClInclude Include="FuncImp\WlanTestSysAntLossV2.h" />
+    <ClInclude Include="FuncImp\WlanTestSysByBtTxOn.h" />
+    <ClInclude Include="FuncImp\WlanTestSysCW.h" />
+    <ClInclude Include="FuncImp\WlanTestSysMimo.h" />
+    <ClInclude Include="FuncImp\WlanTestSysOS80.h" />
+    <ClInclude Include="FuncImp\WcnTestSysWear.h" />
+    <ClInclude Include="FuncImp\WlanTestSysSongShanW6.h" />
+    <ClInclude Include="FuncImp\WlanTestSysSongShanW6DL.h" />
+    <ClInclude Include="FuncImp\WlanTestSysUDS710.h" />
+    <ClInclude Include="ImpBase.h" />
+    <ClInclude Include="..\..\..\Common\SpatBase.h" />
+    <ClInclude Include="FuncImp\BTTestSysV2.h" />
+    <ClInclude Include="FuncImp\BTLoadXML.h" />
+    <ClInclude Include="FuncImp\BTEnterMode.h" />
+    <ClInclude Include="FuncImp\BTMeasBase.h" />
+    <ClInclude Include="FuncImp\BTMeasBDR.h" />
+    <ClInclude Include="FuncImp\BTMeasEDR.h" />
+    <ClInclude Include="FuncImp\WlanTestSys.h" />
+    <ClInclude Include="FuncImp\WlanLoadXML.h" />
+    <ClInclude Include="FuncImp\WlanEnterMode.h" />
+    <ClInclude Include="FuncImp\WlanMeas24G.h" />
+    <ClInclude Include="FuncImp\WlanMeas5G.h" />
+    <ClInclude Include="FuncImp\WlanMeasBase.h" />
+    <ClInclude Include="FuncImp\GPSTestSys.h" />
+    <ClInclude Include="resource.h" />
+    <ClInclude Include="stdafx.h" />
+    <ClInclude Include="targetver.h" />
+    <ClInclude Include="ActionApp.h" />
+    <ClInclude Include="ActionList.h" />
+    <ClInclude Include="..\..\..\Common\SpatRuntimeClass.h" />
+    <ClInclude Include="..\..\..\..\..\Common\UtilFn\AppVer.h" />
+    <ClInclude Include="..\..\..\..\..\Common\lock\CLocks.h" />
+    <ClInclude Include="..\..\..\..\..\Common\lock\CSimpleLock.h" />
+    <ClInclude Include="..\..\..\..\..\Common\dlmalloc\dlmalloc.h" />
+    <ClInclude Include="..\..\..\Common\ExtraLogFile.h" />
+    <ClInclude Include="..\..\..\..\..\Common\Json\JsonUtil.h" />
+    <ClInclude Include="..\..\..\..\..\Common\UtilFn\LogFile.h" />
+    <ClInclude Include="..\..\..\Common\ModeSwitch.h" />
+    <ClInclude Include="..\..\..\..\..\Common\Tr\Tr.h" />
+    <ClInclude Include="..\..\..\..\..\Common\UtilFn\Utility.h" />
+    <ClInclude Include="..\..\..\..\..\Common\Include\device\wcn_def.h" />
+    <ClInclude Include="..\..\..\..\..\Common\UtilFn\wcnUtility.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\..\..\..\..\Common\API\BTApiAT.cpp" />
+    <ClCompile Include="..\..\..\..\..\Common\API\BTApiDiag.cpp" />
+    <ClCompile Include="..\..\..\..\..\Common\API\BTApiHCI.cpp" />
+    <ClCompile Include="..\..\..\..\..\Common\API\GPSApiAT.cpp" />
+    <ClCompile Include="..\..\..\..\..\Common\API\WlanApiAT.cpp" />
+    <ClCompile Include="..\..\..\..\..\Common\API\WlanApiDiag.cpp" />
+    <ClCompile Include="..\..\..\..\..\Common\UtilFn\NetUtility.cpp" />
+    <ClCompile Include="..\..\..\Common\CustomizedBase.cpp" />
+    <ClCompile Include="..\..\..\Common\LossHelper.cpp" />
+    <ClCompile Include="FuncImp\BTGeneralLoadLossXML.cpp" />
+    <ClCompile Include="FuncImp\BTGeneralLoadXML.cpp" />
+    <ClCompile Include="FuncImp\BTGeneralMeasBDR.cpp" />
+    <ClCompile Include="FuncImp\BTGeneralMeasBLE.cpp" />
+    <ClCompile Include="FuncImp\BTGeneralMeasEDR.cpp" />
+    <ClCompile Include="FuncImp\BTLoadXMLCW.cpp" />
+    <ClCompile Include="FuncImp\BTLoadXMLProbe.cpp" />
+    <ClCompile Include="FuncImp\BTLoadXMLUDS710.cpp" />
+    <ClCompile Include="FuncImp\BTLoadXML_BLE53.cpp" />
+    <ClCompile Include="FuncImp\BTMeasBDRUDS710.cpp" />
+    <ClCompile Include="FuncImp\BTMeasBLE_BLE53.cpp" />
+    <ClCompile Include="FuncImp\BTMeasBLE_EXUDS710.cpp" />
+    <ClCompile Include="FuncImp\BTMeasCW.cpp" />
+    <ClCompile Include="FuncImp\BTMeasEDRUDS710.cpp" />
+    <ClCompile Include="FuncImp\BTMeasSysV1.cpp" />
+    <ClCompile Include="FuncImp\BTMeasBLE_EX.cpp" />
+    <ClCompile Include="FuncImp\BTMeasSysV1Loss.cpp" />
+    <ClCompile Include="FuncImp\BTRFPathSwitch.cpp" />
+    <ClCompile Include="FuncImp\BTTestSysCW.cpp" />
+    <ClCompile Include="FuncImp\BTTestSysHCI.cpp" />
+    <ClCompile Include="FuncImp\BTTestSysProbe.cpp" />
+    <ClCompile Include="FuncImp\BTTestSysUDS710.cpp" />
+    <ClCompile Include="FuncImp\BTTestSysSongShan.cpp" />
+    <ClCompile Include="FuncImp\CalCNR.cpp" />
+    <ClCompile Include="FuncImp\CheckWcnUid.cpp" />
+    <ClCompile Include="FuncImp\GPSAutoModeTestSys.cpp" />
+    <ClCompile Include="FuncImp\GPSTestLoss.cpp" />
+    <ClCompile Include="FuncImp\GPSTestSysBeiDou.cpp" />
+    <ClCompile Include="FuncImp\GPSTestSysGlonass.cpp" />
+    <ClCompile Include="FuncImp\GPSTestSysMslt.cpp" />
+    <ClCompile Include="FuncImp\GPSTestSysV2.cpp" />
+    <ClCompile Include="FuncImp\GPSTestSysV3.cpp" />
+    <ClCompile Include="FuncImp\HciBtCheckAddr.cpp" />
+    <ClCompile Include="FuncImp\HciBtWriteAddr.cpp" />
+    <ClCompile Include="FuncImp\LogEnable.cpp" />
+    <ClCompile Include="FuncImp\WcnTestSysWearAT.cpp" />
+    <ClCompile Include="FuncImp\WcnTestSysWearATEx.cpp" />
+    <ClCompile Include="FuncImp\WcnTestSysWearCW.cpp" />
+    <ClCompile Include="FuncImp\WlanAntSwitch.cpp" />
+    <ClCompile Include="FuncImp\WlanBerProbe.cpp" />
+    <ClCompile Include="FuncImp\WlanLoadLossXML.cpp" />
+    <ClCompile Include="FuncImp\WlanLoadXMLCW.cpp" />
+    <ClCompile Include="FuncImp\WlanLoadXMLOS80.cpp" />
+    <ClCompile Include="FuncImp\WlanLoadXMLSongShanW6.cpp" />
+    <ClCompile Include="FuncImp\WlanLoadXMLUDS710.cpp" />
+    <ClCompile Include="FuncImp\WlanMeasBaseProbe.cpp" />
+    <ClCompile Include="FuncImp\WlanMeasCW.cpp" />
+    <ClCompile Include="FuncImp\WlanMeasMimo.cpp" />
+    <ClCompile Include="FuncImp\WlanMeasMimoBase.cpp" />
+    <ClCompile Include="FuncImp\WlanMeasOS80.cpp" />
+    <ClCompile Include="FuncImp\WlanMeasSongShanW6.cpp" />
+    <ClCompile Include="FuncImp\WlanMeasSongShanW6DL.cpp" />
+    <ClCompile Include="FuncImp\WlanMeasUDS710.cpp" />
+    <ClCompile Include="FuncImp\WlanProbeLoadXML.cpp" />
+    <ClCompile Include="FuncImp\WlanRxSearchOS80.cpp" />
+    <ClCompile Include="FuncImp\WlanTestSysAntLoss.cpp" />
+    <ClCompile Include="FuncImp\WlanTestSysAntLossSC266X.cpp" />
+    <ClCompile Include="FuncImp\WlanTestSysAntLossV2.cpp" />
+    <ClCompile Include="FuncImp\WlanTestSysByBtTxOn.cpp" />
+    <ClCompile Include="FuncImp\WlanTestSysCW.cpp" />
+    <ClCompile Include="FuncImp\WlanTestSysMimo.cpp" />
+    <ClCompile Include="FuncImp\WlanTestSysOS80.cpp" />
+    <ClCompile Include="FuncImp\WcnTestSysWear.cpp" />
+    <ClCompile Include="FuncImp\WlanTestSysSongShanW6.cpp" />
+    <ClCompile Include="FuncImp\WlanTestSysSongShanW6DL.cpp" />
+    <ClCompile Include="FuncImp\WlanTestSysUDS710.cpp" />
+    <ClCompile Include="ImpBase.cpp" />
+    <ClCompile Include="..\..\..\Common\SpatBase.cpp" />
+    <ClCompile Include="FuncImp\BTTestSysV2.cpp" />
+    <ClCompile Include="FuncImp\BTLoadXML.cpp" />
+    <ClCompile Include="FuncImp\BTEnterMode.cpp" />
+    <ClCompile Include="FuncImp\BTMeasBase.cpp" />
+    <ClCompile Include="FuncImp\BTMeasBDR.cpp" />
+    <ClCompile Include="FuncImp\BTMeasEDR.cpp" />
+    <ClCompile Include="FuncImp\WlanTestSys.cpp" />
+    <ClCompile Include="FuncImp\WlanLoadXML.cpp" />
+    <ClCompile Include="FuncImp\WlanEnterMode.cpp" />
+    <ClCompile Include="FuncImp\WlanMeas24G.cpp" />
+    <ClCompile Include="FuncImp\WlanMeas5G.cpp" />
+    <ClCompile Include="FuncImp\WlanMeasBase.cpp" />
+    <ClCompile Include="FuncImp\GPSTestSys.cpp" />
+    <ClCompile Include="stdafx.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Create</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Create</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="ActionApp.cpp" />
+    <ClCompile Include="..\..\..\Common\ApiExport.cpp" />
+    <ClCompile Include="..\..\..\Common\SpatRuntimeClass.cpp" />
+    <ClCompile Include="..\..\..\..\..\Common\UtilFn\AppVer.cpp" />
+    <ClCompile Include="..\..\..\..\..\Common\lock\CLocks.cpp" />
+    <ClCompile Include="..\..\..\..\..\Common\lock\CSimpleLock.cpp" />
+    <ClCompile Include="..\..\..\..\..\Common\dlmalloc\dlmalloc.c">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+      </PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+      </PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Common\ExtraLogFile.cpp" />
+    <ClCompile Include="..\..\..\..\..\Common\Json\JsonUtil.cpp" />
+    <ClCompile Include="..\..\..\..\..\Common\UtilFn\LogFile.cpp" />
+    <ClCompile Include="..\..\..\Common\ModeSwitch.cpp" />
+    <ClCompile Include="..\..\..\..\..\Common\Tr\Tr.cpp" />
+    <ClCompile Include="..\..\..\..\..\Common\UtilFn\Utility.cpp" />
+    <ClCompile Include="..\..\..\..\..\Common\UtilFn\wcnUtility.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="WcnFT.rc" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="XML\BlueToothFT.XML">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="XML\BlueToothFTGeneral.XML" />
+    <None Include="XML\BlueToothProbe.XML">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="XML\Dummy.XML" />
+    <None Include="XML\GPSFT.XML" />
+    <None Include="XML\LogEnable.XML" />
+    <None Include="XML\WcnFT.XML">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="ReadMe.txt" />
+    <None Include="XML\WCNFT_ANDROID80.XML">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="XML\WCNFT_ANDROID80_Mimo.XML" />
+    <None Include="XML\WCNFT_CW.XML" />
+    <None Include="XML\WCNFT_DEV.XML" />
+    <None Include="XML\WCNFT_PROBE.XML">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="XML\WCNFT_WEAR.XML">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="XML\WCNFT_WEAR_AT.XML" />
+  </ItemGroup>
+  <ItemGroup>
+    <Xml Include="XML\BlueToothFTCW.XML" />
+    <Xml Include="XML\BlueToothFTGeneral_Loss.XML" />
+    <Xml Include="XML\BlueToothFTUDS710.XML" />
+    <Xml Include="XML\BlueToothFTV2EX.XML" />
+    <Xml Include="XML\BlueToothHCIFT.XML" />
+    <Xml Include="XML\BlueToothFT_BLE53.XML" />
+    <Xml Include="XML\CheckWcnUid.XML" />
+    <Xml Include="XML\GPSFT_Auto.XML" />
+    <Xml Include="XML\GPSFT_BeiDou.XML" />
+    <Xml Include="XML\GPSFT_GLO.XML" />
+    <Xml Include="XML\GPSFT_Loss.XML" />
+    <Xml Include="XML\GPSFT_MSLT.XML" />
+    <Xml Include="XML\GPSFT_V2.XML" />
+    <Xml Include="XML\GPSFT_V3.XML" />
+    <Xml Include="XML\HciBtCheckAddr.XML" />
+    <Xml Include="XML\HciBtWriteAddr.XML" />
+    <Xml Include="XML\WCNFT_ANDROID80_Loss.XML" />
+    <Xml Include="XML\WCNFT_BT_INF_WIFI.XML" />
+    <Xml Include="XML\WCNFT_Loss.XML" />
+    <Xml Include="XML\WCNFT_Loss_SC266X(W6).XML" />
+    <Xml Include="XML\WCNFT_SONGSHAN_W6.XML" />
+    <Xml Include="XML\WCNFT_UDS710.XML" />
+    <Xml Include="XML\WCNFT_WEAR_CW.XML" />
+    <Xml Include="XML\WCNFT_WEAR_AT_Ex.XML" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

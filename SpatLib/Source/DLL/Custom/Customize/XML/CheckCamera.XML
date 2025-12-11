@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Node>
+  <Option>
+    <MainCamera>
+      <Check Control="CheckBox">1</Check>
+      <CameraType>OV8858</CameraType>
+      <CameraSize>790W</CameraSize>
+    </MainCamera>
+    <PreCamera>
+      <Check Control="CheckBox">1</Check>
+      <CameraType>SP8407</CameraType>
+      <CameraSize>790W</CameraSize>
+    </PreCamera>
+  </Option>
+  <Param>
+  </Param>
+</Node>

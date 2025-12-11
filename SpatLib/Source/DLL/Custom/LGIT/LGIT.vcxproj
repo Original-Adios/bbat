@@ -1,0 +1,181 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{69E5EB77-9DAB-49ED-AFCC-DD95E1206876}</ProjectGuid>
+    <RootNamespace>LGIT</RootNamespace>
+    <Keyword>Win32Proj</Keyword>
+    <ProjectName>LGIT</ProjectName>
+    <WindowsTargetPlatformVersion>10.0.17763.0</WindowsTargetPlatformVersion>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <CharacterSet>Unicode</CharacterSet>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <PlatformToolset>v142</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <CharacterSet>Unicode</CharacterSet>
+    <PlatformToolset>v142</PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <_ProjectFileVersion>10.0.30319.1</_ProjectFileVersion>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">..\..\..\..\..\..\Bin\App\SpatLib\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(Configuration)\</IntDir>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</LinkIncremental>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">../../../../../../Bin/App/SpatLib\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(Configuration)\</IntDir>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">false</LinkIncremental>
+    <CodeAnalysisRuleSet Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">AllRules.ruleset</CodeAnalysisRuleSet>
+    <CodeAnalysisRules Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" />
+    <CodeAnalysisRuleAssemblies Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" />
+    <CodeAnalysisRuleSet Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">AllRules.ruleset</CodeAnalysisRuleSet>
+    <CodeAnalysisRules Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" />
+    <CodeAnalysisRuleAssemblies Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" />
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">LGIT</TargetName>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <Optimization>Disabled</Optimization>
+      <AdditionalIncludeDirectories>../../../Common;../../../../../Common/Include;../../../../../Common/Tr;../../../../../Common/dlmalloc;../../../../../Common/lock;../../../../../Common/UtilFn;../../../../../Common/Include/device;../../../../../Common/Json;../../../../../Common/Uni_Include;../../../../../Common/Uni_Define;../../../../../Common/Uni_Dependence;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_WINDOWS;_USRDLL;_SPATLIB_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <MinimalRebuild>true</MinimalRebuild>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <WarningLevel>Level4</WarningLevel>
+      <DebugInformationFormat>EditAndContinue</DebugInformationFormat>
+    </ClCompile>
+    <Link>
+      <OutputFile>$(OutDir)$(TargetName)$(TargetExt)</OutputFile>
+      <AdditionalLibraryDirectories>../../../../../Common/Lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <SubSystem>Windows</SubSystem>
+      <ImportLibrary>$(OutDir)LGIT.lib</ImportLibrary>
+      <TargetMachine>MachineX86</TargetMachine>
+      <AdditionalDependencies>%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <Optimization>MaxSpeed</Optimization>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <AdditionalIncludeDirectories>../../../Common;../../../../../Common/Include;../../../../../Common/Tr;../../../../../Common/dlmalloc;../../../../../Common/lock;../../../../../Common/UtilFn;../../../../../Common/Include/device;../../../../../Common/Json;../../../../../Common/Uni_Include;../../../../../Common/Uni_Define;../../../../../Common/Uni_Dependence;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_WINDOWS;_USRDLL;_SPATLIB_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <WarningLevel>Level4</WarningLevel>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+    </ClCompile>
+    <Link>
+      <OutputFile>$(OutDir)LGIT.dll</OutputFile>
+      <AdditionalLibraryDirectories>../../../../../Common/Lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <SubSystem>Windows</SubSystem>
+      <OptimizeReferences>true</OptimizeReferences>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <ImportLibrary>$(OutDir)LGIT.lib</ImportLibrary>
+      <TargetMachine>MachineX86</TargetMachine>
+      <ProgramDatabaseFile>../../../../../../Source\Common\pdb\$(TargetName).pdb</ProgramDatabaseFile>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="..\..\..\..\..\Common\Json\JsonUtil.cpp" />
+    <ClCompile Include="..\..\..\..\..\Common\thread\Thread.cpp" />
+    <ClCompile Include="Impl\CheckUsageCount.cpp" />
+    <ClCompile Include="Impl\CloseJig.cpp" />
+    <ClCompile Include="Impl\ImpBase.cpp" />
+    <ClCompile Include="..\..\..\Common\SpatBase.cpp" />
+    <ClCompile Include="Impl\InputQRCode.cpp" />
+    <ClCompile Include="Impl\Jig.cpp" />
+    <ClCompile Include="Impl\LgitMesEnd.cpp" />
+    <ClCompile Include="Impl\LgitMesStart.cpp" />
+    <ClCompile Include="Impl\ReadUniqueID.cpp" />
+    <ClCompile Include="Impl\SocketCon.cpp" />
+    <ClCompile Include="Impl\StartJig.cpp" />
+    <ClCompile Include="Impl\UpdateCalFlag.cpp" />
+    <ClCompile Include="Impl\WriteFID.cpp" />
+    <ClCompile Include="Impl\WriteUniqueID.cpp" />
+    <ClCompile Include="stdafx.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Create</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Create</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="Impl\ActionApp.cpp" />
+    <ClCompile Include="..\..\..\Common\ApiExport.cpp" />
+    <ClCompile Include="..\..\..\Common\ModeSwitch.cpp" />
+    <ClCompile Include="..\..\..\Common\SpatRuntimeClass.cpp" />
+    <ClCompile Include="..\..\..\..\..\Common\UtilFn\AppVer.cpp" />
+    <ClCompile Include="..\..\..\..\..\Common\lock\CLocks.cpp" />
+    <ClCompile Include="..\..\..\..\..\Common\lock\CSimpleLock.cpp" />
+    <ClCompile Include="..\..\..\..\..\Common\Tr\Tr.cpp" />
+    <ClCompile Include="..\..\..\..\..\Common\UtilFn\Utility.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\..\..\..\..\Common\Json\JsonUtil.h" />
+    <ClInclude Include="..\..\..\..\..\Common\thread\Thread.h" />
+    <ClInclude Include="Impl\CheckUsageCount.h" />
+    <ClInclude Include="Impl\CloseJig.h" />
+    <ClInclude Include="Impl\ImpBase.h" />
+    <ClInclude Include="..\..\..\Common\SpatBase.h" />
+    <ClInclude Include="..\..\..\..\..\Common\Include\SpatLibExport.h" />
+    <ClInclude Include="Impl\InputQRCode.h" />
+    <ClInclude Include="Impl\Jig.h" />
+    <ClInclude Include="Impl\LgitMesEnd.h" />
+    <ClInclude Include="Impl\LgitMesStart.h" />
+    <ClInclude Include="Impl\LockQueue.h" />
+    <ClInclude Include="Impl\ReadUniqueID.h" />
+    <ClInclude Include="Impl\SocketCon.h" />
+    <ClInclude Include="Impl\StartJig.h" />
+    <ClInclude Include="Impl\UpdateCalFlag.h" />
+    <ClInclude Include="Impl\WriteFID.h" />
+    <ClInclude Include="Impl\WriteUniqueID.h" />
+    <ClInclude Include="resource.h" />
+    <ClInclude Include="stdafx.h" />
+    <ClInclude Include="targetver.h" />
+    <ClInclude Include="Impl\ActionApp.h" />
+    <ClInclude Include="Impl\ActionList.h" />
+    <ClInclude Include="..\..\..\Common\ModeSwitch.h" />
+    <ClInclude Include="..\..\..\Common\SpatRuntimeClass.h" />
+    <ClInclude Include="..\..\..\..\..\Common\UtilFn\AppVer.h" />
+    <ClInclude Include="..\..\..\..\..\Common\lock\CLocks.h" />
+    <ClInclude Include="..\..\..\..\..\Common\lock\CSimpleLock.h" />
+    <ClInclude Include="..\..\..\..\..\Common\Tr\Tr.h" />
+    <ClInclude Include="..\..\..\..\..\Common\UtilFn\Utility.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="LGIT.rc" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="XML\Dummy.XML" />
+    <None Include="ReadMe.txt" />
+    <None Include="XML\InputQRCode.XML" />
+    <None Include="XML\MesStart.XML" />
+    <None Include="XML\StartJig.XML" />
+    <None Include="XML\UsageCount.XML" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Node>
+  <Option>
+	<Snr8K Control="CheckBox">0</Snr8K>
+	<SNR Description="设置SNR" Control="EditBox">20</SNR>
+	<PEAK Description="设置Peak" Control="EditBox">5000</PEAK>
+	<Voltage>
+		<DownSpec Description="电压下限" Control="EditBox">1500</DownSpec>
+		<UpSpec Description="电压上限" Control="EditBox">3000</UpSpec>
+	</Voltage>
+</Option>
+  <Param>
+  </Param>
+</Node>

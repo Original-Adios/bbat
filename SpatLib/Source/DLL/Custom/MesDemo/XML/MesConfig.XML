@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="gb2312"?>
+<Node>
+	<Option>
+    <DllPath Control="FileDialog" Filter="DLL file(*.dll)|*.dll"></DllPath>    
+    <Server Description="服务器设置">
+      <Type Control="ComboBox" Elements="SQL,ACCESS" Description="Server type Select 服务器类型选择 in &lt;Option&gt;">SQL</Type>
+      <Server></Server>
+      <Database Description="如果是ACCESS，这里设置mdb路径 in &lt;Option&gt;"></Database>
+      <User></User>
+      <Password></Password>
+    </Server>
+    <DataLog>
+      <Upload Control="ComboBox" Elements="NONE,Sync,Async" Description="I am ComboBox UploadMode in &lt;Option&gt;">Sync</Upload>
+      <Level Control="ComboBox" Elements="BASIC_1,FT_CURRENT_2,CAL_4,NV_8,MISC_16,ALL_9999">FT_CURRENT_2</Level>
+      <BatchName MaxLength="32"></BatchName>
+      <StationName MaxLength="32"></StationName>
+     </DataLog>  
+  </Option>
+	<Param>
+	</Param>
+</Node>

@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Node>
+  <Option>
+    <GSM Tag="Show">
+      <GSM850M Control="CheckBox">0</GSM850M>
+      <EGSM900 Control="CheckBox">0</EGSM900>
+      <DCS1800 Control="CheckBox">0</DCS1800>
+      <PCS1900 Control="CheckBox">0</PCS1900>
+    </GSM>
+    <WCDMA>
+      <WCDMA1 Description="WCDMA低频频段" Tag="Show">
+        <Band1 Control="CheckBox">0</Band1>
+        <Band2 Control="CheckBox">0</Band2>
+        <Band3 Control="CheckBox">0</Band3>
+        <Band4 Control="CheckBox">0</Band4>
+        <Band5 Control="CheckBox">0</Band5>
+        <Band6 Control="CheckBox">0</Band6>
+        <Band8 Control="CheckBox">0</Band8>
+        <Band9 Control="CheckBox">0</Band9>
+        <Band19 Control="CheckBox">0</Band19>
+      </WCDMA1>
+      <WCDMA2 Description="WCDMA高频频段" Tag="Show">
+        <Band7 Control="CheckBox">0</Band7>
+      </WCDMA2>
+    </WCDMA>
+    <TD Tag="Show">
+      <BandA Control="CheckBox">0</BandA>
+      <BandF Control="CheckBox">0</BandF>
+    </TD>
+    <LTE>
+      <LTE Tag="Show">
+        <Band1 Control="CheckBox">0</Band1>
+        <Band2 Control="CheckBox">0</Band2>
+        <Band3 Control="CheckBox">0</Band3>
+        <Band4 Control="CheckBox">0</Band4>
+        <Band5 Control="CheckBox">0</Band5>
+        <Band6 Control="CheckBox">0</Band6>
+        <Band7 Control="CheckBox">0</Band7>
+        <Band8 Control="CheckBox">0</Band8>
+        <Band9 Control="CheckBox">0</Band9>
+        <Band10 Control="CheckBox">0</Band10>
+        <Band11 Control="CheckBox">0</Band11>
+        <Band12 Control="CheckBox">0</Band12>
+        <Band13 Control="CheckBox">0</Band13>
+        <Band14 Control="CheckBox">0</Band14>
+        <Band17 Control="CheckBox">0</Band17>
+        <Band18 Control="CheckBox">0</Band18>
+        <Band19 Control="CheckBox">0</Band19>
+        <Band20 Control="CheckBox">0</Band20>
+        <Band21 Control="CheckBox">0</Band21>
+        <Band22 Control="CheckBox">0</Band22>
+        <Band23 Control="CheckBox">0</Band23>
+        <Band24 Control="CheckBox">0</Band24>
+        <Band25 Control="CheckBox">0</Band25>
+        <Band26 Control="CheckBox">0</Band26>
+        <Band28 Control="CheckBox">0</Band28>
+        <Band30 Control="CheckBox">0</Band30>
+        <Band31 Control="CheckBox">0</Band31>
+        <Band32 Control="CheckBox">0</Band32>
+        <Band33 Control="CheckBox">0</Band33>
+        <Band34 Control="CheckBox">0</Band34>
+        <Band35 Control="CheckBox">0</Band35>
+        <Band36 Control="CheckBox">0</Band36>
+        <Band37 Control="CheckBox">0</Band37>
+        <Band38 Control="CheckBox">0</Band38>
+        <Band39 Control="CheckBox">0</Band39>
+        <Band40 Control="CheckBox">0</Band40>
+        <Band41 Control="CheckBox">0</Band41>
+        <Band42 Control="CheckBox">0</Band42>
+        <Band43 Control="CheckBox">0</Band43>
+        <Band45 Control="CheckBox">0</Band45>
+        <Band59 Control="CheckBox">0</Band59>
+        <Band41_100M Control="CheckBox">0</Band41_100M>
+        <Band28A Control="CheckBox">0</Band28A>
+        <Band28B Control="CheckBox">0</Band28B>
+        <Band3_35M Control="CheckBox">0</Band3_35M>
+        <Band66 Control="CheckBox">0</Band66>
+        <Band41_120M Control="CheckBox">0</Band41_120M>
+        <Band41_140M Control="CheckBox">0</Band41_140M>
+        <Band41_160M Control="CheckBox">0</Band41_160M>
+        <Band61 Control="CheckBox">0</Band61>
+        <Band62 Control="CheckBox">0</Band62>
+        <Band39_SRRC Control="CheckBox">0</Band39_SRRC>
+        <Band40_SRRC Control="CheckBox">0</Band40_SRRC>
+        <Band41_SRRC Control="CheckBox">0</Band41_SRRC>
+        <Band41_65M Control="CheckBox">0</Band41_65M>
+        <Band1_20M Control="CheckBox">0</Band1_20M>
+        <Band3_20M Control="CheckBox">0</Band3_20M>
+        <Band71 Control="CheckBox">0</Band71>
+        <Band72 Control="CheckBox">0</Band72>
+        <Band73 Control="CheckBox">0</Band73>
+        <Band26_25M Control="CheckBox">0</Band26_25M>
+        <Band58_65M Control="CheckBox">0</Band58_65M>
+        <Band60_100M Control="CheckBox">0</Band60_100M>
+        <Band63_20M Control="CheckBox">0</Band63_20M>
+        <Band48 Control="CheckBox">0</Band48>
+      </LTE>
+      <ANT>
+        <Primary Control="CheckBox">1</Primary>
+        <Diversity Control="CheckBox">1</Diversity>
+      </ANT>
+      <Compatibility Property="InVisible" Control="CheckBox">1</Compatibility>
+    </LTE>
+    <WCN>
+      <AntennaSwitch Control="CheckBox">1</AntennaSwitch>
+      <WLAN>
+        <WLAN2.4GHz Tag="Show">
+          <Ant1st Description="Channel 0 enable" Control="CheckBox">1</Ant1st>
+          <Ant2nd Description="Channel 1 enable" Control="CheckBox">0</Ant2nd>
+          <Wlancw Description="CW" Control="CheckBox">0</Wlancw>
+          <Wlan11b Description="IEEE 802.11b" Control="CheckBox">0</Wlan11b>
+          <Wlan11g Description="IEEE 802.11g" Control="CheckBox">0</Wlan11g>
+          <Wlan11n Description="IEEE 802.11n 2.4GHz" Control="CheckBox">0</Wlan11n>
+        </WLAN2.4GHz>
+        <WLAN5.0GHz Tag="Show">
+          <Ant1st Description="Channel 0 enable" Control="CheckBox">1</Ant1st>
+          <Ant2nd Description="Channel 1 enable" Control="CheckBox">0</Ant2nd>
+          <Wlan11n Description="IEEE 802.11n 5.0GHz" Control="CheckBox">0</Wlan11n>
+          <Wlan11ac Description="IEEE 802.11ac" Control="CheckBox">0</Wlan11ac>
+          <Wlan11a Description="IEEE 802.11a" Control="CheckBox">0</Wlan11a>
+        </WLAN5.0GHz>
+      </WLAN>
+      <BT>
+        <Shared Description="Shared RF path" Control="CheckBox">1</Shared>
+        <StandAlone Description="StandAlone RF path" Control="CheckBox">0</StandAlone>
+        <BT Tag="Show">
+          <BDR Control="CheckBox">0</BDR>
+          <EDR Control="CheckBox">0</EDR>
+          <BLE Control="CheckBox">0</BLE>
+          <BLE_5.0 Control="CheckBox">0</BLE_5.0>
+        </BT>
+      </BT>
+      <GPS Tag="Show">
+        <GPS Control="CheckBox">0</GPS>
+      </GPS>
+    </WCN>
+  </Option>
+  <Param>
+    <GSM>
+      <PCL>
+        <GSM850M>5</GSM850M>
+        <EGSM900>5</EGSM900>
+        <DCS1800>0</DCS1800>
+        <PCS1900>0</PCS1900>
+      </PCL>
+    </GSM>
+    <WCDMA>
+      <UplinkPower>10.0</UplinkPower>
+    </WCDMA>
+    <LTE>
+      <MaxCellPower>-30.0</MaxCellPower>
+      <MinCellPower>-70.0</MinCellPower>
+      <RxTarget>-10.0</RxTarget>
+      <RxTolerance>0.5</RxTolerance>
+      <RxIndex>60</RxIndex>
+    </LTE>
+    <WLAN>
+      <RefLevel>20.0</RefLevel>
+    </WLAN>
+    <BT>
+      <RefLevel>20.0</RefLevel>
+    </BT>
+  </Param>
+</Node>

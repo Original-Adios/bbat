@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Node>
+	<Option>
+    <RecordSet>
+      <MicType Control="ComboBox" Elements="Primary,AUX,Dual,Earphone">Primary</MicType>
+      <SampleRate Control="ComboBox" Elements="48000,44100,16000,8000">44100</SampleRate>
+      <TrackCount Control="ComboBox" Elements="1,2">1</TrackCount>
+      <Time Description="Record Time, unit:ms, [40ms - 60s]">10000</Time>
+      <Bit Control="ComboBox" Elements="16">16</Bit>
+    </RecordSet>
+    <FilePath>
+      <Local Control="SaveFileDialog" Filter="wav(*.wav)|*.wav|All Files (*.*)|*.*">.\UserData\record.wav</Local>
+      <Suffix>
+        <SN Control="CheckBox" Description="file_sn">0</SN>
+        <Time Control="CheckBox" Description="file_yyyy_dd_mm_hh_mm_ss">1</Time>
+        <RecordSet Control="CheckBox" Description="file_MicType_SampleRate_Track_16bits_Time">0</RecordSet>
+      </Suffix>
+    </FilePath>
+	</Option>
+	<Param>
+	</Param>
+</Node>

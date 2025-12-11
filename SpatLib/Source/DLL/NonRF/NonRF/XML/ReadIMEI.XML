@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Node>
+	<Option>
+		<IMEI1>
+			<Enable Control="CheckBox">1</Enable>
+			<Check>
+                <!-->CheckEnable Control="CheckBox">0</CheckEnable-->
+				<Prefix Description="IMEI前缀, 若为空则不检查"></Prefix>
+				<CheckBarcode Control="ComboBox" Elements="NONE,Barcode1,Barcode2,Barcode3,Barcode4,Barcode5,Barcode6,Barcode7,Barcode8,Barcode9,Barcode10" Description="若选择NONE则不检查；否则与相应输入的Barcode比对">NONE</CheckBarcode>
+			</Check>
+		</IMEI1>
+    	<IMEI2>
+			<Enable Control="CheckBox">1</Enable>
+			<Check>
+                <!-->CheckEnable Control="CheckBox">0</CheckEnable-->
+				<Prefix Description="IMEI前缀, 若为空则不检查"></Prefix>
+				<CheckBarcode Control="ComboBox" Elements="NONE,Barcode1,Barcode2,Barcode3,Barcode4,Barcode5,Barcode6,Barcode7,Barcode8,Barcode9,Barcode10" Description="若选择NONE则不检查；否则与相应输入的Barcode比对">NONE</CheckBarcode>
+			</Check>
+		</IMEI2>
+		<IMEI3>
+			<Enable Control="CheckBox">1</Enable>
+			<Check>
+                <!-->CheckEnable Control="CheckBox">0</CheckEnable-->
+				<Prefix Description="IMEI前缀, 若为空则不检查"></Prefix>
+				<CheckBarcode Control="ComboBox" Elements="NONE,Barcode1,Barcode2,Barcode3,Barcode4,Barcode5,Barcode6,Barcode7,Barcode8,Barcode9,Barcode10" Description="若选择NONE则不检查；否则与相应输入的Barcode比对">NONE</CheckBarcode>
+			</Check>
+		</IMEI3>
+		<IMEI4>
+			<Enable Control="CheckBox">1</Enable>
+			<Check>
+                <!-->CheckEnable Control="CheckBox">0</CheckEnable-->
+				<Prefix Description="IMEI前缀, 若为空则不检查"></Prefix>
+				<CheckBarcode Control="ComboBox" Elements="NONE,Barcode1,Barcode2,Barcode3,Barcode4,Barcode5,Barcode6,Barcode7,Barcode8,Barcode9,Barcode10" Description="若选择NONE则不检查；否则与相应输入的Barcode比对">NONE</CheckBarcode>
+			</Check>
+		</IMEI4>	
+	</Option>
+	<Param>
+	</Param>
+</Node>

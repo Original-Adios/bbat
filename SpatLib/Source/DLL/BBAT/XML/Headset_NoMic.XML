@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Node>
+  <Option>
+  <FeaturePhone Control="CheckBox">0</FeaturePhone>
+	<Snr8K  Control="CheckBox">0</Snr8K>
+	<SNR Description="设置SNR" Control="EditBox">20</SNR>
+	<PEAK Description="设置PEAK" Control="EditBox">100</PEAK>
+
+</Option>
+  <Param>
+  </Param>
+</Node>

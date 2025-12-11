@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Node>
+	<Option>
+		<WIFI Control="CheckBox">1</WIFI>
+    <BT Control="CheckBox">1</BT>
+	</Option>
+	<Param>
+	</Param>
+</Node>

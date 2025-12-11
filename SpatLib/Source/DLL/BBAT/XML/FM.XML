@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Node>
+  <Option>
+      <Fm_Open Control="ComboBox" Elements="Lant,Sant,FP">Lant</Fm_Open>
+      <Fm_Close Control="CheckBox" Description="关闭天线">1</Fm_Close>
+	    <Freq Control="EditBox" Description="FM频率">87.5</Freq>
+	    <Rssi Control="EditBox" Description="信号强度">-75</Rssi> 
+  </Option>
+  <Param>
+  </Param>
+</Node>

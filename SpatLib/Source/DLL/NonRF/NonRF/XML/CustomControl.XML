@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Node>
+	<Option>
+    <MessageBox>
+      <Select Control="CheckBox">0</Select>
+      <Text>Sample</Text>
+      <Caption>Simba</Caption>
+    </MessageBox>
+  </Option>
+	<Param>
+    
+  </Param>
+</Node>
+

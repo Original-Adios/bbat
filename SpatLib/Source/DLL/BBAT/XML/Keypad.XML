@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Node>
+	<Option>		
+		<PowerKey>
+			<Enable Control="CheckBox">1</Enable>
+			<FeaturePhone Description="功能机需勾选" Control="CheckBox">0</FeaturePhone>
+			<KeyValueSpec Control="EditBox" Description="期望键值ֵ">116</KeyValueSpec>
+		</PowerKey>
+		<PowerKey2>
+			<Enable Control="CheckBox">0</Enable>
+			<KeyValueSpec Control="EditBox" Description="期望键值ֵ">115</KeyValueSpec>
+		</PowerKey2>
+		<SideKey>
+			<Enable Control="CheckBox">0</Enable>
+			<KeyValueSpec Control="EditBox" Description="期望键值ֵ">0</KeyValueSpec>
+		</SideKey>
+	</Option>
+	<Param>
+	</Param>
+</Node>

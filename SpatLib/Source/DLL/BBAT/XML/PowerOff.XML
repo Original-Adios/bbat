@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Node>
+  <Option>
+	<PowerOff Control="CheckBox" Description="下电">1</PowerOff>
+	  <PowerVoltage Control="ComboBox" Elements="4V,12V">4V</PowerVoltage>
+</Option>
+  <Param>
+  </Param>
+</Node>

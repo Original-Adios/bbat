@@ -1,0 +1,170 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{E3C7EE2A-2BCA-4C4C-91FA-FC187E7D2BE8}</ProjectGuid>
+    <Keyword>Win32Proj</Keyword>
+    <RootNamespace>WcnCal</RootNamespace>
+    <WindowsTargetPlatformVersion>10.0.17763.0</WindowsTargetPlatformVersion>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <CharacterSet>Unicode</CharacterSet>
+    <PlatformToolset>v142</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+    <PlatformToolset>v142</PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <LinkIncremental>true</LinkIncremental>
+    <OutDir>../../../../../../Bin/App/SpatLib\</OutDir>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <OutDir>../../../../../../Bin/App/SpatLib\</OutDir>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <WarningLevel>Level4</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_WINDOWS;_USRDLL;_SPATLIB_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>$(ProjectDir);../../../../../Common/Include/Device;../../../../../Common;../../../../../Common/Include;../../../../../Common/Tr;../../../../../Common/dlmalloc;../../../Common;../../../../../Common/lock;../../../../../Common/UtilFn;../../../../../Common/API;../../../../../Common/Uni_Dependence;../../../../../Common/Uni_Include;../../../../../Common/Uni_Define;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <BasicRuntimeChecks>Default</BasicRuntimeChecks>
+    </ClCompile>
+    <Link>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <OutputFile>$(OutDir)WcnCal.dll</OutputFile>
+      <AdditionalLibraryDirectories>../../../../../Common/Lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <ImportLibrary>$(OutDir)WcnCal.lib</ImportLibrary>
+      <ProgramDatabaseFile>../../../../../../Source\Common\pdb\$(TargetName).pdb</ProgramDatabaseFile>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level4</WarningLevel>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_WINDOWS;_USRDLL;_SPATLIB_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>$(ProjectDir);../../../../../Common/Include/Device;../../../../../Common;../../../../../Common/Include;../../../../../Common/Tr;../../../../../Common/dlmalloc;../../../Common;../../../../../Common/lock;../../../../../Common/UtilFn;../../../../../Common/API;../../../../../Common/Uni_Dependence;../../../../../Common/Uni_Include;../../../../../Common/Uni_Define;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <WholeProgramOptimization>true</WholeProgramOptimization>
+      <Optimization>MinSpace</Optimization>
+    </ClCompile>
+    <Link>
+      <OutputFile>$(OutDir)WcnCal.dll</OutputFile>
+      <AdditionalLibraryDirectories>../../../../../Common/Lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <ProgramDatabaseFile>../../../../../../Source\Common\pdb\$(TargetName).pdb</ProgramDatabaseFile>
+      <ImportLibrary>$(OutDir)WcnCal.lib</ImportLibrary>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClInclude Include="..\..\..\..\..\Common\API\BTApiAT.h" />
+    <ClInclude Include="..\..\..\..\..\Common\API\GPSApiAT.h" />
+    <ClInclude Include="..\..\..\..\..\Common\API\IBTApi.h" />
+    <ClInclude Include="..\..\..\..\..\Common\API\IWlanApi.h" />
+    <ClInclude Include="..\..\..\..\..\Common\API\WlanApiAT.h" />
+    <ClInclude Include="..\..\..\..\..\Common\dlmalloc\dlmalloc.h" />
+    <ClInclude Include="..\..\..\..\..\Common\Include\device\wcn_def.h" />
+    <ClInclude Include="..\..\..\..\..\Common\Include\SpatLibExport.h" />
+    <ClInclude Include="..\..\..\..\..\Common\lock\CLocks.h" />
+    <ClInclude Include="..\..\..\..\..\Common\lock\CSimpleLock.h" />
+    <ClInclude Include="..\..\..\..\..\Common\Tr\Tr.h" />
+    <ClInclude Include="..\..\..\..\..\Common\UtilFn\AppVer.h" />
+    <ClInclude Include="..\..\..\..\..\Common\UtilFn\BarCodeUtility.h" />
+    <ClInclude Include="..\..\..\..\..\Common\UtilFn\LogFile.h" />
+    <ClInclude Include="..\..\..\..\..\Common\UtilFn\Utility.h" />
+    <ClInclude Include="..\..\..\..\..\Common\UtilFn\wcnUtility.h" />
+    <ClInclude Include="..\..\..\Common\ExtraLogFile.h" />
+    <ClInclude Include="..\..\..\Common\GenCodes.h" />
+    <ClInclude Include="..\..\..\Common\ModeSwitch.h" />
+    <ClInclude Include="..\..\..\Common\ScanConfig.h" />
+    <ClInclude Include="..\..\..\Common\SpatBase.h" />
+    <ClInclude Include="..\..\..\Common\SpatRuntimeClass.h" />
+    <ClInclude Include="ActionApp.h" />
+    <ClInclude Include="ActionList.h" />
+    <ClInclude Include="FuncImp\BtAFCRx.h" />
+    <ClInclude Include="FuncImp\VerifyMac.h" />
+    <ClInclude Include="FuncImp\WriteEfuse.h" />
+    <ClInclude Include="FuncImp\WlanAFCTx.h" />
+    <ClInclude Include="FuncImp\WlanAPC.h" />
+    <ClInclude Include="ImpBase.h" />
+    <ClInclude Include="resource.h" />
+    <ClInclude Include="stdafx.h" />
+    <ClInclude Include="targetver.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\..\..\..\..\Common\API\BTApiAT.cpp" />
+    <ClCompile Include="..\..\..\..\..\Common\API\GPSApiAT.cpp" />
+    <ClCompile Include="..\..\..\..\..\Common\API\WlanApiAT.cpp" />
+    <ClCompile Include="..\..\..\..\..\Common\dlmalloc\dlmalloc.c" />
+    <ClCompile Include="..\..\..\..\..\Common\lock\CLocks.cpp" />
+    <ClCompile Include="..\..\..\..\..\Common\lock\CSimpleLock.cpp" />
+    <ClCompile Include="..\..\..\..\..\Common\Tr\Tr.cpp" />
+    <ClCompile Include="..\..\..\..\..\Common\UtilFn\AppVer.cpp" />
+    <ClCompile Include="..\..\..\..\..\Common\UtilFn\BarCodeUtility.cpp" />
+    <ClCompile Include="..\..\..\..\..\Common\UtilFn\LogFile.cpp" />
+    <ClCompile Include="..\..\..\..\..\Common\UtilFn\Utility.cpp" />
+    <ClCompile Include="..\..\..\..\..\Common\UtilFn\wcnUtility.cpp" />
+    <ClCompile Include="..\..\..\Common\ApiExport.cpp" />
+    <ClCompile Include="..\..\..\Common\ExtraLogFile.cpp" />
+    <ClCompile Include="..\..\..\Common\GenCodes.cpp" />
+    <ClCompile Include="..\..\..\Common\ModeSwitch.cpp" />
+    <ClCompile Include="..\..\..\Common\ScanConfig.cpp" />
+    <ClCompile Include="..\..\..\Common\SpatBase.cpp" />
+    <ClCompile Include="..\..\..\Common\SpatRuntimeClass.cpp" />
+    <ClCompile Include="ActionApp.cpp" />
+    <ClCompile Include="FuncImp\BtAFCRx.cpp" />
+    <ClCompile Include="FuncImp\VerifyMac.cpp" />
+    <ClCompile Include="FuncImp\WriteEfuse.cpp" />
+    <ClCompile Include="FuncImp\WlanAFCTx.cpp" />
+    <ClCompile Include="FuncImp\WlanAPC.cpp" />
+    <ClCompile Include="ImpBase.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="WcnCal.rc" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="XML\AFC_BT.XML">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="XML\Dummy.XML" />
+    <None Include="XML\TSX_BT.XML">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="XML\TSX_BT_FINAL.XML">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="XML\WlanAFCTx.XML" />
+    <None Include="XML\WlanAPC.XML">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="XML\WriteEfuse.XML" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

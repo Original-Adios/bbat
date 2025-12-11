@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Node>
+	<Option>
+	</Option>
+	<Param>
+		<GPIO Control="Group">
+			<GroupCount>2</GroupCount>
+			<Group1>
+
+				<G3_PORT Control="ComboBox" Description="G3 GPIO通道" Elements="GPIO_A,GPIO_B,GPIO_C,GPIO_D,IO">GPIO_A</G3_PORT>
+				<G3_GPIO Control="EditBox" Description="G3 GPIO号">0</G3_GPIO>
+				<SET_LEVEL Control="ComboBox" Description="设置电平" Elements="0,1">0</SET_LEVEL>
+			</Group1>
+			<Group2>
+				<G3_PORT Control="ComboBox" Description="G3 GPIO通道" Elements="GPIO_A,GPIO_B,GPIO_C,GPIO_D,IO">GPIO_A</G3_PORT>
+				<G3_GPIO Control="EditBox" Description="G3 GPIO号">0</G3_GPIO>
+				<SET_LEVEL Control="ComboBox" Description="设置电平" Elements="0,1">0</SET_LEVEL>
+			</Group2>
+		</GPIO>
+	</Param>
+</Node>

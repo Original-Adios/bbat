@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Node>
+  <Option>    
+    <Write>
+      <GPIO_Write Control="CheckBox" Description="写GPIO">1</GPIO_Write>
+      <Set_Level Control="ComboBox" Elements="0,1">0</Set_Level>
+      <GPIO_Number Control="EditBox" Description="GPIO号码">0</GPIO_Number>
+    </Write>
+    <Read>
+      <GPIO_Read Control="CheckBox" Description="读GPIO">1</GPIO_Read>
+      <Compare Control="CheckBox">1</Compare>
+      <Compare_Value Control="ComboBox" Elements="0,1">0</Compare_Value>
+      <GPIO_Number Control="EditBox" Description="GPIO号码">0</GPIO_Number>
+    </Read>
+  </Option>
+  <Param>
+  </Param>
+</Node>

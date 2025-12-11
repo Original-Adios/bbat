@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Node>
+  <Option>
+      <CheckIMEIUnique Control="CheckBox" Description="Check IMEI unique">1</CheckIMEIUnique>
+	  <CheckMEIDUnique Control="CheckBox" Description="Check MEID unique">1</CheckMEIDUnique>
+      <SaveInfoToMdb Control="CheckBox" Description="Save IMEI Info">1</SaveInfoToMdb>
+      <MDB Control="FileDialog" Filter="MDB file(*.mdb)|*.mdb">..\..\UserData\IMEI.mdb</MDB>
+      <SaveInfoToTxt Control="CheckBox" Description="Save IMEI Info">0</SaveInfoToTxt>
+      <TXT Control="SaveFileDialog" Filter="TXT file(*.txt)|*.txt">..\IMEI.txt</TXT>
+  </Option>
+  <Param>
+  </Param>
+</Node>

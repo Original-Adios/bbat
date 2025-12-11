@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Node>
+	<Option>
+    <DDR_LSL Description="DDR Low limit (Unit:G)">3</DDR_LSL>
+    <DDR_USL Description="DDR Hight limit (Unit:G)">3</DDR_USL>
+    <EMMC_LSL Description="EMMC Low limit (Unit:G)">32</EMMC_LSL>
+    <EMMC_USL Description="EMMC Hight limit (Unit:G)">32</EMMC_USL>
+  </Option>
+	<Param>
+  </Param>
+</Node>

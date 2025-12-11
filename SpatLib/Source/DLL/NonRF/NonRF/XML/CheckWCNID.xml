@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Node>
+  <Option>
+    <WCNID Description="设置检查的目标WCNID，如果设置为空，则不检查"></WCNID>
+  </Option>
+  <Param>
+  </Param>
+</Node>

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Node>
+  <Option>
+    <ModeSwitch Control="ComboBox" Elements="CalToNormalMode">CalToNormalMode</ModeSwitch>
+    <AtCmd>
+      <NormalModeToCalMode>AT+MODECHAN=0,0</NormalModeToCalMode>
+      <CalModeToNormalMode>AT+MODECHAN=0,2</CalModeToNormalMode>
+    </AtCmd>
+  </Option>
+  <Param>
+  </Param>
+</Node>

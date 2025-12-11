@@ -1,0 +1,445 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{7D9E2B0F-ED03-4D1C-AFBE-D71493AB80BD}</ProjectGuid>
+    <RootNamespace>BBAT</RootNamespace>
+    <Keyword>Win32Proj</Keyword>
+    <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <CharacterSet>Unicode</CharacterSet>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <PlatformToolset>v143</PlatformToolset>
+    <UseOfMfc>false</UseOfMfc>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <CharacterSet>Unicode</CharacterSet>
+    <PlatformToolset>v143</PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <_ProjectFileVersion>10.0.30319.1</_ProjectFileVersion>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">../../../../../Bin/App/SpatLib/</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(Configuration)\</IntDir>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</LinkIncremental>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">../../../../../Bin/App/SpatLib/</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(Configuration)\</IntDir>
+    <CodeAnalysisRuleSet Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">AllRules.ruleset</CodeAnalysisRuleSet>
+    <CodeAnalysisRules Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" />
+    <CodeAnalysisRuleAssemblies Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" />
+    <CodeAnalysisRuleSet Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">AllRules.ruleset</CodeAnalysisRuleSet>
+    <CodeAnalysisRules Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" />
+    <CodeAnalysisRuleAssemblies Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" />
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <Optimization>Disabled</Optimization>
+      <AdditionalIncludeDirectories>$(ProjectDir);../../Common;../../../../Common/Include;../../../../Common/Tr;../../../../Common/dlmalloc;../../../../Common/lock;../../../../Common/UtilFn;../../../../Common/Include/device;../../../../Common/Uni_Define;../../../../Common/Uni_Dependence;../../../../Common/Uni_Include</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_WINDOWS;_USRDLL;_SPATLIB_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <MinimalRebuild>false</MinimalRebuild>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <WarningLevel>Level4</WarningLevel>
+      <DebugInformationFormat>EditAndContinue</DebugInformationFormat>
+    </ClCompile>
+    <Link>
+      <OutputFile>$(OutDir)BBAT.dll</OutputFile>
+      <AdditionalLibraryDirectories>../../../../Common/Lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <ImportLibrary>$(OutDir)BBAT.lib</ImportLibrary>
+      <ProgramDatabaseFile>../../../../../Source\Common\pdb/$(TargetName).pdb</ProgramDatabaseFile>
+      <AdditionalDependencies>Channel9.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;comdlg32.lib;advapi32.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;odbc32.lib;odbccp32.lib;AFCBoard.lib;AFCB_G3.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>$(ProjectDir);../../Common;../../../../Common/Include;../../../../Common/Tr;../../../../Common/dlmalloc;../../../../Common/lock;../../../../Common/UtilFn;../../../../Common/Include/device;../../../../Common/Uni_Define;../../../../Common/Uni_Dependence;../../../../Common/Uni_Include</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_WINDOWS;_USRDLL;_SPATLIB_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <WarningLevel>Level4</WarningLevel>
+    </ClCompile>
+    <Link>
+      <OutputFile>$(OutDir)BBAT.dll</OutputFile>
+      <AdditionalLibraryDirectories>../../../../Common/Lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <ImportLibrary>$(OutDir)BBAT.lib</ImportLibrary>
+      <TargetMachine>MachineX86</TargetMachine>
+      <ProgramDatabaseFile>../../../../../Source\Common\pdb/$(TargetName).pdb</ProgramDatabaseFile>
+      <AdditionalDependencies>Channel9.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;comdlg32.lib;advapi32.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;odbc32.lib;odbccp32.lib;AFCBoard.lib;AFCB_G3.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClInclude Include="..\..\..\..\Common\dlmalloc\dlmalloc.h" />
+    <ClInclude Include="..\..\..\..\Common\Include\AFCBoard.h" />
+    <ClInclude Include="..\..\..\..\Common\Include\AFCB_G3.h" />
+    <ClInclude Include="..\..\..\..\Common\Include\ControlBoardDefine.h" />
+    <ClInclude Include="..\..\..\..\Common\Include\SpatLibExport.h" />
+    <ClInclude Include="..\..\..\..\Common\lock\CLocks.h" />
+    <ClInclude Include="..\..\..\..\Common\lock\CSimpleLock.h" />
+    <ClInclude Include="..\..\..\..\Common\Tr\Tr.h" />
+    <ClInclude Include="..\..\..\..\Common\UtilFn\AppVer.h" />
+    <ClInclude Include="..\..\..\..\Common\UtilFn\LogFile.h" />
+    <ClInclude Include="..\..\..\..\Common\UtilFn\Utility.h" />
+    <ClInclude Include="..\..\Common\ModeSwitch.h" />
+    <ClInclude Include="..\..\Common\SpatBase.h" />
+    <ClInclude Include="..\..\Common\SpatRuntimeClass.h" />
+    <ClInclude Include="Impl\6760\UIS6760_GPIO.h" />
+    <ClInclude Include="Impl\6760\UIS6760_RESET.h" />
+    <ClInclude Include="Impl\ActionApp.h" />
+    <ClInclude Include="Impl\ActionList.h" />
+    <ClInclude Include="Impl\ADC\891XADC.h" />
+    <ClInclude Include="Impl\ADC\Get_ADC.h" />
+    <ClInclude Include="Impl\ADC\RGB_ADC.h" />
+    <ClInclude Include="Impl\ADC_AFCB\AdcAfcb.h" />
+    <ClInclude Include="Impl\AfcbControl\AfcbCtrlVol.h" />
+    <ClInclude Include="Impl\AMU\AMU_Camera.h" />
+    <ClInclude Include="Impl\AMU\AMU_Keypad.h" />
+    <ClInclude Include="Impl\AMU\AMU_LED.h" />
+    <ClInclude Include="Impl\AMU\AMU_Sensor_Calibration.h" />
+    <ClInclude Include="Impl\AMU\AMU_Sensor_Test.h" />
+    <ClInclude Include="Impl\AudioLoop\AudioLoop.h" />
+    <ClInclude Include="Impl\AudioLoop\AudioLoopAfcb.h" />
+    <ClInclude Include="Impl\AudioLoop\AudioLoopBase.h" />
+    <ClInclude Include="Impl\AudioLoop\AudioLoopG3Mic.h" />
+    <ClInclude Include="Impl\AudioLoop\AudioLoopPA.h" />
+    <ClInclude Include="Impl\AudioLoop\ImpAudioLoop.h">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">false</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">false</ExcludedFromBuild>
+    </ClInclude>
+    <ClInclude Include="Impl\B2B\B2B.h" />
+    <ClInclude Include="Impl\BBAT_GlobelDef.h" />
+    <ClInclude Include="Impl\BT\BT.h" />
+    <ClInclude Include="Impl\BT\McuBT.h" />
+    <ClInclude Include="Impl\Camera\Camera.h" />
+    <ClInclude Include="Impl\Camera\CameraOper.h" />
+    <ClInclude Include="Impl\ChargeCurrent\ChargeCurrentAfcb.h" />
+    <ClInclude Include="Impl\Charge\FastCharge.h" />
+    <ClInclude Include="Impl\CheckX\CheckXFastCharge.h" />
+    <ClInclude Include="Impl\ChipConnect\ChipConnect.h" />
+    <ClInclude Include="Impl\COB_AFCB\CobAfcb.h" />
+    <ClInclude Include="Impl\ECELL_5G\5G_ADC.h" />
+    <ClInclude Include="Impl\ECELL_5G\Ecell_Test_Lan.h" />
+    <ClInclude Include="Impl\ECELL_5G\InterConnect.h" />
+    <ClInclude Include="Impl\ECELL_5G\Keypad_Relay.h" />
+    <ClInclude Include="Impl\ECELL_5G\ShortCircuit.h" />
+    <ClInclude Include="Impl\EnableArmlog\EnableArmlog.h" />
+    <ClInclude Include="Impl\Ethernet\Ethernet.h" />
+    <ClInclude Include="Impl\Ethernet\PreEthernet.h" />
+    <ClInclude Include="Impl\FM\FM.h" />
+    <ClInclude Include="Impl\FM\FM_Transmit.h" />
+    <ClInclude Include="Impl\GPIO\GPIO.h" />
+    <ClInclude Include="Impl\GPIO\GPIO_Read.h" />
+    <ClInclude Include="Impl\GPIO\GPIO_Write.h" />
+    <ClInclude Include="Impl\GPIO_AFCB\GpioAfcbBase.h" />
+    <ClInclude Include="Impl\GPIO_AFCB\GpioAfcbControl.h" />
+    <ClInclude Include="Impl\GPIO_AFCB\GpioAfcbGet.h" />
+    <ClInclude Include="Impl\GPIO_AFCB\GpioAfcbSet.h" />
+    <ClInclude Include="Impl\GPIO_AFCB\ImpGpioAfcb.h" />
+    <ClInclude Include="Impl\GPIO_AFCB\ImpGpioAfcbControl.h" />
+    <ClInclude Include="Impl\GPIO_Smp\GpioSmpBase.h" />
+    <ClInclude Include="Impl\GPIO_Smp\ImpGpioSmp.h" />
+    <ClInclude Include="Impl\GPS\GPS.h" />
+    <ClInclude Include="Impl\Headset\Headset.h" />
+    <ClInclude Include="Impl\Headset\NoMicHeadset.h" />
+    <ClInclude Include="Impl\Headset\TypeC_Headset.h" />
+    <ClInclude Include="Impl\ImpBase.h" />
+    <ClInclude Include="Impl\KeypadLight_AFCB\KeypadLight_AFCB.h" />
+    <ClInclude Include="Impl\Keypad\Keypad.h" />
+    <ClInclude Include="Impl\LCD_AFCB\LCD_AFCB.h" />
+    <ClInclude Include="Impl\LCD_AFCB\MCU_LCD_AFCB.h" />
+    <ClInclude Include="Impl\LED_AFCB\ImpLedAfcb.h" />
+    <ClInclude Include="Impl\LED_AFCB\LED_AFCB.h" />
+    <ClInclude Include="Impl\MakeCall\MakeCall.h" />
+    <ClInclude Include="Impl\MISC\MISC.h" />
+    <ClInclude Include="Impl\NFC\NFC.h" />
+    <ClInclude Include="Impl\NTC\NTC.h" />
+    <ClInclude Include="Impl\NTC\NTC_ADC.h" />
+    <ClInclude Include="Impl\OpenPort\EnterMode.h" />
+    <ClInclude Include="Impl\ORCA\ORCA.h" />
+    <ClInclude Include="Impl\OTG\OTG.h">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">false</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">false</ExcludedFromBuild>
+    </ClInclude>
+    <ClInclude Include="Impl\PCIE\Pcie.h" />
+    <ClInclude Include="Impl\PowerOff\PowerOff.h" />
+    <ClInclude Include="Impl\Relay\Relay.h" />
+    <ClInclude Include="Impl\RTC\RTC.h" />
+    <ClInclude Include="Impl\Sensor\AccSensor.h" />
+    <ClInclude Include="Impl\Sensor\FingerPrint.h" />
+    <ClInclude Include="Impl\Sensor\GyrSensor.h" />
+    <ClInclude Include="Impl\Sensor\HallSensor.h" />
+    <ClInclude Include="Impl\Sensor\MagSensor.h" />
+    <ClInclude Include="Impl\Sensor\OriSensor.h" />
+    <ClInclude Include="Impl\Sensor\PressureSensor.h" />
+    <ClInclude Include="Impl\Sensor\ProSensor.h" />
+    <ClInclude Include="Impl\Sensor\LigSensor.h" />
+    <ClInclude Include="Impl\Sensor\SarSensor.h" />
+    <ClInclude Include="Impl\Sensor\TempSensor.h" />
+    <ClInclude Include="Impl\SIMCARD\SIMCARD.h" />
+    <ClInclude Include="Impl\TYPEC\TYPEC_CCTEST.h" />
+    <ClInclude Include="Impl\UART0\UART0_Test.h" />
+    <ClInclude Include="Impl\UMW5621\UMW5621_ALL_PULL.h" />
+    <ClInclude Include="Impl\UMW5621\UMW5621_ALL_Set.h" />
+    <ClInclude Include="Impl\UMW5621\UMW5621_GPIO_PINTEST.h" />
+    <ClInclude Include="Impl\UMW5621\UMW5621_Single_Pull.h" />
+    <ClInclude Include="Impl\UMW5621\UMW5621_Single_SetInput.h" />
+    <ClInclude Include="Impl\UMW5621\UMW5621_Uart_Test.h" />
+    <ClInclude Include="Impl\UWP5865\UMP5865_GPIO_GetLevel.h" />
+    <ClInclude Include="Impl\UWP5865\UMP5865_GPIO_SetLevel.h" />
+    <ClInclude Include="Impl\UWP5865\UMP5865_Keypad.h" />
+    <ClInclude Include="Impl\UWP5865\UMP5865_MIC.h" />
+    <ClInclude Include="Impl\Vibrator_AFCB\VibratorAfcb.h" />
+    <ClInclude Include="Impl\Vibrator_AFCB\VibratorPa.h" />
+    <ClInclude Include="Impl\Wifi\Wifi.h" />
+    <ClInclude Include="resource.h" />
+    <ClInclude Include="stdafx.h" />
+    <ClInclude Include="targetver.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\..\..\..\Common\dlmalloc\dlmalloc.c">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">NotUsing</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\Common\lock\CLocks.cpp" />
+    <ClCompile Include="..\..\..\..\Common\lock\CSimpleLock.cpp" />
+    <ClCompile Include="..\..\..\..\Common\Tr\Tr.cpp" />
+    <ClCompile Include="..\..\..\..\Common\UtilFn\AppVer.cpp" />
+    <ClCompile Include="..\..\..\..\Common\UtilFn\LogFile.cpp" />
+    <ClCompile Include="..\..\..\..\Common\UtilFn\Utility.cpp" />
+    <ClCompile Include="..\..\Common\ApiExport.cpp" />
+    <ClCompile Include="..\..\Common\ModeSwitch.cpp" />
+    <ClCompile Include="..\..\Common\SpatBase.cpp" />
+    <ClCompile Include="..\..\Common\SpatRuntimeClass.cpp" />
+    <ClCompile Include="Impl\6760\UIS6760_GPIO.cpp" />
+    <ClCompile Include="Impl\6760\UIS6760_RESET.cpp" />
+    <ClCompile Include="Impl\ActionApp.cpp" />
+    <ClCompile Include="Impl\ADC\891XADC.cpp" />
+    <ClCompile Include="Impl\ADC\Get_ADC.cpp" />
+    <ClCompile Include="Impl\ADC\RGB_ADC.cpp" />
+    <ClCompile Include="Impl\ADC_AFCB\AdcAfcb.cpp" />
+    <ClCompile Include="Impl\AfcbControl\AfcbCtrlVol.cpp" />
+    <ClCompile Include="Impl\AMU\AMU_Camera.cpp" />
+    <ClCompile Include="Impl\AMU\AMU_Keypad.cpp" />
+    <ClCompile Include="Impl\AMU\AMU_LED.cpp" />
+    <ClCompile Include="Impl\AMU\AMU_Sensor_Calibration.cpp" />
+    <ClCompile Include="Impl\AMU\AMU_Sensor_Test.cpp" />
+    <ClCompile Include="Impl\AudioLoop\AudioLoop.cpp" />
+    <ClCompile Include="Impl\AudioLoop\AudioLoopAfcb.cpp" />
+    <ClCompile Include="Impl\AudioLoop\AudioLoopBase.cpp" />
+    <ClCompile Include="Impl\AudioLoop\AudioLoopG3Mic.cpp" />
+    <ClCompile Include="Impl\AudioLoop\AudioLoopPA.cpp" />
+    <ClCompile Include="Impl\AudioLoop\ImpAudioLoop.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">false</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">false</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="Impl\B2B\B2B.cpp" />
+    <ClCompile Include="Impl\BT\BT.cpp" />
+    <ClCompile Include="Impl\BT\McuBT.cpp" />
+    <ClCompile Include="Impl\Camera\Camera.cpp" />
+    <ClCompile Include="Impl\Camera\CameraOper.cpp" />
+    <ClCompile Include="Impl\ChargeCurrent\ChargeCurrentAfcb.cpp" />
+    <ClCompile Include="Impl\Charge\FastCharge.cpp" />
+    <ClCompile Include="Impl\CheckX\CheckXFastCharge.cpp" />
+    <ClCompile Include="Impl\ChipConnect\ChipConnect.cpp" />
+    <ClCompile Include="Impl\COB_AFCB\CobAfcb.cpp" />
+    <ClCompile Include="Impl\ECELL_5G\5G_ADC.cpp" />
+    <ClCompile Include="Impl\ECELL_5G\Ecell_Test_Lan.cpp" />
+    <ClCompile Include="Impl\ECELL_5G\InterConnect.cpp" />
+    <ClCompile Include="Impl\ECELL_5G\Keypad_Relay.cpp" />
+    <ClCompile Include="Impl\ECELL_5G\ShortCircuit.cpp" />
+    <ClCompile Include="Impl\EnableArmlog\EnableArmlog.cpp" />
+    <ClCompile Include="Impl\Ethernet\Ethernet.cpp" />
+    <ClCompile Include="Impl\Ethernet\PreEthernet.cpp" />
+    <ClCompile Include="Impl\FM\FM.cpp" />
+    <ClCompile Include="Impl\FM\FM_Transmit.cpp" />
+    <ClCompile Include="Impl\GPIO\GPIO.cpp" />
+    <ClCompile Include="Impl\GPIO\GPIO_Read.cpp" />
+    <ClCompile Include="Impl\GPIO\GPIO_Write.cpp" />
+    <ClCompile Include="Impl\GPIO_AFCB\GpioAfcbBase.cpp" />
+    <ClCompile Include="Impl\GPIO_AFCB\GpioAfcbControl.cpp" />
+    <ClCompile Include="Impl\GPIO_AFCB\GpioAfcbGet.cpp" />
+    <ClCompile Include="Impl\GPIO_AFCB\GpioAfcbSet.cpp" />
+    <ClCompile Include="Impl\GPIO_AFCB\ImpGpioAfcb.cpp" />
+    <ClCompile Include="Impl\GPIO_AFCB\ImpGpioAfcbControl.cpp" />
+    <ClCompile Include="Impl\GPIO_Smp\GpioSmpBase.cpp" />
+    <ClCompile Include="Impl\GPIO_Smp\ImpGpioSmp.cpp" />
+    <ClCompile Include="Impl\GPS\GPS.cpp" />
+    <ClCompile Include="Impl\Headset\Headset.cpp" />
+    <ClCompile Include="Impl\Headset\NoMicHeadset.cpp" />
+    <ClCompile Include="Impl\Headset\TypeC_Headset.cpp" />
+    <ClCompile Include="Impl\ImpBase.cpp" />
+    <ClCompile Include="Impl\KeypadLight_AFCB\KeypadLight_AFCB.cpp" />
+    <ClCompile Include="Impl\Keypad\Keypad.cpp" />
+    <ClCompile Include="Impl\LCD_AFCB\LCD_AFCB.cpp" />
+    <ClCompile Include="Impl\LCD_AFCB\MCU_LCD_AFCB.cpp" />
+    <ClCompile Include="Impl\LED_AFCB\ImpLedAfcb.cpp" />
+    <ClCompile Include="Impl\LED_AFCB\LED_AFCB.cpp" />
+    <ClCompile Include="Impl\MakeCall\MakeCall.cpp" />
+    <ClCompile Include="Impl\MISC\MISC.cpp" />
+    <ClCompile Include="Impl\NFC\NFC.cpp" />
+    <ClCompile Include="Impl\NTC\NTC.cpp" />
+    <ClCompile Include="Impl\NTC\NTC_ADC.cpp" />
+    <ClCompile Include="Impl\OpenPort\EnterMode.cpp" />
+    <ClCompile Include="Impl\ORCA\ORCA.cpp" />
+    <ClCompile Include="Impl\OTG\OTG.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">false</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">false</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="Impl\PCIE\Pcie.cpp" />
+    <ClCompile Include="Impl\PowerOff\PowerOff.cpp" />
+    <ClCompile Include="Impl\Relay\Relay.cpp" />
+    <ClCompile Include="Impl\RTC\RTC.cpp" />
+    <ClCompile Include="Impl\Sensor\AccSensor.cpp" />
+    <ClCompile Include="Impl\Sensor\FingerPrint.cpp" />
+    <ClCompile Include="Impl\Sensor\GyrSensor.cpp" />
+    <ClCompile Include="Impl\Sensor\HallSensor.cpp" />
+    <ClCompile Include="Impl\Sensor\MagSensor.cpp" />
+    <ClCompile Include="Impl\Sensor\OriSensor.cpp" />
+    <ClCompile Include="Impl\Sensor\PressureSensor.cpp" />
+    <ClCompile Include="Impl\Sensor\ProSensor.cpp" />
+    <ClCompile Include="Impl\Sensor\LigSensor.cpp" />
+    <ClCompile Include="Impl\Sensor\SarSensor.cpp" />
+    <ClCompile Include="Impl\Sensor\TempSensor.cpp" />
+    <ClCompile Include="Impl\SIMCARD\SIMCARD.cpp" />
+    <ClCompile Include="Impl\TYPEC\TYPEC_CCTEST.cpp" />
+    <ClCompile Include="Impl\UART0\UART0_Test.cpp" />
+    <ClCompile Include="Impl\UMW5621\UMW5621_ALL_PULL.cpp" />
+    <ClCompile Include="Impl\UMW5621\UMW5621_ALL_Set.cpp" />
+    <ClCompile Include="Impl\UMW5621\UMW5621_GPIO_PINTEST.cpp" />
+    <ClCompile Include="Impl\UMW5621\UMW5621_Single_Pull.cpp" />
+    <ClCompile Include="Impl\UMW5621\UMW5621_Single_SetInput.cpp" />
+    <ClCompile Include="Impl\UMW5621\UMW5621_Uart_Test.cpp" />
+    <ClCompile Include="Impl\UWP5865\UMP5865_GPIO_GetLevel.cpp" />
+    <ClCompile Include="Impl\UWP5865\UMP5865_GPIO_SetLevel.cpp" />
+    <ClCompile Include="Impl\UWP5865\UMP5865_Keypad.cpp" />
+    <ClCompile Include="Impl\UWP5865\UMP5865_MIC.cpp" />
+    <ClCompile Include="Impl\Vibrator_AFCB\VibratorAfcb.cpp" />
+    <ClCompile Include="Impl\Vibrator_AFCB\VibratorPa.cpp" />
+    <ClCompile Include="Impl\Wifi\Wifi.cpp" />
+    <ClCompile Include="stdafx.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Create</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Create</PrecompiledHeader>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="BBAT.rc" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="XML\5G_ADC.XML" />
+    <None Include="XML\6760_TEST_RESET.XML" />
+    <None Include="XML\BBAT_GET_ADC.XML" />
+    <None Include="XML\BT.XML" />
+    <None Include="XML\ChipConnect.XML" />
+    <None Include="XML\Dummy.XML" />
+    <None Include="XML\ECELL_5G_TEST_LAN.XML" />
+    <None Include="XML\ECELL_KEYPAD_RELAY.XML" />
+    <None Include="XML\FASTCHARGE.XML" />
+    <None Include="XML\GPIO_READ.XML" />
+    <None Include="XML\GPIO_WRITE.XML" />
+    <None Include="XML\InterConnect.XML" />
+    <None Include="XML\NTC.XML" />
+    <None Include="XML\NTC_ADC.XML" />
+    <None Include="XML\RELAY.XML" />
+    <None Include="XML\RGB_ADC.XML" />
+    <None Include="XML\RTC.XML" />
+    <None Include="XML\ShortCircuit.XML" />
+    <None Include="XML\SIMCARD.XML" />
+    <None Include="XML\TYPEC_CCTEST.XML" />
+    <None Include="XML\UART0_TEST.XML" />
+    <None Include="XML\UIS6760_GPIO.XML" />
+    <None Include="XML\UMP5865_GPIO_GETLEVEL.XML" />
+    <None Include="XML\UMP5865_GPIO_SETLEVEL.XML" />
+    <None Include="XML\UMP5865_KEYPAD.XML" />
+    <None Include="XML\UMP5865_MIC.XML" />
+    <None Include="XML\UMW5621_GPIO_ALL_PULL.XML" />
+    <None Include="XML\UMW5621_GPIO_ALL_SETINOUT.XML" />
+    <None Include="XML\UMW5621_GPIO_PINTEST.XML" />
+    <None Include="XML\UMW5621_GPIO_SINGLE_PULL.XML" />
+    <None Include="XML\UMW5621_GPIO_SINGLE_SET_INPUT.XML" />
+    <None Include="XML\UMW5621_TEST_UART.XML" />
+  </ItemGroup>
+  <ItemGroup>
+    <Xml Include="XML\891x_ADC.XML" />
+    <Xml Include="XML\AccSensor.XML" />
+    <Xml Include="XML\AdcAfcb.XML" />
+    <Xml Include="XML\AfcbCtrlVol.XML" />
+    <Xml Include="XML\AMU_CAMERA.XML" />
+    <Xml Include="XML\AMU_KEYPAD.XML" />
+    <Xml Include="XML\AMU_LED.XML" />
+    <Xml Include="XML\AMU_SENSOR_GALI.XML" />
+    <Xml Include="XML\AMU_SENSOR_TEST.XML" />
+    <Xml Include="XML\AudioLoop.XML" />
+    <Xml Include="XML\AudioLoopAfcb.XML" />
+    <Xml Include="XML\AudioLoopG3Mic.XML" />
+    <Xml Include="XML\AudioLoopPa.XML" />
+    <Xml Include="XML\B2B.XML" />
+    <Xml Include="XML\BT_MCU.XML" />
+    <Xml Include="XML\Camera.XML" />
+    <Xml Include="XML\CameraOper.XML" />
+    <Xml Include="XML\ChargeCurrent.XML" />
+    <Xml Include="XML\CheckXFastCharge.XML" />
+    <Xml Include="XML\CobAfcb.XML" />
+    <Xml Include="XML\EnableArmlog.XML" />
+    <Xml Include="XML\EnterMode.XML" />
+    <Xml Include="XML\Ethernet.XML" />
+    <Xml Include="XML\FingerPrint.XML" />
+    <Xml Include="XML\FM.XML" />
+    <Xml Include="XML\FM_TRANSMIT.XML" />
+    <Xml Include="XML\GPIO_AFCB.XML" />
+    <Xml Include="XML\GPIO_AFCB_CONTROL.XML" />
+    <Xml Include="XML\GPIO_SMP.XML" />
+    <Xml Include="XML\GPS.XML" />
+    <Xml Include="XML\GyrSensor.XML" />
+    <Xml Include="XML\HallSensor.XML" />
+    <Xml Include="XML\Headset.XML" />
+    <Xml Include="XML\Headset_NoMic.XML" />
+    <Xml Include="XML\Keypad.XML" />
+    <Xml Include="XML\KeypadLightAfcb.XML" />
+    <Xml Include="XML\LcdAfcb.XML" />
+    <Xml Include="XML\LedAfcb.XML" />
+    <Xml Include="XML\LigSensor.XML" />
+    <Xml Include="XML\MAGSENSOR.XML" />
+    <Xml Include="XML\MakeCall.XML" />
+    <Xml Include="XML\Misc.XML" />
+    <Xml Include="XML\Nfc.XML" />
+    <Xml Include="XML\ORCA.XML" />
+    <Xml Include="XML\OriSensor.XML" />
+    <Xml Include="XML\OTG.XML" />
+    <Xml Include="XML\Pcie.XML" />
+    <Xml Include="XML\PowerOff.XML" />
+    <Xml Include="XML\PreEthernet.XML" />
+    <Xml Include="XML\PreSensor.XML" />
+    <Xml Include="XML\Proximity.XML" />
+    <Xml Include="XML\SarSensor.XML" />
+    <Xml Include="XML\Sensor.XML" />
+    <Xml Include="XML\TempSensor.XML" />
+    <Xml Include="XML\TypeCHeadset.XML" />
+    <Xml Include="XML\VibratorAfcb.XML" />
+    <Xml Include="XML\VibratorPa.XML" />
+    <Xml Include="XML\Wifi.XML" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

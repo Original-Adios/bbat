@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Node>
+	<Option>
+    <Project>LST_MU9820E_052</Project>
+    <Upload Control="ComboBox" Elements="Sync,None">Sync</Upload>
+  </Option>
+	<Param>
+	</Param>
+</Node>

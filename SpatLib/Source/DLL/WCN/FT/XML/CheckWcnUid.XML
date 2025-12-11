@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Node>
+  <Option>
+    <UID Property="InVisible" Description="Expected Uid, As LotID_WaferID_X_Y"></UID>
+  </Option>
+  <Param>
+  </Param>
+</Node>

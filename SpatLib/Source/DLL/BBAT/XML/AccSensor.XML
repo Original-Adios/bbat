@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Node>
+  <Option>
+    <Accuracy Control="ComboBox" Description="精度" Elements="1k,1m">1m</Accuracy>
+    <X_SpecUp Control="EditBox" Description="X轴上限">2</X_SpecUp>
+    <X_SpecDown Control="EditBox" Description="X轴下限">-2</X_SpecDown>
+    <Y_SpecUp Control="EditBox" Description="Y轴上限">2</Y_SpecUp>
+    <Y_SpecDown Control="EditBox" Description="Y轴下限">-2</Y_SpecDown>
+    <Z_SpecUp Control="EditBox" Description="Z轴上限">11</Z_SpecUp>
+    <Z_SpecDown Control="EditBox" Description="Z轴下限">8</Z_SpecDown>
+</Option>
+  <Param>
+  </Param>
+</Node>

@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Node>
+  <Option>
+    <Mag_Sensor Description="磁力传感器测试">
+      <Magnetic Control="CheckBox" >1</Magnetic>
+      <X_SpecUp Control="EditBox" Description="X轴上限">360</X_SpecUp>
+      <X_SpecDown Control="EditBox" Description="X轴下限">-360</X_SpecDown>
+      <Y_SpecUp Control="EditBox" Description="Y轴上限">180</Y_SpecUp>
+      <Y_SpecDown Control="EditBox" Description="Y轴下限">-180</Y_SpecDown>
+      <Z_SpecUp Control="EditBox" Description="Z轴上限">90</Z_SpecUp>
+      <Z_SpecDown Control="EditBox" Description="Z轴下限">-90</Z_SpecDown>
+    </Mag_Sensor>
+
+    <Pro_Sensor Description="接近光测试">
+      <Proximity Control="CheckBox" >1</Proximity>
+      <SpecUp Control="EditBox" Description="接近等级上限">5</SpecUp>
+      <SpecDown Control="EditBox" Description="接近等级下限">1</SpecDown>
+    </Pro_Sensor>
+
+    <Light_Sensor Description="环境光测试">
+      <Light Control="CheckBox" Description="环境光测试">1</Light>
+      <SpecUp Control="EditBox" Description="上限">1500</SpecUp>
+      <SpecDown Control="EditBox" Description="下限">1</SpecDown>
+    </Light_Sensor>
+  </Option>
+  <Param>
+  </Param>
+</Node>

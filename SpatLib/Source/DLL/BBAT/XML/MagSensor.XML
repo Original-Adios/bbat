@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Node>
+  <Option>
+    <X_SpecUp Control="EditBox" Description="X轴上限">360</X_SpecUp>
+    <X_SpecDown Control="EditBox" Description="X轴下限">-360</X_SpecDown>
+    <Y_SpecUp Control="EditBox" Description="Y轴上限">180</Y_SpecUp>
+    <Y_SpecDown Control="EditBox" Description="Y轴下限">-180</Y_SpecDown>
+    <Z_SpecUp Control="EditBox" Description="Z轴上限">90</Z_SpecUp>
+    <Z_SpecDown Control="EditBox" Description="Z轴下限">-90</Z_SpecDown>
+</Option>
+  <Param>
+  </Param>
+</Node>

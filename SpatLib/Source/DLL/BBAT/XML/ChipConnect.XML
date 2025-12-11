@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Node>
+	<Option>
+    <Accelerometer Control="CheckBox" Property="InVisible" Description="加速传感器">0</Accelerometer>
+    <Magnetic Control="CheckBox" Property="InVisible" Description="磁传感器">0</Magnetic>
+    <Orientation Control="CheckBox" Description="方向传感器">0</Orientation>
+    <Gyroscope Control="CheckBox" Description="陀螺仪传感器">0</Gyroscope>
+    <Light Control="CheckBox" Property="InVisible" Description="光传感器">0</Light>
+    <Pressure Control="CheckBox" Property="InVisible" Description="气压传感器">0</Pressure>
+    <Temperature Control="CheckBox" Property="InVisible" Description="温度传感器">0</Temperature>
+    <Proximity Control="CheckBox" Property="InVisible" Description="接近传感器">0</Proximity>
+    <Gravity Control="CheckBox" Description="重力传感器">0</Gravity>
+    <Linear_Acceleration Control="CheckBox" Description="线型加速度传感器">0</Linear_Acceleration>
+    <Rotation_Vector Control="CheckBox" Description="旋转矢量传感器">0</Rotation_Vector>
+    <Finger_Print Control="CheckBox" Description="指纹传感器">0</Finger_Print>
+    <Heart_Rate Control="CheckBox" Description="心率传感器">0</Heart_Rate>
+    <Blood_Press Control="CheckBox" Description="血压传感器">0</Blood_Press>
+    <Sar Control="CheckBox" Description="电磁波吸收比值传感器">0</Sar>
+    <Step Control="CheckBox" Description="计步传感器">0</Step>
+  </Option>
+	<Param>
+	</Param>
+</Node>

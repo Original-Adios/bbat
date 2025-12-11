@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Node>
+  <Option>
+    <DUTType Property="InVisible">
+      <UEType Description="UE type code.">0x891C</UEType>
+    </DUTType>
+    <MMIFlag Tag="Show">
+      <WholeMMI Control="CheckBox" Description="Check whole MMI">0</WholeMMI>
+      <PCBAMMI Control="CheckBox" Description="Check whole MMI">0</PCBAMMI>
+    </MMIFlag>
+    <BBATFlag Tag="Show">
+      <BBAT Control="CheckBox" Description="Check whole MMI">0</BBAT>
+    </BBATFlag>
+    <CaliFlag Tag="Show">
+      <GSM_CALI_AFC Control="CheckBox">0</GSM_CALI_AFC>
+      <GSM850_CALI_AGC Control="CheckBox">0</GSM850_CALI_AGC>
+      <GSM850_CALI_APC Control="CheckBox">0</GSM850_CALI_APC>
+      <EGSM_CALI_AGC Control="CheckBox">0</EGSM_CALI_AGC>
+      <EGSM_CALI_APC Control="CheckBox">0</EGSM_CALI_APC>
+      <DCS_CALI_AGC Control="CheckBox">0</DCS_CALI_AGC>
+      <DCS_CALI_APC Control="CheckBox">0</DCS_CALI_APC>
+      <PCS_CALI_AGC Control="CheckBox">0</PCS_CALI_AGC>
+      <PCS_CALI_APC Control="CheckBox">0</PCS_CALI_APC>
+      <GSM_FINAL Control="CheckBox">0</GSM_FINAL>
+      <GSM_ANTENNA Control="CheckBox">0</GSM_ANTENNA>
+      <GSM_FINAL2 Control="CheckBox">0</GSM_FINAL2>
+      <LTE_CALI_AFC Control="CheckBox">0</LTE_CALI_AFC>
+      <LTE_CALI_AGC_TDD Control="CheckBox">0</LTE_CALI_AGC_TDD>
+      <LTE_CALI_APC_TDD Control="CheckBox">0</LTE_CALI_APC_TDD>
+      <LTE_CALI_AGC_FDD Control="CheckBox">0</LTE_CALI_AGC_FDD>
+      <LTE_CALI_APC_FDD Control="CheckBox">0</LTE_CALI_APC_FDD>
+      <LTE_CALI_TX_DROOP Control="CheckBox">0</LTE_CALI_TX_DROOP>
+      <LTE_FINAL Control="CheckBox">0</LTE_FINAL>
+      <LTE_ANTENNA Control="CheckBox">0</LTE_ANTENNA>
+      <LTE_FINAL2 Control="CheckBox">0</LTE_FINAL2>
+    </CaliFlag>
+  </Option>
+  <Param>
+  </Param>
+</Node>

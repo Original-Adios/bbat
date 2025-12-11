@@ -1,0 +1,152 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="01.Interface">
+      <UniqueIdentifier>{2c46a287-0c88-4526-ae61-5319cf1263f5}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="02.Impl">
+      <UniqueIdentifier>{30455a50-f3df-4532-a8d2-3fc20f332e34}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="09.RC">
+      <UniqueIdentifier>{47fcf247-0699-4a4b-9bf4-1775d831ef6f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="03.App">
+      <UniqueIdentifier>{355ffb19-5e13-4b9d-8691-10479726dcd7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="04.XML">
+      <UniqueIdentifier>{323bb7e5-a07b-417c-b0bf-bb328ac71ee4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="05.Utility">
+      <UniqueIdentifier>{7b55a8bd-ad36-4bff-8205-87bf75dfc3b1}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\..\..\..\..\Common\Include\SpatLibExport.h">
+      <Filter>01.Interface</Filter>
+    </ClInclude>
+    <ClInclude Include="DummyAction.h">
+      <Filter>02.Impl</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Common\SpatBase.h">
+      <Filter>02.Impl</Filter>
+    </ClInclude>
+    <ClInclude Include="resource.h">
+      <Filter>09.RC</Filter>
+    </ClInclude>
+    <ClInclude Include="stdafx.h">
+      <Filter>09.RC</Filter>
+    </ClInclude>
+    <ClInclude Include="targetver.h">
+      <Filter>09.RC</Filter>
+    </ClInclude>
+    <ClInclude Include="ActionApp.h">
+      <Filter>03.App</Filter>
+    </ClInclude>
+    <ClInclude Include="ActionList.h">
+      <Filter>03.App</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Common\SpatRuntimeClass.h">
+      <Filter>03.App</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\Common\UtilFn\AppVer.h">
+      <Filter>05.Utility</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\Common\lock\CLocks.h">
+      <Filter>05.Utility</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\Common\lock\CSimpleLock.h">
+      <Filter>05.Utility</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\Common\dlmalloc\dlmalloc.h">
+      <Filter>05.Utility</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Common\ExtraLogFile.h">
+      <Filter>05.Utility</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\Common\UtilFn\LogFile.h">
+      <Filter>05.Utility</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Common\ModeSwitch.h">
+      <Filter>05.Utility</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Common\ScanConfig.h">
+      <Filter>05.Utility</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\Common\Tr\Tr.h">
+      <Filter>05.Utility</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\Common\UtilFn\Utility.h">
+      <Filter>05.Utility</Filter>
+    </ClInclude>
+    <ClInclude Include="DummyGSM.h">
+      <Filter>02.Impl</Filter>
+    </ClInclude>
+    <ClInclude Include="ActionContainer.h">
+      <Filter>03.App</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="DummyAction.cpp">
+      <Filter>02.Impl</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Common\SpatBase.cpp">
+      <Filter>02.Impl</Filter>
+    </ClCompile>
+    <ClCompile Include="stdafx.cpp">
+      <Filter>09.RC</Filter>
+    </ClCompile>
+    <ClCompile Include="ActionApp.cpp">
+      <Filter>03.App</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Common\ApiExport.cpp">
+      <Filter>03.App</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Common\SpatRuntimeClass.cpp">
+      <Filter>03.App</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\Common\UtilFn\AppVer.cpp">
+      <Filter>05.Utility</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\Common\lock\CLocks.cpp">
+      <Filter>05.Utility</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\Common\lock\CSimpleLock.cpp">
+      <Filter>05.Utility</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\Common\dlmalloc\dlmalloc.c">
+      <Filter>05.Utility</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Common\ExtraLogFile.cpp">
+      <Filter>05.Utility</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\Common\UtilFn\LogFile.cpp">
+      <Filter>05.Utility</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Common\ModeSwitch.cpp">
+      <Filter>05.Utility</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Common\ScanConfig.cpp">
+      <Filter>05.Utility</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\Common\Tr\Tr.cpp">
+      <Filter>05.Utility</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\Common\UtilFn\Utility.cpp">
+      <Filter>05.Utility</Filter>
+    </ClCompile>
+    <ClCompile Include="DummyGSM.cpp">
+      <Filter>02.Impl</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="SpatDummy.rc">
+      <Filter>09.RC</Filter>
+    </ResourceCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="..\XML\Dummy.XML">
+      <Filter>04.XML</Filter>
+    </None>
+    <None Include="ReadMe.txt" />
+  </ItemGroup>
+</Project>

@@ -1,0 +1,70 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="02 Impl">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="09 RC">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav</Extensions>
+    </Filter>
+    <Filter Include="01 Include">
+      <UniqueIdentifier>{b73fcf92-bd6e-43d2-a08f-3b8f694c1125}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\..\Common\UtilFn\AppVer.cpp">
+      <Filter>02 Impl</Filter>
+    </ClCompile>
+    <ClCompile Include="dllmain.cpp">
+      <Filter>02 Impl</Filter>
+    </ClCompile>
+    <ClCompile Include="SpatLib.cpp">
+      <Filter>02 Impl</Filter>
+    </ClCompile>
+    <ClCompile Include="SpatLibManager.cpp">
+      <Filter>02 Impl</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Common\Tr\Tr.cpp">
+      <Filter>02 Impl</Filter>
+    </ClCompile>
+    <ClCompile Include="stdafx.cpp">
+      <Filter>09 RC</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\..\Common\UtilFn\AppVer.h">
+      <Filter>02 Impl</Filter>
+    </ClInclude>
+    <ClInclude Include="SpatLib.h">
+      <Filter>02 Impl</Filter>
+    </ClInclude>
+    <ClInclude Include="SpatLibManager.h">
+      <Filter>02 Impl</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Common\Tr\Tr.h">
+      <Filter>02 Impl</Filter>
+    </ClInclude>
+    <ClInclude Include="resource.h">
+      <Filter>09 RC</Filter>
+    </ClInclude>
+    <ClInclude Include="stdafx.h">
+      <Filter>09 RC</Filter>
+    </ClInclude>
+    <ClInclude Include="targetver.h">
+      <Filter>09 RC</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Common\Include\ISpatLibManager.h">
+      <Filter>01 Include</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="SpatLibManager.rc">
+      <Filter>09 RC</Filter>
+    </ResourceCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="ReadMe.txt" />
+  </ItemGroup>
+</Project>

@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Node>
+  <Option>
+    <Flash Description="闪光灯测试">
+      <Back_Flash_Cold Control="CheckBox" Description="后置闪光灯冷光">0</Back_Flash_Cold>
+      <Back_Flash_Warm Control="CheckBox" Description="后置闪光灯暖光">0</Back_Flash_Warm>
+      <Front_Flash Control="CheckBox" Description="前置闪光灯">0</Front_Flash>
+      <Keypad Control="CheckBox" Description="键盘背光">0</Keypad>
+      <Torch Control="CheckBox" Description="后置闪光灯">0</Torch>
+    </Flash>
+    <RGB Description="RGB测试">
+      <Red Control="CheckBox" Description="RGB Red">0</Red>
+      <Blue Control="CheckBox" Description="RGB Blue">0</Blue>
+      <Green Control="CheckBox" Description="RGB Green">0</Green>
+    </RGB>
+    <Vibrator Description="震动测试">
+      <Open Control="CheckBox" Description="打开震动">0</Open>
+      <Close Control="CheckBox" Description="关闭震动">0</Close>
+    </Vibrator>
+    <LCD Description="LCD测试">
+      <White Control="CheckBox" Description="LCD White">0</White>
+      <Red Control="CheckBox" Description="LCD Red">0</Red>
+      <Green Control="CheckBox" Description="LCD Green">0</Green>
+      <Blue Control="CheckBox" Description="LCD Blue">0</Blue>
+      <Black Control="CheckBox" Description="LCD Black">0</Black>
+    </LCD>
+	<UartLoop Control="CheckBox">0</UartLoop>    
+</Option>
+  <Param>
+	  <FlashDelayTime Description="FlashDelayTime">500</FlashDelayTime>
+	  <RgbDelayTime Description="RgbDelayTime">500</RgbDelayTime>
+	  <VibratorDelayTime Description="VibratorDelayTime">1000</VibratorDelayTime>	  
+	  <LcdDelayTime Description="LcdDelayTime">500</LcdDelayTime>  
+   </Param>
+</Node>

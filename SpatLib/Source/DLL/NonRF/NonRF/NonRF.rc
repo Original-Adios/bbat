@@ -1,0 +1,252 @@
+// Microsoft Visual C++ generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#include "afxres.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// 中文(简体，中国) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_CHS)
+LANGUAGE LANG_CHINESE, SUBLANG_CHINESE_SIMPLIFIED
+#pragma code_page(936)
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE 
+BEGIN
+    "#include ""afxres.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE 
+BEGIN
+    "\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Version
+//
+
+VS_VERSION_INFO VERSIONINFO
+ FILEVERSION 9,25,20,53
+ PRODUCTVERSION 9,25,20,53
+ FILEFLAGSMASK 0x17L
+#ifdef _DEBUG
+ FILEFLAGS 0x1L
+#else
+ FILEFLAGS 0x0L
+#endif
+ FILEOS 0x4L
+ FILETYPE 0x2L
+ FILESUBTYPE 0x0L
+BEGIN
+    BLOCK "StringFileInfo"
+    BEGIN
+        BLOCK "080404b0"
+        BEGIN
+            VALUE "CompanyName", "UNISOC TECHNOLOGIES INC."
+            VALUE "FileDescription", "SpatLib NonRF Dynamic Link Library"
+            VALUE "FileVersion", "9, 25, 20, 53"
+            VALUE "InternalName", "NonRF"
+            VALUE "LegalCopyright", "COPYRIGHT (C) 2019 UNISOC TECHNOLOGIES INC."
+            VALUE "OriginalFilename", "NonRF.dll"
+            VALUE "ProductName", "SpatLib NonRF Dynamic Link Library"
+            VALUE "ProductVersion", "9, 25, 20, 53"
+        END
+    END
+    BLOCK "VarFileInfo"
+    BEGIN
+        VALUE "Translation", 0x804, 1200
+    END
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// XML
+//
+
+IDR_XML_DUMMY           XML                     "XML\\Dummy.XML"
+
+IDR_XML_SWVER           XML                     "XML\\ReadSwVer.XML"
+
+IDR_XML_HWVER           XML                     "XML\\ReadHwVer.XML"
+
+IDR_XML_READSN          XML                     "XML\\ReadSN.XML"
+
+IDR_XML_SAVETOFLASH     XML                     "XML\\SaveToFlash.XML"
+
+IDR_XML_SWITCHOFF       XML                     "XML\\SwitchOff.XML"
+
+IDR_XML_TESTMODE        XML                     "XML\\TestModeX.XML"
+
+IDR_XML_SLEEP           XML                     "XML\\Sleep.XML"
+
+IDR_XML_READIMEI        XML                     "XML\\ReadIMEI.XML"
+
+IDR_XML_CALFLAG         XML                     "XML\\CheckCalFlag.XML"
+
+IDR_XML_CALFLAG_DMR     XML                     "XML\\CheckCalFlag_DMR.XML"
+
+IDR_XML_CHECKALLSTATION XML                     "XML\\CheckAllStation.XML"
+
+IDR_XML_PHASECHECK      XML                     "XML\\PhaseCheck.XML"
+
+IDR_XML_CHECKPERIPHERAL XML                     "XML\\CheckPeripheral.XML"
+
+IDR_XML_OPEN_PORT       XML                     "XML\\OpenPort.XML"
+
+IDR_XML_OPEN_SOCKET     XML                     "XML\\OpenSocket.XML"
+
+IDR_XML_ATCMD           XML                     "XML\\AtCmd.XML"
+
+IDR_XML_CHECKMEMORY     XML                     "XML\\CheckMemory.XML"
+
+IDR_XML_ClaiMMIFlag     XML                     "XML\\CheckCaliMMIFlag.XML"
+
+IDR_XML_CheckUID        XML                     "XML\\CheckUID.XML"
+
+IDR_XML_READ_NVID       XML                     "XML\\ReadNVID.XML"
+
+IDR_XML_ICCID           XML                     "XML\\CheckICCID.XML"
+
+IDR_XML_CHECKSIMCARD    XML                     "XML\\CheckSimCard.xml"
+
+IDR_XML_EID             XML                     "XML\\EID.XML"
+
+IDR_XML_BATTERYCAPACITY XML                     "XML\\CheckBatteryCapacity.XML"
+
+IDR_XML_NormalToCalMode XML                     "XML\\NormalToCalMode.XML"
+
+IDR_XML_CalToNormalMode XML                     "XML\\CalToNormalMode.XML"
+
+IDR_XML_MACADDR         XML                     "XML\\MacAddr.XML"
+
+IDR_XML_SAVEINFO        XML                     "XML\\SaveUEInfo.XML"
+
+IDR_XML_CUSTOMCONTROL   XML                     "XML\\CustomControl.XML"
+
+IDR_XML_WIDEVINE_DEVICE_ID XML                     "XML\\LoadWidevineDeviceID.XML"
+
+IDR_XML_CHARGER         XML                     "XML\\Charger.XML"
+
+IDR_XML_ClaiMMIFlagUIS8910 XML                     "XML\\CheckCaliMMIFlagUIS8910.XML"
+
+IDR_XML_ClaiMMIFlagUIS1930 XML                     "XML\\CheckCaliMMIFlagUIS1930.XML"
+
+IDR_XML_ClaiMMIFlagUIS8811 XML                     "XML\\CheckCaliMMIFlagUIS8811.XML"
+
+IDR_XML_ClaiMMIFlagUIS8850 XML                     "XML\\CheckCaliMMIFlagUIS8850.XML"
+
+IDR_XML_PMICID          XML                     "XML\\CheckPMICID.xml"
+
+IDR_XML_BBID            XML                     "XML\\CheckBBID.xml"
+
+IDR_XML_RUNMODE         XML                     "XML\\RunMode.XML"
+
+IDR_XML_WCNID           XML                     "XML\\CheckWCNID.xml"
+
+IDR_XML_CALI_V3         XML                     "XML\\CheckCalFlagV3.XML"
+
+IDR_XML_AUDIOSAVERECORDER XML                     "XML\\AudioSaveRecorder.xml"
+
+IDR_XML_CHECK_GOLDEN_8910 XML                     "XML\\CheckGoldenUIS8910.XML"
+
+IDR_XML_CHECK_GOLDEN_8850 XML                     "XML\\CheckGoldenUIS8850.XML"
+
+IDR_XML_ClaiMMIFlagUIS891C XML                    "XML\\CheckCaliMMIFlagUIS891C.XML"
+
+IDR_XML_ClaiMMIFlagUIS8910FF_L XML                "XML\\CheckCaliMMIFlagUIS8910FF_L.XML"
+
+IDR_XML_OPEN_PORT_PARITY   XML                     "XML\\OpenPortByParity.XML"
+
+IDR_XML_READMODEMVERSION XML                    "XML\\ImpReadVersion.XML"
+
+IDR_XML_CHANGEMODE      XML                      "XML\\ChangeMode.XML"
+
+IDR_XML_CHECK32kCrystalFreqOffset        XML                         "XML\\Check32kCrystalFreqOffset.XML"
+
+IDR_XML_MCUVER          XML                     "XML\\ReadMcuVer.XML"
+
+#endif    // 中文(简体，中国) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+/////////////////////////////////////////////////////////////////////////////
+// 英语(美国) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)
+LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
+#pragma code_page(1252)
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// XML
+//
+
+IDR_XML_CHECKMEMORYRANGE XML                     "XML\\CheckMemoryRange.XML"
+
+IDR_XML_RESETSTATIONS   XML                     "XML\\ResetStations.XML"
+
+IDR_XML_CHKSTATIONEXIST XML                     "XML\\CheckStationExist.XML"
+
+IDR_XML_CHECKDIAGCONN   XML                     "XML\\CheckDiagConnect.XML"
+
+IDR_XML_UPDATEPHASE     XML                     "XML\\UpdatePhase.XML"
+
+IDR_XML_CHK_PACNAME     XML                     "XML\\CheckPackName.XML"
+
+IDR_XMLWAITFORAT        XML                     "XML\\WaitForAT.XML"
+
+IDR_XML_SSID            XML                     "XML\\SSID.XML"
+
+IDR_XML_SETUPCONNMODE   XML                     "XML\\SetupConnMode.XML"
+
+IDR_XML_BENCHMARK       XML                     "XML\\CheckBenchMark.XML"
+
+IDR_XML_FINALIZE        XML                     "XML\\Finalize.XML"
+
+IDR_XML_CUSTOMISCDATA   XML                     "XML\\CustomerMiscData.XML"
+
+IDR_XML_OPEN_DUT        XML                     "XML\\OpenDut.XML"
+
+IDR_XML_CHKCRYSTAL32K   XML                     "XML\\CheckCrystal32K.xml"
+
+#endif    // 英语(美国) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+

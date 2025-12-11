@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Node>
+    <Option>
+      <Mode>
+          <BDR Description="BDR measurement switcher, if checkbox is enabled, measurement will be performed or not" Control="CheckBox">1</BDR>
+          <EDR Description="EDR measurement switcher, if checkbox is enabled, measurement will be performed or not" Control="CheckBox">1</EDR>
+          <BLE5.0 Description="BLE 5.0 measurement switcher, if checkbox is enabled, measurement will be performed or not" Control="CheckBox">1</BLE5.0>
+      </Mode>
+      <Ant>
+         <StandAlone Description="Primary RF path" Control="CheckBox">1</StandAlone>
+         <Shared Description="Diversity RF path" Control="CheckBox">0</Shared>
+      </Ant>
+    </Option>
+    <Param>
+      <Common>
+        <AvgCount Description="Average Count for Measurements">3</AvgCount>
+      </Common>
+        <BDR Description="BDR" Control="Group">
+            <GroupCount>1</GroupCount>
+            <Group1>
+                <TCH Description="Transmit channel 0~78 is available">0,39,78</TCH>
+                <TxLogicCh Property="ReadOnly">1</TxLogicCh>
+                <PacketType Description="Different packet type with differrent packet length, the matching map is DH1,DH3,DH5" Control="ComboBox" Elements="DH1,DH3,DH5">DH5</PacketType>
+                <RXLVL Description="Rx level for per measurement. Unit:dBm">-70</RXLVL>
+                <RefLVL Description="Reference level for tx measure. Unit:dBm">5</RefLVL>
+                <RxCount Description="Total bits count for RX configuration!">816800</RxCount>
+                <TestItem>
+                    <TXP Description="Output power" Control="CheckBox">1</TXP>
+                    <TSBD Description="Tx output spectrum - 20dB Bandwidth" Control="CheckBox">1</TSBD>
+                    <TSACP Description="Tx output spectrum - Adjacent Channel Power" Control="CheckBox">1</TSACP>
+                    <MOD Description="Modulation Characteristics" Control="CheckBox">1</MOD>
+                    <ICFT Description="Initial Carrier Frequency Tolerance" Control="CheckBox">1</ICFT>
+                    <CFD Description="Carrier Frequency Drift" Control="CheckBox">1</CFD>
+                    <BER Description="Receiver sensitivity" Control="CheckBox">1</BER>
+                </TestItem>
+            </Group1>
+            <Specification Description="Configure the test tolerance and specification">
+              <TXP Description="TX Power, Unit: dBm">2,12</TXP>
+              <TSBD Description="Tx output spectrum - 20dB Bandwidth:Uint KHz>-1000,1000">-1000,1000</TSBD>
+              <TSACP Description="Tx output spectrum - Adjacent Channel Power">-40,-40,-40,-20,99,99,99,-20,-40,-40,-40</TSACP>
+              <MOD Description="Modulation Characteristics">
+                <f1avg>140,175</f1avg>
+                <f2max>115</f2max>
+                <ratio>0.8</ratio>
+              </MOD>
+              <ICFT Description="Initial Carrier Frequency Tolerance">-75,75</ICFT>
+              <CFD Description="Carrier Frequency Drift">-40,40</CFD>
+              <BER Description="Receiver sensitivity">0.1</BER>
+            </Specification>
+        </BDR>
+        <EDR Description="EDR Band" Control="Group">
+            <GroupCount>2</GroupCount>
+            <Group1>
+                <TCH Description="Transmit channel 0~78 is available">0,39,78</TCH>
+              <TxLogicCh Property="ReadOnly">0</TxLogicCh>  
+              <PacketType Description="Different packet type with different packet length, the matching map is 2-DH1,2-DH3,2-DH5,3-DH1,3-DH3,3-DH5" Control="ComboBox" Elements="2-DH1,2-DH3,2-DH5,3-DH1,3-DH3,3-DH5">2-DH5</PacketType>
+                <RXLVL Description="Rx level for per measurement. Unit:dBm">-70</RXLVL>
+                <RefLVL Description="Reference level for tx measure. Unit:dBm">5</RefLVL>
+                <RxCount Description="Total bits count for RX configuration!">816800</RxCount>
+                <TestItem>
+                    <TXP Description="Output power" Control="CheckBox">1</TXP>
+                    <RTXP Description="Relative Transmit Power" Control="CheckBox">1</RTXP>
+                    <CFDMODA Description="Carrier Frequency drift and modulation Accuracy" Control="CheckBox">1</CFDMODA>
+                    <IBSE Description="In-Band Spurious Emmissons" Control="CheckBox">1</IBSE>
+                    <BER Description="Receiver sensitivity" Control="CheckBox">1</BER>
+                </TestItem>
+            </Group1>
+            <Group2>
+                <TCH Description="Transmit channel 0~78 is available">0,39,78</TCH>
+              <TxLogicCh Property="ReadOnly">0</TxLogicCh>
+              <PacketType Description="Different packet type with differrent packet length, the matching map is 2-DH1,2-DH3,2-DH5,3-DH1,3-DH3,3-DH5" Control="ComboBox" Elements="2-DH1,2-DH3,2-DH5,3-DH1,3-DH3,3-DH5">3-DH5</PacketType>
+                <RXLVL Description="Rx level for per measurement. Unit:dBm">-70</RXLVL>
+                <RefLVL Description="Reference level for tx measure. Unit:dBm">5</RefLVL>
+                <RxCount Description="Total bits count for RX configuration!">816800</RxCount>
+                <TestItem>
+                    <TXP Description="Output power" Control="CheckBox">1</TXP>
+                    <RTXP Description="Relative Transmit Power" Control="CheckBox">1</RTXP>
+                    <CFDMODA Description="Carrier Frequency drift and modulation Accurancy" Control="CheckBox">1</CFDMODA>
+                    <IBSE Description="In-Band Spurious Emmisons" Control="CheckBox">1</IBSE>
+                    <BER Description="Receiver sensitivity" Control="CheckBox">1</BER>
+                </TestItem>
+            </Group2>
+          <Specification Description="Configure the test tolerance and specification">
+            <TXP Description="TX Power, Unit: dBm">2,12</TXP>
+            <RTXP  Description="Relative Transmit Power">-4,1</RTXP>
+            <CFDMODA Description="Carrier Frequency drift and modulation Accurancy">
+              <w0>-10,10</w0>
+              <wi>-75,75</wi>
+              <RMSDEVM_2DHX>0.2</RMSDEVM_2DHX>
+              <PEAKDEVM_2DHX>0.35</PEAKDEVM_2DHX>
+              <RMSDEVM_3DHX>0.13</RMSDEVM_3DHX>
+              <PEAKDEVM_3DHX>0.25</PEAKDEVM_3DHX>
+            </CFDMODA>
+            <IBSE Description="In-Band Spurious Emmisons">-40,-40,-40,-20,-26,99,-26,-20,-40,-40,-40</IBSE>
+            <BER Description="Receiver sensitivity">0.01</BER>
+          </Specification>
+        </EDR>
+        <BLE5.0 Description="BLE 5.0 Band" Control="Group">
+          <GroupCount>2</GroupCount>
+          <Group1>
+            <TCH Description="Transmit channel 0~38 is available">0,19,38</TCH>
+            <ModIndex Description="Modulation index: 0:BT_STABLE, 1:BT_STAND" Control="ComboBox" Elements="0,1">0</ModIndex>
+            <PacketType Description="Packet type" Control="ComboBox" Elements="RF_PHY_1M,RF_PHY_2M,RF_PHY_S2,RF_PHY_S8">RF_PHY_2M</PacketType>
+            <RXLVL Description="Rx level for per measurement. Unit:dBm">-70</RXLVL>
+            <RefLVL Description="Reference level for tx measure. Unit:dBm">5</RefLVL>
+            <RxCount Description="Total packets count for RX configuration!">100</RxCount>
+            <TestItem>
+              <TXP Description="Output power" Control="CheckBox">1</TXP>
+              <IBSE Description="In-Band Spurious Emmisons" Control="CheckBox">1</IBSE>
+              <MOD Description="Modulation Characteristics" Control="CheckBox">1</MOD>
+              <CFOD Description="Carrier Frequency Offset and Drift" Control="CheckBox">1</CFOD>
+              <BER Description="Receiver sensitivity" Control="CheckBox">1</BER>
+            </TestItem>
+          </Group1>
+          <Group2>
+            <TCH Description="Transmit channel 0~38 is available">0,19,38</TCH>
+            <ModIndex Description="Modulation index: 0:BT_STABLE, 1:BT_STAND" Control="ComboBox" Elements="0,1">0</ModIndex>
+            <PacketType Description="Packet type" Control="ComboBox" Elements="RF_PHY_1M,RF_PHY_2M,RF_PHY_S2,RF_PHY_S8">RF_PHY_1M</PacketType>
+            <RXLVL Description="Rx level for per measurement. Unit:dBm">-70</RXLVL>
+            <RefLVL Description="Reference level for tx measure. Unit:dBm">5</RefLVL>
+            <RxCount Description="Total packets count for RX configuration!">100</RxCount>
+            <TestItem>
+              <TXP Description="Output power" Control="CheckBox">1</TXP>
+              <IBSE Description="In-Band Spurious Emmisons" Control="CheckBox">1</IBSE>
+              <MOD Description="Modulation Characteristics" Control="CheckBox">1</MOD>
+              <CFOD Description="Carrier Frequency Offset and Drift" Control="CheckBox">1</CFOD>
+              <BER Description="Receiver sensitivity" Control="CheckBox">1</BER>
+            </TestItem>
+          </Group2>   
+          <Specification Description="Configure the test tolerance and specification">
+            <TXP Description="TX Power, Unit: dBm">-20,10</TXP>
+            <TXP_PEAK_AVG>3</TXP_PEAK_AVG>
+            <IBSE Description="In-Band Spurious Emmisons">-30,-30,-30,-20,99,99,99,-20,-30,-30,-30</IBSE>
+            <MOD Description="Modulation Characteristics">
+              <f1avg>225,275</f1avg>
+              <f2max>185</f2max>
+              <ratio>0.8</ratio>
+            </MOD>
+            <CFOD Description="Carrier Frequency Offset and Drift">
+              <RF_PHY_1M>
+                <Fn>-150,150</Fn>
+                <F0Fn>-99,50</F0Fn>
+                <F1F0>-99,23</F1F0>
+                <FnFn5>-99,20</FnFn5>
+              </RF_PHY_1M>
+              <RF_PHY_2M>
+                <Fn>-150,150</Fn>
+                <F0Fn>-99,50</F0Fn>
+                <F1F0>-99,23</F1F0>
+                <FnFn5>-99,20</FnFn5>
+              </RF_PHY_2M>
+              <RF_PHY_S8>
+                <Fn>-150,150</Fn>
+                <F0Fn>-99,50</F0Fn>
+                <F0F3>-99,23</F0F3>
+                <FnFn3>-99,20</FnFn3>
+              </RF_PHY_S8>
+            </CFOD>
+            <BER>30.8</BER>
+          </Specification>
+        </BLE5.0>
+    </Param>
+</Node>

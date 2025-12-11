@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Node>
+	<Option>
+    <ASSERT Control="CheckBox" Description="1: Assert UE, 0: Not assert">0</ASSERT>
+    <UID Control="ComboBox" Elements="ON,OFF" Description="ON: UI display UID">ON</UID>
+    <SN1 Control="ComboBox" Elements="ON,OFF" Description="ON: UI display SN1">ON</SN1>
+    <SN2 Control="ComboBox" Elements="ON,OFF" Description="ON: UI display SN2">ON</SN2>
+    <CP Control="ComboBox" Elements="ON,OFF" Description="ON: UI display CP version">ON</CP>
+    <AP Control="ComboBox" Elements="ON,OFF" Description="ON: UI display AP version">ON</AP>
+    <IMEI1 Control="ComboBox" Elements="ON,OFF" Description="ON: UI display IMEI1">ON</IMEI1>
+    <IMEI2 Control="ComboBox" Elements="ON,OFF" Description="ON: UI display IMEI2">ON</IMEI2>
+    <BT Control="ComboBox" Elements="ON,OFF" Description="ON: UI display BT address">ON</BT>
+    <WIFI Control="ComboBox" Elements="ON,OFF" Description="ON: UI display WIFI address">ON</WIFI>
+  </Option>
+	<Param>
+    <ItemCount>10000</ItemCount>
+		<A Description="Parameter A by edit control, no property">32.80,30.80,29.00,27.00,25.00,23.00,21.00</A>
+    <B Control="CheckBox" Description="Parameter B by check-box">1</B>
+    <C Control="ComboBox" Elements="ElementA,ElementB,ElementC"  Description="Parameter B by combo-box">ElementB</C>
+    <D Property="ReadOnly" Description="Parameter D by ReadOnly property">
+      <D1>Exmaple for ReadOnly property</D1>
+      <D2>-90,-80,-100,-102</D2>
+    </D>
+    <E Property="InVisible" Description="Parameter E by InVisible property">
+      <E1>Exmaple for InVisible property</E1>
+      <E2>100,20</E2>
+    </E>
+    <F Description="测试中文支持">参数1</F>
+	</Param>
+</Node>

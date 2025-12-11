@@ -1,0 +1,404 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{71CF4F76-4E4A-4ED6-868B-22BE8FB25761}</ProjectGuid>
+    <RootNamespace>LossCal</RootNamespace>
+    <Keyword>Win32Proj</Keyword>
+    <WindowsTargetPlatformVersion>10.0.17763.0</WindowsTargetPlatformVersion>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <CharacterSet>Unicode</CharacterSet>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <PlatformToolset>v142</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <CharacterSet>Unicode</CharacterSet>
+    <PlatformToolset>v142</PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <_ProjectFileVersion>10.0.30319.1</_ProjectFileVersion>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">../../../../../../../Bin/App/SpatLib\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(Configuration)\</IntDir>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</LinkIncremental>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">../../../../../../../Bin/App/SpatLib\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(Configuration)\</IntDir>
+    <CodeAnalysisRuleSet Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">AllRules.ruleset</CodeAnalysisRuleSet>
+    <CodeAnalysisRules Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" />
+    <CodeAnalysisRuleAssemblies Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" />
+    <CodeAnalysisRuleSet Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">AllRules.ruleset</CodeAnalysisRuleSet>
+    <CodeAnalysisRules Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" />
+    <CodeAnalysisRuleAssemblies Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" />
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <Optimization>Disabled</Optimization>
+      <AdditionalIncludeDirectories>$(ProjectDir);../../../../Common;../../../../../../Common/Include;../../../../../../Common/Tr;../../../../../../Common/dlmalloc;../../../../../../Common/lock;../../../../../../Common/UtilFn;./Impl;./Impl/Func;../../../../../../Common/Include/device;../../LTE/Cal/Impl;../../../../../../Common/API;../../../../../../Common/Uni_Include;../../../../../../Common/Uni_Define/Global;../../../../../../Common/Uni_PhoneCommand;../../../../../../Common/Uni_Define/;../../../../../../Common/Uni_Dependence;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_WINDOWS;_USRDLL;_SPATLIB_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <MinimalRebuild>true</MinimalRebuild>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <WarningLevel>Level4</WarningLevel>
+      <DebugInformationFormat>EditAndContinue</DebugInformationFormat>
+    </ClCompile>
+    <Link>
+      <OutputFile>$(OutDir)LossCal.dll</OutputFile>
+      <AdditionalLibraryDirectories>../../../../../../Common/Lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <ImportLibrary>$(OutDir)LossCal.lib</ImportLibrary>
+      <ProgramDatabaseFile>../../../../../../../Source\Common\pdb\$(TargetName).pdb</ProgramDatabaseFile>
+      <AdditionalDependencies>Customized.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;comdlg32.lib;advapi32.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;odbc32.lib;odbccp32.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>$(ProjectDir);../../../../Common;../../../../../../Common/Include;../../../../../../Common/Tr;../../../../../../Common/dlmalloc;../../../../../../Common/lock;../../../../../../Common/UtilFn;./Impl;./Impl/Func;../../../../../../Common/Include/device;../../LTE/Cal/Impl;../../../../../../Common/API;../../../../../../Common/Uni_Include;../../../../../../Common/Uni_Define/Global;../../../../../../Common/Uni_PhoneCommand;../../../../../../Common/Uni_Define/;../../../../../../Common/Uni_Dependence;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_WINDOWS;_USRDLL;_SPATLIB_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <WarningLevel>Level4</WarningLevel>
+      <WholeProgramOptimization>true</WholeProgramOptimization>
+      <Optimization>MinSpace</Optimization>
+    </ClCompile>
+    <Link>
+      <OutputFile>$(OutDir)LossCal.dll</OutputFile>
+      <AdditionalLibraryDirectories>../../../../../../Common/Lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <ImportLibrary>$(OutDir)LossCal.lib</ImportLibrary>
+      <ProgramDatabaseFile>../../../../../../../Source\Common\pdb\$(TargetName).pdb</ProgramDatabaseFile>
+      <AdditionalDependencies>Customized.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;comdlg32.lib;advapi32.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;odbc32.lib;odbccp32.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClInclude Include="..\..\..\..\..\..\Common\API\BTApiAT.h" />
+    <ClInclude Include="..\..\..\..\..\..\Common\API\GPSApiAT.h" />
+    <ClInclude Include="..\..\..\..\..\..\Common\API\IBTApi.h" />
+    <ClInclude Include="..\..\..\..\..\..\Common\API\IWlanApi.h" />
+    <ClInclude Include="..\..\..\..\..\..\Common\API\WlanApiAT.h" />
+    <ClInclude Include="..\..\..\..\..\..\Common\UtilFn\CdmaUtility.h" />
+    <ClInclude Include="..\..\..\..\..\..\Common\UtilFn\NrUtility.h" />
+    <ClInclude Include="..\..\..\..\..\..\Common\UtilFn\wcnUtility.h" />
+    <ClInclude Include="..\..\..\..\Common\CustomizedBase.h" />
+    <ClInclude Include="..\..\LTE\Cal\Impl\AlgoBase.h" />
+    <ClInclude Include="..\..\LTE\Cal\Impl\ApiRxModV3.h" />
+    <ClInclude Include="..\..\LTE\Cal\Impl\ApiRxModV4.h" />
+    <ClInclude Include="..\..\LTE\Cal\Impl\ApiRxModV5.h" />
+    <ClInclude Include="..\..\LTE\Cal\Impl\ApiRxV3.h" />
+    <ClInclude Include="..\..\LTE\Cal\Impl\ApiTxModV3.h" />
+    <ClInclude Include="..\..\LTE\Cal\Impl\ApiTxModV4.h" />
+    <ClInclude Include="..\..\LTE\Cal\Impl\ApiTxModV5.h" />
+    <ClInclude Include="..\..\LTE\Cal\Impl\ApiTxV22.h" />
+    <ClInclude Include="Impl\CalcLS_Cellular.h" />
+    <ClInclude Include="Impl\CalcLS_CellularV4.h" />
+    <ClInclude Include="Impl\CalcLS_CellularV5.h" />
+    <ClInclude Include="Impl\CalcLS_Marlin2.h" />
+    <ClInclude Include="Impl\CalcLS_Marlin3.h" />
+    <ClInclude Include="Impl\CalcLS_Umw266x.h" />
+    <ClInclude Include="Impl\ComDef.h" />
+    <ClInclude Include="Impl\ExportGoldenSample.h" />
+    <ClInclude Include="Impl\ExportGoldenSample_V4.h" />
+    <ClInclude Include="Impl\ExportGoldenSample_V5.h" />
+    <ClInclude Include="Impl\Func\AlgoClcRxModV3.h" />
+    <ClInclude Include="Impl\Func\AlgoClcRxModV4.h" />
+    <ClInclude Include="Impl\Func\AlgoClcRxModV5.h" />
+    <ClInclude Include="Impl\Func\AlgoClcTxModV3.h" />
+    <ClInclude Include="Impl\Func\AlgoClcTxModV4.h" />
+    <ClInclude Include="Impl\Func\AlgoClcTxModV5.h" />
+    <ClInclude Include="Impl\Func\AlgoGsRxModV3.h" />
+    <ClInclude Include="Impl\Func\AlgoGsRxModV4.h" />
+    <ClInclude Include="Impl\Func\AlgoGsRxModV5.h" />
+    <ClInclude Include="Impl\Func\AlgoGsTxModV3.h" />
+    <ClInclude Include="Impl\Func\AlgoGsTxModV4.h" />
+    <ClInclude Include="Impl\Func\AlgoGsTxModV5.h" />
+    <ClInclude Include="Impl\Func\C2KClc.h" />
+    <ClInclude Include="Impl\Func\C2KGs.h" />
+    <ClInclude Include="Impl\Func\CommonAlgoClcBase.h" />
+    <ClInclude Include="Impl\Func\CommonAlgoGsBase.h" />
+    <ClInclude Include="Impl\Func\CommonApiBase.h" />
+    <ClInclude Include="Impl\Func\CommonDefine.h" />
+    <ClInclude Include="Impl\Func\Define.h" />
+    <ClInclude Include="Impl\Func\DMRClc.h" />
+    <ClInclude Include="Impl\Func\DMRGs.h" />
+    <ClInclude Include="Impl\Func\DMRLossBase.h" />
+    <ClInclude Include="Impl\Func\GsmBase.h" />
+    <ClInclude Include="Impl\Func\ILossFunc.h" />
+    <ClInclude Include="..\..\LTE\Cal\Impl\GlobalDefine.h" />
+    <ClInclude Include="..\..\..\..\..\..\Common\UtilFn\LteUtility.h" />
+    <ClInclude Include="..\..\LTE\Cal\Impl\FuncBase.h" />
+    <ClInclude Include="..\..\LTE\Cal\Impl\ApiBase.h" />
+    <ClInclude Include="..\..\LTE\Cal\Impl\FuncCenter.h" />
+    <ClInclude Include="Impl\Func\LteClc.h" />
+    <ClInclude Include="Impl\Func\LteClcV4.h" />
+    <ClInclude Include="Impl\Func\LteClcV5.h" />
+    <ClInclude Include="Impl\Func\LteGs.h" />
+    <ClInclude Include="Impl\Func\LteGsV4.h" />
+    <ClInclude Include="Impl\Func\LteGsV5.h" />
+    <ClInclude Include="Impl\Func\ModV3Nv.h" />
+    <ClInclude Include="Impl\Func\ModV4Nv.h" />
+    <ClInclude Include="Impl\Func\ModV5Nv.h" />
+    <ClInclude Include="Impl\Func\NalClcV4.h" />
+    <ClInclude Include="Impl\Func\NalClcV5.h" />
+    <ClInclude Include="Impl\Func\NalGsV4.h" />
+    <ClInclude Include="Impl\Func\NalGsV5.h" />
+    <ClInclude Include="Impl\Func\Nv.h" />
+    <ClInclude Include="Impl\Func\FileConfig.h" />
+    <ClInclude Include="Impl\Func\NalClc.h" />
+    <ClInclude Include="Impl\Func\NalGs.h" />
+    <ClInclude Include="..\..\LTE\Cal\Impl\IAlgo.h" />
+    <ClInclude Include="Impl\Func\AlgoGsRx.h" />
+    <ClInclude Include="Impl\Func\AlgoGsTx.h" />
+    <ClInclude Include="Impl\Func\AlgoClcRx.h" />
+    <ClInclude Include="Impl\Func\AlgoClcTx.h" />
+    <ClInclude Include="Impl\Func\GsmClc.h" />
+    <ClInclude Include="Impl\Func\GsmGs.h" />
+    <ClInclude Include="..\..\..\..\..\..\Common\UtilFn\gsmUtility.h" />
+    <ClInclude Include="Impl\Func\NvHelper.h" />
+    <ClInclude Include="Impl\Func\NvHelperV4.h" />
+    <ClInclude Include="Impl\Func\NvHelperV5.h" />
+    <ClInclude Include="Impl\Func\TdClc.h" />
+    <ClInclude Include="Impl\Func\TdGs.h" />
+    <ClInclude Include="Impl\Func\TDMeasurePower.h" />
+    <ClInclude Include="..\..\..\..\..\..\Common\UtilFn\TDUtility.h" />
+    <ClInclude Include="Impl\Func\WcdmaBase.h" />
+    <ClInclude Include="Impl\Func\WcdmaClc.h" />
+    <ClInclude Include="Impl\Func\WcdmaGs.h" />
+    <ClInclude Include="..\..\..\..\..\..\Common\UtilFn\wcdmaUtility.h" />
+    <ClInclude Include="Impl\Func\WCNCLC.h" />
+    <ClInclude Include="Impl\Func\WCNGS.h" />
+    <ClInclude Include="Impl\Func\WCNMeasurePower.h" />
+    <ClInclude Include="Impl\ImpBase.h" />
+    <ClInclude Include="..\..\..\..\Common\SpatBase.h" />
+    <ClInclude Include="Impl\ImportGoldenSample.h" />
+    <ClInclude Include="Impl\ImportGoldenSampleV4.h" />
+    <ClInclude Include="Impl\ImportGoldenSampleV5.h" />
+    <ClInclude Include="Impl\MakeGS.h" />
+    <ClInclude Include="Impl\CalcLS.h" />
+    <ClInclude Include="Impl\ActionApp.h" />
+    <ClInclude Include="Impl\ActionList.h" />
+    <ClInclude Include="..\..\..\..\Common\SpatRuntimeClass.h" />
+    <ClInclude Include="..\..\..\..\..\..\Common\Include\SpatLibExport.h" />
+    <ClInclude Include="Impl\MakeGS_Cellular.h" />
+    <ClInclude Include="Impl\MakeGS_CellularV4.h" />
+    <ClInclude Include="Impl\MakeGS_CellularV5.h" />
+    <ClInclude Include="Impl\MakeGS_Marlin2.h" />
+    <ClInclude Include="Impl\MakeGS_Marlin3.h" />
+    <ClInclude Include="Impl\MakeGS_Umw266x.h" />
+    <ClInclude Include="Impl\NrAlgoClc.h" />
+    <ClInclude Include="Impl\NrAlgoClcV4.h" />
+    <ClInclude Include="Impl\NrAlgoClcV5.h" />
+    <ClInclude Include="Impl\NrAlgoGs.h" />
+    <ClInclude Include="Impl\NrAlgoGsV4.h" />
+    <ClInclude Include="Impl\NrAlgoGsV5.h" />
+    <ClInclude Include="Impl\NrApi.h" />
+    <ClInclude Include="Impl\NrApiV4.h" />
+    <ClInclude Include="Impl\NrApiV5.h" />
+    <ClInclude Include="Impl\NrDefine.h" />
+    <ClInclude Include="Impl\NrFileConfig.h" />
+    <ClInclude Include="resource.h" />
+    <ClInclude Include="stdafx.h" />
+    <ClInclude Include="targetver.h" />
+    <ClInclude Include="..\..\..\..\..\..\Common\UtilFn\AppVer.h" />
+    <ClInclude Include="..\..\..\..\..\..\Common\lock\CLocks.h" />
+    <ClInclude Include="..\..\..\..\..\..\Common\lock\CSimpleLock.h" />
+    <ClInclude Include="..\..\..\..\..\..\Common\dlmalloc\dlmalloc.h" />
+    <ClInclude Include="..\..\..\..\Common\ExtraLogFile.h" />
+    <ClInclude Include="..\..\..\..\..\..\Common\UtilFn\LogFile.h" />
+    <ClInclude Include="..\..\..\..\Common\ModeSwitch.h" />
+    <ClInclude Include="..\..\..\..\Common\ScanConfig.h" />
+    <ClInclude Include="..\..\..\..\..\..\Common\Tr\Tr.h" />
+    <ClInclude Include="..\..\..\..\..\..\Common\UtilFn\Utility.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\..\..\..\..\..\Common\API\BTApiAT.cpp" />
+    <ClCompile Include="..\..\..\..\..\..\Common\API\GPSApiAT.cpp" />
+    <ClCompile Include="..\..\..\..\..\..\Common\API\WlanApiAT.cpp" />
+    <ClCompile Include="..\..\..\..\..\..\Common\UtilFn\CdmaUtility.cpp" />
+    <ClCompile Include="..\..\..\..\..\..\Common\UtilFn\NrUtility.cpp" />
+    <ClCompile Include="..\..\..\..\..\..\Common\UtilFn\wcnUtility.cpp" />
+    <ClCompile Include="..\..\..\..\Common\CustomizedBase.cpp" />
+    <ClCompile Include="..\..\LTE\Cal\Impl\AlgoBase.cpp" />
+    <ClCompile Include="..\..\LTE\Cal\Impl\ApiRxModV3.cpp" />
+    <ClCompile Include="..\..\LTE\Cal\Impl\ApiRxModV4.cpp" />
+    <ClCompile Include="..\..\LTE\Cal\Impl\ApiRxModV5.cpp" />
+    <ClCompile Include="..\..\LTE\Cal\Impl\ApiRxV3.cpp" />
+    <ClCompile Include="..\..\LTE\Cal\Impl\ApiTxModV3.cpp" />
+    <ClCompile Include="..\..\LTE\Cal\Impl\ApiTxModV4.cpp" />
+    <ClCompile Include="..\..\LTE\Cal\Impl\ApiTxModV5.cpp" />
+    <ClCompile Include="..\..\LTE\Cal\Impl\ApiTxV22.cpp" />
+    <ClCompile Include="Impl\CalcLS_Cellular.cpp" />
+    <ClCompile Include="Impl\CalcLS_CellularV4.cpp" />
+    <ClCompile Include="Impl\CalcLS_CellularV5.cpp" />
+    <ClCompile Include="Impl\CalcLS_Marlin2.cpp" />
+    <ClCompile Include="Impl\CalcLS_Marlin3.cpp" />
+    <ClCompile Include="Impl\CalcLS_Umw266x.cpp" />
+    <ClCompile Include="Impl\ExportGoldenSample.cpp" />
+    <ClCompile Include="Impl\ExportGoldenSample_V4.cpp" />
+    <ClCompile Include="Impl\ExportGoldenSample_V5.cpp" />
+    <ClCompile Include="Impl\Func\AlgoClcRxModV3.cpp" />
+    <ClCompile Include="Impl\Func\AlgoClcRxModV4.cpp" />
+    <ClCompile Include="Impl\Func\AlgoClcRxModV5.cpp" />
+    <ClCompile Include="Impl\Func\AlgoClcTxModV3.cpp" />
+    <ClCompile Include="Impl\Func\AlgoClcTxModV4.cpp" />
+    <ClCompile Include="Impl\Func\AlgoClcTxModV5.cpp" />
+    <ClCompile Include="Impl\Func\AlgoGsRxModV3.cpp" />
+    <ClCompile Include="Impl\Func\AlgoGsRxModV4.cpp" />
+    <ClCompile Include="Impl\Func\AlgoGsRxModV5.cpp" />
+    <ClCompile Include="Impl\Func\AlgoGsTxModV3.cpp" />
+    <ClCompile Include="Impl\Func\AlgoGsTxModV4.cpp" />
+    <ClCompile Include="Impl\Func\AlgoGsTxModV5.cpp" />
+    <ClCompile Include="Impl\Func\C2KClc.cpp" />
+    <ClCompile Include="Impl\Func\C2KGs.cpp" />
+    <ClCompile Include="Impl\Func\CommonAlgoClcBase.cpp" />
+    <ClCompile Include="Impl\Func\CommonAlgoGsBase.cpp" />
+    <ClCompile Include="Impl\Func\CommonApiBase.cpp" />
+    <ClCompile Include="Impl\Func\DMRClc.cpp" />
+    <ClCompile Include="Impl\Func\DMRGs.cpp" />
+    <ClCompile Include="Impl\Func\DMRLossBase.cpp" />
+    <ClCompile Include="Impl\Func\GsmBase.cpp" />
+    <ClCompile Include="Impl\Func\ILossFunc.cpp" />
+    <ClCompile Include="..\..\..\..\..\..\Common\UtilFn\LteUtility.cpp" />
+    <ClCompile Include="..\..\LTE\Cal\Impl\FuncBase.cpp" />
+    <ClCompile Include="..\..\LTE\Cal\Impl\ApiBase.cpp" />
+    <ClCompile Include="..\..\LTE\Cal\Impl\FuncCenter.cpp" />
+    <ClCompile Include="Impl\Func\LteClc.cpp" />
+    <ClCompile Include="Impl\Func\LteClcV4.cpp" />
+    <ClCompile Include="Impl\Func\LteClcV5.cpp" />
+    <ClCompile Include="Impl\Func\LteGs.cpp" />
+    <ClCompile Include="Impl\Func\LteGsV4.cpp" />
+    <ClCompile Include="Impl\Func\LteGsV5.cpp" />
+    <ClCompile Include="Impl\Func\ModV3Nv.cpp" />
+    <ClCompile Include="Impl\Func\ModV4Nv.cpp" />
+    <ClCompile Include="Impl\Func\ModV5Nv.cpp" />
+    <ClCompile Include="Impl\Func\NalClcV4.cpp" />
+    <ClCompile Include="Impl\Func\NalClcV5.cpp" />
+    <ClCompile Include="Impl\Func\NalGsV4.cpp" />
+    <ClCompile Include="Impl\Func\NalGsV5.cpp" />
+    <ClCompile Include="Impl\Func\Nv.cpp" />
+    <ClCompile Include="Impl\Func\FileConfig.cpp" />
+    <ClCompile Include="Impl\Func\NalClc.cpp" />
+    <ClCompile Include="Impl\Func\NalGs.cpp" />
+    <ClCompile Include="Impl\Func\AlgoGsRx.cpp" />
+    <ClCompile Include="Impl\Func\AlgoGsTx.cpp" />
+    <ClCompile Include="Impl\Func\AlgoClcRx.cpp" />
+    <ClCompile Include="Impl\Func\AlgoClcTx.cpp" />
+    <ClCompile Include="Impl\Func\GsmClc.cpp" />
+    <ClCompile Include="Impl\Func\GsmGs.cpp" />
+    <ClCompile Include="..\..\..\..\..\..\Common\UtilFn\gsmUtility.cpp" />
+    <ClCompile Include="Impl\Func\NvHelper.cpp" />
+    <ClCompile Include="Impl\Func\NvHelperV4.cpp" />
+    <ClCompile Include="Impl\Func\NvHelperV5.cpp" />
+    <ClCompile Include="Impl\Func\TdClc.cpp" />
+    <ClCompile Include="Impl\Func\TdGs.cpp" />
+    <ClCompile Include="Impl\Func\TDMeasurePower.cpp" />
+    <ClCompile Include="..\..\..\..\..\..\Common\UtilFn\TDUtility.cpp" />
+    <ClCompile Include="Impl\Func\WcdmaBase.cpp" />
+    <ClCompile Include="Impl\Func\WcdmaClc.cpp" />
+    <ClCompile Include="Impl\Func\WcdmaGs.cpp" />
+    <ClCompile Include="..\..\..\..\..\..\Common\UtilFn\wcdmaUtility.cpp" />
+    <ClCompile Include="Impl\Func\WCNCLC.cpp" />
+    <ClCompile Include="Impl\Func\WCNGS.cpp" />
+    <ClCompile Include="Impl\Func\WCNMeasurePower.cpp" />
+    <ClCompile Include="Impl\ImpBase.cpp" />
+    <ClCompile Include="..\..\..\..\Common\SpatBase.cpp" />
+    <ClCompile Include="Impl\ImportGoldenSample.cpp" />
+    <ClCompile Include="Impl\ImportGoldenSampleV4.cpp" />
+    <ClCompile Include="Impl\ImportGoldenSampleV5.cpp" />
+    <ClCompile Include="Impl\MakeGS.cpp" />
+    <ClCompile Include="Impl\CalcLS.cpp" />
+    <ClCompile Include="Impl\ActionApp.cpp" />
+    <ClCompile Include="..\..\..\..\Common\ApiExport.cpp" />
+    <ClCompile Include="..\..\..\..\Common\SpatRuntimeClass.cpp" />
+    <ClCompile Include="Impl\MakeGS_Cellular.cpp" />
+    <ClCompile Include="Impl\MakeGS_CellularV4.cpp" />
+    <ClCompile Include="Impl\MakeGS_CellularV5.cpp" />
+    <ClCompile Include="Impl\MakeGS_Marlin2.cpp" />
+    <ClCompile Include="Impl\MakeGS_Marlin3.cpp" />
+    <ClCompile Include="Impl\MakeGS_Umw266x.cpp" />
+    <ClCompile Include="Impl\NrAlgoClc.cpp" />
+    <ClCompile Include="Impl\NrAlgoClcV4.cpp" />
+    <ClCompile Include="Impl\NrAlgoClcV5.cpp" />
+    <ClCompile Include="Impl\NrAlgoGs.cpp" />
+    <ClCompile Include="Impl\NrAlgoGsV4.cpp" />
+    <ClCompile Include="Impl\NrAlgoGsV5.cpp" />
+    <ClCompile Include="Impl\NrApi.cpp" />
+    <ClCompile Include="Impl\NrApiV4.cpp" />
+    <ClCompile Include="Impl\NrApiV5.cpp" />
+    <ClCompile Include="Impl\NrFileConfig.cpp" />
+    <ClCompile Include="stdafx.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Create</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Create</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\..\Common\UtilFn\AppVer.cpp" />
+    <ClCompile Include="..\..\..\..\..\..\Common\lock\CLocks.cpp" />
+    <ClCompile Include="..\..\..\..\..\..\Common\lock\CSimpleLock.cpp" />
+    <ClCompile Include="..\..\..\..\..\..\Common\dlmalloc\dlmalloc.c">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+      </PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+      </PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\Common\ExtraLogFile.cpp" />
+    <ClCompile Include="..\..\..\..\..\..\Common\UtilFn\LogFile.cpp" />
+    <ClCompile Include="..\..\..\..\Common\ModeSwitch.cpp" />
+    <ClCompile Include="..\..\..\..\Common\ScanConfig.cpp" />
+    <ClCompile Include="..\..\..\..\..\..\Common\Tr\Tr.cpp" />
+    <ClCompile Include="..\..\..\..\..\..\Common\UtilFn\Utility.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="XML\CalcLS.XML" />
+    <None Include="XML\CalcLS_Cellular.XML" />
+    <None Include="XML\CalcLS_DMR.XML" />
+    <None Include="XML\CalcLS_Marlin2.XML" />
+    <None Include="XML\CalcLS_Marlin3.XML" />
+    <None Include="XML\Dummy.XML" />
+    <None Include="XML\ExportGoldenSample.XML" />
+    <None Include="XML\ImportGoldenSample.XML" />
+    <None Include="XML\MakeGS.XML">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="ReadMe.txt" />
+    <None Include="XML\MakeGS_Cellular.XML" />
+    <None Include="XML\MakeGS_Cellular_Roc1.XML" />
+    <None Include="XML\MakeGS_DMR.XML" />
+    <None Include="XML\MakeGS_Marlin2.XML" />
+    <None Include="XML\MakeGS_Marlin3.XML">
+      <SubType>Designer</SubType>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="LossCal.rc" />
+  </ItemGroup>
+  <ItemGroup>
+    <Xml Include="XML\CalcLS_Umw266x.XML" />
+    <Xml Include="XML\MakeGS_Umw266x.XML" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+  <ProjectExtensions>
+    <VisualStudio>
+      <UserProperties RESOURCE_FILE="LossCal.rc" />
+    </VisualStudio>
+  </ProjectExtensions>
+</Project>

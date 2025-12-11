@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Node>
+  <Option>
+    <Min_RSSI_Number Description="读Rssi">-85</Min_RSSI_Number>
+</Option>
+  <Param>
+  </Param>
+</Node>

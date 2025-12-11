@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Node>
+	<Option>
+		<AT Description="Specifies AT command to send">AT</AT>
+		<Response Description="Expected Response">OK</Response>
+	</Option>
+	<Param>
+    <TimeOut Description="Unit: ms">1000</TimeOut>
+    <TotalTimeOut Description="Unit: ms">20000</TotalTimeOut>
+  </Param>
+</Node>

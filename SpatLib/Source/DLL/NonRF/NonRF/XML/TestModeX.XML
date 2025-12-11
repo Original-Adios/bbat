@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Node>
+   <Option>
+     <TestMode Control="ComboBox" Elements="Automatically,GSM Calibration,GSM Signal,WCDMA Calibration,WCDMA Signal,LTE Calibration,LTE Signal,NR Calibration,NR Signal,TD Calibration,TD Signal,C2K Calibration,C2K Signal,BBAT,Download" Description="Automatically: 根据测试项目配置自动检测测试模式">Automatically</TestMode>
+     <TimeOut Description="进模式超时 0: INFINITE, Unit: ms.">30000</TimeOut>
+     <UsingOtherPort Control="CheckBox">0</UsingOtherPort>
+     <ChargeOff Control="CheckBox" Description="进模式后关闭充电">0</ChargeOff>
+   </Option>
+   <Param>
+     <SleepTime Description="进模式之后等待时间, Unit: ms">0</SleepTime>
+     <MaxRetryCount>3</MaxRetryCount>
+     <RestartOption Control="ComboBox" Elements="Automatically,Command,Customized,NpiDevice" Description="Automatically: 若有程控电源，则优先控制电源重启&#x0D;&#x0A;Command:下发命令重启&#x0D;&#x0A;Customized:用户自定义重启">Automatically</RestartOption>
+     <SearchFixedBCCH Control="CheckBox" Description="信令模式下固定搜网频点">1</SearchFixedBCCH>
+     <LoadSN Control="CheckBox" Description="Load SN1">1</LoadSN>
+     <EnterModeAuth Control="CheckBox" Description="Cal Auth">0</EnterModeAuth>
+	 <UsbSpeedType Control="ComboBox" Elements="NotSet Speed,High Speed,Full Speed," Description="Usb 速率">NotSet Speed</UsbSpeedType>
+     <VBUS Description="双路电源下VBUS的电压">5</VBUS>
+  </Param>
+</Node>

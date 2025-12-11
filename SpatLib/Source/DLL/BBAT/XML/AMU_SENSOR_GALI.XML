@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Node>
+  <Option>
+    <Accelerometer Control="CheckBox" Description="加速传感器测试">1</Accelerometer>
+    <Magnetic Control="CheckBox" Description="磁传感器测试">0</Magnetic>
+    <Gyroscope Control="CheckBox" Description="陀螺仪传感器">0</Gyroscope>
+</Option>
+  <Param>
+  </Param>
+</Node>

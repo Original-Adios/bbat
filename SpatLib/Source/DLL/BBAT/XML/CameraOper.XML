@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Node>
+  <Option>
+    <Camera_Open Control="CheckBox" Description="打开摄像头">0</Camera_Open>
+    <Camera_Close Control="CheckBox" Description="关闭摄像头">0</Camera_Close>
+	  <MCU Control="CheckBox" Description="关闭摄像头">0</MCU>
+</Option>
+  <Param>
+  </Param>
+</Node>

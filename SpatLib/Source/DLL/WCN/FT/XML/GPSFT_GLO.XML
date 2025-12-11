@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Node>
+    <Option>
+        <!-->Ant Description="Ant port" Control="ComboBox" Elements="0:WIFI,1:GPS">0</Ant-->
+        <RfSwitchAnt Description="Outer Customer Rf Switch Ant">0</RfSwitchAnt>
+        <SingleWave Property="InVisible" Description="Force SinglWave Play With KW620 or KV120" Control="CheckBox">0</SingleWave>
+        <GLO_L1 Description="Band Type GLO_L1, ANT1 PORT" >
+            <ANT Property="InVisible" Control="ComboBox" Elements="None,1stANT,2ndANT"  Description="Channel enable">1stANT</ANT>
+            <ModuleWave>
+                <CN0 Description="GPS CN0 measurement" Control="CheckBox">1</CN0>
+                <Clock_Drift Description="GPS Clock Drift measurement" Control="CheckBox">1</Clock_Drift>
+                <Freq_Drift Property="InVisible" Description="GPS Freq Drift measurement" Control="CheckBox">0</Freq_Drift>
+            </ModuleWave>
+            <CWWave>
+                <CNR Description="GPS CNR measurement" Control="ComboBox" Elements="0:None,1:CNR,2:ModuleCNR">1</CNR>
+                <FreqOffset Description="GPS Freq offset measurement" Control="CheckBox">1</FreqOffset>
+            </CWWave>
+        </GLO_L1>
+    </Option>
+    <Param>
+        <CmdSleep Description="Unit: millisecond">1000</CmdSleep>
+        <RetryCount Description="Query SNR status times">3</RetryCount>
+        <GLO_L1 Description="Band Type GLO_L1 Specification" >
+            <MODULATION>
+                <RXLVL Description="Rx level for SNR and Clock Drift. Unit:dBm">-130</RXLVL>
+                <Specification Description="Configure the test tolerance and specification">
+                    <CN0 Description="CN0 Tolerance">40,44</CN0>
+                    <Clock_Drift Description="Clock Drift Tolerance,Unit:Hz">-3000,3000</Clock_Drift>
+                    <Freq_Drift Property="InVisible" Description="Freq Drift Tolerance,Unit:Hz">-7.5,7.5</Freq_Drift>
+                </Specification>
+            </MODULATION>
+            <CW>
+                <RXLVL Description="Rx level for C2N. Unit:dBm">-115</RXLVL>
+                <Specification Description="Configure the test tolerance and specification">
+                    <CNR Description="C2N Tolerance">53,58</CNR>
+                    <FreqOffset Description="FreqOffset Tolerance,Unit:Hz">-3000,3000</FreqOffset>
+                </Specification>
+            </CW>
+        </GLO_L1>
+    </Param>
+</Node>

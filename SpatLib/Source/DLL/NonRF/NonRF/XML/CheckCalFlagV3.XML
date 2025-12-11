@@ -1,0 +1,565 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Node>
+  <Option>
+    <CaliFlag>
+      <AFC Control="CheckBox">0</AFC>
+      <GSM>
+        <EGSM900>
+          <AGC Control="CheckBox">0</AGC>
+          <APC Control="CheckBox">0</APC>
+          <FT Control="CheckBox">0</FT>
+        </EGSM900>
+        <DCS1800>
+          <AGC Control="CheckBox">0</AGC>
+          <APC Control="CheckBox">0</APC>
+          <FT Control="CheckBox">0</FT>
+        </DCS1800>
+        <PCS1900>
+          <AGC Control="CheckBox">0</AGC>
+          <APC Control="CheckBox">0</APC>
+          <FT Control="CheckBox">0</FT>
+        </PCS1900>
+        <GSM850>
+          <AGC Control="CheckBox">0</AGC>
+          <APC Control="CheckBox">0</APC>
+          <FT Control="CheckBox">0</FT>
+        </GSM850>
+      </GSM>
+      <EDGE>
+         <CALI Control="CheckBox">0</CALI>
+         <FT Control="CheckBox">0</FT>
+      </EDGE>
+      <TD>
+        <AGC Control="CheckBox">0</AGC>
+        <APC Control="CheckBox">0</APC>
+        <FT Control="CheckBox">0</FT>
+      </TD>
+      <WCDMA>
+        <BANDI>
+          <CALI Control="CheckBox">0</CALI>
+        </BANDI>
+        <BANDII>
+          <CALI Control="CheckBox">0</CALI>
+        </BANDII>
+        <BANDIII>
+          <CALI Control="CheckBox">0</CALI>
+        </BANDIII>
+        <BANDIV>
+          <CALI Control="CheckBox">0</CALI>
+        </BANDIV>
+        <BANDV>
+          <CALI Control="CheckBox">0</CALI>
+        </BANDV>
+        <BANDVI>
+          <CALI Control="CheckBox">0</CALI>
+        </BANDVI>
+        <BANDVIII>
+          <CALI Control="CheckBox">0</CALI>
+        </BANDVIII>
+        <BANDXIX>
+          <CALI Control="CheckBox">0</CALI>
+        </BANDXIX>
+        <FT Control="CheckBox">0</FT>
+      </WCDMA>
+      <LTE Control="BoolComboBox" CtrlNode="Mode">
+        <Mode Control="ComboBox" Elements="Auto,Manual">Auto</Mode>
+        <Band1>
+          <CALI Control="CheckBox">0</CALI>
+          <FT Control="CheckBox">0</FT>
+          <Antenna Control="CheckBox">0</Antenna>
+        </Band1>
+        <Band2>
+          <CALI Control="CheckBox">0</CALI>
+          <FT Control="CheckBox">0</FT>
+          <Antenna Control="CheckBox">0</Antenna>
+        </Band2>
+        <Band3>
+          <CALI Control="CheckBox">0</CALI>
+          <FT Control="CheckBox">0</FT>
+          <Antenna Control="CheckBox">0</Antenna>
+        </Band3>
+        <Band4>
+          <CALI Control="CheckBox">0</CALI>
+          <FT Control="CheckBox">0</FT>
+          <Antenna Control="CheckBox">0</Antenna>
+        </Band4>
+        <Band5>
+          <CALI Control="CheckBox">0</CALI>
+          <FT Control="CheckBox">0</FT>
+          <Antenna Control="CheckBox">0</Antenna>
+        </Band5>
+        <Band6>
+          <CALI Control="CheckBox">0</CALI>
+          <FT Control="CheckBox">0</FT>
+          <Antenna Control="CheckBox">0</Antenna>
+        </Band6>
+        <Band7>
+          <CALI Control="CheckBox">0</CALI>
+          <FT Control="CheckBox">0</FT>
+          <Antenna Control="CheckBox">0</Antenna>
+        </Band7>
+        <Band8>
+          <CALI Control="CheckBox">0</CALI>
+          <FT Control="CheckBox">0</FT>
+          <Antenna Control="CheckBox">0</Antenna>
+        </Band8>
+        <Band9>
+          <CALI Control="CheckBox">0</CALI>
+          <FT Control="CheckBox">0</FT>
+          <Antenna Control="CheckBox">0</Antenna>
+        </Band9>
+        <Band10>
+          <CALI Control="CheckBox">0</CALI>
+          <FT Control="CheckBox">0</FT>
+          <Antenna Control="CheckBox">0</Antenna>
+        </Band10>
+        <Band11>
+          <CALI Control="CheckBox">0</CALI>
+          <FT Control="CheckBox">0</FT>
+          <Antenna Control="CheckBox">0</Antenna>
+        </Band11>
+        <Band12>
+          <CALI Control="CheckBox">0</CALI>
+          <FT Control="CheckBox">0</FT>
+          <Antenna Control="CheckBox">0</Antenna>
+        </Band12>
+        <Band13>
+          <CALI Control="CheckBox">0</CALI>
+          <FT Control="CheckBox">0</FT>
+          <Antenna Control="CheckBox">0</Antenna>
+        </Band13>
+        <Band14>
+          <CALI Control="CheckBox">0</CALI>
+          <FT Control="CheckBox">0</FT>
+          <Antenna Control="CheckBox">0</Antenna>
+        </Band14>
+        <Band17>
+          <CALI Control="CheckBox">0</CALI>
+          <FT Control="CheckBox">0</FT>
+          <Antenna Control="CheckBox">0</Antenna>
+        </Band17>
+        <Band18>
+          <CALI Control="CheckBox">0</CALI>
+          <FT Control="CheckBox">0</FT>
+          <Antenna Control="CheckBox">0</Antenna>
+        </Band18>
+        <Band19>
+          <CALI Control="CheckBox">0</CALI>
+          <FT Control="CheckBox">0</FT>
+          <Antenna Control="CheckBox">0</Antenna>
+        </Band19>
+        <Band20>
+          <CALI Control="CheckBox">0</CALI>
+          <FT Control="CheckBox">0</FT>
+          <Antenna Control="CheckBox">0</Antenna>
+        </Band20>
+        <Band21>
+          <CALI Control="CheckBox">0</CALI>
+          <FT Control="CheckBox">0</FT>
+          <Antenna Control="CheckBox">0</Antenna>
+        </Band21>
+        <Band22>
+          <CALI Control="CheckBox">0</CALI>
+          <FT Control="CheckBox">0</FT>
+          <Antenna Control="CheckBox">0</Antenna>
+        </Band22>
+        <Band23>
+          <CALI Control="CheckBox">0</CALI>
+          <FT Control="CheckBox">0</FT>
+          <Antenna Control="CheckBox">0</Antenna>
+        </Band23>
+        <Band24>
+          <CALI Control="CheckBox">0</CALI>
+          <FT Control="CheckBox">0</FT>
+          <Antenna Control="CheckBox">0</Antenna>
+        </Band24>
+        <Band25>
+          <CALI Control="CheckBox">0</CALI>
+          <FT Control="CheckBox">0</FT>
+          <Antenna Control="CheckBox">0</Antenna>
+        </Band25>
+        <Band26>
+          <CALI Control="CheckBox">0</CALI>
+          <FT Control="CheckBox">0</FT>
+          <Antenna Control="CheckBox">0</Antenna>
+        </Band26>
+        <Band28>
+          <CALI Control="CheckBox">0</CALI>
+          <FT Control="CheckBox">0</FT>
+          <Antenna Control="CheckBox">0</Antenna>
+        </Band28>
+        <Band30>
+          <CALI Control="CheckBox">0</CALI>
+          <FT Control="CheckBox">0</FT>
+          <Antenna Control="CheckBox">0</Antenna>
+        </Band30>
+        <Band31>
+          <CALI Control="CheckBox">0</CALI>
+          <FT Control="CheckBox">0</FT>
+          <Antenna Control="CheckBox">0</Antenna>
+        </Band31>
+        <Band32>
+          <CALI Control="CheckBox">0</CALI>
+          <FT Control="CheckBox">0</FT>
+          <Antenna Control="CheckBox">0</Antenna>
+        </Band32>
+        <Band33>
+          <CALI Control="CheckBox">0</CALI>
+          <FT Control="CheckBox">0</FT>
+          <Antenna Control="CheckBox">0</Antenna>
+        </Band33>
+        <Band34>
+          <CALI Control="CheckBox">0</CALI>
+          <FT Control="CheckBox">0</FT>
+          <Antenna Control="CheckBox">0</Antenna>
+        </Band34>
+        <Band35>
+          <CALI Control="CheckBox">0</CALI>
+          <FT Control="CheckBox">0</FT>
+          <Antenna Control="CheckBox">0</Antenna>
+        </Band35>
+        <Band36>
+          <CALI Control="CheckBox">0</CALI>
+          <FT Control="CheckBox">0</FT>
+          <Antenna Control="CheckBox">0</Antenna>
+        </Band36>
+        <Band37>
+          <CALI Control="CheckBox">0</CALI>
+          <FT Control="CheckBox">0</FT>
+          <Antenna Control="CheckBox">0</Antenna>
+        </Band37>
+        <Band38>
+          <CALI Control="CheckBox">0</CALI>
+          <FT Control="CheckBox">0</FT>
+          <Antenna Control="CheckBox">0</Antenna>
+        </Band38>
+        <Band39>
+          <CALI Control="CheckBox">0</CALI>
+          <FT Control="CheckBox">0</FT>
+          <Antenna Control="CheckBox">0</Antenna>
+        </Band39>
+        <Band40>
+          <CALI Control="CheckBox">0</CALI>
+          <FT Control="CheckBox">0</FT>
+          <Antenna Control="CheckBox">0</Antenna>
+        </Band40>
+        <Band41>
+          <CALI Control="CheckBox">0</CALI>
+          <FT Control="CheckBox">0</FT>
+          <Antenna Control="CheckBox">0</Antenna>
+        </Band41>
+        <Band42>
+          <CALI Control="CheckBox">0</CALI>
+          <FT Control="CheckBox">0</FT>
+          <Antenna Control="CheckBox">0</Antenna>
+        </Band42>
+        <Band43>
+          <CALI Control="CheckBox">0</CALI>
+          <FT Control="CheckBox">0</FT>
+          <Antenna Control="CheckBox">0</Antenna>
+        </Band43>
+        <Band45>
+          <CALI Control="CheckBox">0</CALI>
+          <FT Control="CheckBox">0</FT>
+          <Antenna Control="CheckBox">0</Antenna>
+        </Band45>
+        <Band59>
+          <CALI Control="CheckBox">0</CALI>
+          <FT Control="CheckBox">0</FT>
+          <Antenna Control="CheckBox">0</Antenna>
+        </Band59>
+        <Band41_100M>
+          <CALI Control="CheckBox">0</CALI>
+          <FT Control="CheckBox">0</FT>
+          <Antenna Control="CheckBox">0</Antenna>
+        </Band41_100M>
+        <Band28A>
+          <CALI Control="CheckBox">0</CALI>
+          <FT Control="CheckBox">0</FT>
+          <Antenna Control="CheckBox">0</Antenna>
+        </Band28A>
+        <Band28B>
+          <CALI Control="CheckBox">0</CALI>
+          <FT Control="CheckBox">0</FT>
+          <Antenna Control="CheckBox">0</Antenna>
+        </Band28B>
+        <Band3_35M>
+          <CALI Control="CheckBox">0</CALI>
+          <FT Control="CheckBox">0</FT>
+          <Antenna Control="CheckBox">0</Antenna>
+        </Band3_35M>
+        <Band66>
+          <CALI Control="CheckBox">0</CALI>
+          <FT Control="CheckBox">0</FT>
+          <Antenna Control="CheckBox">0</Antenna>
+        </Band66>
+        <Band41_120M>
+          <CALI Control="CheckBox">0</CALI>
+          <FT Control="CheckBox">0</FT>
+          <Antenna Control="CheckBox">0</Antenna>
+        </Band41_120M>
+        <Band41_140M>
+          <CALI Control="CheckBox">0</CALI>
+          <FT Control="CheckBox">0</FT>
+          <Antenna Control="CheckBox">0</Antenna>
+        </Band41_140M>
+        <Band41_160M>
+          <CALI Control="CheckBox">0</CALI>
+          <FT Control="CheckBox">0</FT>
+          <Antenna Control="CheckBox">0</Antenna>
+        </Band41_160M>
+        <Band62>
+          <CALI Control="CheckBox">0</CALI>
+          <FT Control="CheckBox">0</FT>
+          <Antenna Control="CheckBox">0</Antenna>
+        </Band62>
+        <Band39_SRRC>
+          <CALI Control="CheckBox">0</CALI>
+          <FT Control="CheckBox">0</FT>
+          <Antenna Control="CheckBox">0</Antenna>
+        </Band39_SRRC>
+        <Band40_SRRC>
+          <CALI Control="CheckBox">0</CALI>
+          <FT Control="CheckBox">0</FT>
+          <Antenna Control="CheckBox">0</Antenna>
+        </Band40_SRRC>
+        <Band41_SRRC>
+          <CALI Control="CheckBox">0</CALI>
+          <FT Control="CheckBox">0</FT>
+          <Antenna Control="CheckBox">0</Antenna>
+        </Band41_SRRC>
+        <Band41_65M>
+          <CALI Control="CheckBox">0</CALI>
+          <FT Control="CheckBox">0</FT>
+          <Antenna Control="CheckBox">0</Antenna>
+        </Band41_65M>
+        <Band1_20M>
+          <CALI Control="CheckBox">0</CALI>
+          <FT Control="CheckBox">0</FT>
+          <Antenna Control="CheckBox">0</Antenna>
+        </Band1_20M>
+        <Band3_20M>
+          <CALI Control="CheckBox">0</CALI>
+          <FT Control="CheckBox">0</FT>
+          <Antenna Control="CheckBox">0</Antenna>
+        </Band3_20M>
+        <Band71>
+          <CALI Control="CheckBox">0</CALI>
+          <FT Control="CheckBox">0</FT>
+          <Antenna Control="CheckBox">0</Antenna>
+        </Band71>
+        <Band26_25M>
+          <CALI Control="CheckBox">0</CALI>
+          <FT Control="CheckBox">0</FT>
+          <Antenna Control="CheckBox">0</Antenna>
+        </Band26_25M>
+      </LTE>
+		<NR Control="BoolComboBox" CtrlNode="Mode">
+			<Mode Control="ComboBox" Elements="Auto,Manual">Auto</Mode>
+			<Band1>
+				<CALI Control="CheckBox">0</CALI>
+				<FT Control="CheckBox">0</FT>
+				<Antenna Control="CheckBox">0</Antenna>
+			</Band1>
+			<Band2>
+				<CALI Control="CheckBox">0</CALI>
+				<FT Control="CheckBox">0</FT>
+				<Antenna Control="CheckBox">0</Antenna>
+			</Band2>
+			<Band3>
+				<CALI Control="CheckBox">0</CALI>
+				<FT Control="CheckBox">0</FT>
+				<Antenna Control="CheckBox">0</Antenna>
+			</Band3>
+			<Band5>
+				<CALI Control="CheckBox">0</CALI>
+				<FT Control="CheckBox">0</FT>
+				<Antenna Control="CheckBox">0</Antenna>
+			</Band5>
+			<Band7>
+				<CALI Control="CheckBox">0</CALI>
+				<FT Control="CheckBox">0</FT>
+				<Antenna Control="CheckBox">0</Antenna>
+			</Band7>
+			<Band8>
+				<CALI Control="CheckBox">0</CALI>
+				<FT Control="CheckBox">0</FT>
+				<Antenna Control="CheckBox">0</Antenna>
+			</Band8>
+			<Band20>
+				<CALI Control="CheckBox">0</CALI>
+				<FT Control="CheckBox">0</FT>
+				<Antenna Control="CheckBox">0</Antenna>
+			</Band20>
+			<Band26>
+				<CALI Control="CheckBox">0</CALI>
+				<FT Control="CheckBox">0</FT>
+				<Antenna Control="CheckBox">0</Antenna>
+			</Band26>
+			<Band28>
+				<CALI Control="CheckBox">0</CALI>
+				<FT Control="CheckBox">0</FT>
+				<Antenna Control="CheckBox">0</Antenna>
+			</Band28>
+			<Band38>
+				<CALI Control="CheckBox">0</CALI>
+				<FT Control="CheckBox">0</FT>
+				<Antenna Control="CheckBox">0</Antenna>
+			</Band38>
+			<Band40>
+				<CALI Control="CheckBox">0</CALI>
+				<FT Control="CheckBox">0</FT>
+				<Antenna Control="CheckBox">0</Antenna>
+			</Band40>
+			<Band41>
+				<CALI Control="CheckBox">0</CALI>
+				<FT Control="CheckBox">0</FT>
+				<Antenna Control="CheckBox">0</Antenna>
+			</Band41>
+			<Band50>
+				<CALI Control="CheckBox">0</CALI>
+				<FT Control="CheckBox">0</FT>
+				<Antenna Control="CheckBox">0</Antenna>
+			</Band50>
+			<Band51>
+				<CALI Control="CheckBox">0</CALI>
+				<FT Control="CheckBox">0</FT>
+				<Antenna Control="CheckBox">0</Antenna>
+			</Band51>
+			<Band66>
+				<CALI Control="CheckBox">0</CALI>
+				<FT Control="CheckBox">0</FT>
+				<Antenna Control="CheckBox">0</Antenna>
+			</Band66>
+			<Band70>
+				<CALI Control="CheckBox">0</CALI>
+				<FT Control="CheckBox">0</FT>
+				<Antenna Control="CheckBox">0</Antenna>
+			</Band70>
+			<Band71>
+				<CALI Control="CheckBox">0</CALI>
+				<FT Control="CheckBox">0</FT>
+				<Antenna Control="CheckBox">0</Antenna>
+			</Band71>
+			<Band74>
+				<CALI Control="CheckBox">0</CALI>
+				<FT Control="CheckBox">0</FT>
+				<Antenna Control="CheckBox">0</Antenna>
+			</Band74>
+			<Band75>
+				<CALI Control="CheckBox">0</CALI>
+				<FT Control="CheckBox">0</FT>
+				<Antenna Control="CheckBox">0</Antenna>
+			</Band75>
+			<Band76>
+				<CALI Control="CheckBox">0</CALI>
+				<FT Control="CheckBox">0</FT>
+				<Antenna Control="CheckBox">0</Antenna>
+			</Band76>
+			<Band77>
+				<CALI Control="CheckBox">0</CALI>
+				<FT Control="CheckBox">0</FT>
+				<Antenna Control="CheckBox">0</Antenna>
+			</Band77>
+			<Band78>
+				<CALI Control="CheckBox">0</CALI>
+				<FT Control="CheckBox">0</FT>
+				<Antenna Control="CheckBox">0</Antenna>
+			</Band78>
+			<Band79>
+				<CALI Control="CheckBox">0</CALI>
+				<FT Control="CheckBox">0</FT>
+				<Antenna Control="CheckBox">0</Antenna>
+			</Band79>
+			<Band80>
+				<CALI Control="CheckBox">0</CALI>
+				<FT Control="CheckBox">0</FT>
+				<Antenna Control="CheckBox">0</Antenna>
+			</Band80>
+			<Band81>
+				<CALI Control="CheckBox">0</CALI>
+				<FT Control="CheckBox">0</FT>
+				<Antenna Control="CheckBox">0</Antenna>
+			</Band81>
+			<Band82>
+				<CALI Control="CheckBox">0</CALI>
+				<FT Control="CheckBox">0</FT>
+				<Antenna Control="CheckBox">0</Antenna>
+			</Band82>
+			<Band83>
+				<CALI Control="CheckBox">0</CALI>
+				<FT Control="CheckBox">0</FT>
+				<Antenna Control="CheckBox">0</Antenna>
+			</Band83>
+			<Band84>
+				<CALI Control="CheckBox">0</CALI>
+				<FT Control="CheckBox">0</FT>
+				<Antenna Control="CheckBox">0</Antenna>
+			</Band84>
+			<Band86>
+				<CALI Control="CheckBox">0</CALI>
+				<FT Control="CheckBox">0</FT>
+				<Antenna Control="CheckBox">0</Antenna>
+			</Band86>
+			<Band97>
+				<CALI Control="CheckBox">0</CALI>
+				<FT Control="CheckBox">0</FT>
+				<Antenna Control="CheckBox">0</Antenna>
+			</Band97>
+			<Band102>
+				<CALI Control="CheckBox">0</CALI>
+				<FT Control="CheckBox">0</FT>
+				<Antenna Control="CheckBox">0</Antenna>
+			</Band102>
+			<Band104>
+				<CALI Control="CheckBox">0</CALI>
+				<FT Control="CheckBox">0</FT>
+				<Antenna Control="CheckBox">0</Antenna>
+			</Band104>
+			<Band28A>
+				<CALI Control="CheckBox">0</CALI>
+				<FT Control="CheckBox">0</FT>
+				<Antenna Control="CheckBox">0</Antenna>
+			</Band28A>
+			<Band28B>
+				<CALI Control="CheckBox">0</CALI>
+				<FT Control="CheckBox">0</FT>
+				<Antenna Control="CheckBox">0</Antenna>
+			</Band28B>
+      <Band28D>
+        <CALI Control="CheckBox">0</CALI>
+        <FT Control="CheckBox">0</FT>
+        <Antenna Control="CheckBox">0</Antenna>
+      </Band28D>
+			<Band83A>
+				<CALI Control="CheckBox">0</CALI>
+				<FT Control="CheckBox">0</FT>
+				<Antenna Control="CheckBox">0</Antenna>
+			</Band83A>
+			<Band83B>
+				<CALI Control="CheckBox">0</CALI>
+				<FT Control="CheckBox">0</FT>
+				<Antenna Control="CheckBox">0</Antenna>
+			</Band83B>
+			<Band150>
+				<CALI Control="CheckBox">0</CALI>
+				<FT Control="CheckBox">0</FT>
+				<Antenna Control="CheckBox">0</Antenna>
+			</Band150>
+			<Band197>
+				<CALI Control="CheckBox">0</CALI>
+				<FT Control="CheckBox">0</FT>
+				<Antenna Control="CheckBox">0</Antenna>
+			</Band197>
+			<Band198>
+				<CALI Control="CheckBox">0</CALI>
+				<FT Control="CheckBox">0</FT>
+				<Antenna Control="CheckBox">0</Antenna>
+			</Band198>
+		</NR>
+    <Antenna Control="CheckBox">0</Antenna>
+    </CaliFlag>
+  </Option>
+  <Param>
+  </Param>
+</Node>

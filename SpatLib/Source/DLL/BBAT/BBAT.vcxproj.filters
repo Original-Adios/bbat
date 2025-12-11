@@ -1,0 +1,1161 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="02.Impl">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="01.Interface">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="09.RC">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav</Extensions>
+    </Filter>
+    <Filter Include="03.App">
+      <UniqueIdentifier>{a2598ef8-8390-43d4-aeac-2d4853884bba}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="05.Utility">
+      <UniqueIdentifier>{55468ac5-b652-4c2c-9237-df246a1df733}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="04.XML">
+      <UniqueIdentifier>{71dd2092-95af-4876-acb9-d3d4a7b9dd7b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="02.Impl\6760">
+      <UniqueIdentifier>{61243706-24ce-426f-861d-a3ecc48149df}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="02.Impl\RTC">
+      <UniqueIdentifier>{fb49dc2e-c2c7-4db5-9e7e-61071810ffa7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="02.Impl\GPIO">
+      <UniqueIdentifier>{3e3d69ec-87b8-4a1c-a8df-a9651bd0b418}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="02.Impl\UMW5621">
+      <UniqueIdentifier>{cc94609a-fca4-4476-9f72-3d03ab67faf0}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="02.Impl\TYPEC">
+      <UniqueIdentifier>{724f3c21-f51e-4732-bd93-2a27a0447dd6}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="02.Impl\ECELL_5G">
+      <UniqueIdentifier>{824b1b84-4324-4cd3-b1c7-c6eddc3cc9ba}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="02.Impl\GetADC">
+      <UniqueIdentifier>{249bf9d5-4412-447d-9a21-aa49ed865ac3}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="02.Impl\UART0_Test">
+      <UniqueIdentifier>{edb8f874-8f82-4aaf-acd1-508587fc176c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="02.Impl\Relay">
+      <UniqueIdentifier>{b4b399ec-73dc-494c-8845-4ac156b490d2}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="02.Impl\NTC">
+      <UniqueIdentifier>{11cbe046-aedc-4f1b-869a-cc4e21557cb5}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="02.Impl\UWP5865">
+      <UniqueIdentifier>{46f27a38-88de-4cf7-aee0-22a83898f9dd}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="02.Impl\BT">
+      <UniqueIdentifier>{452f157e-91e2-4da7-b2e1-125dffb7be17}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="02.Impl\SIMCARD">
+      <UniqueIdentifier>{c920bc69-6720-423f-9fb0-eb6fa7237b0b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="02.Impl\Charge">
+      <UniqueIdentifier>{ce455bc4-e45f-43ba-be24-18185a2a77e1}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="02.Impl\ChipConnect">
+      <UniqueIdentifier>{9f3e0d06-9586-4af6-a302-5d823f26d994}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="02.Impl\AMU">
+      <UniqueIdentifier>{406201c0-d395-4ca8-8025-e2e629f756f0}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="02.Impl\CheckX">
+      <UniqueIdentifier>{5582aa5b-d715-433d-890a-05ab44735e4f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="02.Impl\Wifi">
+      <UniqueIdentifier>{3357f72d-bd08-471f-864d-9b8401ea134d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="02.Impl\AudioLoop">
+      <UniqueIdentifier>{5ff4c742-1cea-4320-8785-6445585d1cfa}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="02.Impl\B2B">
+      <UniqueIdentifier>{343b6890-11aa-4052-80db-04902eb4f5cd}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="02.Impl\Sensor">
+      <UniqueIdentifier>{25ba0b80-8d1b-4110-8289-ec81144d3aaf}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="02.Impl\MISC">
+      <UniqueIdentifier>{65867209-812d-44d8-8ee5-56f3388536c0}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="02.Impl\Camera">
+      <UniqueIdentifier>{b61bb037-3729-499f-bc5a-6c28133f0b4a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="02.Impl\FM">
+      <UniqueIdentifier>{f1bad180-a559-4b4d-97ff-b17d6f69b4e1}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="02.Impl\MakeCall">
+      <UniqueIdentifier>{eb27b16d-c503-4eb6-b226-0fc067a2d59d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="02.Impl\GPS">
+      <UniqueIdentifier>{f2a82745-a51e-4087-84ef-26c33b2f9a07}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="02.Impl\AFCB">
+      <UniqueIdentifier>{67ac689d-f4e0-424d-aa56-5b9bf1d81517}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="02.Impl\AFCB\Keypad">
+      <UniqueIdentifier>{52610c0e-bfad-4fe3-9254-994ce4e7ebe0}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="02.Impl\AFCB\LCD">
+      <UniqueIdentifier>{9e22a086-50a5-4996-b6be-b74a56d8ae23}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="02.Impl\NFC">
+      <UniqueIdentifier>{fe9cbdf0-a7fb-4d1b-b2db-251cb88df680}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="02.Impl\AFCB\KeypadLight">
+      <UniqueIdentifier>{9178286c-0859-4b6b-9da0-be5e5bc9b4dc}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="02.Impl\AFCB\LED">
+      <UniqueIdentifier>{1780a27f-79bc-4882-95f1-de3509dc809a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="02.Impl\AFCB\ADC">
+      <UniqueIdentifier>{dd6cde0e-9b66-4583-bb86-ff6a63113d00}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="02.Impl\AFCB\Vibrator">
+      <UniqueIdentifier>{9fb17097-29e7-4292-9224-5c921e6e7cb8}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="02.Impl\ORCA">
+      <UniqueIdentifier>{6d6301c6-78aa-48d4-b908-6a83aa4f2218}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="02.Impl\AFCB\ChargeCurrent">
+      <UniqueIdentifier>{459e65fe-e06d-4fec-b981-249d321304f6}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="02.Impl\AFCB\COB">
+      <UniqueIdentifier>{ed8aaacc-9b6a-41b0-8760-8ec120bae821}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="02.Impl\AFCB\Headset">
+      <UniqueIdentifier>{3414baaa-1132-4cbc-b01f-a197c1550002}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="02.Impl\AFCB\Headset\Headset">
+      <UniqueIdentifier>{49c76108-5cca-4a61-8837-5fd31aa3342d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="02.Impl\AFCB\Headset\TypeCHeadset">
+      <UniqueIdentifier>{4aa1653a-93e7-4a46-abf8-821548d8566d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="02.Impl\AFCB\Headset\NoMicHeadset">
+      <UniqueIdentifier>{b7a59d82-f590-4fb8-b093-00214efeae65}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="02.Impl\AFCB\GPIO">
+      <UniqueIdentifier>{5f827827-4f88-497a-8d31-a87d267c67e7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="02.Impl\OpenPort">
+      <UniqueIdentifier>{33c65b76-93c8-4651-8a0c-e2f786bcce70}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="02.Impl\AudioLoop\Action">
+      <UniqueIdentifier>{998469a7-a4d2-4373-bd52-07323fef6bab}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="02.Impl\AudioLoop\Algo">
+      <UniqueIdentifier>{9de19a65-83d7-4e10-bf1a-947c63a68b1f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="02.Impl\AFCB\GPIO\Algo">
+      <UniqueIdentifier>{a7466d6d-b3ee-40d4-b27e-9eb11a6e4092}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="02.Impl\AFCB\GPIO\Impl">
+      <UniqueIdentifier>{4a565ba6-a91e-43cf-8911-ce8547f1971b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="02.Impl\AFCB\OTG">
+      <UniqueIdentifier>{2270fd4f-a901-411c-9a54-9f42c2388a34}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="02.Impl\PCIE">
+      <UniqueIdentifier>{b43fa4e8-662b-4d08-a7a7-cdb3a0363a4b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="02.Impl\GPIO_Smp">
+      <UniqueIdentifier>{ec19a794-b6e2-48f5-948c-34e5f57c276e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="02.Impl\Ethernet">
+      <UniqueIdentifier>{fdc70ea6-27b8-41a2-b4d3-deda9540a311}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="02.Impl\EnableArmlog">
+      <UniqueIdentifier>{0c97d7f3-70a3-4ff5-b4b6-dfbf631201bb}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="02.Impl\AFCB\AfcbControl">
+      <UniqueIdentifier>{dfb5f310-b553-4306-baac-04e5253dc561}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="resource.h">
+      <Filter>09.RC</Filter>
+    </ClInclude>
+    <ClInclude Include="stdafx.h">
+      <Filter>09.RC</Filter>
+    </ClInclude>
+    <ClInclude Include="targetver.h">
+      <Filter>09.RC</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\Common\Include\SpatLibExport.h">
+      <Filter>01.Interface</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Common\SpatBase.h">
+      <Filter>02.Impl</Filter>
+    </ClInclude>
+    <ClInclude Include="Impl\ImpBase.h">
+      <Filter>02.Impl</Filter>
+    </ClInclude>
+    <ClInclude Include="Impl\ActionApp.h">
+      <Filter>03.App</Filter>
+    </ClInclude>
+    <ClInclude Include="Impl\ActionList.h">
+      <Filter>03.App</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Common\SpatRuntimeClass.h">
+      <Filter>03.App</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\Common\UtilFn\AppVer.h">
+      <Filter>05.Utility</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\Common\lock\CLocks.h">
+      <Filter>05.Utility</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\Common\lock\CSimpleLock.h">
+      <Filter>05.Utility</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\Common\Tr\Tr.h">
+      <Filter>05.Utility</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Common\ModeSwitch.h">
+      <Filter>03.App</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\Common\UtilFn\Utility.h">
+      <Filter>05.Utility</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\Common\UtilFn\LogFile.h">
+      <Filter>05.Utility</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\Common\dlmalloc\dlmalloc.h">
+      <Filter>05.Utility</Filter>
+    </ClInclude>
+    <ClInclude Include="Impl\6760\UIS6760_GPIO.h">
+      <Filter>02.Impl\6760</Filter>
+    </ClInclude>
+    <ClInclude Include="Impl\RTC\RTC.h">
+      <Filter>02.Impl\RTC</Filter>
+    </ClInclude>
+    <ClInclude Include="Impl\GPIO\GPIO.h">
+      <Filter>02.Impl\GPIO</Filter>
+    </ClInclude>
+    <ClInclude Include="Impl\GPIO\GPIO_Read.h">
+      <Filter>02.Impl\GPIO</Filter>
+    </ClInclude>
+    <ClInclude Include="Impl\GPIO\GPIO_Write.h">
+      <Filter>02.Impl\GPIO</Filter>
+    </ClInclude>
+    <ClInclude Include="Impl\UMW5621\UMW5621_ALL_PULL.h">
+      <Filter>02.Impl\UMW5621</Filter>
+    </ClInclude>
+    <ClInclude Include="Impl\UMW5621\UMW5621_ALL_Set.h">
+      <Filter>02.Impl\UMW5621</Filter>
+    </ClInclude>
+    <ClInclude Include="Impl\UMW5621\UMW5621_Single_Pull.h">
+      <Filter>02.Impl\UMW5621</Filter>
+    </ClInclude>
+    <ClInclude Include="Impl\UMW5621\UMW5621_Single_SetInput.h">
+      <Filter>02.Impl\UMW5621</Filter>
+    </ClInclude>
+    <ClInclude Include="Impl\UMW5621\UMW5621_Uart_Test.h">
+      <Filter>02.Impl\UMW5621</Filter>
+    </ClInclude>
+    <ClInclude Include="Impl\UMW5621\UMW5621_GPIO_PINTEST.h">
+      <Filter>02.Impl\UMW5621</Filter>
+    </ClInclude>
+    <ClInclude Include="Impl\TYPEC\TYPEC_CCTEST.h">
+      <Filter>02.Impl\TYPEC</Filter>
+    </ClInclude>
+    <ClInclude Include="Impl\6760\UIS6760_RESET.h">
+      <Filter>02.Impl\6760</Filter>
+    </ClInclude>
+    <ClInclude Include="Impl\ECELL_5G\Ecell_Test_Lan.h">
+      <Filter>02.Impl\ECELL_5G</Filter>
+    </ClInclude>
+    <ClInclude Include="Impl\ADC\Get_ADC.h">
+      <Filter>02.Impl\GetADC</Filter>
+    </ClInclude>
+    <ClInclude Include="Impl\UART0\UART0_Test.h">
+      <Filter>02.Impl\UART0_Test</Filter>
+    </ClInclude>
+    <ClInclude Include="Impl\Relay\Relay.h">
+      <Filter>02.Impl\Relay</Filter>
+    </ClInclude>
+    <ClInclude Include="Impl\NTC\NTC.h">
+      <Filter>02.Impl\NTC</Filter>
+    </ClInclude>
+    <ClInclude Include="Impl\ECELL_5G\InterConnect.h">
+      <Filter>02.Impl\ECELL_5G</Filter>
+    </ClInclude>
+    <ClInclude Include="Impl\ECELL_5G\ShortCircuit.h">
+      <Filter>02.Impl\ECELL_5G</Filter>
+    </ClInclude>
+    <ClInclude Include="Impl\ECELL_5G\Keypad_Relay.h">
+      <Filter>02.Impl\ECELL_5G</Filter>
+    </ClInclude>
+    <ClInclude Include="Impl\ECELL_5G\5G_ADC.h">
+      <Filter>02.Impl\ECELL_5G</Filter>
+    </ClInclude>
+    <ClInclude Include="Impl\ADC\RGB_ADC.h">
+      <Filter>02.Impl\GetADC</Filter>
+    </ClInclude>
+    <ClInclude Include="Impl\NTC\NTC_ADC.h">
+      <Filter>02.Impl\NTC</Filter>
+    </ClInclude>
+    <ClInclude Include="Impl\UWP5865\UMP5865_GPIO_GetLevel.h">
+      <Filter>02.Impl\UWP5865</Filter>
+    </ClInclude>
+    <ClInclude Include="Impl\UWP5865\UMP5865_GPIO_SetLevel.h">
+      <Filter>02.Impl\UWP5865</Filter>
+    </ClInclude>
+    <ClInclude Include="Impl\UWP5865\UMP5865_Keypad.h">
+      <Filter>02.Impl\UWP5865</Filter>
+    </ClInclude>
+    <ClInclude Include="Impl\UWP5865\UMP5865_MIC.h">
+      <Filter>02.Impl\UWP5865</Filter>
+    </ClInclude>
+    <ClInclude Include="Impl\BT\BT.h">
+      <Filter>02.Impl\BT</Filter>
+    </ClInclude>
+    <ClInclude Include="Impl\SIMCARD\SIMCARD.h">
+      <Filter>02.Impl\SIMCARD</Filter>
+    </ClInclude>
+    <ClInclude Include="Impl\Charge\FastCharge.h">
+      <Filter>02.Impl\Charge</Filter>
+    </ClInclude>
+    <ClInclude Include="Impl\ChipConnect\ChipConnect.h">
+      <Filter>02.Impl\ChipConnect</Filter>
+    </ClInclude>
+    <ClInclude Include="Impl\ADC\891XADC.h">
+      <Filter>02.Impl\GetADC</Filter>
+    </ClInclude>
+    <ClInclude Include="Impl\AMU\AMU_Camera.h">
+      <Filter>02.Impl\AMU</Filter>
+    </ClInclude>
+    <ClInclude Include="Impl\AMU\AMU_Keypad.h">
+      <Filter>02.Impl\AMU</Filter>
+    </ClInclude>
+    <ClInclude Include="Impl\AMU\AMU_LED.h">
+      <Filter>02.Impl\AMU</Filter>
+    </ClInclude>
+    <ClInclude Include="Impl\AMU\AMU_Sensor_Calibration.h">
+      <Filter>02.Impl\AMU</Filter>
+    </ClInclude>
+    <ClInclude Include="Impl\AMU\AMU_Sensor_Test.h">
+      <Filter>02.Impl\AMU</Filter>
+    </ClInclude>
+    <ClInclude Include="Impl\CheckX\CheckXFastCharge.h">
+      <Filter>02.Impl\CheckX</Filter>
+    </ClInclude>
+    <ClInclude Include="Impl\Wifi\Wifi.h">
+      <Filter>02.Impl\Wifi</Filter>
+    </ClInclude>
+    <ClInclude Include="Impl\Sensor\MagSensor.h">
+      <Filter>02.Impl\Sensor</Filter>
+    </ClInclude>
+    <ClInclude Include="Impl\AudioLoop\AudioLoop.h">
+      <Filter>02.Impl\AudioLoop</Filter>
+    </ClInclude>
+    <ClInclude Include="Impl\B2B\B2B.h">
+      <Filter>02.Impl\B2B</Filter>
+    </ClInclude>
+    <ClInclude Include="Impl\MISC\MISC.h">
+      <Filter>02.Impl\MISC</Filter>
+    </ClInclude>
+    <ClInclude Include="Impl\GPS\GPS.h">
+      <Filter>02.Impl\GPS</Filter>
+    </ClInclude>
+    <ClInclude Include="Impl\Camera\Camera.h">
+      <Filter>02.Impl\Camera</Filter>
+    </ClInclude>
+    <ClInclude Include="Impl\FM\FM.h">
+      <Filter>02.Impl\FM</Filter>
+    </ClInclude>
+    <ClInclude Include="Impl\NFC\NFC.h">
+      <Filter>02.Impl\NFC</Filter>
+    </ClInclude>
+    <ClInclude Include="Impl\MakeCall\MakeCall.h">
+      <Filter>02.Impl\MakeCall</Filter>
+    </ClInclude>
+    <ClInclude Include="Impl\Sensor\AccSensor.h">
+      <Filter>02.Impl\Sensor</Filter>
+    </ClInclude>
+    <ClInclude Include="Impl\Sensor\ProSensor.h">
+      <Filter>02.Impl\Sensor</Filter>
+    </ClInclude>
+    <ClInclude Include="Impl\Sensor\LigSensor.h">
+      <Filter>02.Impl\Sensor</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\Common\Include\AFCB_G3.h">
+      <Filter>01.Interface</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\Common\Include\AFCBoard.h">
+      <Filter>01.Interface</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\Common\Include\ControlBoardDefine.h">
+      <Filter>01.Interface</Filter>
+    </ClInclude>
+    <ClInclude Include="Impl\Sensor\TempSensor.h">
+      <Filter>02.Impl\Sensor</Filter>
+    </ClInclude>
+    <ClInclude Include="Impl\Keypad\Keypad.h">
+      <Filter>02.Impl\AFCB\Keypad</Filter>
+    </ClInclude>
+    <ClInclude Include="Impl\LCD_AFCB\LCD_AFCB.h">
+      <Filter>02.Impl\AFCB\LCD</Filter>
+    </ClInclude>
+    <ClInclude Include="Impl\KeypadLight_AFCB\KeypadLight_AFCB.h">
+      <Filter>02.Impl\AFCB\KeypadLight</Filter>
+    </ClInclude>
+    <ClInclude Include="Impl\LED_AFCB\LED_AFCB.h">
+      <Filter>02.Impl\AFCB\LED</Filter>
+    </ClInclude>
+    <ClInclude Include="Impl\ADC_AFCB\AdcAfcb.h">
+      <Filter>02.Impl\AFCB\ADC</Filter>
+    </ClInclude>
+    <ClInclude Include="Impl\Vibrator_AFCB\VibratorAfcb.h">
+      <Filter>02.Impl\AFCB\Vibrator</Filter>
+    </ClInclude>
+    <ClInclude Include="Impl\ORCA\ORCA.h">
+      <Filter>02.Impl\ORCA</Filter>
+    </ClInclude>
+    <ClInclude Include="Impl\ChargeCurrent\ChargeCurrentAfcb.h">
+      <Filter>02.Impl\AFCB\ChargeCurrent</Filter>
+    </ClInclude>
+    <ClInclude Include="Impl\COB_AFCB\CobAfcb.h">
+      <Filter>02.Impl\AFCB\COB</Filter>
+    </ClInclude>
+    <ClInclude Include="Impl\AudioLoop\AudioLoopG3Mic.h">
+      <Filter>02.Impl\AudioLoop</Filter>
+    </ClInclude>
+    <ClInclude Include="Impl\Sensor\HallSensor.h">
+      <Filter>02.Impl\Sensor</Filter>
+    </ClInclude>
+    <ClInclude Include="Impl\Headset\Headset.h">
+      <Filter>02.Impl\AFCB\Headset\Headset</Filter>
+    </ClInclude>
+    <ClInclude Include="Impl\Headset\TypeC_Headset.h">
+      <Filter>02.Impl\AFCB\Headset\TypeCHeadset</Filter>
+    </ClInclude>
+    <ClInclude Include="Impl\Headset\NoMicHeadset.h">
+      <Filter>02.Impl\AFCB\Headset\NoMicHeadset</Filter>
+    </ClInclude>
+    <ClInclude Include="Impl\Sensor\PressureSensor.h">
+      <Filter>02.Impl\Sensor</Filter>
+    </ClInclude>
+    <ClInclude Include="Impl\Camera\CameraOper.h">
+      <Filter>02.Impl\Camera</Filter>
+    </ClInclude>
+    <ClInclude Include="Impl\PowerOff\PowerOff.h">
+      <Filter>02.Impl\OpenPort</Filter>
+    </ClInclude>
+    <ClInclude Include="Impl\BBAT_GlobelDef.h">
+      <Filter>02.Impl</Filter>
+    </ClInclude>
+    <ClInclude Include="Impl\LED_AFCB\ImpLedAfcb.h">
+      <Filter>02.Impl\AFCB\LED</Filter>
+    </ClInclude>
+    <ClInclude Include="Impl\AudioLoop\AudioLoopAfcb.h">
+      <Filter>02.Impl\AudioLoop\Algo</Filter>
+    </ClInclude>
+    <ClInclude Include="Impl\AudioLoop\AudioLoopPA.h">
+      <Filter>02.Impl\AudioLoop\Algo</Filter>
+    </ClInclude>
+    <ClInclude Include="Impl\AudioLoop\ImpAudioLoop.h">
+      <Filter>02.Impl\AudioLoop\Action</Filter>
+    </ClInclude>
+    <ClInclude Include="Impl\AudioLoop\AudioLoopBase.h">
+      <Filter>02.Impl\AudioLoop\Action</Filter>
+    </ClInclude>
+    <ClInclude Include="Impl\OpenPort\EnterMode.h">
+      <Filter>02.Impl\OpenPort</Filter>
+    </ClInclude>
+    <ClInclude Include="Impl\GPIO_AFCB\GpioAfcbSet.h">
+      <Filter>02.Impl\AFCB\GPIO\Algo</Filter>
+    </ClInclude>
+    <ClInclude Include="Impl\GPIO_AFCB\GpioAfcbBase.h">
+      <Filter>02.Impl\AFCB\GPIO\Algo</Filter>
+    </ClInclude>
+    <ClInclude Include="Impl\GPIO_AFCB\GpioAfcbGet.h">
+      <Filter>02.Impl\AFCB\GPIO\Algo</Filter>
+    </ClInclude>
+    <ClInclude Include="Impl\GPIO_AFCB\ImpGpioAfcb.h">
+      <Filter>02.Impl\AFCB\GPIO\Impl</Filter>
+    </ClInclude>
+    <ClInclude Include="Impl\OTG\OTG.h">
+      <Filter>02.Impl\AFCB\OTG</Filter>
+    </ClInclude>
+    <ClInclude Include="Impl\Sensor\OriSensor.h">
+      <Filter>02.Impl\Sensor</Filter>
+    </ClInclude>
+    <ClInclude Include="Impl\Sensor\GyrSensor.h">
+      <Filter>02.Impl\Sensor</Filter>
+    </ClInclude>
+    <ClInclude Include="Impl\Sensor\FingerPrint.h">
+      <Filter>02.Impl\Sensor</Filter>
+    </ClInclude>
+    <ClInclude Include="Impl\PCIE\Pcie.h">
+      <Filter>02.Impl\PCIE</Filter>
+    </ClInclude>
+    <ClInclude Include="Impl\GPIO_Smp\GpioSmpBase.h">
+      <Filter>02.Impl\GPIO_Smp</Filter>
+    </ClInclude>
+    <ClInclude Include="Impl\GPIO_Smp\ImpGpioSmp.h">
+      <Filter>02.Impl\GPIO_Smp</Filter>
+    </ClInclude>
+    <ClInclude Include="Impl\FM\FM_Transmit.h">
+      <Filter>02.Impl\FM</Filter>
+    </ClInclude>
+    <ClInclude Include="Impl\Sensor\SarSensor.h">
+      <Filter>02.Impl\Sensor</Filter>
+    </ClInclude>
+    <ClInclude Include="Impl\Ethernet\Ethernet.h">
+      <Filter>02.Impl\Ethernet</Filter>
+    </ClInclude>
+    <ClInclude Include="Impl\EnableArmlog\EnableArmlog.h">
+      <Filter>02.Impl\EnableArmlog</Filter>
+    </ClInclude>
+    <ClInclude Include="Impl\Ethernet\PreEthernet.h">
+      <Filter>02.Impl\Ethernet</Filter>
+    </ClInclude>
+    <ClInclude Include="Impl\GPIO_AFCB\ImpGpioAfcbControl.h">
+      <Filter>02.Impl\AFCB\GPIO\Impl</Filter>
+    </ClInclude>
+    <ClInclude Include="Impl\GPIO_AFCB\GpioAfcbControl.h">
+      <Filter>02.Impl\AFCB\GPIO\Algo</Filter>
+    </ClInclude>
+    <ClInclude Include="Impl\AfcbControl\AfcbCtrlVol.h">
+      <Filter>02.Impl\AFCB\AfcbControl</Filter>
+    </ClInclude>
+    <ClInclude Include="Impl\Vibrator_AFCB\VibratorPa.h">
+      <Filter>02.Impl\AFCB\Vibrator</Filter>
+    </ClInclude>
+    <ClInclude Include="Impl\BT\McuBT.h">
+      <Filter>02.Impl\BT</Filter>
+    </ClInclude>
+    <ClInclude Include="Impl\LCD_AFCB\MCU_LCD_AFCB.h">
+      <Filter>02.Impl\AFCB\LCD</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="stdafx.cpp">
+      <Filter>09.RC</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Common\SpatBase.cpp">
+      <Filter>02.Impl</Filter>
+    </ClCompile>
+    <ClCompile Include="Impl\ImpBase.cpp">
+      <Filter>02.Impl</Filter>
+    </ClCompile>
+    <ClCompile Include="Impl\ActionApp.cpp">
+      <Filter>03.App</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Common\SpatRuntimeClass.cpp">
+      <Filter>03.App</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\Common\UtilFn\AppVer.cpp">
+      <Filter>05.Utility</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\Common\lock\CLocks.cpp">
+      <Filter>05.Utility</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\Common\lock\CSimpleLock.cpp">
+      <Filter>05.Utility</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\Common\Tr\Tr.cpp">
+      <Filter>05.Utility</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Common\ModeSwitch.cpp">
+      <Filter>03.App</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\Common\UtilFn\Utility.cpp">
+      <Filter>05.Utility</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Common\ApiExport.cpp">
+      <Filter>03.App</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\Common\UtilFn\LogFile.cpp">
+      <Filter>05.Utility</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\Common\dlmalloc\dlmalloc.c">
+      <Filter>05.Utility</Filter>
+    </ClCompile>
+    <ClCompile Include="Impl\6760\UIS6760_GPIO.cpp">
+      <Filter>02.Impl\6760</Filter>
+    </ClCompile>
+    <ClCompile Include="Impl\RTC\RTC.cpp">
+      <Filter>02.Impl\RTC</Filter>
+    </ClCompile>
+    <ClCompile Include="Impl\GPIO\GPIO.cpp">
+      <Filter>02.Impl\GPIO</Filter>
+    </ClCompile>
+    <ClCompile Include="Impl\GPIO\GPIO_Read.cpp">
+      <Filter>02.Impl\GPIO</Filter>
+    </ClCompile>
+    <ClCompile Include="Impl\GPIO\GPIO_Write.cpp">
+      <Filter>02.Impl\GPIO</Filter>
+    </ClCompile>
+    <ClCompile Include="Impl\UMW5621\UMW5621_ALL_PULL.cpp">
+      <Filter>02.Impl\UMW5621</Filter>
+    </ClCompile>
+    <ClCompile Include="Impl\UMW5621\UMW5621_ALL_Set.cpp">
+      <Filter>02.Impl\UMW5621</Filter>
+    </ClCompile>
+    <ClCompile Include="Impl\UMW5621\UMW5621_Single_Pull.cpp">
+      <Filter>02.Impl\UMW5621</Filter>
+    </ClCompile>
+    <ClCompile Include="Impl\UMW5621\UMW5621_Single_SetInput.cpp">
+      <Filter>02.Impl\UMW5621</Filter>
+    </ClCompile>
+    <ClCompile Include="Impl\UMW5621\UMW5621_Uart_Test.cpp">
+      <Filter>02.Impl\UMW5621</Filter>
+    </ClCompile>
+    <ClCompile Include="Impl\UMW5621\UMW5621_GPIO_PINTEST.cpp">
+      <Filter>02.Impl\UMW5621</Filter>
+    </ClCompile>
+    <ClCompile Include="Impl\TYPEC\TYPEC_CCTEST.cpp">
+      <Filter>02.Impl\TYPEC</Filter>
+    </ClCompile>
+    <ClCompile Include="Impl\6760\UIS6760_RESET.cpp">
+      <Filter>02.Impl\6760</Filter>
+    </ClCompile>
+    <ClCompile Include="Impl\ECELL_5G\Ecell_Test_Lan.cpp">
+      <Filter>02.Impl\ECELL_5G</Filter>
+    </ClCompile>
+    <ClCompile Include="Impl\ADC\Get_ADC.cpp">
+      <Filter>02.Impl\GetADC</Filter>
+    </ClCompile>
+    <ClCompile Include="Impl\UART0\UART0_Test.cpp">
+      <Filter>02.Impl\UART0_Test</Filter>
+    </ClCompile>
+    <ClCompile Include="Impl\Relay\Relay.cpp">
+      <Filter>02.Impl\Relay</Filter>
+    </ClCompile>
+    <ClCompile Include="Impl\NTC\NTC.cpp">
+      <Filter>02.Impl\NTC</Filter>
+    </ClCompile>
+    <ClCompile Include="Impl\ECELL_5G\InterConnect.cpp">
+      <Filter>02.Impl\ECELL_5G</Filter>
+    </ClCompile>
+    <ClCompile Include="Impl\ECELL_5G\ShortCircuit.cpp">
+      <Filter>02.Impl\ECELL_5G</Filter>
+    </ClCompile>
+    <ClCompile Include="Impl\ECELL_5G\Keypad_Relay.cpp">
+      <Filter>02.Impl\ECELL_5G</Filter>
+    </ClCompile>
+    <ClCompile Include="Impl\ECELL_5G\5G_ADC.cpp">
+      <Filter>02.Impl\ECELL_5G</Filter>
+    </ClCompile>
+    <ClCompile Include="Impl\ADC\RGB_ADC.cpp">
+      <Filter>02.Impl\GetADC</Filter>
+    </ClCompile>
+    <ClCompile Include="Impl\NTC\NTC_ADC.cpp">
+      <Filter>02.Impl\NTC</Filter>
+    </ClCompile>
+    <ClCompile Include="Impl\UWP5865\UMP5865_GPIO_GetLevel.cpp">
+      <Filter>02.Impl\UWP5865</Filter>
+    </ClCompile>
+    <ClCompile Include="Impl\UWP5865\UMP5865_GPIO_SetLevel.cpp">
+      <Filter>02.Impl\UWP5865</Filter>
+    </ClCompile>
+    <ClCompile Include="Impl\UWP5865\UMP5865_Keypad.cpp">
+      <Filter>02.Impl\UWP5865</Filter>
+    </ClCompile>
+    <ClCompile Include="Impl\UWP5865\UMP5865_MIC.cpp">
+      <Filter>02.Impl\UWP5865</Filter>
+    </ClCompile>
+    <ClCompile Include="Impl\BT\BT.cpp">
+      <Filter>02.Impl\BT</Filter>
+    </ClCompile>
+    <ClCompile Include="Impl\SIMCARD\SIMCARD.cpp">
+      <Filter>02.Impl\SIMCARD</Filter>
+    </ClCompile>
+    <ClCompile Include="Impl\Charge\FastCharge.cpp">
+      <Filter>02.Impl\Charge</Filter>
+    </ClCompile>
+    <ClCompile Include="Impl\ChipConnect\ChipConnect.cpp">
+      <Filter>02.Impl\ChipConnect</Filter>
+    </ClCompile>
+    <ClCompile Include="Impl\ADC\891XADC.cpp">
+      <Filter>02.Impl\GetADC</Filter>
+    </ClCompile>
+    <ClCompile Include="Impl\AMU\AMU_Camera.cpp">
+      <Filter>02.Impl\AMU</Filter>
+    </ClCompile>
+    <ClCompile Include="Impl\AMU\AMU_Keypad.cpp">
+      <Filter>02.Impl\AMU</Filter>
+    </ClCompile>
+    <ClCompile Include="Impl\AMU\AMU_LED.cpp">
+      <Filter>02.Impl\AMU</Filter>
+    </ClCompile>
+    <ClCompile Include="Impl\AMU\AMU_Sensor_Calibration.cpp">
+      <Filter>02.Impl\AMU</Filter>
+    </ClCompile>
+    <ClCompile Include="Impl\AMU\AMU_Sensor_Test.cpp">
+      <Filter>02.Impl\AMU</Filter>
+    </ClCompile>
+    <ClCompile Include="Impl\CheckX\CheckXFastCharge.cpp">
+      <Filter>02.Impl\CheckX</Filter>
+    </ClCompile>
+    <ClCompile Include="Impl\Wifi\Wifi.cpp">
+      <Filter>02.Impl\Wifi</Filter>
+    </ClCompile>
+    <ClCompile Include="Impl\Sensor\MagSensor.cpp">
+      <Filter>02.Impl\Sensor</Filter>
+    </ClCompile>
+    <ClCompile Include="Impl\AudioLoop\AudioLoop.cpp">
+      <Filter>02.Impl\AudioLoop</Filter>
+    </ClCompile>
+    <ClCompile Include="Impl\B2B\B2B.cpp">
+      <Filter>02.Impl\B2B</Filter>
+    </ClCompile>
+    <ClCompile Include="Impl\MISC\MISC.cpp">
+      <Filter>02.Impl\MISC</Filter>
+    </ClCompile>
+    <ClCompile Include="Impl\GPS\GPS.cpp">
+      <Filter>02.Impl\GPS</Filter>
+    </ClCompile>
+    <ClCompile Include="Impl\Camera\Camera.cpp">
+      <Filter>02.Impl\Camera</Filter>
+    </ClCompile>
+    <ClCompile Include="Impl\FM\FM.cpp">
+      <Filter>02.Impl\FM</Filter>
+    </ClCompile>
+    <ClCompile Include="Impl\NFC\NFC.cpp">
+      <Filter>02.Impl\NFC</Filter>
+    </ClCompile>
+    <ClCompile Include="Impl\MakeCall\MakeCall.cpp">
+      <Filter>02.Impl\MakeCall</Filter>
+    </ClCompile>
+    <ClCompile Include="Impl\Sensor\AccSensor.cpp">
+      <Filter>02.Impl\Sensor</Filter>
+    </ClCompile>
+    <ClCompile Include="Impl\Sensor\ProSensor.cpp">
+      <Filter>02.Impl\Sensor</Filter>
+    </ClCompile>
+    <ClCompile Include="Impl\Sensor\LigSensor.cpp">
+      <Filter>02.Impl\Sensor</Filter>
+    </ClCompile>
+    <ClCompile Include="Impl\Sensor\TempSensor.cpp">
+      <Filter>02.Impl\Sensor</Filter>
+    </ClCompile>
+    <ClCompile Include="Impl\Keypad\Keypad.cpp">
+      <Filter>02.Impl\AFCB\Keypad</Filter>
+    </ClCompile>
+    <ClCompile Include="Impl\LCD_AFCB\LCD_AFCB.cpp">
+      <Filter>02.Impl\AFCB\LCD</Filter>
+    </ClCompile>
+    <ClCompile Include="Impl\KeypadLight_AFCB\KeypadLight_AFCB.cpp">
+      <Filter>02.Impl\AFCB\KeypadLight</Filter>
+    </ClCompile>
+    <ClCompile Include="Impl\LED_AFCB\LED_AFCB.cpp">
+      <Filter>02.Impl\AFCB\LED</Filter>
+    </ClCompile>
+    <ClCompile Include="Impl\ADC_AFCB\AdcAfcb.cpp">
+      <Filter>02.Impl\AFCB\ADC</Filter>
+    </ClCompile>
+    <ClCompile Include="Impl\Vibrator_AFCB\VibratorAfcb.cpp">
+      <Filter>02.Impl\AFCB\Vibrator</Filter>
+    </ClCompile>
+    <ClCompile Include="Impl\ORCA\ORCA.cpp">
+      <Filter>02.Impl\ORCA</Filter>
+    </ClCompile>
+    <ClCompile Include="Impl\ChargeCurrent\ChargeCurrentAfcb.cpp">
+      <Filter>02.Impl\AFCB\ChargeCurrent</Filter>
+    </ClCompile>
+    <ClCompile Include="Impl\COB_AFCB\CobAfcb.cpp">
+      <Filter>02.Impl\AFCB\COB</Filter>
+    </ClCompile>
+    <ClCompile Include="Impl\AudioLoop\AudioLoopG3Mic.cpp">
+      <Filter>02.Impl\AudioLoop</Filter>
+    </ClCompile>
+    <ClCompile Include="Impl\Sensor\HallSensor.cpp">
+      <Filter>02.Impl\Sensor</Filter>
+    </ClCompile>
+    <ClCompile Include="Impl\Headset\Headset.cpp">
+      <Filter>02.Impl\AFCB\Headset\Headset</Filter>
+    </ClCompile>
+    <ClCompile Include="Impl\Headset\TypeC_Headset.cpp">
+      <Filter>02.Impl\AFCB\Headset\TypeCHeadset</Filter>
+    </ClCompile>
+    <ClCompile Include="Impl\Headset\NoMicHeadset.cpp">
+      <Filter>02.Impl\AFCB\Headset\NoMicHeadset</Filter>
+    </ClCompile>
+    <ClCompile Include="Impl\Sensor\PressureSensor.cpp">
+      <Filter>02.Impl\Sensor</Filter>
+    </ClCompile>
+    <ClCompile Include="Impl\Camera\CameraOper.cpp">
+      <Filter>02.Impl\Camera</Filter>
+    </ClCompile>
+    <ClCompile Include="Impl\PowerOff\PowerOff.cpp">
+      <Filter>02.Impl\OpenPort</Filter>
+    </ClCompile>
+    <ClCompile Include="Impl\LED_AFCB\ImpLedAfcb.cpp">
+      <Filter>02.Impl\AFCB\LED</Filter>
+    </ClCompile>
+    <ClCompile Include="Impl\AudioLoop\AudioLoopAfcb.cpp">
+      <Filter>02.Impl\AudioLoop\Algo</Filter>
+    </ClCompile>
+    <ClCompile Include="Impl\AudioLoop\AudioLoopPA.cpp">
+      <Filter>02.Impl\AudioLoop\Algo</Filter>
+    </ClCompile>
+    <ClCompile Include="Impl\AudioLoop\ImpAudioLoop.cpp">
+      <Filter>02.Impl\AudioLoop\Action</Filter>
+    </ClCompile>
+    <ClCompile Include="Impl\AudioLoop\AudioLoopBase.cpp">
+      <Filter>02.Impl\AudioLoop\Action</Filter>
+    </ClCompile>
+    <ClCompile Include="Impl\OpenPort\EnterMode.cpp">
+      <Filter>02.Impl\OpenPort</Filter>
+    </ClCompile>
+    <ClCompile Include="Impl\GPIO_AFCB\GpioAfcbSet.cpp">
+      <Filter>02.Impl\AFCB\GPIO\Algo</Filter>
+    </ClCompile>
+    <ClCompile Include="Impl\GPIO_AFCB\GpioAfcbBase.cpp">
+      <Filter>02.Impl\AFCB\GPIO\Algo</Filter>
+    </ClCompile>
+    <ClCompile Include="Impl\GPIO_AFCB\GpioAfcbGet.cpp">
+      <Filter>02.Impl\AFCB\GPIO\Algo</Filter>
+    </ClCompile>
+    <ClCompile Include="Impl\GPIO_AFCB\ImpGpioAfcb.cpp">
+      <Filter>02.Impl\AFCB\GPIO\Impl</Filter>
+    </ClCompile>
+    <ClCompile Include="Impl\OTG\OTG.cpp">
+      <Filter>02.Impl\AFCB\OTG</Filter>
+    </ClCompile>
+    <ClCompile Include="Impl\Sensor\OriSensor.cpp">
+      <Filter>02.Impl\Sensor</Filter>
+    </ClCompile>
+    <ClCompile Include="Impl\Sensor\GyrSensor.cpp">
+      <Filter>02.Impl\Sensor</Filter>
+    </ClCompile>
+    <ClCompile Include="Impl\Sensor\FingerPrint.cpp">
+      <Filter>02.Impl\Sensor</Filter>
+    </ClCompile>
+    <ClCompile Include="Impl\PCIE\Pcie.cpp">
+      <Filter>02.Impl\PCIE</Filter>
+    </ClCompile>
+    <ClCompile Include="Impl\GPIO_Smp\GpioSmpBase.cpp">
+      <Filter>02.Impl\GPIO_Smp</Filter>
+    </ClCompile>
+    <ClCompile Include="Impl\GPIO_Smp\ImpGpioSmp.cpp">
+      <Filter>02.Impl\GPIO_Smp</Filter>
+    </ClCompile>
+    <ClCompile Include="Impl\FM\FM_Transmit.cpp">
+      <Filter>02.Impl\FM</Filter>
+    </ClCompile>
+    <ClCompile Include="Impl\Sensor\SarSensor.cpp">
+      <Filter>02.Impl\Sensor</Filter>
+    </ClCompile>
+    <ClCompile Include="Impl\Ethernet\Ethernet.cpp">
+      <Filter>02.Impl\Ethernet</Filter>
+    </ClCompile>
+    <ClCompile Include="Impl\EnableArmlog\EnableArmlog.cpp">
+      <Filter>02.Impl\EnableArmlog</Filter>
+    </ClCompile>
+    <ClCompile Include="Impl\Ethernet\PreEthernet.cpp">
+      <Filter>02.Impl\Ethernet</Filter>
+    </ClCompile>
+    <ClCompile Include="Impl\GPIO_AFCB\ImpGpioAfcbControl.cpp">
+      <Filter>02.Impl\AFCB\GPIO\Impl</Filter>
+    </ClCompile>
+    <ClCompile Include="Impl\GPIO_AFCB\GpioAfcbControl.cpp">
+      <Filter>02.Impl\AFCB\GPIO\Algo</Filter>
+    </ClCompile>
+    <ClCompile Include="Impl\AfcbControl\AfcbCtrlVol.cpp">
+      <Filter>02.Impl\AFCB\AfcbControl</Filter>
+    </ClCompile>
+    <ClCompile Include="Impl\Vibrator_AFCB\VibratorPa.cpp">
+      <Filter>02.Impl\AFCB\Vibrator</Filter>
+    </ClCompile>
+    <ClCompile Include="Impl\BT\McuBT.cpp">
+      <Filter>02.Impl\BT</Filter>
+    </ClCompile>
+    <ClCompile Include="Impl\LCD_AFCB\MCU_LCD_AFCB.cpp">
+      <Filter>02.Impl\AFCB\LCD</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="BBAT.rc">
+      <Filter>09.RC</Filter>
+    </ResourceCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="XML\Dummy.XML">
+      <Filter>04.XML</Filter>
+    </None>
+    <None Include="XML\UIS6760_GPIO.XML">
+      <Filter>04.XML</Filter>
+    </None>
+    <None Include="XML\RTC.XML">
+      <Filter>04.XML</Filter>
+    </None>
+    <None Include="XML\GPIO_WRITE.XML">
+      <Filter>04.XML</Filter>
+    </None>
+    <None Include="XML\GPIO_READ.XML">
+      <Filter>04.XML</Filter>
+    </None>
+    <None Include="XML\UMW5621_GPIO_ALL_PULL.XML">
+      <Filter>04.XML</Filter>
+    </None>
+    <None Include="XML\UMW5621_GPIO_SINGLE_SET_INPUT.XML">
+      <Filter>04.XML</Filter>
+    </None>
+    <None Include="XML\UMW5621_GPIO_ALL_SETINOUT.XML">
+      <Filter>04.XML</Filter>
+    </None>
+    <None Include="XML\UMW5621_GPIO_SINGLE_PULL.XML">
+      <Filter>04.XML</Filter>
+    </None>
+    <None Include="XML\UMW5621_GPIO_PINTEST.XML">
+      <Filter>04.XML</Filter>
+    </None>
+    <None Include="XML\UMW5621_TEST_UART.XML">
+      <Filter>04.XML</Filter>
+    </None>
+    <None Include="XML\TYPEC_CCTEST.XML">
+      <Filter>04.XML</Filter>
+    </None>
+    <None Include="XML\6760_TEST_RESET.XML">
+      <Filter>04.XML</Filter>
+    </None>
+    <None Include="XML\ECELL_5G_TEST_LAN.XML">
+      <Filter>04.XML</Filter>
+    </None>
+    <None Include="XML\BBAT_GET_ADC.XML">
+      <Filter>04.XML</Filter>
+    </None>
+    <None Include="XML\UART0_TEST.XML">
+      <Filter>04.XML</Filter>
+    </None>
+    <None Include="XML\RELAY.XML">
+      <Filter>04.XML</Filter>
+    </None>
+    <None Include="XML\ShortCircuit.XML">
+      <Filter>04.XML</Filter>
+    </None>
+    <None Include="XML\ECELL_KEYPAD_RELAY.XML">
+      <Filter>04.XML</Filter>
+    </None>
+    <None Include="XML\InterConnect.XML">
+      <Filter>04.XML</Filter>
+    </None>
+    <None Include="XML\NTC.XML">
+      <Filter>04.XML</Filter>
+    </None>
+    <None Include="XML\5G_ADC.XML">
+      <Filter>04.XML</Filter>
+    </None>
+    <None Include="XML\BT.XML">
+      <Filter>04.XML</Filter>
+    </None>
+    <None Include="XML\ChipConnect.XML">
+      <Filter>04.XML</Filter>
+    </None>
+    <None Include="XML\FASTCHARGE.XML">
+      <Filter>04.XML</Filter>
+    </None>
+    <None Include="XML\NTC_ADC.XML">
+      <Filter>04.XML</Filter>
+    </None>
+    <None Include="XML\RGB_ADC.XML">
+      <Filter>04.XML</Filter>
+    </None>
+    <None Include="XML\SIMCARD.XML">
+      <Filter>04.XML</Filter>
+    </None>
+    <None Include="XML\UMP5865_GPIO_GETLEVEL.XML">
+      <Filter>04.XML</Filter>
+    </None>
+    <None Include="XML\UMP5865_GPIO_SETLEVEL.XML">
+      <Filter>04.XML</Filter>
+    </None>
+    <None Include="XML\UMP5865_KEYPAD.XML">
+      <Filter>04.XML</Filter>
+    </None>
+    <None Include="XML\UMP5865_MIC.XML">
+      <Filter>04.XML</Filter>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Xml Include="XML\891x_ADC.XML">
+      <Filter>04.XML</Filter>
+    </Xml>
+    <Xml Include="XML\AccSensor.XML">
+      <Filter>04.XML</Filter>
+    </Xml>
+    <Xml Include="XML\AMU_CAMERA.XML">
+      <Filter>04.XML</Filter>
+    </Xml>
+    <Xml Include="XML\AMU_KEYPAD.XML">
+      <Filter>04.XML</Filter>
+    </Xml>
+    <Xml Include="XML\AMU_LED.XML">
+      <Filter>04.XML</Filter>
+    </Xml>
+    <Xml Include="XML\AMU_SENSOR_GALI.XML">
+      <Filter>04.XML</Filter>
+    </Xml>
+    <Xml Include="XML\AMU_SENSOR_TEST.XML">
+      <Filter>04.XML</Filter>
+    </Xml>
+    <Xml Include="XML\AudioLoop.XML">
+      <Filter>04.XML</Filter>
+    </Xml>
+    <Xml Include="XML\B2B.XML">
+      <Filter>04.XML</Filter>
+    </Xml>
+    <Xml Include="XML\Camera.XML">
+      <Filter>04.XML</Filter>
+    </Xml>
+    <Xml Include="XML\CheckXFastCharge.XML">
+      <Filter>04.XML</Filter>
+    </Xml>
+    <Xml Include="XML\FM.XML">
+      <Filter>04.XML</Filter>
+    </Xml>
+    <Xml Include="XML\GPS.XML">
+      <Filter>04.XML</Filter>
+    </Xml>
+    <Xml Include="XML\LigSensor.XML">
+      <Filter>04.XML</Filter>
+    </Xml>
+    <Xml Include="XML\MAGSENSOR.XML">
+      <Filter>04.XML</Filter>
+    </Xml>
+    <Xml Include="XML\MakeCall.XML">
+      <Filter>04.XML</Filter>
+    </Xml>
+    <Xml Include="XML\Misc.XML">
+      <Filter>04.XML</Filter>
+    </Xml>
+    <Xml Include="XML\Nfc.XML">
+      <Filter>04.XML</Filter>
+    </Xml>
+    <Xml Include="XML\Proximity.XML">
+      <Filter>04.XML</Filter>
+    </Xml>
+    <Xml Include="XML\Sensor.XML">
+      <Filter>04.XML</Filter>
+    </Xml>
+    <Xml Include="XML\Wifi.XML">
+      <Filter>04.XML</Filter>
+    </Xml>
+    <Xml Include="XML\TempSensor.XML">
+      <Filter>04.XML</Filter>
+    </Xml>
+    <Xml Include="XML\Keypad.XML">
+      <Filter>04.XML</Filter>
+    </Xml>
+    <Xml Include="XML\LcdAfcb.XML">
+      <Filter>04.XML</Filter>
+    </Xml>
+    <Xml Include="XML\KeypadLightAfcb.XML">
+      <Filter>04.XML</Filter>
+    </Xml>
+    <Xml Include="XML\AdcAfcb.XML">
+      <Filter>04.XML</Filter>
+    </Xml>
+    <Xml Include="XML\LedAfcb.XML">
+      <Filter>04.XML</Filter>
+    </Xml>
+    <Xml Include="XML\VibratorAfcb.XML">
+      <Filter>04.XML</Filter>
+    </Xml>
+    <Xml Include="XML\TypeCHeadset.XML">
+      <Filter>04.XML</Filter>
+    </Xml>
+    <Xml Include="XML\ChargeCurrent.XML">
+      <Filter>04.XML</Filter>
+    </Xml>
+    <Xml Include="XML\ORCA.XML">
+      <Filter>04.XML</Filter>
+    </Xml>
+    <Xml Include="XML\AudioLoopAfcb.XML">
+      <Filter>04.XML</Filter>
+    </Xml>
+    <Xml Include="XML\AudioLoopG3Mic.XML">
+      <Filter>04.XML</Filter>
+    </Xml>
+    <Xml Include="XML\AudioLoopPa.XML">
+      <Filter>04.XML</Filter>
+    </Xml>
+    <Xml Include="XML\CobAfcb.XML">
+      <Filter>04.XML</Filter>
+    </Xml>
+    <Xml Include="XML\HallSensor.XML">
+      <Filter>04.XML</Filter>
+    </Xml>
+    <Xml Include="XML\Headset.XML">
+      <Filter>04.XML</Filter>
+    </Xml>
+    <Xml Include="XML\CameraOper.XML">
+      <Filter>04.XML</Filter>
+    </Xml>
+    <Xml Include="XML\EnterMode.XML">
+      <Filter>04.XML</Filter>
+    </Xml>
+    <Xml Include="XML\GPIO_AFCB.XML">
+      <Filter>04.XML</Filter>
+    </Xml>
+    <Xml Include="XML\Headset_NoMic.XML">
+      <Filter>04.XML</Filter>
+    </Xml>
+    <Xml Include="XML\PreSensor.XML">
+      <Filter>04.XML</Filter>
+    </Xml>
+    <Xml Include="XML\FingerPrint.XML">
+      <Filter>04.XML</Filter>
+    </Xml>
+    <Xml Include="XML\GyrSensor.XML">
+      <Filter>04.XML</Filter>
+    </Xml>
+    <Xml Include="XML\OriSensor.XML">
+      <Filter>04.XML</Filter>
+    </Xml>
+    <Xml Include="XML\OTG.XML">
+      <Filter>04.XML</Filter>
+    </Xml>
+    <Xml Include="XML\Pcie.XML">
+      <Filter>04.XML</Filter>
+    </Xml>
+    <Xml Include="XML\PowerOff.XML">
+      <Filter>04.XML</Filter>
+    </Xml>
+    <Xml Include="XML\GPIO_SMP.XML">
+      <Filter>04.XML</Filter>
+    </Xml>
+    <Xml Include="XML\FM_TRANSMIT.XML">
+      <Filter>04.XML</Filter>
+    </Xml>
+    <Xml Include="XML\SarSensor.XML">
+      <Filter>04.XML</Filter>
+    </Xml>
+    <Xml Include="XML\Ethernet.XML">
+      <Filter>04.XML</Filter>
+    </Xml>
+    <Xml Include="XML\PreEthernet.XML">
+      <Filter>04.XML</Filter>
+    </Xml>
+    <Xml Include="XML\EnableArmlog.XML">
+      <Filter>04.XML</Filter>
+    </Xml>
+    <Xml Include="XML\GPIO_AFCB_CONTROL.XML">
+      <Filter>04.XML</Filter>
+    </Xml>
+    <Xml Include="XML\AfcbCtrlVol.XML">
+      <Filter>04.XML</Filter>
+    </Xml>
+    <Xml Include="XML\VibratorPa.XML">
+      <Filter>04.XML</Filter>
+    </Xml>
+    <Xml Include="XML\BT_MCU.XML">
+      <Filter>04.XML</Filter>
+    </Xml>
+  </ItemGroup>
+</Project>

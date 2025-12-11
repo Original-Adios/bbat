@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Node>
+	<Option>
+	  <SaveFile Control="CheckBox" Description="将读取到的Device ID保存到指定本地文件">1</SaveFile>
+		<FilePath Control="SaveFileDialog" Filter="ID file(*.txt)|*.txt|All Files (*.*)|*.*">..\..\UserData\WidevineDeviceID.txt</FilePath>
+	</Option>
+	<Param>
+  </Param>
+</Node>

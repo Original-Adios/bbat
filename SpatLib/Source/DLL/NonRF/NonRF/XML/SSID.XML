@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Node>
+  <Option>
+    <SSID Description="最大长度:32"></SSID>
+    <PSK Description="密码长度[8 - 64]"></PSK>
+  </Option>
+  <Param>
+  </Param>
+</Node>

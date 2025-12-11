@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Node>
+  <Option>
+    <Mic_Peak_UpSepc Control="EditBox" Description="幅值上限">0</Mic_Peak_UpSepc>
+    <Mic_Peak_DownSepc Control="EditBox" Description="幅值下限">0</Mic_Peak_DownSepc>
+</Option>
+  <Param>
+  </Param>
+</Node>

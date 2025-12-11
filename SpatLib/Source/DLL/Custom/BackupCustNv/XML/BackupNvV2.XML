@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Node>
+	<Option>
+    <Magic Description="Digital">1</Magic>
+    <SavePath Control="FolderDialog"></SavePath>
+	<Item Property="InVisible" >ReadBackupNvV2</Item>
+	</Option>
+	<Param>       
+	</Param>
+</Node>

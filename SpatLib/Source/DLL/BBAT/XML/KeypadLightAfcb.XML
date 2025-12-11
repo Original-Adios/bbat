@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Node>
+  <Option>
+	<TestType Control="ComboBox" Description="测试类型：单颗/多颗测试" Elements="Single,Multi">Multi</TestType>
+	<LightNumber Control="EditBox" Description="Multi时为按键灯数量，Single时为某颗按键灯的ID">6</LightNumber>
+	  <UpSpec Description="电压上限" Control="EditBox">3300</UpSpec>
+	  <DownSpec Description="电压下限" Control="EditBox">500</DownSpec>
+  </Option>
+  <Param>
+	<SingleDelay Control="EditBox" Description="测试类型为Single时读取电压延时，单位ms">500</SingleDelay>
+	<MultiDelay Control="EditBox" Description="测试类型为Multi时读取电压延时，单位ms">500</MultiDelay>
+  </Param>
+</Node>

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Node>
+	<Option>
+    <IP Description="Configure the IP of MES">127.0.0.1</IP>
+    <Port Description="Configure the port of MES">8300</Port>
+	</Option>
+	<Param>
+	</Param>
+</Node>

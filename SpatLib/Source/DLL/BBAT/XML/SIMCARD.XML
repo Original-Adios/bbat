@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Node>
+  <Option>  	
+    <SIMCARD1>
+		<Select Control="CheckBox">1</Select>
+	</SIMCARD1>
+    <SIMCARD2>
+		<Select Control="CheckBox">1</Select>
+	</SIMCARD2>
+    <SIMCARD3>
+		<Select Control="CheckBox">0</Select>
+	</SIMCARD3>
+    <SIMCARD4>
+		<Select Control="CheckBox">0</Select>
+	</SIMCARD4>
+    <TCARD1>
+      <Select Control="CheckBox">1</Select>
+    </TCARD1>
+    <TCARD2>
+      <Select Control="CheckBox">0</Select>
+    </TCARD2>
+	  <FP_SIMCARD_1>
+		  <Select Control="CheckBox">0</Select>
+	  </FP_SIMCARD_1>
+	  <FP_SIMCARD_2>
+		  <Select Control="CheckBox">0</Select>
+	  </FP_SIMCARD_2>
+</Option>
+  <Param>
+  </Param>
+</Node>

@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Node>
+   <Option>
+     <RunMode Control="ComboBox" Elements="NORMAL,GSMCAL,GSMFT,WCDMACAL,WCDMAFT,TDSCAL,TDSFT,LTECAL,LTEFT,NRCAL,NRFT,C2KCAL,C2KFT,BBAT,NATIVEMMI,APKMMI,UPT">BBAT</RunMode>
+   </Option>
+   <Param>
+  </Param>
+</Node>

@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Node>
+    <Option>
+      <ManualPwrLvl Description="Manual Set Power Level" Control="CheckBox">0</ManualPwrLvl>
+      <Band_24G>
+        <Ant1st Description="Channel 0 enable" Control="CheckBox">1</Ant1st>
+        <RfSwitchAnt1st Description="Outer Customer Rf Switch Ant1st">0</RfSwitchAnt1st>
+        <Ant2nd Description="Channel 1 enable" Control="CheckBox">0</Ant2nd>
+        <RfSwitchAnt2nd Description="Outer Customer Rf Switch Ant2nd">0</RfSwitchAnt2nd>
+      </Band_24G>
+      <Band_50G>
+        <Ant1st Description="Channel 0 enable" Control="CheckBox">1</Ant1st>
+        <RfSwitchAnt1st Description="Outer Customer Rf Switch Ant1st">0</RfSwitchAnt1st>
+        <Ant2nd Description="Channel 1 enable" Control="CheckBox">0</Ant2nd>
+        <RfSwitchAnt2nd Description="Outer Customer Rf Switch Ant2nd">0</RfSwitchAnt2nd>
+      </Band_50G>
+    </Option>
+    <Param>
+      <Common>
+        <AvgCount Description="Average Count for Measurements">3</AvgCount>
+      </Common>
+      <Band_24G>
+        <CenChan Description="Center channel 1~13 is available">1,7,13</CenChan>
+        <RefLVL Description="Reference level for tx measure. Unit:dBm">20</RefLVL>
+        <Specification Description="Configure the test tolerance and specification">
+          <TXP Description="TX Power, Unit: dBm">8,23</TXP>
+        </Specification>
+      </Band_24G>
+      <Band_50G>
+          <CenChan Description="Center channel 36~64 100~144 149~161(Channel step:4) is available">36,100,149</CenChan>
+          <RefLVL Description="Reference level for tx measure. Unit:dBm">20</RefLVL>
+          <Specification Description="Configure the test tolerance and specification">
+            <TXP Description="TX Power, Unit: dBm">8,23</TXP>
+          </Specification>
+      </Band_50G>
+    </Param>
+</Node>

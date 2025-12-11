@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Node>
+    <Option>
+      <ArmLog>
+          <Arm Description="Switcher for Armlog" Control="CheckBox">0</Arm>
+      </ArmLog>
+	    <CP2Log>
+          <CP2 Description="Switcher for Cp2log" Control="CheckBox">0</CP2>
+      </CP2Log>
+    </Option>
+    <Param>
+        <TimeOut >
+            <WaitTime Description="Unit: millisecond">60000</WaitTime>
+            <CmdSleep Description="Unit: millisecond">3000</CmdSleep>
+        </TimeOut>
+    </Param>
+</Node>

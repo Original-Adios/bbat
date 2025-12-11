@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Node>
+  <Option>
+</Option>
+  <Param>
+    <ADC Control="Group">
+      <GroupCount>1</GroupCount>
+      <Group1>
+        <Channel>1</Channel>
+        <LowLimit>1000</LowLimit>
+        <UpLimit>3000</UpLimit>
+      </Group1>
+      <Group2>
+        <Channel>2</Channel>
+        <LowLimit>1000</LowLimit>
+        <UpLimit>3000</UpLimit>
+      </Group2>
+      <Group3>
+        <Channel>3</Channel>
+        <LowLimit>1000</LowLimit>
+        <UpLimit>3000</UpLimit>
+      </Group3>
+      <Group4>
+        <Channel>4</Channel>
+        <LowLimit>1000</LowLimit>
+        <UpLimit>3000</UpLimit>
+      </Group4>
+    </ADC>
+  </Param>
+</Node>

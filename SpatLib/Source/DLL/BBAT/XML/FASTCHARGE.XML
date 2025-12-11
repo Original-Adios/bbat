@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Node>
+  <Option>  	
+    <CurrentUpSpec Description="电流上限">0</CurrentUpSpec>
+    <CurrentDownSpec Description="电流下限">0</CurrentDownSpec>
+    <VoltageUpUpSpec Description="电压上限">0</VoltageUpUpSpec>
+    <VoltageDownSpec Description="电压下限">0</VoltageDownSpec>
+</Option>
+  <Param>
+  </Param>
+</Node>

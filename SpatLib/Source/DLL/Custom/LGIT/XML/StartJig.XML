@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Node>
+	<Option>
+    <Port Description="Configure the UART port of JIG">1</Port>
+    <Baudrate Control="ComboBox" Elements="115200" Description="Configure the JIG port baudrate">115200</Baudrate>
+	</Option>
+	<Param>
+	</Param>
+</Node>

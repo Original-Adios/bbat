@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Node>
+  <Option>
+    <Speaker Control="ComboBox" Description="设置Speaker" Elements="MainSpeaker,MainReceiver,Headset">MainSpeaker</Speaker>
+	  <LoopSelect>
+		  <LoopIn Description="G3音频输入通道，Speaker/Sub Speaker/Receiver分别为1/2/3" Control="ComboBox" Elements="1,2,3">1</LoopIn>
+		  <LoopOut Description="G3音频输出通道，Main Mic/Sub Mic分别为1/2" Control="ComboBox" Elements="1,2">1</LoopOut>
+	  </LoopSelect>
+	  <SNR Control="EditBox" Description="配置SNR">20</SNR>
+    <Peak Control="EditBox" Description="配置Peak">100</Peak>
+	</Option>
+	<Param>
+  </Param>
+</Node>

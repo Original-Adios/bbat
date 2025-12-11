@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Node>
+  <Option>  	
+    <UART Description="UART号码">0</UART>
+    <Baudrate Description="波特率">9600</Baudrate>
+    <Relay1>
+		<Relay1 Control="CheckBox" Description="继电器1号是否触发">0</Relay1>
+		<KeyValue1 Description="1号目标键值">124</KeyValue1>
+	</Relay1>
+	<Relay2>
+		<Relay2 Control="CheckBox" Description="继电器2号是否触发">0</Relay2>
+		<KeyValue2 Description="2号目标键值">125</KeyValue2>
+	</Relay2>
+</Option>
+  <Param>
+  </Param>
+</Node>

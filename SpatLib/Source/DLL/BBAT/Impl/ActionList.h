@@ -1,0 +1,115 @@
+﻿
+#include "../resource.h"
+
+#ifdef ACTION
+/*     
+            FnTag,      SubFnName,  ClassName,          ActionName,     rcID,            rcName,                Description    
+    ----------------------------------------------------------------------------------------------------------------------------------
+    Example:
+    ==
+    1. Action with RC 
+    ACTION(L"Dummy",    L"",        L"CDummyAction",    L"Dummy",       IDR_XML_TSX_TEMP,   TOWSTR(IDR_XML_TSX_TEMP),  L"Action with    RC"),
+    
+    2. Action without RC
+    ACTION(L"Dummy",    L"",        L"CDummyAction",    L"Dummy",       0,               NULL,                   L"Action without RC"),
+
+ */
+    // IDR_XML_InterConnect IDR_XML_ShortCircuit
+
+ACTION(L"AfcbCtrl", L"AfcbCtrl_GetVoltage", L"CAdcVoltageAfcb", L"GetVoltage_G3", IDR_XML_AdcAfcb, TOWSTR(IDR_XML_AdcAfcb), L"读盒子电压(需要连接G3盒子)"),
+ACTION(L"AfcbCtrl", L"AfcbCtrl_Gpio", L"CImpGpioAfcbControl", L"GpioControl_G3", IDR_XML_GpioAfcbControl, TOWSTR(IDR_XML_GpioAfcbControl), L"GPIO控制（需要连接G3盒子)"),
+ACTION(L"AfcbCtrl", L"AfcbCtrl_OutputVoltage", L"CAfcbCtrlVol", L"OutputVoltage_G3", IDR_XML_AfcbCtrlVol, TOWSTR(IDR_XML_AfcbCtrlVol), L"输出电压(5v)控制（需要连接G3盒子)"),
+ACTION(L"AudioLoop", L"AudioLoop_G3", L"CImpAudioLoopBase", L"AudioLoop_G3", IDR_XML_AudioLoopPa, TOWSTR(IDR_XML_AudioLoopPa), L"声音回环测试(PA)(需要连接G3盒子)"),
+ACTION(L"AudioLoop", L"AudioOut", L"CAudioLoopG3", L"AudioOut", IDR_XML_G3Mic, TOWSTR(IDR_XML_G3Mic), L"音频输出测试（需要连接G3盒子）"),
+ACTION(L"AudioLoop", L"Headset", L"CHeadset", L"Headset", IDR_XML_Headset, TOWSTR(IDR_XML_Headset), L"测试耳机(欧标/美标)（需要连接G3盒子）"),
+ACTION(L"AudioLoop", L"TypeCHeadset", L"CTypeCHeadset", L"TypeCHeadset", IDR_XML_TypeCHeadset, TOWSTR(IDR_XML_TypeCHeadset), L"测试TypeC耳机(需要连接G3盒子)"),
+//ACTION(L"AudioLoop", L"HeadsetWithoutMic", L"CNoMicHeadset", L"HeadsetWithoutMic", IDR_XML_HeadsetNoMic, TOWSTR(IDR_XML_HeadsetNoMic), L"测试无mic耳机（需要连接G3盒子）"),
+ACTION(L"AudioLoop", L"AudioLoop", L"CAudioLoop", L"AudioLoop", IDR_XML_AudioLoop, TOWSTR(IDR_XML_AudioLoop), L"声音回环测试"),
+ACTION(L"B2B", L"B2B", L"CB2B", L"B2B", IDR_XML_B2B, TOWSTR(IDR_XML_B2B), L"测试接口连通性  不关注数据信号"),
+ACTION(L"Camera", L"Camera", L"CCamera", L"Camera", IDR_XML_Camera, TOWSTR(IDR_XML_Camera), L"Camera测试"),
+ACTION(L"Camera", L"CameraOper", L"CCameraOper", L"CameraOper", IDR_XML_CameraOper, TOWSTR(IDR_XML_CameraOper), L"Camera单独打开/关闭"),
+ACTION(L"Card", L"Card", L"CSimCard", L"CARD", IDR_XML_SIMCARD, TOWSTR(IDR_XML_SIMCARD), L"BBAT Sim/T Card测试,使用Diag方式"),
+ACTION(L"COB", L"COB", L"CCob", L"COB", IDR_XML_Cob, TOWSTR(IDR_XML_Cob), L"COB单点测试"),
+ACTION(L"Current", L"Current", L"CChargeCurrent", L"Current", IDR_XML_ChargeCurrent, TOWSTR(IDR_XML_ChargeCurrent), L"测试电流(需要连接G3盒子)"),
+ACTION(L"DUT_ADC", L"ADC", L"CGet_ADC", L"BBAT ADC", IDR_XML_GET_ADC, TOWSTR(IDR_XML_GET_ADC), L"BBAT ADC测试"),
+ACTION(L"DUT_ADC", L"RGB_ADC", L"CRGB_ADC", L"BBAT RGB ADC", IDR_XML_RGB_ADC, TOWSTR(IDR_XML_RGB_ADC), L"BBAT RGB - ADC读取测试"),
+ACTION(L"DUT_ADC", L"8910x_ADC", L"C891xADC", L"BBAT 891X ADC", IDR_XML_891X_ADC, TOWSTR(IDR_XML_891X_ADC), L"BBAT ADC For 891X/8811"),
+ACTION(L"EnableArmlog", L"EnableArmlog", L"CEnableArmlog", L"EnableArmlog", IDR_XML_ENABLEARMLOG, TOWSTR(IDR_XML_ENABLEARMLOG), L"EnableArmlog old"),
+ACTION(L"EnterMode", L"EnterMode_G3", L"CEnterModeG3", L"EnterMode_G3", IDR_XML_EnterMode, TOWSTR(IDR_XML_EnterMode), L"进模式（盒子）"),
+ACTION(L"Ethernet", L"Ethernet", L"CEthernet", L"Ethernet Loop", IDR_XML_Ethernet, TOWSTR(IDR_XML_Ethernet), L"网口回环测试"),
+ACTION(L"Ethernet", L"PreEthernet", L"CPreEthernet", L"PreEthernet", IDR_XML_PreEthernet, TOWSTR(IDR_XML_PreEthernet), L"Ethernet Prerun"),
+ACTION(L"FastCharge", L"FastCharge_5V", L"CFastCharge", L"FastCharge_5V", IDR_XML_FASTCHARGE, TOWSTR(IDR_XML_FASTCHARGE), L"5V快充测试"),
+ACTION(L"FastCharge", L"FastCharge_8V", L"CCheckXFastCharge", L"FastCharge_8V", IDR_XML_CHECKX_FAST_CHARGE, TOWSTR(IDR_XML_CHECKX_FAST_CHARGE), L"高压快充测试"),
+ACTION(L"FM", L"FM", L"CFm", L"FM", IDR_XML_Fm, TOWSTR(IDR_XML_Fm), L"BBAT FM测试"),
+ACTION(L"FM", L"FMTransmit", L"CFm_Transmit", L"FMTransmit", IDR_XML_FM_TRANSMIT, TOWSTR(IDR_XML_FM_TRANSMIT), L"BBAT FM发射测试(需要连接G3盒子)"),
+//ACTION(L"G3OpenPort", L"OpenPort", L"COpenPortG3", L"OpenPort_G3", IDR_XML_EnterMode, TOWSTR(IDR_XML_EnterMode), L"G3盒子打开端口（需要连接G3盒子）"),
+ACTION(L"G3OpenPort", L"ClosePort", L"CPowerOff", L"ClosePort_G3", IDR_XML_Power, TOWSTR(IDR_XML_Power), L"G3盒子关闭端口（需要连接G3盒子）"),
+ACTION(L"GPIO", L"GPIO", L"CGPIO", L"GPIO", IDR_XML_GPIO_READ, TOWSTR(IDR_XML_GPIO_READ), L"BBAT GPIO测试"),
+//ACTION(L"GPIO",  L"GPIO_WRITE",  L"CGPIO_Write",     L"GPIO_WRITE",   IDR_XML_GPIO_WRITE,  TOWSTR(IDR_XML_GPIO_WRITE),   L"BBAT GPIO 写入测试"),
+ACTION(L"GPIO", L"GPIO_G3", L"CImpGpioAfcb", L"GPIO_G3", IDR_XML_GpioAfcb, TOWSTR(IDR_XML_GpioAfcb), L"BBAT GPIO测试（需要连接G3盒子)"),
+ACTION(L"GPIO", L"GPIOtoGPIO", L"CImpGpioSmp", L"GPIOtoGPIO", IDR_XML_GPIO_SMP, TOWSTR(IDR_XML_GPIO_SMP), L"BBAT GPIO互联测试"),
+ACTION(L"Keypad", L"Keypad", L"CKeypad", L"Keypad", IDR_XML_Keypad, TOWSTR(IDR_XML_Keypad), L"Keypad测试(需要连接G3盒子)"),
+ACTION(L"KeypadLight", L"KeypadLight", L"CKeypadLightAfcb", L"KeypadLight", IDR_XML_KeypadLightAfcb, TOWSTR(IDR_XML_KeypadLightAfcb), L"测试按键灯(需要连接G3盒子)"),
+ACTION(L"LED", L"LED", L"CImpLedAfcb", L"LED", IDR_XML_LedAfcb, TOWSTR(IDR_XML_LedAfcb), L"测试LED(需要连接G3盒子)"),
+ACTION(L"MakeCall", L"MakeCall", L"CMakeCall", L"MakeCall", IDR_XML_MakeCall, TOWSTR(IDR_XML_MakeCall), L"通话测试"),
+ACTION(L"MISC", L"MISC", L"CMisc", L"MISC", IDR_XML_MISC, TOWSTR(IDR_XML_MISC), L"闪光灯、RGB、震动、LCD测试"),
+ACTION(L"NFC", L"NFC", L"CNfc", L"NFC", IDR_XML_Nfc, TOWSTR(IDR_XML_Nfc), L"NFC测试"),
+ACTION(L"NTC", L"NTC", L"CNTC", L"NTC", IDR_XML_NTC, TOWSTR(IDR_XML_NTC), L"BBAT NTC测试,使用命令方式"),
+ACTION(L"NTC", L"NTC_ADC", L"CNTC_ADC", L"NTC_ADC", IDR_XML_NTC_ADC, TOWSTR(IDR_XML_NTC_ADC), L"BBAT NTC测试,使用ADC读取电压方式"),
+ACTION(L"OTG", L"OTG", L"COtg", L"OTG", IDR_XML_OTG, TOWSTR(IDR_XML_OTG), L"OTG"),
+ACTION(L"Pcie", L"Pcie", L"CPcie", L"Pcie", IDR_XML_Pcie, TOWSTR(IDR_XML_Pcie), L"Pcie测试"),
+ACTION(L"Relay", L"Relay", L"CRelay", L"Relay", IDR_XML_RELAY, TOWSTR(IDR_XML_RELAY), L"BBAT 继电器测试"),
+ACTION(L"RGB_LCD", L"RGB_LCD", L"CLcdAfcb", L"RGB_LCD", IDR_XML_LcdAfcb, TOWSTR(IDR_XML_LcdAfcb), L"测试RGB LCD(需要连接G3盒子)"),
+ACTION(L"RGB_LCD", L"Mcu_RGB_LCD", L"CMcuLcdAfcb", L"Mcu_RGB_LCD", IDR_XML_LcdAfcb, TOWSTR(IDR_XML_LcdAfcb), L"测试Mcu RGB LCD(需要连接G3盒子)"),
+ACTION(L"RTC",  L"RTC",  L"CRTC",     L"RTC",   IDR_XML_RTC,  TOWSTR(IDR_XML_RTC),   L"BBAT RTC测试"),
+ACTION(L"Sensor", L"LigSensor", L"CLigSensor", L"LigSensor", IDR_XML_LigSensor, TOWSTR(IDR_XML_LigSensor), L"环境光传感器测试"),
+ACTION(L"Sensor", L"AccSensor", L"CAccSensor", L"AccSensor", IDR_XML_AccSensor, TOWSTR(IDR_XML_AccSensor), L"加速度传感器测试"),
+ACTION(L"Sensor", L"MagSensor", L"CMagSensor", L"MagSensor", IDR_XML_MagSensor, TOWSTR(IDR_XML_MagSensor), L"地磁传感器测试"),
+ACTION(L"Sensor", L"ProSensor", L"CProSensor", L"ProSensor", IDR_XML_ProSensor, TOWSTR(IDR_XML_ProSensor), L"距离传感器测试"),
+ACTION(L"Sensor", L"TempSensor", L"CTempSensor", L"TempSensor", IDR_XML_TempSensor, TOWSTR(IDR_XML_TempSensor), L"温度传感器测试"),
+ACTION(L"Sensor", L"SarSensor", L"CSarSensor", L"SarSensor", IDR_XML_SarSensor, TOWSTR(IDR_XML_SarSensor), L"电磁波吸收比值传感器测试"),
+ACTION(L"Sensor", L"PressureSensor", L"CPreSensor", L"PressureSensor", IDR_XML_PreSensor, TOWSTR(IDR_XML_PreSensor), L"压力传感器测试"),
+ACTION(L"Sensor", L"FingerPrintSensor", L"CFingerPrint", L"FingerPrintSensor", IDR_XML_FingerPrint, TOWSTR(IDR_XML_FingerPrint), L"指纹传感器测试"),
+ACTION(L"Sensor", L"GyroscopeSensor", L"CGyrSensor", L"GyroscopeSensor", IDR_XML_GrySensor, TOWSTR(IDR_XML_GrySensor), L"陀螺仪传感器测试"),
+ACTION(L"Sensor", L"OrientationSensor", L"COriSensor", L"OrientationSensor", IDR_XML_OriSensor, TOWSTR(IDR_XML_OriSensor), L"方向传感器测试"),
+ACTION(L"Sensor",  L"Sensor", L"CChipConnect",              L"Sensor",             IDR_XML_CHIPCONNECT,     TOWSTR(IDR_XML_CHIPCONNECT),      L"Check Sensor Connect [检查器件的连接性]"),
+ACTION(L"Sensor", L"HallSensor", L"CHallSensor", L"HallSensor", IDR_XML_HallSensor, TOWSTR(IDR_XML_HallSensor), L"霍尔传感器测试（需要连接G3盒子）"),
+ACTION(L"TYPEC", L"TYPEC_CC_TEST", L"CTYPEC_CCTEST", L"TYPEC_CCTEST", IDR_XML_TYPEC_CCTEST, TOWSTR(IDR_XML_TYPEC_CCTEST), L"测试TYPEC CC"),
+ACTION(L"UART0_LOOP", L"UART0", L"CUART0_Test", L"UART0 LOOP", IDR_XML_UART0_TEST, TOWSTR(IDR_XML_UART0_TEST), L"BBAT UART0测试"),
+ACTION(L"Vibrator", L"Vibrator", L"CVibratorAfcb", L"Vibrator", IDR_XML_Vibrator, TOWSTR(IDR_XML_Vibrator), L"马达测试(需要连接G3盒子)"),
+ACTION(L"Vibrator", L"VibratorPa", L"CVibratorPa", L"VibratorPa", IDR_XML_Vibrator, TOWSTR(IDR_XML_Vibrator), L"贴片/线性马达测试(需要连接G3盒子)"),
+ACTION(L"WCN",  L"BT",  L"CBT",     L"BT",   IDR_XML_BT,  TOWSTR(IDR_XML_BT),   L"BBAT BT测试"),
+ACTION(L"WCN", L"BT_MCU", L"CMcuBT", L"BT_MCU", IDR_XML_BT_MCU, TOWSTR(IDR_XML_BT_MCU), L"BBAT BT_MCU测试"),
+ACTION(L"WCN", L"WIFI", L"CWifi", L"Wifi", IDR_XML_WIFI, TOWSTR(IDR_XML_WIFI), L"BBAT WIFI测试"),
+ACTION(L"WCN", L"GPS", L"CGps", L"GPS", IDR_XML_Gps, TOWSTR(IDR_XML_Gps), L"BBAT GPS测试"),
+
+//Project
+//ACTION(L"AMU", L"AMU_LED", L"CAMU_LED", L"[AMU] LED", IDR_XML_AMU_LED, TOWSTR(IDR_XML_AMU_LED), L"BBAT AMU项目LED测试"),
+//ACTION(L"AMU", L"AMU_CAMERA", L"CAMU_Camera", L"[AMU] CAMERA", IDR_XML_AMU_CAMERA, TOWSTR(IDR_XML_AMU_CAMERA), L"BBAT AMU项目Camera测试"),
+//ACTION(L"AMU", L"AMU_SENSOR_TEST", L"CAMU_Sensor_Test", L"[AMU] SENSOR_TEST", IDR_XML_AMU_SENSOR_TEST, TOWSTR(IDR_XML_AMU_SENSOR_TEST), L"BBAT AMU项目Sensor测试"),
+//ACTION(L"AMU", L"AMU_SENSOR_CALI", L"CAMU_Sensor_Calibration", L"[AMU] SENSOR_CALIBRATION", IDR_XML_AMU_SENSOR_GALI, TOWSTR(IDR_XML_AMU_SENSOR_GALI), L"BBAT AMU项目Sensor校准"),
+//ACTION(L"KEYPAD", L"KEYPAD",			L"CAMU_Keypad",			L"[AMU] KEYPAD",				IDR_XML_AMU_KEYPAD,			TOWSTR(IDR_XML_AMU_KEYPAD), L"BBAT Keypad测试"),
+ACTION(L"ECELL 5G", L"Lan Test", L"CEcell_Test_Lan", L"Ecell_Test_Lan", IDR_XML_ECELL_5G_TEST_LAN, TOWSTR(IDR_XML_ECELL_5G_TEST_LAN), L"BBAT LAN网口测试"),
+ACTION(L"ECELL 5G", L"InterConnect", L"CInterConnect", L"InterConnect", IDR_XML_InterConnect, TOWSTR(IDR_XML_InterConnect), L"ECELL GPIO互联测试"),
+ACTION(L"ECELL 5G", L"5G_ADC", L"C5G_ADC", L"5G_ADC", IDR_XML_5G_ADC, TOWSTR(IDR_XML_5G_ADC), L"5G ADC测试"),
+ACTION(L"ECELL 5G", L"ShortCircuit", L"CShortCircuit", L"ShortCircuit", IDR_XML_ShortCircuit, TOWSTR(IDR_XML_ShortCircuit), L"ECELL GPIO短路测试"),
+ACTION(L"ECELL 5G", L"KeypadRelay", L"CKeypadRelay", L"KeypadRelay", IDR_XML_ECELL_KEYPAD_RELAY, TOWSTR(IDR_XML_ECELL_KEYPAD_RELAY), L"ECELL 键盘(继电器)测试"),
+ACTION(L"UMW5621 OTT", L"GPIO_PULL_ALL", L"CUMW5621", L"UMW5621OTT_All_Pull", IDR_XML_UMW5621_GPIO_ALL_PULL, TOWSTR(IDR_XML_UMW5621_GPIO_ALL_PULL), L"全部上拉/下拉"),
+ACTION(L"UMW5621 OTT", L"GPIO_SET_ALL", L"CUMW5621_All_Set", L"UMW5621OTT_All_Set", IDR_XML_UMW5621_GPIO_ALL_SET, TOWSTR(IDR_XML_UMW5621_GPIO_ALL_SET), L"全部输入/输出"),
+ACTION(L"UMW5621 OTT", L"GPIO_PULL_SINGLE", L"CUMW5621_Single_Pull", L"UMW5621OTT_Single_Pull", IDR_XML_UMW5621_GPIO_SINGLE_PULL, TOWSTR(IDR_XML_UMW5621_GPIO_SINGLE_PULL), L"扩展IO输出测试"),
+ACTION(L"UMW5621 OTT", L"GPIO_SINGLE_SET_INPUT", L"CUMW5621_Single_SetInput", L"UMW5621OTT_Single_SetInput", IDR_XML_UMW5621_GPIO_SINGLE_SETINPUT, TOWSTR(IDR_XML_UMW5621_GPIO_SINGLE_SETINPUT), L"单个GPIO设置为输入状态"),
+ACTION(L"UMW5621 OTT", L"TEST_UART", L"CUMW5621_Uart_Test", L"UMW5621_Uart_Test", IDR_UMW5621_TEST_UART, TOWSTR(IDR_UMW5621_TEST_UART), L"测试Uart通信"),
+ACTION(L"UMW5621 OTT", L"GPIO_PINTEST", L"CUMW5621_GPIO_PINTEST", L"UMW5621_GPIO_PINTEST", IDR_XML_UMW5621_GPIO_PINTEST, TOWSTR(IDR_XML_UMW5621_GPIO_PINTEST), L"测试Uart通信"),
+ACTION(L"UMP5865", L"KEYPAD", L"CUMP5865_Keypad", L"[5865]Keypad", IDR_XML_UMP5865_KEYPAD, TOWSTR(IDR_XML_UMP5865_KEYPAD), L"BBAT 5865 Keypad测试"),
+ACTION(L"UMP5865", L"MIC", L"CUMP5865_MIC", L"[5865]MIC", IDR_XML_UMP5865_MIC, TOWSTR(IDR_XML_UMP5865_MIC), L"BBAT 5865 MIC测试"),
+ACTION(L"UMP5865", L"GPIO_SetLevel", L"CUMP5865_GPIO_SetLevel", L"[5865]GPIO_SetLevel", IDR_XML_UMP5865_GPIO_SETLEVEL, TOWSTR(IDR_XML_UMP5865_GPIO_SETLEVEL), L"BBAT GPIO 设置"),
+ACTION(L"UMP5865", L"GPIO_GetLevel", L"CUMP5865_GPIO_GetLevel", L"[5865]GPIO_GetLevel", IDR_XML_UMP5865_GPIO_GETLEVEL, TOWSTR(IDR_XML_UMP5865_GPIO_GETLEVEL), L"BBAT GPIO 读取"),
+ACTION(L"UIS6760", L"GPIO", L"CUIS6760_GPIO", L"[UIS6760]GPIO", IDR_XML_UIS6760_GPIO, TOWSTR(IDR_XML_UIS6760_GPIO), L"UIS6760 GPIO测试"),
+ACTION(L"UIS6760", L"Reset", L"CUIS6760_RESET", L"[UIS6760]Reset", IDR_XML_6760_TEST_RESET, TOWSTR(IDR_XML_6760_TEST_RESET), L"UIS6760 Reset测试"),
+ACTION(L"UIS6760", L"GPIO", L"CUIS6760_GPIO", L"[UIS6760]GPIO", IDR_XML_UIS6760_GPIO, TOWSTR(IDR_XML_UIS6760_GPIO), L"UIS6760 GPIO测试"),
+ACTION(L"UIS6760", L"Reset", L"CUIS6760_RESET", L"[UIS6760]Reset", IDR_XML_6760_TEST_RESET, TOWSTR(IDR_XML_6760_TEST_RESET), L"UIS6760 Reset测试"),
+ACTION(L"ORCA", L"ORCA", L"COrca", L"ORCA", IDR_XML_ORCA, TOWSTR(IDR_XML_ORCA), L"ORCA平台测试"),
+
+
+
+#endif 

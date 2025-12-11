@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Node>
+  <Option>
+    <Wifi_Open Control="CheckBox" Description="打开Wifi">1</Wifi_Open>
+    <Wifi_Read Control="CheckBox" Description="搜索Wifi">1</Wifi_Read>
+    <Wifi_5G Control="CheckBox" Description="Wifi_5G">1</Wifi_5G>
+    <Wifi_Close Control="CheckBox" Description="关闭Wifi">1</Wifi_Close>
+    <Search_Times Control="EditBox" Description="搜索次数">2</Search_Times>
+    <Min_AP_Number Control="EditBox" Description="AP个数">3</Min_AP_Number>
+    <Min_RSSI_Number Control="EditBox" Description="Rssi信号强度">-85</Min_RSSI_Number>
+</Option>
+  <Param>
+  </Param>
+</Node>

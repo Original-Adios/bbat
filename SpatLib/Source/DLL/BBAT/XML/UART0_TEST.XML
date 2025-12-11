@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Node>
+  <Option>  	
+    <UART Control="EditBox" Description="UART号码">0</UART>
+    <Baudrate Control="EditBox" Description="波特率">115200</Baudrate>
+    <RecvTime Control="EditBox" Description="接收命令前，等待延时">1000</RecvTime>
+</Option>
+  <Param>
+  </Param>
+</Node>

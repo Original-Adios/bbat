@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Node>
+	<Option>
+		<ExtPower1>
+			<Enable Description="G3盒子电压输出通道1使能" Control="CheckBox">0</Enable>
+			<Open Description="打开/关闭" Control="CheckBox">0</Open>
+		</ExtPower1>
+		<ExtPower2>
+			<Enable Description="G3盒子电压输出通道1使能" Control="CheckBox">0</Enable>
+			<Open Description="打开/关闭" Control="CheckBox">0</Open>
+		</ExtPower2>
+	</Option>
+	<Param>
+	</Param>
+</Node>

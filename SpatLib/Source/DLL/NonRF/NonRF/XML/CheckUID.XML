@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Node>
+	<Option>
+    <SaveUID Control="SaveFileDialog" Filter="UID txt(*.txt)|*.txt|All Files (*.*)|*.*" Description="指定保存UID的文件路径">.\Log\UID.txt</SaveUID>
+	</Option>
+	<Param>
+  </Param>
+</Node>

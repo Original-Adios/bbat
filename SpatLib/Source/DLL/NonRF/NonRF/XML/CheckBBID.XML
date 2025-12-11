@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Node>
+	<Option>
+    <BBID Description="设置检查的目标BBID，如果设置为空，则不检查"></BBID>
+	</Option>
+	<Param>
+  </Param>
+</Node>

@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Node>
+  <Option>
+  </Option>
+  <Param>
+	  <GPIO Control="Group">
+          <FailStop Control="CheckBox" Description="失败立刻停止">0</FailStop>
+          <GroupCount>2</GroupCount>
+          <IsGPIOEx Control="CheckBox" Description="是否为GPIO拓展模式">0</IsGPIOEx>
+		  <TestType Control="ComboBox" Elements="PhoneToG3,G3ToPhone">PhoneToG3</TestType>
+		  <Group1>
+			  <Phone_GPIO Control="EditBox" Description="手机GPIO号码">124</Phone_GPIO>
+			  <G3_PORT Control="ComboBox" Description="G3 GPIO通道" Elements="GPIO_A,GPIO_B,GPIO_C,GPIO_D,IO">GPIO_A</G3_PORT>
+			  <G3_GPIO Control="ComboBox" Description="G3 GPIO号" Elements="0,1,2,3,4,5,6,7">0</G3_GPIO>
+		  </Group1>
+		  <Group2>
+			  <Phone_GPIO Control="EditBox" Description="手机GPIO号码">125</Phone_GPIO>
+			  <G3_PORT Control="ComboBox" Description="G3 GPIO通道" Elements="GPIO_A,GPIO_B,GPIO_C,GPIO_D,IO">GPIO_A</G3_PORT>
+			  <G3_GPIO Control="ComboBox" Description="G3 GPIO号" Elements="0,1,2,3,4,5,6,7">0</G3_GPIO>
+		  </Group2>
+
+	  </GPIO>
+  </Param>
+</Node>

@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Node>
+	<Option>
+    <Aux>
+      <V3.6 Control="CheckBox">0</V3.6>
+      <V3.8 Control="CheckBox">0</V3.8>
+      <V4.2 Control="CheckBox">0</V4.2>
+    </Aux>
+    <FGU>
+      <CheckFGUType Control="CheckBox">0</CheckFGUType>
+      <FGUType>1</FGUType>
+      <V3.6 Control="CheckBox">0</V3.6>
+      <V3.8 Control="CheckBox">0</V3.8>
+      <V4.2 Control="CheckBox">0</V4.2>
+    </FGU>
+    <Current>
+      <Charge Control="CheckBox">0</Charge>
+      <PowerOn Control="CheckBox">0</PowerOn>
+      <PowerOff Control="CheckBox">0</PowerOff>
+      <DeepSleep Control="CheckBox">0</DeepSleep>
+    </Current>
+  </Option>
+	<Param>
+    <Aux>
+      <V3.6>
+        <LowLimit>3570</LowLimit>
+        <HighLimit>3570</HighLimit>
+      </V3.6>
+      <V3.8>
+        <LowLimit>3770</LowLimit>
+        <HighLimit>3830</HighLimit>
+      </V3.8>
+      <V4.2>
+        <LowLimit>4170</LowLimit>
+        <HighLimit>4230</HighLimit>
+      </V4.2>
+    </Aux>
+    <FGU>
+      <V3.6>
+        <LowLimit>3570</LowLimit>
+        <HighLimit>3630</HighLimit>
+      </V3.6>
+      <V3.8>
+        <LowLimit>3770</LowLimit>
+        <HighLimit>3830</HighLimit>
+      </V3.8>
+      <V4.2>
+        <LowLimit>4170</LowLimit>
+        <HighLimit>4230</HighLimit>
+      </V4.2>
+    </FGU>
+    <Current>
+      <Charge>
+        <LowLimit>410</LowLimit>
+        <HighLimit>510</HighLimit>
+        <SleepTime>1000</SleepTime>
+        <MaxChargeCurrent>500</MaxChargeCurrent>
+      </Charge>
+      <PowerOn>
+        <LowLimit>120</LowLimit>
+        <HighLimit>220</HighLimit>
+        <SleepTime>0</SleepTime>
+      </PowerOn>
+      <PowerOff>
+        <LowLimit>0</LowLimit>
+        <HighLimit>150</HighLimit>
+        <SleepTime>0</SleepTime>
+      </PowerOff>
+      <DeepSleep>
+        <LowLimit>1</LowLimit>
+        <HighLimit>5</HighLimit>
+        <SleepTime>2000</SleepTime>
+      </DeepSleep>
+    </Current>
+  </Param>
+</Node>
+

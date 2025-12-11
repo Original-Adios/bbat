@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Node>
+  <Option>  	
+    <Red>
+		<Select Control="CheckBox">0</Select>
+		<ADC_Channel Control="ComboBox" Elements="0,1,2,3,4,5,6,7,8,9,10,11,12" Description="ADC信道号">0</ADC_Channel>
+		<Upspec Description="电压上限">3000</Upspec>
+		<Downspec Description="电压下限">100</Downspec>
+	</Red>
+	<Green>
+		<Select Control="CheckBox">0</Select>
+		<ADC_Channel Control="ComboBox" Elements="0,1,2,3,4,5,6,7,8,9,10,11,12" Description="ADC信道号">0</ADC_Channel>
+		<Upspec Description="电压上限">3000</Upspec>
+		<Downspec Description="电压下限">100</Downspec>
+	</Green>
+	<Blue>
+		<Select Control="CheckBox">0</Select>
+		<ADC_Channel Control="ComboBox" Elements="0,1,2,3,4,5,6,7,8,9,10,11,12" Description="ADC信道号">0</ADC_Channel>
+		<Upspec Description="电压上限">3000</Upspec>
+		<Downspec Description="电压下限">100</Downspec>
+	</Blue>
+	<KeyOUT1>
+		<Select Control="CheckBox">0</Select>
+		<Deltaspec Description="电压差下限(mV)">100</Deltaspec>
+	</KeyOUT1>
+</Option>
+  <Param>
+  </Param>
+</Node>

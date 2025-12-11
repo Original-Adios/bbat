@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Node>
+  <Option>  	
+    <GPIO_Number Control="EditBox" Description="GPIO号码">0</GPIO_Number>
+    <Single_Pull_Level Control="ComboBox" Elements="0,1">0</Single_Pull_Level>
+</Option>
+  <Param>
+  </Param>
+</Node>

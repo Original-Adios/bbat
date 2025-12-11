@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Node>
+	<Option>
+  </Option>
+	<Param>
+    <TSX_Enable Control="CheckBox" Property="InVisible" Description="TSX Enable">1</TSX_Enable>
+    <TSX_Final Control="CheckBox" Property="InVisible" Description="">1</TSX_Final>
+	</Param>
+</Node>

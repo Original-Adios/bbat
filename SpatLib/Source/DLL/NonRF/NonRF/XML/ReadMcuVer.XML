@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Node>
+    <Option>
+        <Load Control="CheckBox" Description="Load MCU version">1</Load>
+        <Verify Control="CheckBox" Description="核查MCU版本信息与否">1</Verify>
+        <ExpectedVersion Description="Expected version string. 请输入核查的版本信息"></ExpectedVersion>
+    </Option>
+    <Param>
+    </Param>
+</Node>

@@ -1,0 +1,249 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="02.Imp">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+      <ParseFiles>false</ParseFiles>
+    </Filter>
+    <Filter Include="01.Interface">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="09.RC">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav</Extensions>
+    </Filter>
+    <Filter Include="03.App">
+      <UniqueIdentifier>{001f31ad-4309-446e-9433-ff7da3d6da02}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="05.Utility">
+      <UniqueIdentifier>{3ee908a4-3caf-431b-8d19-d685360a8447}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="04.XML">
+      <UniqueIdentifier>{9d9e2093-3746-42eb-bda6-7114e19f6b66}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="05.Utility\UnisocMesDrv">
+      <UniqueIdentifier>{5669383e-b768-4ab7-bce1-ec3009284af9}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="02.Imp\InputCodes">
+      <UniqueIdentifier>{82d507ce-8f75-4e24-afe7-d433822f9635}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="02.Imp\OneNet">
+      <UniqueIdentifier>{b440c2c4-f96e-4666-abc5-2eb3b5d783bd}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="02.Imp\SSN">
+      <UniqueIdentifier>{f23e4518-c03c-4418-ae19-4df5b97baf70}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="02.Imp\WW">
+      <UniqueIdentifier>{f6b4e536-ec77-412c-b3d4-0c0c65a9e528}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="Impl\ImpBase.cpp">
+      <Filter>02.Imp</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Common\SpatBase.cpp">
+      <Filter>02.Imp</Filter>
+    </ClCompile>
+    <ClCompile Include="stdafx.cpp">
+      <Filter>09.RC</Filter>
+    </ClCompile>
+    <ClCompile Include="Impl\ActionApp.cpp">
+      <Filter>03.App</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Common\ApiExport.cpp">
+      <Filter>03.App</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Common\ModeSwitch.cpp">
+      <Filter>03.App</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Common\SpatRuntimeClass.cpp">
+      <Filter>03.App</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\Common\UtilFn\AppVer.cpp">
+      <Filter>05.Utility</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\Common\lock\CLocks.cpp">
+      <Filter>05.Utility</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\Common\lock\CSimpleLock.cpp">
+      <Filter>05.Utility</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\Common\Tr\Tr.cpp">
+      <Filter>05.Utility</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\Common\UtilFn\Utility.cpp">
+      <Filter>05.Utility</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\Common\UnisocMesDrv\MesDriver.cpp">
+      <Filter>05.Utility\UnisocMesDrv</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\Common\UnisocMesDrv\UnisocMesBase.cpp">
+      <Filter>05.Utility\UnisocMesDrv</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\Common\Json\JsonUtil.cpp">
+      <Filter>05.Utility</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Common\GenCodes.cpp">
+      <Filter>05.Utility</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Common\ScanConfig.cpp">
+      <Filter>05.Utility</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\Common\UtilFn\BarCodeUtility.cpp">
+      <Filter>05.Utility</Filter>
+    </ClCompile>
+    <ClCompile Include="Impl\WriteSSN.cpp">
+      <Filter>02.Imp\SSN</Filter>
+    </ClCompile>
+    <ClCompile Include="Impl\WriteGuid.cpp">
+      <Filter>02.Imp\SSN</Filter>
+    </ClCompile>
+    <ClCompile Include="Impl\WriteNetCodes.cpp">
+      <Filter>02.Imp\OneNet</Filter>
+    </ClCompile>
+    <ClCompile Include="Impl\InputCustBarCodes.cpp">
+      <Filter>02.Imp\InputCodes</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\NonRF\Provision\DBHelper.cpp">
+      <Filter>02.Imp</Filter>
+    </ClCompile>
+    <ClCompile Include="Impl\LoadCodesFromMdb.cpp">
+      <Filter>02.Imp\InputCodes</Filter>
+    </ClCompile>
+    <ClCompile Include="Impl\LoadCodesFromBin.cpp">
+      <Filter>02.Imp\WW</Filter>
+    </ClCompile>
+    <ClCompile Include="Impl\WriteCu.cpp">
+      <Filter>02.Imp\WW</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Impl\ImpBase.h">
+      <Filter>02.Imp</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Common\SpatBase.h">
+      <Filter>02.Imp</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\Common\Include\SpatLibExport.h">
+      <Filter>01.Interface</Filter>
+    </ClInclude>
+    <ClInclude Include="resource.h">
+      <Filter>09.RC</Filter>
+    </ClInclude>
+    <ClInclude Include="stdafx.h">
+      <Filter>09.RC</Filter>
+    </ClInclude>
+    <ClInclude Include="targetver.h">
+      <Filter>09.RC</Filter>
+    </ClInclude>
+    <ClInclude Include="Impl\ActionApp.h">
+      <Filter>03.App</Filter>
+    </ClInclude>
+    <ClInclude Include="Impl\ActionList.h">
+      <Filter>03.App</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Common\ModeSwitch.h">
+      <Filter>03.App</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Common\SpatRuntimeClass.h">
+      <Filter>03.App</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\Common\UtilFn\AppVer.h">
+      <Filter>05.Utility</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\Common\lock\CLocks.h">
+      <Filter>05.Utility</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\Common\lock\CSimpleLock.h">
+      <Filter>05.Utility</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\Common\Tr\Tr.h">
+      <Filter>05.Utility</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\Common\UtilFn\Utility.h">
+      <Filter>05.Utility</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\Common\UnisocMesDrv\drvdef.h">
+      <Filter>05.Utility\UnisocMesDrv</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\Common\UnisocMesDrv\MesDriver.h">
+      <Filter>05.Utility\UnisocMesDrv</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\Common\UnisocMesDrv\Unisoc_Solution_MES.h">
+      <Filter>05.Utility\UnisocMesDrv</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\Common\UnisocMesDrv\UnisocMesBase.h">
+      <Filter>05.Utility\UnisocMesDrv</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\Common\Json\JsonUtil.h">
+      <Filter>05.Utility</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Common\GenCodes.h">
+      <Filter>05.Utility</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Common\ScanConfig.h">
+      <Filter>05.Utility</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\Common\UtilFn\BarCodeUtility.h">
+      <Filter>05.Utility</Filter>
+    </ClInclude>
+    <ClInclude Include="Impl\WriteSSN.h">
+      <Filter>02.Imp\SSN</Filter>
+    </ClInclude>
+    <ClInclude Include="Impl\WriteGuid.h">
+      <Filter>02.Imp\SSN</Filter>
+    </ClInclude>
+    <ClInclude Include="Impl\WriteNetCodes.h">
+      <Filter>02.Imp\OneNet</Filter>
+    </ClInclude>
+    <ClInclude Include="Impl\InputCustBarCodes.h">
+      <Filter>02.Imp\InputCodes</Filter>
+    </ClInclude>
+    <ClInclude Include="Impl\timo_crypt.h">
+      <Filter>02.Imp\SSN</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\NonRF\Provision\DBHelper.h">
+      <Filter>02.Imp</Filter>
+    </ClInclude>
+    <ClInclude Include="Impl\LoadCodesFromMdb.h">
+      <Filter>02.Imp\InputCodes</Filter>
+    </ClInclude>
+    <ClInclude Include="Impl\LoadCodesFromBin.h">
+      <Filter>02.Imp\WW</Filter>
+    </ClInclude>
+    <ClInclude Include="Impl\WriteCu.h">
+      <Filter>02.Imp\WW</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="XML\Dummy.XML">
+      <Filter>04.XML</Filter>
+    </None>
+    <None Include="ReadMe.txt" />
+    <None Include="xml1.bin">
+      <Filter>09.RC</Filter>
+    </None>
+    <None Include="XML\InputCodes1By1.XML">
+      <Filter>04.XML</Filter>
+    </None>
+    <None Include="XML\TimoEncryptMode.XML">
+      <Filter>04.XML</Filter>
+    </None>
+    <None Include="XML\LoadCodesFromMdb.XML">
+      <Filter>04.XML</Filter>
+    </None>
+    <None Include="XML\LoadCodesFromBin.XML">
+      <Filter>04.XML</Filter>
+    </None>
+    <None Include="XML\CuConfig.XML">
+      <Filter>04.XML</Filter>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="CustMisdata.rc">
+      <Filter>09.RC</Filter>
+    </ResourceCompile>
+  </ItemGroup>
+</Project>

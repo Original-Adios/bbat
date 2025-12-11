@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Node>
+  <Option>
+    <TxTriggerDelay Description="Unit:ms">3000</TxTriggerDelay>
+    <WaitForConnect Description="Unit:ms">30000</WaitForConnect>    
+    <Wlan>
+      <Tx_Delay Description="Unit:ms">4000</Tx_Delay>
+      <End_Delay Description="Unit:ms">200</End_Delay>      
+      <Band_24G>
+        <Ant1st Description="Channel 0 enable" Control="CheckBox">1</Ant1st>
+        <Ant2nd Description="Channel 1 enable" Control="CheckBox">0</Ant2nd>
+      </Band_24G>
+      <Band_50G>
+        <Ant1st Description="Channel 0 enable" Control="CheckBox">1</Ant1st>
+        <Ant2nd Description="Channel 1 enable" Control="CheckBox">0</Ant2nd>
+      </Band_50G>
+      </Wlan>
+      <BT>
+        <Tx_Delay Description="Unit:ms">10000</Tx_Delay>
+        <End_Delay Description="Unit:ms">200</End_Delay>
+        <Mode Description="Cw Common Test, if checkbox is enabled, measurement will be performed or not" Control="CheckBox">1</Mode>
+        <Ant>
+          <StandAlone Description="Primary RF path" Control="CheckBox">1</StandAlone>
+          <Shared Description="Diversity RF path" Control="CheckBox">0</Shared>
+        </Ant>
+      </BT>
+    </Option>
+  <Param>
+    <Common>
+      <AvgCount Description="Average Count for Measurements">3</AvgCount>
+    </Common>
+    <Wlan>
+      <Band_24G>
+        <CenChan Description="Center channel 1~13 is available">1,7,13</CenChan>
+        <RefLVL Description="Reference level for tx measure. Unit:dBm">20</RefLVL>
+        <Specification Description="Configure the test tolerance and specification">
+          <TXP Description="TX Power, Unit: dBm">8,23</TXP>
+        </Specification>
+      </Band_24G>
+      <Band_50G>
+        <CenChan Description="Center channel 36~64 100~144 149~161(Channel step:4) is available">36,100,149</CenChan>
+        <RefLVL Description="Reference level for tx measure. Unit:dBm">20</RefLVL>
+        <Specification Description="Configure the test tolerance and specification">
+          <TXP Description="TX Power, Unit: dBm">8,23</TXP>
+        </Specification>
+      </Band_50G>
+    </Wlan>
+    <BT>
+        <TCH Description="Transmit channel 0~78 is available">0,39,78</TCH>
+        <RefLVL Description="Reference level for tx measure. Unit:dBm">15</RefLVL>
+        <Specification Description="Configure the test tolerance and specification">
+        <TXP Description="TX Power, Unit: dBm">2,15</TXP>
+        </Specification>
+    </BT>
+  </Param>
+</Node>

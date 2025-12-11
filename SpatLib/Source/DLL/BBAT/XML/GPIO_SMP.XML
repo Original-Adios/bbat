@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Node>
+  <Option>
+  </Option>
+  <Param>
+	  <GPIO Control="Group">
+		  <FailStop Control="CheckBox" Description="失败立刻停止">0</FailStop>
+		  <SetByFile Control="CheckBox" Description="使用文件进行配置，如不勾选，默认使用UI进行配置，文件配置不生效">0</SetByFile>
+		  <GPIO_SetFilePath Control="FileDialog" Descripion="请选择配置GPIO的csv文件" Filter="GPIO_Set.csv(*.csv)|*.csv|All Files (*.*)|*.*" ></GPIO_SetFilePath>
+		  <GroupCount>3</GroupCount>
+		  <Group1>
+        <Write_GPIO Control="EditBox" Description="写GPIO号码">124</Write_GPIO>
+        <Read_GPIO Control="EditBox" Description="读GPIO号码">0</Read_GPIO>  
+		  </Group1>
+		  <Group2>
+        <Write_GPIO Control="EditBox" Description="写GPIO号码">125</Write_GPIO>
+        <Read_GPIO Control="EditBox" Description="读GPIO号码">10</Read_GPIO>
+		  </Group2>
+      <Group3>
+        <Write_GPIO Control="EditBox" Description="写GPIO号码">126</Write_GPIO>
+        <Read_GPIO Control="EditBox" Description="读GPIO号码">20</Read_GPIO>
+      </Group3>
+
+	  </GPIO>
+  </Param>
+</Node>

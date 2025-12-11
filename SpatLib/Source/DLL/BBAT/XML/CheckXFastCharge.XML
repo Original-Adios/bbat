@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Node>
+  <Option>
+  	<Chip_Count Description="芯片个数">1</Chip_Count>
+    <Current_UpSpec Description="电流上限(mA)">2000</Current_UpSpec>
+    <Current_DownSpec Description="电流下限(mA)">1000</Current_DownSpec>
+    <Voltage_Set Description="设置VBUS电压，范围7.5V-9.5V">8.0</Voltage_Set>      
+</Option>
+  <Param>
+    <DelayTime_ms Description="设置VBUS电压后延时DelayTime_ms（ms）再读电流">500</DelayTime_ms>
+  </Param>
+</Node>

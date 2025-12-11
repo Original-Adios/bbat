@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Node>
+	<Option>
+		<CheckSimCard Control="CheckBox">1</CheckSimCard>
+    <CheckSDCard Control="CheckBox">1</CheckSDCard>
+	</Option>
+	<Param>
+	</Param>
+</Node>

@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Node>
+  <Option>
+    <CaliFlag>
+      <ADC Control="CheckBox">0</ADC>
+      <AFC Control="CheckBox">1</AFC>
+      <GSM>
+        <EGSM900>
+          <AGC Control="CheckBox">0</AGC>
+          <APC Control="CheckBox">0</APC>
+          <FT Control="CheckBox">0</FT>
+        </EGSM900>
+        <DCS1800>
+          <AGC Control="CheckBox">0</AGC>
+          <APC Control="CheckBox">0</APC>
+          <FT Control="CheckBox">0</FT>
+        </DCS1800>
+        <PCS1900>
+          <AGC Control="CheckBox">0</AGC>
+          <APC Control="CheckBox">0</APC>
+          <FT Control="CheckBox">0</FT>
+        </PCS1900>
+        <GSM850>
+          <AGC Control="CheckBox">0</AGC>
+          <APC Control="CheckBox">0</APC>
+          <FT Control="CheckBox">0</FT>
+        </GSM850>
+      </GSM>
+      <EDGE>
+        <CALI Control="CheckBox">0</CALI>
+        <FT Control="CheckBox">0</FT>
+      </EDGE>
+      <TD>
+        <AGC Control="CheckBox">0</AGC>
+        <APC Control="CheckBox">0</APC>
+        <FT Control="CheckBox">0</FT>
+      </TD>
+      <WCDMA>
+        <BANDI>
+          <CALI Control="CheckBox">0</CALI>
+        </BANDI>
+        <BANDII>
+          <CALI Control="CheckBox">0</CALI>
+        </BANDII>
+        <BANDIII>
+          <CALI Control="CheckBox">0</CALI>
+        </BANDIII>
+        <BANDIV>
+          <CALI Control="CheckBox">0</CALI>
+        </BANDIV>
+        <BANDV>
+          <CALI Control="CheckBox">0</CALI>
+        </BANDV>
+        <BANDVI>
+          <CALI Control="CheckBox">0</CALI>
+        </BANDVI>
+        <BANDVIII>
+          <CALI Control="CheckBox">0</CALI>
+        </BANDVIII>
+        <BANDXIX>
+          <CALI Control="CheckBox">0</CALI>
+        </BANDXIX>
+        <FT Control="CheckBox">1</FT>
+      </WCDMA>
+      <LTE>
+        <TDD>
+          <CALI Control="CheckBox">0</CALI>
+          <FT Control="CheckBox">0</FT>
+          <ANT Control="CheckBox">0</ANT>
+          <AFC Control="CheckBox">0</AFC>
+        </TDD>
+        <FDD>
+          <CALI Control="CheckBox">0</CALI>
+          <FT Control="CheckBox">0</FT>
+          <ANT Control="CheckBox">0</ANT>
+          <AFC Control="CheckBox">0</AFC>
+        </FDD>
+      </LTE>
+      <CDMA>
+        <CALI Control="CheckBox">0</CALI>
+        <FT Control="CheckBox">0</FT>
+      </CDMA>
+      <Antenna Control="CheckBox">1</Antenna>
+    </CaliFlag>
+  </Option>
+  <Param>
+  </Param>
+</Node>

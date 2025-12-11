@@ -1,0 +1,298 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Node>
+  <Option>
+    <ManualPwrLvl Description="Manual Set Power Level" Control="CheckBox">0</ManualPwrLvl>
+    <Band_24G>
+      <MIMO Description="Channel 0 enable" Control="CheckBox">1</MIMO>
+      <Wlan11n Description="802.11n measurement switcher, if checkbox is enabled, measurement will be performed or not" >
+        <BW_20M Description="802.11n bandwidth 20M measurement switcher, if checkbox is enabled, measurement will be performed or not" Control="CheckBox">1</BW_20M>
+        <BW_40M Description="802.11n bandwidth 40M measurement switcher, if checkbox is enabled, measurement will be performed or not" Control="CheckBox">1</BW_40M>
+      </Wlan11n>
+    </Band_24G>
+    <Band_50G>
+      <MIMO Description="Channel 0 enable" Control="CheckBox">1</MIMO>
+      <Wlan11n Description="802.11n measurement switcher, if checkbox is enabled, measurement will be performed or not">
+        <BW_20M Description="802.11n bandwidth 20M measurement switcher, if checkbox is enabled, measurement will be performed or not" Control="CheckBox">1</BW_20M>
+        <BW_40M Description="802.11n bandwidth 40M measurement switcher, if checkbox is enabled, measurement will be performed or not" Control="CheckBox">1</BW_40M>
+      </Wlan11n>
+      <Wlan11ac Description="802.11ac measurement switcher, if checkbox is enabled, measurement will be performed or not">
+        <BW_20M Description="bandwidth 20M measurement switcher, if checkbox is enabled, measurement will be performed or not" Control="CheckBox">1</BW_20M>
+        <BW_40M Description="bandwidth 40M measurement switcher, if checkbox is enabled, measurement will be performed or not" Control="CheckBox">1</BW_40M>
+        <BW_80M Description="bandwidth 80M measurement switcher, if checkbox is enabled, measurement will be performed or not" Control="CheckBox">1</BW_80M>
+      </Wlan11ac>
+    </Band_50G>
+  </Option>
+  <Param>
+    <Common Property="InVisible">
+      <AvgCount Description="Average Count for Measurements">3</AvgCount>
+      <ChannelEstimation Description="enableFullPacketChannelEst Channel Estimate on full packet which is valid for 11n and 11ac.0:disable 1:enable" Control="ComboBox" Elements="0,1">1</ChannelEstimation>
+      <FreqCorrection Description="frequency Correction options. 2:on short and long legacy training fields (default),3: based on full packet,4:signal fields (legacy and HT) in addition to short and long training fields">2</FreqCorrection>
+      <PhaseCorrection Description="Phase Correction Mode which is valid for 11n and 11ac.0:disable 1:enable" Control="ComboBox" Elements="0,1">1</PhaseCorrection>
+      <AmplitudeCorrection Description="enableAmplitudeTracking Amplitude Tracking which is valid for 11n and 11ac.0:disable 1:enable" Control="ComboBox" Elements="0,1">0</AmplitudeCorrection>
+      <SymbolClock Description="enableSymTimingCorr Symbol Timing Correction which is valid for 11n and 11ac.0:disable 1:enable" Control="ComboBox" Elements="0,1">1</SymbolClock>
+    </Common>
+    <Band_24G>
+      <Wlan11n Description="802.11n Band" Control="Group">
+        <BW_20M Control="Group">
+          <GroupCount>1</GroupCount>
+          <Group1>
+            <CenChan Description="Center channel 1~13 is available">1,7,13</CenChan>
+            <PriChan Property="InVisible" Description="Primary channel position. 1:+10M,0:0,-1:-10M" Control="ComboBox" Elements="1,0,-1">0</PriChan>
+            <Modulation Control="ComboBox" Elements="MCS-8,MCS-9,MCS-10,MCS-11,MCS-12,MCS-13,MCS-14,MCS-15">MCS-15</Modulation>
+            <RXLVL Description="Rx level for per measurement. Unit:dBm">
+              <MCS-8>-65</MCS-8>
+              <MCS-9>-65</MCS-9>
+              <MCS-10>-65</MCS-10>
+              <MCS-11>-65</MCS-11>
+              <MCS-12>-65</MCS-12>
+              <MCS-13>-65</MCS-13>
+              <MCS-14>-65</MCS-14>
+              <MCS-15>-65</MCS-15>
+            </RXLVL>
+            <PacketCount Description="Total packets count for RX configuration!">1000</PacketCount>
+            <RefLVL Description="Reference level for tx measure. Unit:dBm">10</RefLVL>
+            <ChanCoding Description="Channel coding type selected: BCC, LDPC"  Control="ComboBox" Elements="0:BCC, 1:LDPC">0</ChanCoding>
+            <TestItem>
+              <TXP Description="Transmit power level" Control="CheckBox">1</TXP>
+              <TCFT Description="Transmit center frequency tolerance" Control="CheckBox">1</TCFT>
+              <EVM Description="Error vector magnitude" Control="CheckBox">1</EVM>
+              <SPECMASK Description="Transmit spectrum mask" Control="CheckBox">1</SPECMASK>
+              <PER Description="Receiver sensitivity" Control="CheckBox">1</PER>
+            </TestItem>
+          </Group1>
+        </BW_20M>
+        <BW_40M Control="Group">
+          <GroupCount>1</GroupCount>
+          <Group1>
+            <CenChan Description="Center channel 3~11 is available">3,7,11</CenChan>
+            <PriChan Property="InVisible" Description="Primary channel position. 1:+10M,0:0,-1:-10M" Control="ComboBox" Elements="1,-1">1</PriChan>
+            <Modulation Control="ComboBox" Elements="MCS-8,MCS-9,MCS-10,MCS-11,MCS-12,MCS-13,MCS-14,MCS-15">MCS-15</Modulation>
+            <RXLVL Description="Rx level for per measurement. Unit:dBm">
+              <MCS-8>-65</MCS-8>
+              <MCS-9>-65</MCS-9>
+              <MCS-10>-65</MCS-10>
+              <MCS-11>-65</MCS-11>
+              <MCS-12>-65</MCS-12>
+              <MCS-13>-65</MCS-13>
+              <MCS-14>-65</MCS-14>
+              <MCS-15>-65</MCS-15>
+            </RXLVL>
+            <PacketCount Description="Total packets count for RX configuration!">1000</PacketCount>
+            <RefLVL Description="Reference level for tx measure. Unit:dBm">10</RefLVL>
+            <ChanCoding Description="Channel coding type selected: BCC, LDPC"  Control="ComboBox" Elements="0:BCC, 1:LDPC">0</ChanCoding>
+            <SBW Property="ReadOnly" Description="Signal Bandwidth. 0:20M, 1:40M, 2:80M"  Control="ComboBox" Elements="0,1">1</SBW>
+            <TestItem>
+              <TXP Description="Transmit power level" Control="CheckBox">1</TXP>
+              <TCFT Description="Transmit center frequency tolerance" Control="CheckBox">1</TCFT>
+              <EVM Description="Error vector magnitude" Control="CheckBox">1</EVM>
+              <SPECMASK Description="Transmit spectrum mask" Control="CheckBox">1</SPECMASK>
+              <PER Description="Receiver sensitivity" Control="CheckBox">1</PER>
+            </TestItem>
+          </Group1>
+        </BW_40M>
+        <Specification Description="Configure the test tolerance and specification">
+          <TXP Description="TX Power, Unit: dBm">8,20</TXP>
+          <EVM Description="Error Vector Magnitude, Unit: %">
+            <MCS-8>-5</MCS-8>
+            <MCS-9>-10</MCS-9>
+            <MCS-10>-13</MCS-10>
+            <MCS-11>-16</MCS-11>
+            <MCS-12>-19</MCS-12>
+            <MCS-13>-22</MCS-13>
+            <MCS-14>-25</MCS-14>
+            <MCS-15>-28</MCS-15>
+          </EVM>
+          <TCFT Description="Transmit Center Frequency Tolerance, Unit: PPM">-15,15</TCFT>
+          <PER>10</PER>
+        </Specification>
+      </Wlan11n>
+    </Band_24G>
+    <Band_50G>
+      <Wlan11n Description="802.11n Band">
+        <BW_20M Control="Group">
+          <GroupCount>1</GroupCount>
+          <Group1>
+            <CenChan Description="Center channel 36~64 100~144 149~161(Channel step:4) is available">36,100,149</CenChan>
+            <PriChan Property="ReadOnly" Description="Primary channel position. 1:+10M,0:0,-1:-10M" Control="ComboBox" Elements="1,0,-1">0</PriChan>
+            <Modulation Control="ComboBox" Elements="MCS-8,MCS-9,MCS-10,MCS-11,MCS-12,MCS-13,MCS-14,MCS-15">MCS-15</Modulation>
+            <RXLVL Description="Rx level for per measurement. Unit:dBm">
+              <MCS-8>-65</MCS-8>
+              <MCS-9>-65</MCS-9>
+              <MCS-10>-65</MCS-10>
+              <MCS-11>-65</MCS-11>
+              <MCS-12>-65</MCS-12>
+              <MCS-13>-65</MCS-13>
+              <MCS-14>-65</MCS-14>
+              <MCS-15>-65</MCS-15>
+            </RXLVL>
+            <PacketCount Description="Total packets count for RX configuration!">1000</PacketCount>
+            <RefLVL Description="Reference level for tx measure. Unit:dBm">10</RefLVL>
+            <ChanCoding Description="Channel coding type selected: BCC, LDPC"  Control="ComboBox" Elements="0:BCC, 1:LDPC">0</ChanCoding>
+            <TestItem>
+              <TXP Description="Transmit power level" Control="CheckBox">1</TXP>
+              <TCFT Description="Transmit center frequency tolerance" Control="CheckBox">1</TCFT>
+              <EVM Description="Error vector magnitude" Control="CheckBox">1</EVM>
+              <SPECMASK Description="Transmit spectrum mask" Control="CheckBox">1</SPECMASK>
+              <PER Description="Receiver sensitivity" Control="CheckBox">1</PER>
+            </TestItem>
+          </Group1>
+        </BW_20M>
+        <BW_40M Control="Group">
+          <GroupCount>1</GroupCount>
+          <Group1>
+            <CenChan Description="Center channel 38~62 102~142 151~159 (channel step:8) is available">38,102,151</CenChan>
+            <PriChan Description="Primary channel position. 1:+10M,0:0,-1:-10M" Control="ComboBox" Elements="1,-1">1</PriChan>
+            <Modulation Control="ComboBox" Elements="MCS-8,MCS-9,MCS-10,MCS-11,MCS-12,MCS-13,MCS-14,MCS-15">MCS-15</Modulation>
+            <RXLVL Description="Rx level for per measurement. Unit:dBm">
+              <MCS-8>-65</MCS-8>
+              <MCS-9>-65</MCS-9>
+              <MCS-10>-65</MCS-10>
+              <MCS-11>-65</MCS-11>
+              <MCS-12>-65</MCS-12>
+              <MCS-13>-65</MCS-13>
+              <MCS-14>-65</MCS-14>
+              <MCS-15>-65</MCS-15>
+            </RXLVL>
+            <PacketCount Description="Total packets count for RX configuration!">1000</PacketCount>
+            <RefLVL Description="Reference level for tx measure. Unit:dBm">10</RefLVL>
+            <ChanCoding Description="Channel coding type selected: BCC, LDPC"  Control="ComboBox" Elements="0:BCC, 1:LDPC">0</ChanCoding>
+            <SBW Property="ReadOnly" Description="Signal Bandwidth. 0:20M, 1:40M, 2:80M"  Control="ComboBox" Elements="0,1">1</SBW>
+            <TestItem>
+              <TXP Description="Transmit power level" Control="CheckBox">1</TXP>
+              <TCFT Description="Transmit center frequency tolerance" Control="CheckBox">1</TCFT>
+              <EVM Description="Error vector magnitude" Control="CheckBox">1</EVM>
+              <SPECMASK Description="Transmit spectrum mask" Control="CheckBox">1</SPECMASK>
+              <PER Description="Receiver sensitivity" Control="CheckBox">1</PER>
+            </TestItem>
+          </Group1>
+        </BW_40M>
+        <Specification Description="Configure the test tolerance and specification">
+          <TXP Description="TX Power, Unit: dBm">8,20</TXP>
+          <EVM Description="Error Vector Magnitude, Unit: %">
+            <MCS-8>-5</MCS-8>
+            <MCS-9>-10</MCS-9>
+            <MCS-10>-13</MCS-10>
+            <MCS-11>-16</MCS-11>
+            <MCS-12>-19</MCS-12>
+            <MCS-13>-22</MCS-13>
+            <MCS-14>-25</MCS-14>
+            <MCS-15>-28</MCS-15>
+          </EVM>
+          <TCFT Description="Transmit Center Frequency Tolerance, Unit: PPM">-15,15</TCFT>
+          <PER>10</PER>
+        </Specification>
+      </Wlan11n>
+      <Wlan11ac Description="802.11ac Band">
+        <BW_20M Control="Group">
+          <GroupCount>1</GroupCount>
+          <Group1>
+            <CenChan Description="Center channel 36~64 100~144 149~161(Channel step:4) is available">36,100,149</CenChan>
+            <PriChan Property="InVisible" Description="Primary channel position. 1:+10M,0:0,-1:-10M" Control="ComboBox" Elements="1,0,-1">0</PriChan>
+            <Modulation Control="ComboBox" Elements="MCS0_2SS,MCS1_2SS,MCS2_2SS,MCS3_2SS,MCS4_2SS,MCS5_2SS,MCS6_2SS,MCS7_2SS,MCS8_2SS,MCS9_2SS">MCS8_2SS</Modulation>
+            <RXLVL Description="Rx level for per measurement. Unit:dBm">
+              <MCS0_2SS>-57</MCS0_2SS>
+              <MCS1_2SS>-57</MCS1_2SS>
+              <MCS2_2SS>-57</MCS2_2SS>
+              <MCS3_2SS>-57</MCS3_2SS>
+              <MCS4_2SS>-57</MCS4_2SS>
+              <MCS5_2SS>-57</MCS5_2SS>
+              <MCS6_2SS>-57</MCS6_2SS>
+              <MCS7_2SS>-57</MCS7_2SS>
+              <MCS8_2SS>-57</MCS8_2SS>
+              <MCS9_2SS>-57</MCS9_2SS>
+            </RXLVL>
+            <PacketCount Description="Total packets count for RX configuration!">1000</PacketCount>
+            <RefLVL Description="Reference level for tx measure. Unit:dBm">10</RefLVL>
+            <ChanCoding Description="Channel coding type selected: BCC, LDPC"  Control="ComboBox" Elements="0:BCC, 1:LDPC">0</ChanCoding>
+            <TestItem>
+              <TXP Description="Transmit power level" Control="CheckBox">1</TXP>
+              <TCFT Description="Transmit center frequency tolerance" Control="CheckBox">1</TCFT>
+              <EVM Description="Error vector magnitude" Control="CheckBox">1</EVM>
+              <SPECMASK Description="Transmit spectrum mask" Control="CheckBox">1</SPECMASK>
+              <PER Description="Receiver sensitivity" Control="CheckBox">1</PER>
+            </TestItem>
+          </Group1>
+        </BW_20M>
+        <BW_40M Control="Group">
+          <GroupCount>1</GroupCount>
+          <Group1>
+            <CenChan Description="Center channel 38~62 102~142 151~159 (channel step:8) is available">38,102,151</CenChan>
+            <PriChan Description="Primary channel position. 1:+10M,0:0,-1:-10M" Control="ComboBox" Elements="1,-1">1</PriChan>
+            <Modulation Control="ComboBox" Elements="MCS0_2SS,MCS1_2SS,MCS2_2SS,MCS3_2SS,MCS4_2SS,MCS5_2SS,MCS6_2SS,MCS7_2SS,MCS8_2SS,MCS9_2SS">MCS8_2SS</Modulation>
+            <RXLVL Description="Rx level for per measurement. Unit:dBm">
+              <MCS0_2SS>-57</MCS0_2SS>
+              <MCS1_2SS>-57</MCS1_2SS>
+              <MCS2_2SS>-57</MCS2_2SS>
+              <MCS3_2SS>-57</MCS3_2SS>
+              <MCS4_2SS>-57</MCS4_2SS>
+              <MCS5_2SS>-57</MCS5_2SS>
+              <MCS6_2SS>-57</MCS6_2SS>
+              <MCS7_2SS>-57</MCS7_2SS>
+              <MCS8_2SS>-57</MCS8_2SS>
+              <MCS9_2SS>-57</MCS9_2SS>
+            </RXLVL>
+            <PacketCount Description="Total packets count for RX configuration!">1000</PacketCount>
+            <RefLVL Description="Reference level for tx measure. Unit:dBm">10</RefLVL>
+            <ChanCoding Description="Channel coding type selected: BCC, LDPC"  Control="ComboBox" Elements="0:BCC, 1:LDPC">0</ChanCoding>
+            <SBW Description="Signal Bandwidth. 0:20M, 1:40M, 2:80M"  Control="ComboBox" Elements="0,1">1</SBW>
+            <TestItem>
+              <TXP Description="Transmit power level" Control="CheckBox">1</TXP>
+              <TCFT Description="Transmit center frequency tolerance" Control="CheckBox">1</TCFT>
+              <EVM Description="Error vector magnitude" Control="CheckBox">1</EVM>
+              <SPECMASK Description="Transmit spectrum mask" Control="CheckBox">1</SPECMASK>
+              <PER Description="Receiver sensitivity" Control="CheckBox">1</PER>
+            </TestItem>
+          </Group1>
+        </BW_40M>
+        <BW_80M Control="Group">
+          <GroupCount>1</GroupCount>
+          <Group1>
+            <CenChan Description="Center channel 42,58,106,122,138,155 is available">42,58,106</CenChan>
+            <PriChan Description="Primary channel position. 3:+30M,1:+10M,0:0,-1:-10M,-3:-30M" Control="ComboBox" Elements="3,1,-1,-3">1</PriChan>
+            <Modulation Control="ComboBox" Elements="MCS0_2SS,MCS1_2SS,MCS2_2SS,MCS3_2SS,MCS4_2SS,MCS5_2SS,MCS6_2SS,MCS7_2SS,MCS8_2SS,MCS9_2SS">MCS8_2SS</Modulation>
+            <RXLVL Description="Rx level for per measurement. Unit:dBm">
+              <MCS0_2SS>-57</MCS0_2SS>
+              <MCS1_2SS>-57</MCS1_2SS>
+              <MCS2_2SS>-57</MCS2_2SS>
+              <MCS3_2SS>-57</MCS3_2SS>
+              <MCS4_2SS>-57</MCS4_2SS>
+              <MCS5_2SS>-57</MCS5_2SS>
+              <MCS6_2SS>-57</MCS6_2SS>
+              <MCS7_2SS>-57</MCS7_2SS>
+              <MCS8_2SS>-57</MCS8_2SS>
+              <MCS9_2SS>-57</MCS9_2SS>
+            </RXLVL>
+            <PacketCount Description="Total packets count for RX configuration!">1000</PacketCount>
+            <RefLVL Description="Reference level for tx measure. Unit:dBm">10</RefLVL>
+            <ChanCoding Description="Channel coding type selected: BCC, LDPC"  Control="ComboBox" Elements="0:BCC, 1:LDPC">0</ChanCoding>
+            <SBW Description="Signal Bandwidth. 0:20M, 1:40M, 2:80M"  Control="ComboBox" Elements="0,1,2">2</SBW>
+            <TestItem>
+              <TXP Description="Transmit power level" Control="CheckBox">1</TXP>
+              <TCFT Description="Transmit center frequency tolerance" Control="CheckBox">1</TCFT>
+              <EVM Description="Error vector magnitude" Control="CheckBox">1</EVM>
+              <SPECMASK Description="Transmit spectrum mask" Control="CheckBox">1</SPECMASK>
+              <PER Description="Receiver sensitivity" Control="CheckBox">1</PER>
+            </TestItem>
+          </Group1>
+        </BW_80M>
+        <Specification Description="Configure the test tolerance and specification">
+          <TXP Description="TX Power, Unit: dBm">8,20</TXP>
+          <EVM Description="Error Vector Magnitude, Unit: %">
+            <MCS0_2SS>-5</MCS0_2SS>
+            <MCS1_2SS>-10</MCS1_2SS>
+            <MCS2_2SS>-13</MCS2_2SS>
+            <MCS3_2SS>-16</MCS3_2SS>
+            <MCS4_2SS>-19</MCS4_2SS>
+            <MCS5_2SS>-22</MCS5_2SS>
+            <MCS6_2SS>-25</MCS6_2SS>
+            <MCS7_2SS>-28</MCS7_2SS>
+            <MCS8_2SS>-30</MCS8_2SS>
+            <MCS9_2SS>-32</MCS9_2SS>
+          </EVM>
+          <TCFT Description="Transmit Center Frequency Tolerance, Unit: PPM">-15,15</TCFT>
+          <PER>10</PER>
+        </Specification>
+      </Wlan11ac>
+    </Band_50G>
+  </Param>
+</Node>

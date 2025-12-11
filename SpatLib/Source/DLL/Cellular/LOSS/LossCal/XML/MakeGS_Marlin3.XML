@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Node>
+  <Option>
+    <WCN>
+      <AntennaSwitch Property="InVisible" Control="CheckBox">1</AntennaSwitch>
+      <WLAN>
+        <WLAN2.4GHz Tag="Show">
+          <Ant1st Description="Channel 0 enable" Control="CheckBox">1</Ant1st>
+          <Ant2nd Description="Channel 1 enable" Control="CheckBox">0</Ant2nd>
+          <Wlancw Description="CW" Control="CheckBox">0</Wlancw>
+          <Wlan11b Description="IEEE 802.11b" Control="CheckBox">1</Wlan11b>
+          <Wlan11g Description="IEEE 802.11g" Control="CheckBox">1</Wlan11g>
+          <Wlan11n Description="IEEE 802.11n 2.4GHz" Control="CheckBox">1</Wlan11n>
+        </WLAN2.4GHz>
+        <WLAN5.0GHz Tag="Show">
+          <Ant1st Description="Channel 0 enable" Control="CheckBox">1</Ant1st>
+          <Ant2nd Description="Channel 1 enable" Control="CheckBox">0</Ant2nd>
+          <Wlancw Description="CW" Control="CheckBox">0</Wlancw>
+          <Wlan11n Description="IEEE 802.11n 5.0GHz" Control="CheckBox">1</Wlan11n>
+          <Wlan11ac Description="IEEE 802.11ac" Control="CheckBox">1</Wlan11ac>
+          <Wlan11a Description="IEEE 802.11a" Control="CheckBox">1</Wlan11a>
+        </WLAN5.0GHz>
+      </WLAN>
+      <BT>
+        <Shared Description="Shared RF path" Control="CheckBox">1</Shared>
+        <StandAlone Description="StandAlone RF path" Control="CheckBox">0</StandAlone>
+        <BT Tag="Show">
+          <BDR Control="CheckBox">1</BDR>
+          <EDR Control="CheckBox">1</EDR>
+          <BLE_5.0 Control="CheckBox">1</BLE_5.0>
+        </BT>
+      </BT>
+      <GPS Tag="Show">
+        <GPS_L1 Description="GPS L1" Tag="Show">
+          <Check Control="CheckBox">1</Check>
+          <ANT Control="ComboBox" Elements="1stANT,2ndANT"  Description="Channel enable">1stANT</ANT>
+        </GPS_L1>
+      </GPS>
+    </WCN>
+  </Option>
+  <Param>
+    <WLAN>
+      <RefLevel>20.0</RefLevel>
+    </WLAN>
+    <BT>
+      <RefLevel>20.0</RefLevel>
+    </BT>
+  </Param>
+</Node>

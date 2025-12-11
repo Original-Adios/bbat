@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Node>
+  <Option>
+    <Mic Control="ComboBox" Description="设置Mic" Elements="MainMic,SubMic,FP_MainMic">MainMic</Mic>
+    <Speaker Control="ComboBox" Description="设置Speaker" Elements="MainSpeaker,MainReceiver,FP_Speaker,FP_Receiver">MainSpeaker</Speaker>
+	  <LoopSelect>
+		  <LoopIn Description="G3音频输入通道，Speaker/Sub Speaker/Receiver分别为1/2/3" Control="ComboBox" Elements="1,2,3">1</LoopIn>
+		  <LoopOut Description="G3音频输出通道，Main Mic/Sub Mic/PA分别为1/2/3" Control="ComboBox" Elements="1,2,3">1</LoopOut>
+	  </LoopSelect> 
+	<SNR Control="EditBox" Description="配置SNR">20</SNR>
+    <Peak Control="EditBox" Description="配置Peak">5000</Peak>
+    <Mic_8K Control="CheckBox" Description="Mic 8K">0</Mic_8K>
+	<Voltage>
+		<UpMicN>0</UpMicN>
+		<DownMicP>0</DownMicP>
+	</Voltage>
+	</Option>
+	<Param>
+  </Param>
+</Node>

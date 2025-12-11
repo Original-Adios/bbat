@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Node>
+  <Option>
+      <CheckBtUnique Control="CheckBox" Description="Check Bt Addr unique">0</CheckBtUnique>
+      <SaveInfoToTxt Control="CheckBox" Description="Save Bt Addr Info">1</SaveInfoToTxt>
+      <TXT Control="SaveFileDialog" Filter="TXT file(*.txt)|*.txt">..\HciBtAddress.txt</TXT>
+  </Option>
+  <Param>
+  </Param>
+</Node>

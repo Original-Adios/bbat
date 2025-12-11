@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Node>
+  <Option>
+	  <RED>  
+        <SpecUp  Control="EditBox" Description="RGB Value上限">10000</SpecUp>
+        <SpecDown Control="EditBox" Description="RGB Value下限">50</SpecDown>
+		  <PercentDown Control="EditBox" Description="RGB Percent下限">45</PercentDown>
+	  </RED>
+	  <BLUE>  
+        <SpecUp Control="EditBox" Description="RGB Value上限">10000</SpecUp>
+        <SpecDown Control="EditBox" Description="RGB Value下限">100</SpecDown>
+	  <PercentDown Control="EditBox" Description="RGB Percent下限">45</PercentDown>
+	  </BLUE>
+  </Option>
+  <Param>
+	  <SleepTime  Control="EditBox" Description="屏幕点亮后延时SleepTime ms再读取RGB Sensor数值">2000</SleepTime>
+  </Param>
+</Node>

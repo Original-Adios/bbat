@@ -1,0 +1,281 @@
+#include "StdAfx.h"
+#include "NalClc_UIS8910.h"
+#include "assert.h"
+#include "LteUtility.h"
+#include <algorithm>
+#include <string.h>
+CNalClc_UIS8910::CNalClc_UIS8910( LPCWSTR lpName, CFuncCenter* pFuncCenter ) : CFuncBase(lpName, pFuncCenter)
+{
+	m_plossVal = NULL;
+}
+
+CNalClc_UIS8910::~CNalClc_UIS8910(void)
+{
+
+}
+
+SPRESULT CNalClc_UIS8910::PreInit()
+{
+    CHKRESULT(__super::PreInit());
+
+    m_plossVal = &((CImpBaseUIS8910*)m_pSpatBase)->m_lossVal;
+
+    return SP_OK;
+}
+
+SPRESULT CNalClc_UIS8910::SetResult()
+{
+    std::vector<RF_CABLE_LOSS_POINT_EX> arrLoss;
+    arrLoss.clear();
+
+    for (int j = 0; j < MAX_LTE_ANT; j++)
+    {
+        if (m_arrConfig[j].size() == 0)
+        {
+            continue;
+        }
+        uint32 iArrConfigSize = m_arrConfig[j].size();
+        for (uint32 i = 0; i < iArrConfigSize; i++)
+        {
+            Config* pConfig = &m_arrConfig[j][i];
+            Result* pResult = &m_arrResult[j][i];
+
+            if (pConfig->byPath == 0)
+            {
+                continue;
+            }
+
+            RF_IO_E TRX = RF_IO_TX;
+            if (pConfig->byPath == RX)
+            {
+                TRX = RF_IO_RX;
+            }
+
+            std::vector<RF_CABLE_LOSS_POINT_EX>::iterator itor;
+            itor = std::find_if(arrLoss.begin(), arrLoss.end(), 
+                vector_finder(pConfig->byBand, pConfig->usChannel, pConfig->dFreq, TRX));
+            if (itor == arrLoss.end())
+            {
+                RF_CABLE_LOSS_POINT_EX item;
+                memset(&item, 0, sizeof(item));
+                item.nBand = pConfig->byBand;
+                item.dFreq[TRX] = pConfig->dFreq;
+                item.uArfcn[TRX] = pConfig->usChannel;
+                item.dLoss[j][TRX] = pResult->dLoss;
+                //item.dLoss[pResult->usAnt][RF_IO_RX] = pResult->dLoss;
+                arrLoss.push_back(item);
+            }
+            else
+            {
+                (*itor).nBand = pConfig->byBand;
+                (*itor).dFreq[TRX] = pConfig->dFreq;
+                (*itor).uArfcn[TRX] = pConfig->usChannel;
+                (*itor).dLoss[j][TRX] = pResult->dLoss;
+                //(*itor).dLoss[pResult->usAnt][RF_IO_RX] = pResult->dLoss;
+            }
+        }
+    }
+
+    //std::sort(arrLoss.begin(), arrLoss.end(), cmp());
+
+    memset(&m_plossVal->lteLoss, 0, sizeof(m_plossVal->lteLoss));
+    m_plossVal->lteLoss.nCount = arrLoss.size();
+    for (uint32 i = 0; i < arrLoss.size(); i++)
+    {
+        m_plossVal->lteLoss.arrPoint[i].nBand = arrLoss[i].nBand;
+        m_plossVal->lteLoss.arrPoint[i].dFreq[RF_IO_TX] = arrLoss[i].dFreq[RF_IO_TX];
+        m_plossVal->lteLoss.arrPoint[i].dFreq[RF_IO_RX] = arrLoss[i].dFreq[RF_IO_RX];
+        m_plossVal->lteLoss.arrPoint[i].uArfcn[RF_IO_TX] = arrLoss[i].uArfcn[RF_IO_TX];
+        m_plossVal->lteLoss.arrPoint[i].uArfcn[RF_IO_RX] = arrLoss[i].uArfcn[RF_IO_RX];
+        for (int j = 0; j < MAX_RF_ANT; j++)
+        {
+            m_plossVal->lteLoss.arrPoint[i].dLoss[j][RF_IO_TX] = arrLoss[i].dLoss[j][RF_IO_TX];
+            m_plossVal->lteLoss.arrPoint[i].dLoss[j][RF_IO_RX] = arrLoss[i].dLoss[j][RF_IO_RX];
+        }
+    }
+
+    return SP_OK;
+}
+
+SPRESULT CNalClc_UIS8910::ClearResult()
+{
+    ClearResult(LTE_ANT_MAIN);
+    ClearResult(LTE_ANT_DIV );
+
+    return SP_OK;
+}
+
+SPRESULT CNalClc_UIS8910::ClearResultAcc()
+{
+    ClearResultAcc(LTE_ANT_MAIN);
+    ClearResultAcc(LTE_ANT_DIV );
+
+    return SP_OK;
+}
+
+SPRESULT CNalClc_UIS8910::ClearResult( LTE_ANT_E Ant )
+{
+    if (m_arrResult[Ant].size() != 0)
+    {
+        memset(&m_arrResult[Ant][0], 0, sizeof(Result) * m_arrResult[Ant].size());
+    }
+
+    return SP_OK;
+}
+
+SPRESULT CNalClc_UIS8910::ClearResultAcc( LTE_ANT_E Ant )
+{
+    if (m_arrResult[Ant].size() != 0)
+    {
+        memset(&m_arrResultAcc[Ant][0], 0, sizeof(Result) * m_arrResultAcc[Ant].size());
+    }
+
+    return SP_OK;
+}
+
+SPRESULT CNalClc_UIS8910::InitResult()
+{
+    InitResult(LTE_ANT_MAIN);
+    InitResult(LTE_ANT_DIV );
+
+    return SP_OK;
+}
+
+SPRESULT CNalClc_UIS8910::InitResultAcc()
+{
+    InitResultAcc(LTE_ANT_MAIN);
+    InitResultAcc(LTE_ANT_DIV );
+
+    return SP_OK;
+}
+
+SPRESULT CNalClc_UIS8910::InitResult( LTE_ANT_E Ant )
+{
+    m_arrResult[Ant].resize(m_arrConfig[Ant].size());
+
+    return SP_OK;
+}
+
+SPRESULT CNalClc_UIS8910::InitResultAcc( LTE_ANT_E Ant )
+{
+    m_arrResultAcc[Ant].resize(m_arrConfig[Ant].size());
+
+    return SP_OK;
+}
+
+void CNalClc_UIS8910::Deserialization( std::vector<uint8>* parrData )
+{
+    uint16 usMainLength = *(uint16*)&(*parrData)[0];
+    uint16 usDivLength = *(uint16*)&(*parrData)[2];
+
+    if (parrData->size()!= (uint32)(4 + usMainLength + usDivLength))
+    {
+        assert(0);
+    }
+
+    m_arrConfig[LTE_ANT_MAIN].clear();
+    m_arrConfig[LTE_ANT_DIV].clear();
+
+    if (usMainLength != 0)
+    {
+        Deserialization(&(*parrData)[4], usMainLength, LTE_ANT_MAIN);
+    }
+    if (usDivLength != 0)
+    {
+        Deserialization(&(*parrData)[4 + usMainLength], usDivLength, LTE_ANT_DIV);
+    }
+}
+
+void CNalClc_UIS8910::Deserialization( uint8* pData, uint16 usLength, LTE_ANT_E Ant )
+{
+    uint16 usIndex = 0;
+    BOOL bEnd = FALSE;
+    while (!bEnd)
+    {
+        if ((usLength - usIndex) < 7)
+        {
+            assert(0);
+        }
+
+        Config Item;
+        memset(&Item, 0, sizeof(Config));
+        Item.dFreq = (double)(*((uint16*)pData) / 10);
+        pData += 2;
+        Item.usChannel = *((uint32*)pData);
+        pData += 4;
+        Item.byBand = (uint16)CLteUtility::m_BandInfo[*pData].Band;
+        Item.byIndicator = (uint8)CLteUtility::m_BandInfo[*pData].nIndicator;
+        pData++;
+        usIndex += 7;
+
+        if (*pData == TX)
+        {
+            pData++;
+            usIndex += 1;
+            if ((usLength - usIndex) < 4)
+            {
+                assert(0);
+                LogFmtStrA(SPLOGLV_ERROR, "Tx Loss data Error!");
+            }
+
+            Item.byPath = TX;
+            Item.Tx.usWord = *((uint16*)pData);
+            pData += 2;
+            Item.Tx.dPower = (double)(*((int16*)pData) / 100.0);
+            pData += 2;
+            m_arrConfig[Ant].push_back(Item);
+            usIndex += 4;
+        }
+        else
+        {
+            pData++;
+            usIndex += 1;
+            if ((usLength - usIndex) < 5)
+            {
+                LogFmtStrA(SPLOGLV_ERROR, "Rx Loss data Error!");
+                assert(0);
+            }
+
+            Item.byPath = RX;
+            Item.Rx.dRssi = (double)(*((int16*)pData) / 100.0);
+            pData += 2;
+            Item.Rx.dCellPower = (double)(*((int16*)pData) / 100.0);
+            pData += 2;
+            Item.Rx.byIndex = *((uint8*)pData);
+            pData ++;
+            m_arrConfig[Ant].push_back(Item);
+            usIndex += 5;
+        }
+
+        if (usIndex > usLength)
+        {
+            LogFmtStrA(SPLOGLV_ERROR, "Loss data Error!");
+            assert(0);
+        }
+
+        if (usIndex == usLength)
+        {
+            bEnd = TRUE;
+        }
+    }
+}
+
+
+SPRESULT CNalClc_UIS8910::AccResultPro(int ave_calc)
+{
+    for (int j = 0; j < MAX_LTE_ANT; j++)
+    {
+        uint32 iArrResultSize = m_arrResult[j].size();
+        for (uint32 i = 0; i < iArrResultSize; i++)
+        {
+            m_arrResultAcc[j][i].dLoss += m_arrResult[j][i].dLoss;
+            if(ave_calc)
+            {
+                m_arrResultAcc[j][i].dLoss /= 2;
+                m_arrResult[j][i].dLoss = m_arrResultAcc[j][i].dLoss;
+            }
+        }
+    }
+
+    return SP_OK;
+}

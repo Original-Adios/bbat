@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Node>
+  <Option>
+    <DUTType Property="InVisible">
+      <UEType Description="UE type code.">0x8910</UEType>
+    </DUTType>
+    <GSM Description="Specifies which bands to test" Tag="Show">
+        <GSM850M Control="CheckBox">1</GSM850M>
+        <EGSM900 Control="CheckBox">1</EGSM900>
+        <DCS1800 Control="CheckBox">1</DCS1800>
+        <PCS1900 Control="CheckBox">1</PCS1900>
+    </GSM>
+    <LTE>
+      <LTE Control="BoolComboBox" CtrlNode="Mode" Tag="Show">
+        <Mode Control="ComboBox" Elements="Automatically,Manually" Tag="Wrap">Automatically</Mode>  
+        <Band1 Control="CheckBox">0</Band1>
+        <Band2 Control="CheckBox">0</Band2>
+        <Band3 Control="CheckBox">0</Band3>
+        <Band3_35M Control="CheckBox">0</Band3_35M>
+        <Band4 Control="CheckBox">0</Band4>
+        <Band5 Control="CheckBox">0</Band5>
+        <Band6 Control="CheckBox">0</Band6>
+        <Band7 Control="CheckBox">0</Band7>
+        <Band8 Control="CheckBox">0</Band8>
+        <Band9 Control="CheckBox">0</Band9>
+        <Band10 Control="CheckBox">0</Band10>
+        <Band11 Control="CheckBox">0</Band11>
+        <Band12 Control="CheckBox">0</Band12>
+        <Band13 Control="CheckBox">0</Band13>
+        <Band14 Control="CheckBox">0</Band14>
+        <Band17 Control="CheckBox">0</Band17>
+        <Band18 Control="CheckBox">0</Band18>
+        <Band19 Control="CheckBox">0</Band19>
+        <Band20 Control="CheckBox">0</Band20>
+        <Band21 Control="CheckBox">0</Band21>
+        <Band22 Control="CheckBox">0</Band22>
+        <Band23 Control="CheckBox">0</Band23>
+        <Band24 Control="CheckBox">0</Band24>
+        <Band25 Control="CheckBox">0</Band25>
+        <Band26 Control="CheckBox">0</Band26>
+        <Band28 Control="CheckBox">0</Band28>
+        <Band28A Control="CheckBox">0</Band28A>
+        <Band28B Control="CheckBox">0</Band28B>
+        <Band31 Control="CheckBox">0</Band31>
+        <Band33 Control="CheckBox">0</Band33>
+        <Band34 Control="CheckBox">0</Band34>
+        <Band35 Control="CheckBox">0</Band35>
+        <Band36 Control="CheckBox">0</Band36>
+        <Band37 Control="CheckBox">0</Band37>
+        <Band38 Control="CheckBox">0</Band38>
+        <Band39 Control="CheckBox">0</Band39>
+        <Band40 Control="CheckBox">0</Band40>
+        <Band41 Control="CheckBox">0</Band41>
+        <Band41_100M Control="CheckBox">0</Band41_100M>
+        <Band41_120M Control="CheckBox">0</Band41_120M>
+        <Band41_140M Control="CheckBox">0</Band41_140M>
+        <Band41_160M Control="CheckBox">0</Band41_160M>
+        <Band42 Control="CheckBox">0</Band42>
+        <Band43 Control="CheckBox">0</Band43>
+        <Band45 Control="CheckBox">0</Band45>
+        <Band59 Control="CheckBox">0</Band59>
+        <Band61 Control="CheckBox">0</Band61>
+        <Band62 Control="CheckBox">0</Band62>
+        <Band66 Control="CheckBox">0</Band66>
+        <Band72 Control="CheckBox">0</Band72>
+        <Band73 Control="CheckBox">0</Band73>
+        <Band26_25M Control="CheckBox">0</Band26_25M>
+      </LTE>
+      <ANT Property="InVisible">
+        <Primary Control="CheckBox">1</Primary>
+        <Diversity Control="CheckBox">0</Diversity>
+      </ANT>
+      <Compatibility Property="InVisible" Control="CheckBox">1</Compatibility>
+    </LTE>
+    <WCN Property="InVisible">
+      <BT>
+        <BT>
+          <BDR Control="CheckBox">0</BDR>
+          <EDR Control="CheckBox">0</EDR>
+          <BLE Control="CheckBox">0</BLE>
+        </BT>
+      </BT>
+      <GPS>
+        <GPS Control="CheckBox">0</GPS>
+      </GPS>
+    </WCN>
+  </Option>
+  <Param>
+    <GSM>
+      <PCL>
+        <GSM850M>15</GSM850M>
+        <EGSM900>15</EGSM900>
+        <DCS1800>10</DCS1800>
+        <PCS1900>10</PCS1900>
+      </PCL>
+    </GSM>
+    <LTE>
+      <PriorTxFreqMeasLoss Description="Priority use uplink to test loss." Control="CheckBox">0</PriorTxFreqMeasLoss>
+      <OnlyTxFreqMeasLoss Description="Only use uplink to test loss." Control="CheckBox">0</OnlyTxFreqMeasLoss>
+      <OnlyRxFreqMeasLoss Description="Only use downlink to test loss." Control="CheckBox">0</OnlyRxFreqMeasLoss>
+      <MaxCellPower>-30.0</MaxCellPower>
+      <MinCellPower>-70.0</MinCellPower>
+      <RxTarget>-15.0</RxTarget>
+      <RxTolerance>0.5</RxTolerance>
+      <RxIndex>60</RxIndex>
+      <TestNum>1</TestNum>
+      <TxTarget>-5.0</TxTarget>
+    </LTE>
+    <BT Property="InVisible">
+      <RefLevel>20.0</RefLevel>
+    </BT>
+</Param>
+</Node>

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Node>
+  <Option>
+    <TESTMODE Control="ComboBox" Elements="Single-sided,Double-sided">Single-sided</TESTMODE>
+    <CC Control="ComboBox" Elements="CC0,CC1">CC0</CC>
+    <USB Control="ComboBox" Elements="USB2.0,USB3.0">USB2.0</USB>
+    <SleepTime Description="测试反面USB延时时间" Control="EditBox">15000</SleepTime>
+</Option>
+  <Param>
+  </Param>
+</Node>

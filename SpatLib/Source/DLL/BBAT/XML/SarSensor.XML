@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Node>
+	<Option>
+		<VoltageUpDelayTime  Description="上电前延时">3000</VoltageUpDelayTime>
+		<VoltageDownDelayTime Description="下电前延时">1000</VoltageDownDelayTime>
+	</Option>
+	<Param>
+	</Param>
+</Node>

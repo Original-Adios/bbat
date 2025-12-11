@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Node>
+	<Option>
+	 <FERLimit Description="Unit:KHZ">50</FERLimit>
+   <STEP2_Timeout >60000</STEP2_Timeout>
+   <STEP3_Timeout >60000</STEP3_Timeout>
+   <STEP4_Timeout >60000</STEP4_Timeout>
+  </Option>
+	<Param>
+    <CDAC_START Description="Limit:0~63">0</CDAC_START>
+    <CDAC_END Description="Limit:0~63">63</CDAC_END>
+    <RFPath Description="RF Path, no path select none" Control="ComboBox" Elements="StandAlone,Shared, NONE">Shared</RFPath>
+    <Limit>
+      <STEP1_2_OSC Description="">3</STEP1_2_OSC>
+      <STEP2_3_TSX Description="">1.5</STEP2_3_TSX>
+      <STEP2_3_DELTA Description="">5</STEP2_3_DELTA>
+      <STEP3_4_DELTA Description="">30</STEP3_4_DELTA>
+      <C1_TSX Description="">-0.45,-0.1</C1_TSX>
+      <C1_OSC Description="">-0.03,0.03</C1_OSC>
+    </Limit>
+    <TSX_Enable Control="CheckBox" Property="InVisible" Description="TSX Enable">1</TSX_Enable>
+    <TSX_Start Control="CheckBox" Property="InVisible" Description="">1</TSX_Start>
+	</Param>
+</Node>

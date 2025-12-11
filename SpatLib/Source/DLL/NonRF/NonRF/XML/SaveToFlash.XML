@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Node>
+	<Option>
+		<Module Control="ComboBox" Elements="GSM,TD-SCDMA,WCDMA,LTE">GSM</Module>
+		<TimeOut Description="Unit: ms">20000</TimeOut>
+	</Option>
+	<Param>
+	</Param>
+</Node>

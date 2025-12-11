@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Node>
+  <Option>
+	<NTC Control="CheckBox">1</NTC>
+	<NTC_SUB Control="CheckBox">0</NTC_SUB>
+    <UpSpec Description="测试上限(度)">35</UpSpec>
+    <DownSpec Description="测试下限(度)">15</DownSpec>
+</Option>
+  <Param>
+  </Param>
+</Node>

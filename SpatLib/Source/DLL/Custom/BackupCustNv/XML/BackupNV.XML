@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Node>
+	<Option>
+    <Magic Description="Digital">1</Magic>
+    <SavePath Control="FolderDialog"></SavePath>
+  </Option>
+	<Param>       
+	</Param>
+</Node>

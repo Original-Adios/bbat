@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Node>
+  <Option>
+    <FilePath Control="FileDialog" Filter="input(*.txt)|*.txt||">.\input.txt</FilePath>
+  </Option>
+</Node>

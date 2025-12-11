@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Node>
+  <Option>
+    <KeyNumber Control="EditBox" Description="键值数量">0</KeyNumber>
+    <Expect_KeyValue Control="EditBox" Description="期望键值">0</Expect_KeyValue>
+</Option>
+  <Param>
+  </Param>
+</Node>

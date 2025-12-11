@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Node>
+	<Option>
+	  <StationName></StationName>
+		<FileFolder Control="FolderDialog"></FileFolder> 		
+	</Option>
+	<Param>
+	</Param>
+</Node>

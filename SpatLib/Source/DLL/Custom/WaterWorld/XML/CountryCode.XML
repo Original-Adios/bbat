@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Node>
+  <Option>
+    <SoftwarePN Description="Input SoftwarePN, max. length is 16 characters"></SoftwarePN>
+    <BatteryCheck>
+      <Active Control="CheckBox">1</Active>
+      <Uplimit Description="Battery Max Voltage(v)">4.2</Uplimit>
+      <Downlimit Description="Battery Max Voltage(v)">3.4</Downlimit>
+    </BatteryCheck>
+  </Option>
+  <Param>
+  </Param>
+</Node>

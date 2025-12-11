@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Node>
+  <Option>
+	<NativeMMIFlag Tag="Show">
+      <WholeMMI Control="CheckBox" Description="Check whole MMI">0</WholeMMI>
+      <PCBAMMI Control="CheckBox" Description="Check whole MMI">0</PCBAMMI>
+    </NativeMMIFlag>
+    <BBATFlag Tag="Show">
+      <BBAT Control="CheckBox" Description="Check whole MMI">0</BBAT>
+    </BBATFlag>
+	<APKMMIFlag Tag="Show">
+	  <APKMMI Control="CheckBox" Description="Check APK MMI">0</APKMMI>
+	</APKMMIFlag>
+    <CaliFlag Tag="Show" Property="InVisible">
+      <PCS_CALI_AGC Control="CheckBox">0</PCS_CALI_AGC>
+      <PCS_CALI_APC Control="CheckBox">0</PCS_CALI_APC>
+      <DCS_CALI_AGC Control="CheckBox">0</DCS_CALI_AGC>
+      <DCS_CALI_APC Control="CheckBox">0</DCS_CALI_APC>
+      <EGSM_CALI_AGC Control="CheckBox">0</EGSM_CALI_AGC>
+      <EGSM_CALI_APC Control="CheckBox">0</EGSM_CALI_APC>
+      <GSM850_CALI_AGC Control="CheckBox">0</GSM850_CALI_AGC>
+      <GSM850_CALI_APC Control="CheckBox">0</GSM850_CALI_APC>
+      <GSM_CALI_AFC Control="CheckBox">0</GSM_CALI_AFC>
+      <MISC_ADC Control="CheckBox">0</MISC_ADC>
+      <PCS_FINAL Control="CheckBox">0</PCS_FINAL>
+      <DCS_FINAL Control="CheckBox">0</DCS_FINAL>
+      <EGSM_FINAL Control="CheckBox">0</EGSM_FINAL>
+      <GSM850_FINAL Control="CheckBox">0</GSM850_FINAL>
+      <TD_CALI_AFC Control="CheckBox">0</TD_CALI_AFC>
+      <TD_CALI_APC Control="CheckBox">0</TD_CALI_APC>
+      <TD_CALI_AGC Control="CheckBox">0</TD_CALI_AGC>
+      <TD_FINAL Control="CheckBox">0</TD_FINAL>
+      <GSM_ANTENNA Control="CheckBox">0</GSM_ANTENNA>
+      <EDGE_CALI Control="CheckBox">0</EDGE_CALI>
+      <EDGE_FINAL Control="CheckBox">0</EDGE_FINAL>
+      <MISC_MMI_CIT Control="CheckBox">0</MISC_MMI_CIT>
+      <W_CALI_BANDI Control="CheckBox">0</W_CALI_BANDI>
+      <W_CALI_BANDII Control="CheckBox">0</W_CALI_BANDII>
+      <W_CALI_BANDV Control="CheckBox">0</W_CALI_BANDV>
+      <W_CALI_BANDVIII Control="CheckBox">0</W_CALI_BANDVIII>
+      <W_CALI_BANDIV Control="CheckBox">0</W_CALI_BANDIV>
+      <W_FINAL_TEST Control="CheckBox">0</W_FINAL_TEST>
+      <LTE_CALI_AFC_TDD Control="CheckBox">0</LTE_CALI_AFC_TDD>
+      <LTE_CALI_AGC_TDD Control="CheckBox">0</LTE_CALI_AGC_TDD>
+      <LTE_CALI_APC_TDD Control="CheckBox">0</LTE_CALI_APC_TDD>
+      <LTE_CALI_AFC_FDD Control="CheckBox">0</LTE_CALI_AFC_FDD>
+      <LTE_CALI_AGC_FDD Control="CheckBox">0</LTE_CALI_AGC_FDD>
+      <LTE_CALI_APC_FDD Control="CheckBox">0</LTE_CALI_APC_FDD>
+      <LTE_FINAL_TDD Control="CheckBox">0</LTE_FINAL_TDD>
+      <LTE_ANTENNA_TDD Control="CheckBox">0</LTE_ANTENNA_TDD>
+      <LTE_FINAL_FDD Control="CheckBox">0</LTE_FINAL_FDD>
+      <LTE_ANTENNA_FDD Control="CheckBox">0</LTE_ANTENNA_FDD>
+    </CaliFlag>
+  </Option>
+  <Param>
+  </Param>
+</Node>

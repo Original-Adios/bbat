@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Node>
+  <Option>
+    <IMEI>
+      <IMEI1>
+        <Enable Control="CheckBox">1</Enable>
+        <Check>
+          <!-->CheckEnable Control="CheckBox">0</CheckEnable-->
+          <Prefix Description="IMEI前缀, 若为空则不检查"></Prefix>
+          <CheckBarcode Control="CheckBox">1</CheckBarcode>
+        </Check>
+      </IMEI1>
+      <IMEI2>
+        <Enable Control="CheckBox">1</Enable>
+        <Check>
+          <!-->CheckEnable Control="CheckBox">0</CheckEnable-->
+          <Prefix Description="IMEI前缀, 若为空则不检查"></Prefix>
+          <CheckBarcode Control="CheckBox">1</CheckBarcode>
+        </Check>
+      </IMEI2>
+    </IMEI>
+    <SN>
+      <SN1>
+        <Enable Control="CheckBox">1</Enable>
+        <Check>
+          <!-->CheckEnable Control="CheckBox">0</CheckEnable-->
+          <Prefix Description="SN1前缀, 若为空则不检查"></Prefix>
+          <CheckBarcode Control="CheckBox">1</CheckBarcode>
+        </Check>
+      </SN1>
+      <SN2>
+        <Enable Control="CheckBox">1</Enable>
+        <Check>
+          <!-->CheckEnable Control="CheckBox">0</CheckEnable-->
+          <Prefix Description="SN2前缀, 若为空则不检查"></Prefix>
+          <CheckBarcode Control="CheckBox">1</CheckBarcode>
+        </Check>
+      </SN2>
+    </SN>
+    <BTWIFI>
+      <BT>
+        <Enable Control="CheckBox">1</Enable>
+        <Check>
+          <!-->CheckEnable Control="CheckBox">0</CheckEnable-->
+          <Prefix Description="BT前缀, 若为空则不检查"></Prefix>
+          <CheckBarcode Control="CheckBox">1</CheckBarcode>
+        </Check>
+      </BT>
+      <WIFI>
+        <Enable Control="CheckBox">1</Enable>
+        <Check>
+          <!-->CheckEnable Control="CheckBox">0</CheckEnable-->
+          <Prefix Description="WIFI前缀, 若为空则不检查"></Prefix>
+          <CheckBarcode Control="CheckBox">1</CheckBarcode>
+        </Check>
+      </WIFI>
+    </BTWIFI>
+  </Option>
+  <Param>
+  </Param>
+</Node>

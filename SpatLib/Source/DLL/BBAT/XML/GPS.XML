@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Node>
+  <Option>
+    <GPS_OPEN Control="CheckBox">1</GPS_OPEN>
+    <GPS_SEARCH Control="CheckBox">1</GPS_SEARCH>
+    <GPS_CLOSE Control="CheckBox">1</GPS_CLOSE>
+    <Read_Times Control="EditBox">2</Read_Times>
+    <Min_AP_Number Description="最小AP数量">3</Min_AP_Number>
+    <Min_RSSI_Number Description="读Rssi">35</Min_RSSI_Number>
+</Option>
+  <Param>
+  </Param>
+</Node>

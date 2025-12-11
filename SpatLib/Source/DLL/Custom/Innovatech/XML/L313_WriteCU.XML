@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Node>
+  <Option>
+    <GetCUFromMes Control="ComboBox" Elements="OFF,CODE1,CODE2,CODE3,CODE4,CODE5" Description="OFF:Locally configured CU;CODE1:MES Code1 ">CODE1</GetCUFromMes>
+	  <CU></CU>
+  </Option>
+</Node>

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Node>
+  <FlowControl>
+    <RunMode Control="ComboBox" Elements="NORMAL,ALWAYS">ALWAYS</RunMode>
+    <LoopCount>1</LoopCount>
+    <BreakCondition Control="ComboBox" Elements="FAIL,PASS,SKIP" Description="Break condition while loop testing.">PASS</BreakCondition>
+  </FlowControl>
+	<Option>
+    <Mode Property="InVisible" Control="ComboBox" Elements="Auto,Command" Description="Auto: 优先控制程控电源断电, Command: 命令断电">Auto</Mode>
+    <DelayTime Property="InVisible" Description="Sleep time after power off">3000</DelayTime>
+	</Option>
+	<Param>
+	</Param>
+</Node>

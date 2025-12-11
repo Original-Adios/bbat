@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Node>
+  <Option>
+  <Headset Control="ComboBox" Description="耳机插口类型" Elements="EUROPE,AMERICA">AMERICA</Headset>
+	<HeadsetMic Control="ComboBox" Elements="WithMic,WithoutMic">WithMic</HeadsetMic>
+	<FeaturePhone Description="功能机需勾选" Control="CheckBox">0</FeaturePhone>
+	<Snr8K Control="CheckBox">0</Snr8K>
+	<SNR Description="配置SNR" Control="EditBox">20</SNR>
+	<PEAK Description="配置Peak" Control="EditBox">5000</PEAK>
+	<Voltage>
+		<DownSpec Control="EditBox">0.0</DownSpec>
+		<UpSpec Control="EditBox">0.0</UpSpec>
+	</Voltage>
+</Option>
+  <Param>
+  </Param>
+</Node>
+

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Node>
+  <Option>
+    <APPID>
+      <Digits Description="APPID位数，默认32位">32</Digits>
+    </APPID>
+  </Option>
+  <Param>
+  </Param>
+</Node>

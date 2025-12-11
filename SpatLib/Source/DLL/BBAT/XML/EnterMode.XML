@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Node>
+  <Option>
+	<PowerVoltage Control="ComboBox" Elements="4V,12V">4V</PowerVoltage>
+	<EnterModeTimeout Description="ms">30000</EnterModeTimeout>
+  </Option>
+  <Param>
+	  <AutoStartByJig Control="CheckBox" Description="夹具下压自动启动">0</AutoStartByJig>
+	  <FunctionBoxPort1 Control="EditBox" Description="站位1盒子端口">-1</FunctionBoxPort1>
+	  <FunctionBoxPort2 Control="EditBox" Description="站位2盒子端口">-1</FunctionBoxPort2>
+	  <FunctionBoxPort3 Control="EditBox" Description="站位3盒子端口">-1</FunctionBoxPort3>
+	  <FunctionBoxPort4 Control="EditBox" Description="站位4盒子端口">-1</FunctionBoxPort4>
+	  <Headset Control="ComboBox" Description="耳机插口类型" Elements="EUROPE,AMERICA">AMERICA</Headset>
+  </Param>
+</Node>

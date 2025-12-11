@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Node>
+	<Option>
+		<!--MaxBarcodeNum Description="Maximun barcode number listed in xml: [1-10]">10</MaxBarcodeNum-->
+		<DeviceName>
+			<Active Property="ReadOnly" Control="CheckBox">1</Active>
+			<GenerateType Control="ComboBox" Elements="ManualInput">ManualInput</GenerateType>
+			<MaxLength Property="ReadOnly">16</MaxLength>
+			<Prefix Description="Check prefix of ManualInput [检查输入设备ID前缀]"></Prefix>
+		</DeviceName>
+		<SN1>
+			<Active Control="CheckBox">1</Active>
+			<GenerateType Control="ComboBox" Elements="ManualInput,AutoGenerate">ManualInput</GenerateType>
+			<MaxLength Description="SN length: [1 - 23]">14</MaxLength>
+			<Prefix Description="Check prefix of ManualInput or prefex to add for AutoGenerate [检查输入或自动生成的SN前缀]"></Prefix>
+		</SN1>
+		<IMEI1>
+			<Active Control="CheckBox">1</Active>
+			<GenerateType Control="ComboBox" Elements="ManualInput,AutoGenerate">ManualInput</GenerateType>
+			<MaxLength Property="ReadOnly">15</MaxLength>
+			<Prefix Description="Check prefix of ManualInput or prefex to add for AutoGenerate [检查输入或自动生成的IMEI前缀]"></Prefix>
+		</IMEI1>
+		<WIFI Property="InVisible">
+			<Active Control="CheckBox">1</Active>
+			<GenerateType Control="ComboBox" Elements="ManualInput,AutoGenerate">AutoGenerate</GenerateType>
+			<MaxLength Property="ReadOnly">12</MaxLength>
+			<Prefix Description="Check prefix of ManualInput or prefex to add for AutoGenerate [检查输入或自动生成的WIFI地址前缀]"></Prefix>
+		</WIFI>	
+		<BT>
+			<Active Control="CheckBox">1</Active>
+			<GenerateType Control="ComboBox" Elements="ManualInput,AutoGenerate">AutoGenerate</GenerateType>
+			<MaxLength Property="ReadOnly">12</MaxLength>
+			<Prefix Description="Check prefix of ManualInput or prefex to add for AutoGenerate [检查输入或自动生成的蓝牙地址前缀]"></Prefix>
+		</BT>
+		</Option>
+	<Param>
+	</Param>
+</Node>

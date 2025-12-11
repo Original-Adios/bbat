@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Node>
+  <Option>  	
+    <RJ45 Control="CheckBox">0</RJ45>
+	<FT232_UART Control="CheckBox">0</FT232_UART>
+	<EXTERNAL_IO Control="CheckBox">0</EXTERNAL_IO>
+	<TYPEC_USB Control="CheckBox">0</TYPEC_USB>
+	<ADC Control="CheckBox">0</ADC>
+	</Option>
+  <Param>
+  </Param>
+</Node>

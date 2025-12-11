@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Node>
+	<Option>
+	<!--MaxBarcodeNum Description="Maximun barcode number listed in xml: [1-10]">10</MaxBarcodeNum-->
+    <ChecXMode Control="CheckBox" Property="InVisible" >1</ChecXMode>
+    <SN1>
+      <Enable Control="CheckBox" Description="Input or not">1</Enable>
+      <GenerateType Control="ComboBox" Elements="ManualInput,AutoGenerate,Section">ManualInput</GenerateType>
+	    <Length Description="Maximum input length: [6 - 20]">20</Length>
+	    <Prefix Description="1.For checking manual input. 2 Be used by auto generate"></Prefix>
+      <SectionStart Description="1. Section Start number when generate type is Section mode">1</SectionStart>
+      <SectionEnd Description="1. Section Start number when generate type is Section mode">9999</SectionEnd>
+    </SN1>
+    <SN2>
+      <Enable Control="CheckBox" Description="Input or not">1</Enable>
+      <GenerateType Control="ComboBox" Elements="ManualInput,AutoGenerate,Section,SameSN1">ManualInput</GenerateType>
+	    <Length Description="Maximum input length: [1 - 64]">20</Length>
+	    <Prefix Description="1.For checking manual input. 2 Be used by auto generate"></Prefix>
+      <SectionStart Description="1. Section Start number when generate type is Section mode">1</SectionStart>
+      <SectionEnd Description="1. Section Start number when generate type is Section mode">9999</SectionEnd>
+    </SN2>
+	  <WIFI>
+      <Enable Control="CheckBox" Description="Input or not">1</Enable>
+      <GenerateType Control="ComboBox" Elements="ManualInput,AutoGenerate,Section">ManualInput</GenerateType>
+      <Length  Property="InVisible" Description="Maximum input length: 12">12</Length>
+	  <Prefix Description="1.For checking manual input. 2 Be used by auto generate"></Prefix>
+      <SectionStart Description="1. Section Start number when generate type is Section mode, Hex Input">1</SectionStart>
+      <SectionEnd Description="1. Section Start number when generate type is Section mode, Hex Input">9999</SectionEnd>
+    </WIFI>	
+    <BT>
+      <Enable Control="CheckBox" Description="Input or not">1</Enable>
+	  <GenerateType Control="ComboBox" Elements="ManualInput,AutoGenerate,Section">ManualInput</GenerateType>
+      <Length  Property="InVisible" Description="Maximum input length: 12">12</Length>
+	  <Prefix Description="1.For checking manual input. 2 Be used by auto generate"></Prefix>
+      <SectionStart Description="1. Section Start number when generate type is Section mode, Hex Input">1</SectionStart>
+      <SectionEnd Description="1. Section Start number when generate type is Section mode, Hex Input">9999</SectionEnd>
+    </BT>
+    <ENETMAC>
+      <Enable Control="CheckBox" Description="Input or not">1</Enable>
+      <GenerateType Control="ComboBox" Elements="ManualInput,AutoGenerate,Section">ManualInput</GenerateType>
+      <Length  Property="InVisible" Description="Maximum input length: 12">12</Length>
+	  <Prefix Description="1.For checking manual input. 2 Be used by auto generate"></Prefix>
+      <SectionStart Description="1. Section Start number when generate type is Section mode, Hex Input">1</SectionStart>
+      <SectionEnd Description="1. Section Start number when generate type is Section mode, Hex Input">9999</SectionEnd>
+    </ENETMAC>
+  </Option>
+	<Param>
+        <SN1>
+            <Validation Description="Validate input barcode with special rule"></Validation>
+        </SN1>
+        <SN2>
+            <Validation Description="Validate input barcode with special rule"></Validation>
+        </SN2>
+        <WIFI>
+            <Validation Description="Validate input barcode with special rule"></Validation>
+        </WIFI>
+        <BT>
+            <Validation Description="Validate input barcode with special rule"></Validation>
+        </BT>
+        <ENETMAC>
+          <Validation Description="Validate input barcode with special rule"></Validation>
+        </ENETMAC>
+  </Param>
+</Node>

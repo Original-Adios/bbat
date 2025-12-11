@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Node>
+  <Option>  	
+    
+	<Sleep Description="触控笔延迟下压时间，单位ms">1000</Sleep>
+	<X_Limit>
+    <UpSpec Description="X值上限">1600</UpSpec>
+    <DownSpec Description="X值下限">20</DownSpec>
+	</X_Limit>
+	<Y_Limit>
+    <UpSpec Description="Y值上限">1600</UpSpec>
+    <DownSpec Description="Y值下限">20</DownSpec>
+	</Y_Limit>
+</Option>
+  <Param>
+	<TouchPen_Delay Property="InVisible" Description="触控笔点击持续时间，单位ms" Control="EditBox">500</TouchPen_Delay>
+	<DutReadResult_Delay Property="InVisible" Description="Dut延迟读取结果时间，单位ms" Control="EditBox">200</DutReadResult_Delay>	  
+  </Param>
+</Node>

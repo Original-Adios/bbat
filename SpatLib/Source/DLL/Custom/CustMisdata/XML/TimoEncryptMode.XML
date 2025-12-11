@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Node>
+	<Option>
+    <EncryptMode Control="ComboBox" Elements="EncryptSSNToS1,EncryptSSN,EncryptSSNToJoy2S,EncryptSSNToJoy3,EncryptSSNToM4,EncryptSSNToT10, EncryptSSNToQ1,EncryptSSNToK1PF,EncryptSSNToTeemo"></EncryptMode>
+    <TeemoConfig>
+    <ConfigFile Control="FileDialog" Filter="Teemo file(*.ini)|*.ini"></ConfigFile>
+    <ProName></ProName>
+    </TeemoConfig>  
+  </Option>
+	<Param>
+	</Param>
+</Node>

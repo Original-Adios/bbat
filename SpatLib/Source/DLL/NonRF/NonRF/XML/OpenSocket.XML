@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Node>
+  <Option>
+    <IP Description="IP Address of Server">127.0.0.1</IP>
+    <Port Description="Port of Server">8080</Port>
+  </Option>
+  <Param>
+    <Ping Description="Do Ping before connect">
+      <Enable Control="CheckBox" Description="Enable Ping">0</Enable>
+      <TimeOut Description="Enable Ping">40000</TimeOut>
+      <Count Description="Count of ping return OK">3</Count>
+     </Ping>
+  </Param>
+</Node>

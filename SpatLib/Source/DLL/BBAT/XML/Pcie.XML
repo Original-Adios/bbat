@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Node>
+  <Option>
+    <Pcie2.0 Control="CheckBox" Description="Pcie2.0测试">0</Pcie2.0>
+    <Pcie3.0 Control="CheckBox" Description="Pcie2.0测试">0</Pcie3.0>
+
+</Option>
+  <Param>
+  </Param>
+</Node>

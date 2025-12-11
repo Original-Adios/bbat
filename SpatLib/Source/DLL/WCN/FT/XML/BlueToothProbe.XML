@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Node>
+    <Option>
+      <Mode>
+          <BDR Description="BDR measurement switcher, if checkbox is enabled, measurement will be performed or not" Control="CheckBox">1</BDR>
+          <EDR Description="EDR measurement switcher, if checkbox is enabled, measurement will be performed or not" Control="CheckBox">1</EDR>
+          <BLE5.0 Description="BLE 5.0 measurement switcher, if checkbox is enabled, measurement will be performed or not" Control="CheckBox">1</BLE5.0>
+      </Mode>
+      <Ant>
+         <StandAlone Description="Primary RF path" Control="CheckBox">1</StandAlone>
+         <Shared Description="Diversity RF path" Control="CheckBox">0</Shared>
+      </Ant>
+    </Option>
+    <Param>
+      <Common>
+        <AvgCount Description="Average Count for Measurements">3</AvgCount>
+      </Common>
+        <BDR Description="BDR" Control="Group">
+            <GroupCount>1</GroupCount>
+            <Group1>
+                <TCH Description="Transmit channel 0~78 is available">0,39,78</TCH>
+                <PacketType Description="Different packet type with differrent packet length, the matching map is DH1,DH3,DH5" Control="ComboBox" Elements="DH1,DH3,DH5">DH5</PacketType>
+                <RxCount Description="Total bits count for RX configuration!">816800</RxCount>
+                <RXMinLvl Description="Rx min level for per probe meas. Unit:dBm">-65</RXMinLvl>
+                <RXMaxLvl Description="Rx max level for per probe meas. Unit:dBm">-30</RXMaxLvl>
+                <RXStep Description="Rx PER probe step. Unit:dBm">3</RXStep>
+            </Group1>
+            <Specification Description="Configure the test tolerance and specification">
+              <BER Description="Receiver sensitivity">0.1</BER>
+            </Specification>
+        </BDR>
+        <EDR Description="EDR Band" Control="Group">
+            <GroupCount>2</GroupCount>
+            <Group1>
+                <TCH Description="Transmit channel 0~78 is available">0,39,78</TCH>
+                <PacketType Description="Different packet type with different packet length, the matching map is 2-DH1,2-DH3,2-DH5,3-DH1,3-DH3,3-DH5" Control="ComboBox" Elements="2-DH1,2-DH3,2-DH5,3-DH1,3-DH3,3-DH5">2-DH5</PacketType>
+                <RxCount Description="Total bits count for RX configuration!">816800</RxCount>
+                <RXMinLvl Description="Rx min level for per probe meas. Unit:dBm">-65</RXMinLvl>
+                <RXMaxLvl Description="Rx max level for per probe meas. Unit:dBm">-30</RXMaxLvl>
+                <RXStep Description="Rx PER probe step. Unit:dBm">3</RXStep>
+            </Group1>
+            <Group2>
+                <TCH Description="Transmit channel 0~78 is available">0,39,78</TCH>
+                <PacketType Description="Different packet type with differrent packet length, the matching map is 2-DH1,2-DH3,2-DH5,3-DH1,3-DH3,3-DH5" Control="ComboBox" Elements="2-DH1,2-DH3,2-DH5,3-DH1,3-DH3,3-DH5">3-DH5</PacketType>
+                <RxCount Description="Total bits count for RX configuration!">816800</RxCount>
+                <RXMinLvl Description="Rx min level for per probe meas. Unit:dBm">-65</RXMinLvl>
+                <RXMaxLvl Description="Rx max level for per probe meas. Unit:dBm">-30</RXMaxLvl>
+                <RXStep Description="Rx PER probe step. Unit:dBm">3</RXStep>
+            </Group2>
+          <Specification Description="Configure the test tolerance and specification">
+            <BER Description="Receiver sensitivity">0.01</BER>
+          </Specification>
+        </EDR>
+        <BLE5.0 Description="BLE 5.0 Band" Control="Group">
+          <GroupCount>4</GroupCount>
+          <Group1>
+            <TCH Description="Transmit channel 0~38 is available">0,19,38</TCH>
+            <ModIndex Description="Modulation index: 0:BT_STABLE, 1:BT_STAND" Control="ComboBox" Elements="0,1">0</ModIndex>
+            <PacketType Description="Packet type" Control="ComboBox" Elements="RF_PHY_1M,RF_PHY_2M,RF_PHY_S2,RF_PHY_S8">RF_PHY_2M</PacketType>
+            <RxCount Description="Total packets count for RX configuration!">100</RxCount>
+            <RXMinLvl Description="Rx min level for per probe meas. Unit:dBm">-65</RXMinLvl>
+            <RXMaxLvl Description="Rx max level for per probe meas. Unit:dBm">-30</RXMaxLvl>
+            <RXStep Description="Rx PER probe step. Unit:dBm">3</RXStep>
+          </Group1>
+          <Group2>
+            <TCH Description="Transmit channel 0~38 is available">0,19,38</TCH>
+            <ModIndex Description="Modulation index: 0:BT_STABLE, 1:BT_STAND" Control="ComboBox" Elements="0,1">0</ModIndex>
+            <PacketType Description="Packet type" Control="ComboBox" Elements="RF_PHY_1M,RF_PHY_2M,RF_PHY_S2,RF_PHY_S8">RF_PHY_1M</PacketType>
+            <RxCount Description="Total packets count for RX configuration!">100</RxCount>
+            <RXMinLvl Description="Rx min level for per probe meas. Unit:dBm">-65</RXMinLvl>
+            <RXMaxLvl Description="Rx max level for per probe meas. Unit:dBm">-30</RXMaxLvl>
+            <RXStep Description="Rx PER probe step. Unit:dBm">3</RXStep>
+          </Group2>
+          <Group3>
+            <TCH Description="Transmit channel 0~38 is available">0,19,38</TCH>
+            <ModIndex Description="Modulation index: 0:BT_STABLE, 1:BT_STAND" Control="ComboBox" Elements="0,1">0</ModIndex>
+            <PacketType Description="Packet type" Control="ComboBox" Elements="RF_PHY_1M,RF_PHY_2M,RF_PHY_S2,RF_PHY_S8">RF_PHY_S2</PacketType>
+            <RxCount Description="Total packets count for RX configuration!">100</RxCount>
+            <RXMinLvl Description="Rx min level for per probe meas. Unit:dBm">-65</RXMinLvl>
+            <RXMaxLvl Description="Rx max level for per probe meas. Unit:dBm">-30</RXMaxLvl>
+            <RXStep Description="Rx PER probe step. Unit:dBm">3</RXStep>
+          </Group3>
+          <Group4>
+            <TCH Description="Transmit channel 0~38 is available">0,19,38</TCH>
+            <ModIndex Description="Modulation index: 0:BT_STABLE, 1:BT_STAND" Control="ComboBox" Elements="0,1">0</ModIndex>
+            <PacketType Description="Packet type" Control="ComboBox" Elements="RF_PHY_1M,RF_PHY_2M,RF_PHY_S2,RF_PHY_S8">RF_PHY_S8</PacketType>
+            <RxCount Description="Total packets count for RX configuration!">100</RxCount>
+            <RXMinLvl Description="Rx min level for per probe meas. Unit:dBm">-65</RXMinLvl>
+            <RXMaxLvl Description="Rx max level for per probe meas. Unit:dBm">-30</RXMaxLvl>
+            <RXStep Description="Rx PER probe step. Unit:dBm">3</RXStep>
+          </Group4>
+          <Specification Description="Configure the test tolerance and specification">
+            <BER>30.8</BER>
+          </Specification>
+        </BLE5.0>
+    </Param>
+</Node>

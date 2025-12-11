@@ -1,0 +1,898 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="01.Interface">
+      <UniqueIdentifier>{a16deff3-7a31-436d-a94f-af49fd1925d6}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="02.Impl">
+      <UniqueIdentifier>{b9a61cd8-3e9a-4df4-8982-ce3e53eb53a1}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="02.Impl\BlueTooth">
+      <UniqueIdentifier>{1e90cd14-30f6-4018-bddf-a6aa5b4fbe0a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="02.Impl\BlueTooth\Action">
+      <UniqueIdentifier>{367e73cf-e594-44fa-ba4d-edc6c17572f4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="02.Impl\BlueTooth\Api">
+      <UniqueIdentifier>{99843291-6ec1-46dc-b62e-7970055c44a0}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="02.Impl\BlueTooth\FileConfig">
+      <UniqueIdentifier>{b3c366d8-d6f2-499d-a292-2974f006fbac}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="02.Impl\BlueTooth\Process">
+      <UniqueIdentifier>{fe895d9b-85ed-4561-8c57-cc99a52cd1ed}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="02.Impl\Wlan">
+      <UniqueIdentifier>{349332a6-b023-4127-a3a7-36cd35720bc7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="02.Impl\Wlan\Action">
+      <UniqueIdentifier>{d33215cd-23ad-44eb-832a-21740a19f35f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="02.Impl\Wlan\Api">
+      <UniqueIdentifier>{f0ad085c-62c3-40cc-8d1a-7ad2c8ddd2ca}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="02.Impl\Wlan\FileConfig">
+      <UniqueIdentifier>{7d17ade2-4862-492f-a2e1-1a0c20269e03}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="02.Impl\Wlan\Process">
+      <UniqueIdentifier>{aca9c2c9-2801-4d3d-84ed-ef3291d48960}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="02.Impl\GPS">
+      <UniqueIdentifier>{aad68dd1-c353-4710-8782-575f0a43003b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="02.Impl\GPS\Api">
+      <UniqueIdentifier>{6513837e-c80e-4c99-a95f-f3ff2924e54e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="02.Impl\GPS\Action">
+      <UniqueIdentifier>{6f426902-1b3a-4c13-a42c-f5809adcd2a4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="09.RC">
+      <UniqueIdentifier>{032d1011-055e-4bae-8bac-efcf33d1c35f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="03.App">
+      <UniqueIdentifier>{83af3d62-d4d9-42dd-b1cc-59a8a8c481f0}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="04.XML">
+      <UniqueIdentifier>{b404235f-c05d-47f7-b653-7664b0a15615}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="05.Utility">
+      <UniqueIdentifier>{6f58425b-ed92-4bce-9d5c-2b0dd5002da9}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="02.Impl\LogEnable">
+      <UniqueIdentifier>{628dc991-f3bd-4595-8dde-b3e20141eb7e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="02.Impl\Wlan\Process\General">
+      <UniqueIdentifier>{419677b1-38b2-4a75-a25e-25dd45d85d5f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="02.Impl\Wlan\Process\24G">
+      <UniqueIdentifier>{1fab6aa2-0ef5-4a2b-aeb5-9473580c4462}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="02.Impl\Wlan\Process\5G">
+      <UniqueIdentifier>{15dda814-56bb-411c-8c28-71307602486a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="02.Impl\Wlan\Process\5GRxSearch">
+      <UniqueIdentifier>{4d6ac9a6-7547-4939-8ded-d61e647dff1b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="02.Impl\BlueTooth\Process\General">
+      <UniqueIdentifier>{f3550873-b96e-4b48-91dc-66b51d092224}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="02.Impl\BlueTooth\Process\5.0">
+      <UniqueIdentifier>{507b4d44-3c0e-4ce7-bd8e-12e85d3874c3}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="02.Impl\BlueTooth\FileConfig\General">
+      <UniqueIdentifier>{ce0a7c7c-837b-47ce-9f52-56333a51cd96}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="02.Impl\BlueTooth\FileConfig\5.0">
+      <UniqueIdentifier>{abb6e14e-4ce3-4f04-b98b-686d40a55396}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="02.Impl\BlueTooth\Action\General">
+      <UniqueIdentifier>{87c8c9ec-08a7-4e51-98be-17728d33de03}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="02.Impl\BlueTooth\Action\5.0">
+      <UniqueIdentifier>{d1d6f299-15a1-436e-b8c5-c2046fb9e713}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="02.Impl\Wlan\Process\5GMimo">
+      <UniqueIdentifier>{a37b2a7e-81ec-4061-83a3-746af7d85c4c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="02.Impl\BlueTooth\FileConfig\5.3">
+      <UniqueIdentifier>{6ff69d49-18e9-43a2-bd58-5c87515ea6c7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="02.Impl\BlueTooth\Action\5.3">
+      <UniqueIdentifier>{add54330-e3aa-4f58-b799-08b191a0454c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="02.Impl\BlueTooth\Process\5.3">
+      <UniqueIdentifier>{776dcdb9-e119-41e0-bbf7-61cbc0efbad1}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="02.Impl\Wlan\Process\SongShanW6">
+      <UniqueIdentifier>{186a5c18-3c5f-4b5b-b2ea-5459a2427adf}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\..\..\..\..\Common\Include\SpatLibExport.h">
+      <Filter>01.Interface</Filter>
+    </ClInclude>
+    <ClInclude Include="ImpBase.h">
+      <Filter>02.Impl</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Common\SpatBase.h">
+      <Filter>02.Impl</Filter>
+    </ClInclude>
+    <ClInclude Include="FuncImp\BTEnterMode.h">
+      <Filter>02.Impl\BlueTooth\Process</Filter>
+    </ClInclude>
+    <ClInclude Include="FuncImp\WlanTestSys.h">
+      <Filter>02.Impl\Wlan\Action</Filter>
+    </ClInclude>
+    <ClInclude Include="FuncImp\WlanLoadXML.h">
+      <Filter>02.Impl\Wlan\FileConfig</Filter>
+    </ClInclude>
+    <ClInclude Include="FuncImp\GPSTestSys.h">
+      <Filter>02.Impl\GPS\Action</Filter>
+    </ClInclude>
+    <ClInclude Include="resource.h">
+      <Filter>09.RC</Filter>
+    </ClInclude>
+    <ClInclude Include="stdafx.h">
+      <Filter>09.RC</Filter>
+    </ClInclude>
+    <ClInclude Include="targetver.h">
+      <Filter>09.RC</Filter>
+    </ClInclude>
+    <ClInclude Include="ActionApp.h">
+      <Filter>03.App</Filter>
+    </ClInclude>
+    <ClInclude Include="ActionList.h">
+      <Filter>03.App</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Common\SpatRuntimeClass.h">
+      <Filter>03.App</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\Common\UtilFn\AppVer.h">
+      <Filter>05.Utility</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\Common\lock\CLocks.h">
+      <Filter>05.Utility</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\Common\lock\CSimpleLock.h">
+      <Filter>05.Utility</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\Common\dlmalloc\dlmalloc.h">
+      <Filter>05.Utility</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Common\ExtraLogFile.h">
+      <Filter>05.Utility</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\Common\Json\JsonUtil.h">
+      <Filter>05.Utility</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\Common\UtilFn\LogFile.h">
+      <Filter>05.Utility</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Common\ModeSwitch.h">
+      <Filter>05.Utility</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\Common\Tr\Tr.h">
+      <Filter>05.Utility</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\Common\UtilFn\Utility.h">
+      <Filter>05.Utility</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\Common\Include\device\wcn_def.h">
+      <Filter>05.Utility</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\Common\UtilFn\wcnUtility.h">
+      <Filter>05.Utility</Filter>
+    </ClInclude>
+    <ClInclude Include="FuncImp\LogEnable.h">
+      <Filter>02.Impl\LogEnable</Filter>
+    </ClInclude>
+    <ClInclude Include="FuncImp\WlanTestSysOS80.h">
+      <Filter>02.Impl\Wlan\Action</Filter>
+    </ClInclude>
+    <ClInclude Include="FuncImp\WlanLoadXMLOS80.h">
+      <Filter>02.Impl\Wlan\FileConfig</Filter>
+    </ClInclude>
+    <ClInclude Include="FuncImp\WlanAntSwitch.h">
+      <Filter>02.Impl\Wlan\Process\General</Filter>
+    </ClInclude>
+    <ClInclude Include="FuncImp\WlanEnterMode.h">
+      <Filter>02.Impl\Wlan\Process\General</Filter>
+    </ClInclude>
+    <ClInclude Include="FuncImp\WlanMeasOS80.h">
+      <Filter>02.Impl\Wlan\Process\5G</Filter>
+    </ClInclude>
+    <ClInclude Include="FuncImp\WlanMeasBaseProbe.h">
+      <Filter>02.Impl\Wlan\Process\5GRxSearch</Filter>
+    </ClInclude>
+    <ClInclude Include="FuncImp\WlanRxSearchOS80.h">
+      <Filter>02.Impl\Wlan\Process\5GRxSearch</Filter>
+    </ClInclude>
+    <ClInclude Include="FuncImp\WlanBerProbe.h">
+      <Filter>02.Impl\Wlan\Action</Filter>
+    </ClInclude>
+    <ClInclude Include="FuncImp\WlanMeasCW.h">
+      <Filter>02.Impl\Wlan\Process\24G</Filter>
+    </ClInclude>
+    <ClInclude Include="FuncImp\WlanMeas24G.h">
+      <Filter>02.Impl\Wlan\Process\24G</Filter>
+    </ClInclude>
+    <ClInclude Include="FuncImp\WlanMeas5G.h">
+      <Filter>02.Impl\Wlan\Process\24G</Filter>
+    </ClInclude>
+    <ClInclude Include="FuncImp\WlanProbeLoadXML.h">
+      <Filter>02.Impl\Wlan\FileConfig</Filter>
+    </ClInclude>
+    <ClInclude Include="FuncImp\WlanMeasBase.h">
+      <Filter>02.Impl\Wlan\Process</Filter>
+    </ClInclude>
+    <ClInclude Include="FuncImp\BTMeasBLE_EX.h">
+      <Filter>02.Impl\BlueTooth\Process\5.0</Filter>
+    </ClInclude>
+    <ClInclude Include="FuncImp\BTRFPathSwitch.h">
+      <Filter>02.Impl\BlueTooth\Process\5.0</Filter>
+    </ClInclude>
+    <ClInclude Include="FuncImp\BTGeneralLoadXML.h">
+      <Filter>02.Impl\BlueTooth\FileConfig\General</Filter>
+    </ClInclude>
+    <ClInclude Include="FuncImp\BTLoadXML.h">
+      <Filter>02.Impl\BlueTooth\FileConfig\5.0</Filter>
+    </ClInclude>
+    <ClInclude Include="FuncImp\BTGeneralMeasBDR.h">
+      <Filter>02.Impl\BlueTooth\Process\General</Filter>
+    </ClInclude>
+    <ClInclude Include="FuncImp\BTGeneralMeasBLE.h">
+      <Filter>02.Impl\BlueTooth\Process\General</Filter>
+    </ClInclude>
+    <ClInclude Include="FuncImp\BTGeneralMeasEDR.h">
+      <Filter>02.Impl\BlueTooth\Process\General</Filter>
+    </ClInclude>
+    <ClInclude Include="FuncImp\BTMeasBDR.h">
+      <Filter>02.Impl\BlueTooth\Process\5.0</Filter>
+    </ClInclude>
+    <ClInclude Include="FuncImp\BTMeasEDR.h">
+      <Filter>02.Impl\BlueTooth\Process\5.0</Filter>
+    </ClInclude>
+    <ClInclude Include="FuncImp\BTMeasBase.h">
+      <Filter>02.Impl\BlueTooth\Process</Filter>
+    </ClInclude>
+    <ClInclude Include="FuncImp\BTTestSysV2.h">
+      <Filter>02.Impl\BlueTooth\Action\5.0</Filter>
+    </ClInclude>
+    <ClInclude Include="FuncImp\BTMeasSysV1.h">
+      <Filter>02.Impl\BlueTooth\Action\General</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\Common\API\IWlanApi.h">
+      <Filter>02.Impl\Wlan\Api</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\Common\API\WlanApiAT.h">
+      <Filter>02.Impl\Wlan\Api</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\Common\API\WlanApiDiag.h">
+      <Filter>02.Impl\Wlan\Api</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\Common\API\GPSApiAT.h">
+      <Filter>02.Impl\GPS\Api</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\Common\API\BTApiAT.h">
+      <Filter>02.Impl\BlueTooth\Api</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\Common\API\BTApiDiag.h">
+      <Filter>02.Impl\BlueTooth\Api</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\Common\API\IBTApi.h">
+      <Filter>02.Impl\BlueTooth\Api</Filter>
+    </ClInclude>
+    <ClInclude Include="FuncImp\WlanMeasMimo.h">
+      <Filter>02.Impl\Wlan\Process\5GMimo</Filter>
+    </ClInclude>
+    <ClInclude Include="FuncImp\WlanTestSysMimo.h">
+      <Filter>02.Impl\Wlan\Action</Filter>
+    </ClInclude>
+    <ClInclude Include="FuncImp\WlanMeasMimoBase.h">
+      <Filter>02.Impl\Wlan\Process\5GMimo</Filter>
+    </ClInclude>
+    <ClInclude Include="FuncImp\WlanLoadXMLCW.h">
+      <Filter>02.Impl\Wlan\FileConfig</Filter>
+    </ClInclude>
+    <ClInclude Include="FuncImp\WlanTestSysCW.h">
+      <Filter>02.Impl\Wlan\Action</Filter>
+    </ClInclude>
+    <ClInclude Include="FuncImp\BTLoadXMLProbe.h">
+      <Filter>02.Impl\BlueTooth\FileConfig\5.0</Filter>
+    </ClInclude>
+    <ClInclude Include="FuncImp\BTTestSysProbe.h">
+      <Filter>02.Impl\BlueTooth\Action\5.0</Filter>
+    </ClInclude>
+    <ClInclude Include="FuncImp\BtCommonDef.h">
+      <Filter>02.Impl\BlueTooth</Filter>
+    </ClInclude>
+    <ClInclude Include="FuncImp\WlanCommonDef.h">
+      <Filter>02.Impl\Wlan</Filter>
+    </ClInclude>
+    <ClInclude Include="FuncImp\WcnTestSysWear.h">
+      <Filter>02.Impl\Wlan\Action</Filter>
+    </ClInclude>
+    <ClInclude Include="FuncImp\WcnTestSysWearAT.h">
+      <Filter>02.Impl\Wlan\Action</Filter>
+    </ClInclude>
+    <ClInclude Include="FuncImp\GPSTestLoss.h">
+      <Filter>02.Impl\GPS\Action</Filter>
+    </ClInclude>
+    <ClInclude Include="FuncImp\WlanTestSysAntLoss.h">
+      <Filter>02.Impl\Wlan\Action</Filter>
+    </ClInclude>
+    <ClInclude Include="FuncImp\WlanLoadLossXML.h">
+      <Filter>02.Impl\Wlan\FileConfig</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Common\LossHelper.h">
+      <Filter>02.Impl\GPS\Action</Filter>
+    </ClInclude>
+    <ClInclude Include="FuncImp\BTGeneralLoadLossXML.h">
+      <Filter>02.Impl\BlueTooth\FileConfig\General</Filter>
+    </ClInclude>
+    <ClInclude Include="FuncImp\BTMeasSysV1Loss.h">
+      <Filter>02.Impl\BlueTooth\Action\General</Filter>
+    </ClInclude>
+    <ClInclude Include="FuncImp\WlanLoadXMLUDS710.h">
+      <Filter>02.Impl\Wlan\FileConfig</Filter>
+    </ClInclude>
+    <ClInclude Include="FuncImp\WlanTestSysUDS710.h">
+      <Filter>02.Impl\Wlan\Action</Filter>
+    </ClInclude>
+    <ClInclude Include="FuncImp\WlanMeasUDS710.h">
+      <Filter>02.Impl\Wlan\Process\5G</Filter>
+    </ClInclude>
+    <ClInclude Include="FuncImp\WlanTestSysAntLossV2.h">
+      <Filter>02.Impl\Wlan\Action</Filter>
+    </ClInclude>
+    <ClInclude Include="FuncImp\CalCNR.h">
+      <Filter>02.Impl\GPS\Action</Filter>
+    </ClInclude>
+    <ClInclude Include="FuncImp\GPSTestSysV2.h">
+      <Filter>02.Impl\GPS\Action</Filter>
+    </ClInclude>
+    <ClInclude Include="FuncImp\GPSTestSysV2.h">
+      <Filter>02.Impl\GPS\Action</Filter>
+    </ClInclude>
+    <ClInclude Include="FuncImp\GPSTestSysBeiDou.h">
+      <Filter>02.Impl\GPS\Action</Filter>
+    </ClInclude>
+    <ClInclude Include="FuncImp\GPSTestSysMslt.h">
+      <Filter>02.Impl\GPS\Action</Filter>
+    </ClInclude>
+    <ClInclude Include="FuncImp\BTLoadXMLUDS710.h">
+      <Filter>02.Impl\BlueTooth\FileConfig\5.0</Filter>
+    </ClInclude>
+    <ClInclude Include="FuncImp\BTMeasBDRUDS710.h">
+      <Filter>02.Impl\BlueTooth\Process\5.0</Filter>
+    </ClInclude>
+    <ClInclude Include="FuncImp\BTMeasBLE_EXUDS710.h">
+      <Filter>02.Impl\BlueTooth\Process\5.0</Filter>
+    </ClInclude>
+    <ClInclude Include="FuncImp\BTMeasEDRUDS710.h">
+      <Filter>02.Impl\BlueTooth\Process\5.0</Filter>
+    </ClInclude>
+    <ClInclude Include="FuncImp\BTTestSysUDS710.h">
+      <Filter>02.Impl\BlueTooth\Action\5.0</Filter>
+    </ClInclude>
+    <ClInclude Include="FuncImp\WcnTestSysWearATEx.h">
+      <Filter>02.Impl\Wlan\Action</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Common\CustomizedBase.h">
+      <Filter>02.Impl</Filter>
+    </ClInclude>
+    <ClInclude Include="FuncImp\WlanTestSysSongShanW6.h">
+      <Filter>02.Impl\Wlan\Action</Filter>
+    </ClInclude>
+    <ClInclude Include="FuncImp\WlanLoadXMLSongShanW6.h">
+      <Filter>02.Impl\Wlan\FileConfig</Filter>
+    </ClInclude>
+    <ClInclude Include="FuncImp\WlanMeasSongShanW6.h">
+      <Filter>02.Impl\Wlan\Process\SongShanW6</Filter>
+    </ClInclude>
+    <ClInclude Include="FuncImp\BTMeasBLE_BLE53.h">
+      <Filter>02.Impl\BlueTooth\Process\5.3</Filter>
+    </ClInclude>
+    <ClInclude Include="FuncImp\BTLoadXML_BLE53.h">
+      <Filter>02.Impl\BlueTooth\FileConfig\5.3</Filter>
+    </ClInclude>
+    <ClInclude Include="FuncImp\BTTestSysSongShan.h">
+      <Filter>02.Impl\BlueTooth\Action\5.3</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\Common\API\BTApiHCI.h">
+      <Filter>02.Impl\BlueTooth\Api</Filter>
+    </ClInclude>
+    <ClInclude Include="FuncImp\BTTestSysHCI.h">
+      <Filter>02.Impl\BlueTooth\Action\General</Filter>
+    </ClInclude>
+    <ClInclude Include="FuncImp\HciBtCheckAddr.h">
+      <Filter>02.Impl\BlueTooth\Action\General</Filter>
+    </ClInclude>
+    <ClInclude Include="FuncImp\HciBtWriteAddr.h">
+      <Filter>02.Impl\BlueTooth\Action\General</Filter>
+    </ClInclude>
+    <ClInclude Include="FuncImp\WlanTestSysAntLossSC266X.h">
+      <Filter>02.Impl\Wlan\Action</Filter>
+    </ClInclude>
+    <ClInclude Include="FuncImp\BTTestSysCW.h">
+      <Filter>02.Impl\BlueTooth\Action\General</Filter>
+    </ClInclude>
+    <ClInclude Include="FuncImp\BTLoadXMLCW.h">
+      <Filter>02.Impl\BlueTooth\FileConfig\General</Filter>
+    </ClInclude>
+    <ClInclude Include="FuncImp\BTMeasCW.h">
+      <Filter>02.Impl\BlueTooth\Process\General</Filter>
+    </ClInclude>
+    <ClInclude Include="FuncImp\WcnTestSysWearCW.h">
+      <Filter>02.Impl\Wlan\Action</Filter>
+    </ClInclude>
+    <ClInclude Include="FuncImp\CheckWcnUid.h">
+      <Filter>02.Impl</Filter>
+    </ClInclude>
+    <ClInclude Include="FuncImp\GPSTestSysGlonass.h">
+      <Filter>02.Impl\GPS\Action</Filter>
+    </ClInclude>
+    <ClInclude Include="FuncImp\GPSTestSysV3.h">
+      <Filter>02.Impl\GPS\Action</Filter>
+    </ClInclude>
+    <ClInclude Include="FuncImp\GPSAutoModeTestSys.h">
+      <Filter>02.Impl\GPS\Action</Filter>
+    </ClInclude>
+    <ClInclude Include="FuncImp\WlanTestSysByBtTxOn.h">
+      <Filter>02.Impl\Wlan\Action</Filter>
+    </ClInclude>    
+    <ClInclude Include="FuncImp\WlanTestSysSongShanW6DL.h">
+      <Filter>02.Impl\Wlan\Action</Filter>
+    </ClInclude>
+    <ClInclude Include="FuncImp\WlanMeasSongShanW6DL.h">
+      <Filter>02.Impl\Wlan\Process\SongShanW6</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="ImpBase.cpp">
+      <Filter>02.Impl</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Common\SpatBase.cpp">
+      <Filter>02.Impl</Filter>
+    </ClCompile>
+    <ClCompile Include="FuncImp\BTEnterMode.cpp">
+      <Filter>02.Impl\BlueTooth\Process</Filter>
+    </ClCompile>
+    <ClCompile Include="FuncImp\WlanTestSys.cpp">
+      <Filter>02.Impl\Wlan\Action</Filter>
+    </ClCompile>
+    <ClCompile Include="FuncImp\WlanLoadXML.cpp">
+      <Filter>02.Impl\Wlan\FileConfig</Filter>
+    </ClCompile>
+    <ClCompile Include="FuncImp\GPSTestSys.cpp">
+      <Filter>02.Impl\GPS\Action</Filter>
+    </ClCompile>
+    <ClCompile Include="stdafx.cpp">
+      <Filter>09.RC</Filter>
+    </ClCompile>
+    <ClCompile Include="ActionApp.cpp">
+      <Filter>03.App</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Common\ApiExport.cpp">
+      <Filter>03.App</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Common\SpatRuntimeClass.cpp">
+      <Filter>03.App</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\Common\UtilFn\AppVer.cpp">
+      <Filter>05.Utility</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\Common\lock\CLocks.cpp">
+      <Filter>05.Utility</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\Common\lock\CSimpleLock.cpp">
+      <Filter>05.Utility</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\Common\dlmalloc\dlmalloc.c">
+      <Filter>05.Utility</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Common\ExtraLogFile.cpp">
+      <Filter>05.Utility</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\Common\Json\JsonUtil.cpp">
+      <Filter>05.Utility</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\Common\UtilFn\LogFile.cpp">
+      <Filter>05.Utility</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Common\ModeSwitch.cpp">
+      <Filter>05.Utility</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\Common\Tr\Tr.cpp">
+      <Filter>05.Utility</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\Common\UtilFn\Utility.cpp">
+      <Filter>05.Utility</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\Common\UtilFn\wcnUtility.cpp">
+      <Filter>05.Utility</Filter>
+    </ClCompile>
+    <ClCompile Include="FuncImp\LogEnable.cpp">
+      <Filter>02.Impl\LogEnable</Filter>
+    </ClCompile>
+    <ClCompile Include="FuncImp\WlanTestSysOS80.cpp">
+      <Filter>02.Impl\Wlan\Action</Filter>
+    </ClCompile>
+    <ClCompile Include="FuncImp\WlanLoadXMLOS80.cpp">
+      <Filter>02.Impl\Wlan\FileConfig</Filter>
+    </ClCompile>
+    <ClCompile Include="FuncImp\WlanAntSwitch.cpp">
+      <Filter>02.Impl\Wlan\Process\General</Filter>
+    </ClCompile>
+    <ClCompile Include="FuncImp\WlanEnterMode.cpp">
+      <Filter>02.Impl\Wlan\Process\General</Filter>
+    </ClCompile>
+    <ClCompile Include="FuncImp\WlanMeasOS80.cpp">
+      <Filter>02.Impl\Wlan\Process\5G</Filter>
+    </ClCompile>
+    <ClCompile Include="FuncImp\WlanMeasBaseProbe.cpp">
+      <Filter>02.Impl\Wlan\Process\5GRxSearch</Filter>
+    </ClCompile>
+    <ClCompile Include="FuncImp\WlanRxSearchOS80.cpp">
+      <Filter>02.Impl\Wlan\Process\5GRxSearch</Filter>
+    </ClCompile>
+    <ClCompile Include="FuncImp\WlanBerProbe.cpp">
+      <Filter>02.Impl\Wlan\Action</Filter>
+    </ClCompile>
+    <ClCompile Include="FuncImp\WlanMeas24G.cpp">
+      <Filter>02.Impl\Wlan\Process\24G</Filter>
+    </ClCompile>
+    <ClCompile Include="FuncImp\WlanMeas5G.cpp">
+      <Filter>02.Impl\Wlan\Process\24G</Filter>
+    </ClCompile>
+    <ClCompile Include="FuncImp\WlanMeasCW.cpp">
+      <Filter>02.Impl\Wlan\Process\24G</Filter>
+    </ClCompile>
+    <ClCompile Include="FuncImp\WlanProbeLoadXML.cpp">
+      <Filter>02.Impl\Wlan\FileConfig</Filter>
+    </ClCompile>
+    <ClCompile Include="FuncImp\WlanMeasBase.cpp">
+      <Filter>02.Impl\Wlan\Process</Filter>
+    </ClCompile>
+    <ClCompile Include="FuncImp\BTMeasBLE_EX.cpp">
+      <Filter>02.Impl\BlueTooth\Process\5.0</Filter>
+    </ClCompile>
+    <ClCompile Include="FuncImp\BTRFPathSwitch.cpp">
+      <Filter>02.Impl\BlueTooth\Process\5.0</Filter>
+    </ClCompile>
+    <ClCompile Include="FuncImp\BTGeneralLoadXML.cpp">
+      <Filter>02.Impl\BlueTooth\FileConfig\General</Filter>
+    </ClCompile>
+    <ClCompile Include="FuncImp\BTLoadXML.cpp">
+      <Filter>02.Impl\BlueTooth\FileConfig\5.0</Filter>
+    </ClCompile>
+    <ClCompile Include="FuncImp\BTGeneralMeasBDR.cpp">
+      <Filter>02.Impl\BlueTooth\Process\General</Filter>
+    </ClCompile>
+    <ClCompile Include="FuncImp\BTGeneralMeasBLE.cpp">
+      <Filter>02.Impl\BlueTooth\Process\General</Filter>
+    </ClCompile>
+    <ClCompile Include="FuncImp\BTGeneralMeasEDR.cpp">
+      <Filter>02.Impl\BlueTooth\Process\General</Filter>
+    </ClCompile>
+    <ClCompile Include="FuncImp\BTMeasBDR.cpp">
+      <Filter>02.Impl\BlueTooth\Process\5.0</Filter>
+    </ClCompile>
+    <ClCompile Include="FuncImp\BTMeasEDR.cpp">
+      <Filter>02.Impl\BlueTooth\Process\5.0</Filter>
+    </ClCompile>
+    <ClCompile Include="FuncImp\BTMeasBase.cpp">
+      <Filter>02.Impl\BlueTooth\Process</Filter>
+    </ClCompile>
+    <ClCompile Include="FuncImp\BTTestSysV2.cpp">
+      <Filter>02.Impl\BlueTooth\Action\5.0</Filter>
+    </ClCompile>
+    <ClCompile Include="FuncImp\BTMeasSysV1.cpp">
+      <Filter>02.Impl\BlueTooth\Action\General</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\Common\API\WlanApiAT.cpp">
+      <Filter>02.Impl\Wlan\Api</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\Common\API\WlanApiDiag.cpp">
+      <Filter>02.Impl\Wlan\Api</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\Common\API\GPSApiAT.cpp">
+      <Filter>02.Impl\GPS\Api</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\Common\API\BTApiAT.cpp">
+      <Filter>02.Impl\BlueTooth\Api</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\Common\API\BTApiDiag.cpp">
+      <Filter>02.Impl\BlueTooth\Api</Filter>
+    </ClCompile>
+    <ClCompile Include="FuncImp\WlanMeasMimo.cpp">
+      <Filter>02.Impl\Wlan\Process\5GMimo</Filter>
+    </ClCompile>
+    <ClCompile Include="FuncImp\WlanTestSysMimo.cpp">
+      <Filter>02.Impl\Wlan\Action</Filter>
+    </ClCompile>
+    <ClCompile Include="FuncImp\WlanMeasMimoBase.cpp">
+      <Filter>02.Impl\Wlan\Process\5GMimo</Filter>
+    </ClCompile>
+    <ClCompile Include="FuncImp\WlanLoadXMLCW.cpp">
+      <Filter>02.Impl\Wlan\FileConfig</Filter>
+    </ClCompile>
+    <ClCompile Include="FuncImp\WlanTestSysCW.cpp">
+      <Filter>02.Impl\Wlan\Action</Filter>
+    </ClCompile>
+    <ClCompile Include="FuncImp\BTLoadXMLProbe.cpp">
+      <Filter>02.Impl\BlueTooth\FileConfig\5.0</Filter>
+    </ClCompile>
+    <ClCompile Include="FuncImp\BTTestSysProbe.cpp">
+      <Filter>02.Impl\BlueTooth\Action\5.0</Filter>
+    </ClCompile>
+    <ClCompile Include="FuncImp\WcnTestSysWear.cpp">
+      <Filter>02.Impl\Wlan\Action</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\Common\UtilFn\NetUtility.cpp">
+      <Filter>05.Utility</Filter>
+    </ClCompile>
+    <ClCompile Include="FuncImp\WcnTestSysWearAT.cpp">
+      <Filter>02.Impl\Wlan\Action</Filter>
+    </ClCompile>
+    <ClCompile Include="FuncImp\GPSTestLoss.cpp">
+      <Filter>02.Impl\GPS\Action</Filter>
+    </ClCompile>
+    <ClCompile Include="FuncImp\WlanTestSysAntLoss.cpp">
+      <Filter>02.Impl\Wlan\Action</Filter>
+    </ClCompile>
+    <ClCompile Include="FuncImp\WlanLoadLossXML.cpp">
+      <Filter>02.Impl\Wlan\FileConfig</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Common\LossHelper.cpp">
+      <Filter>02.Impl\GPS\Action</Filter>
+    </ClCompile>
+    <ClCompile Include="FuncImp\BTGeneralLoadLossXML.cpp">
+      <Filter>02.Impl\BlueTooth\FileConfig\General</Filter>
+    </ClCompile>
+    <ClCompile Include="FuncImp\BTMeasSysV1Loss.cpp">
+      <Filter>02.Impl\BlueTooth\Action\General</Filter>
+    </ClCompile>
+    <ClCompile Include="FuncImp\WlanLoadXMLUDS710.cpp">
+      <Filter>02.Impl\Wlan\FileConfig</Filter>
+    </ClCompile>
+    <ClCompile Include="FuncImp\WlanTestSysUDS710.cpp">
+      <Filter>02.Impl\Wlan\Action</Filter>
+    </ClCompile>
+    <ClCompile Include="FuncImp\WlanMeasUDS710.cpp">
+      <Filter>02.Impl\Wlan\Process\5G</Filter>
+    </ClCompile>
+    <ClCompile Include="FuncImp\WlanTestSysAntLossV2.cpp">
+      <Filter>02.Impl\Wlan\Action</Filter>
+    </ClCompile>
+    <ClCompile Include="FuncImp\CalCNR.cpp">
+      <Filter>02.Impl\GPS\Action</Filter>
+    </ClCompile>
+    <ClCompile Include="FuncImp\GPSTestSysV2.cpp">
+      <Filter>02.Impl\GPS\Action</Filter>
+    </ClCompile>
+    <ClCompile Include="FuncImp\GPSTestSysV2.cpp">
+      <Filter>02.Impl\GPS\Action</Filter>
+    </ClCompile>
+    <ClCompile Include="FuncImp\GPSTestSysBeiDou.cpp">
+      <Filter>02.Impl\GPS\Action</Filter>
+    </ClCompile>
+    <ClCompile Include="FuncImp\GPSTestSysMslt.cpp">
+      <Filter>02.Impl\GPS\Action</Filter>
+    </ClCompile>
+    <ClCompile Include="FuncImp\BTLoadXMLUDS710.cpp">
+      <Filter>02.Impl\BlueTooth\FileConfig\5.0</Filter>
+    </ClCompile>
+    <ClCompile Include="FuncImp\BTMeasBDRUDS710.cpp">
+      <Filter>02.Impl\BlueTooth\Process\5.0</Filter>
+    </ClCompile>
+    <ClCompile Include="FuncImp\BTMeasBLE_EXUDS710.cpp">
+      <Filter>02.Impl\BlueTooth\Process\5.0</Filter>
+    </ClCompile>
+    <ClCompile Include="FuncImp\BTMeasEDRUDS710.cpp">
+      <Filter>02.Impl\BlueTooth\Process\5.0</Filter>
+    </ClCompile>
+    <ClCompile Include="FuncImp\BTTestSysUDS710.cpp">
+      <Filter>02.Impl\BlueTooth\Action\5.0</Filter>
+    </ClCompile>
+    <ClCompile Include="FuncImp\WcnTestSysWearATEx.cpp">
+      <Filter>02.Impl\Wlan\Action</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Common\CustomizedBase.cpp">
+      <Filter>02.Impl</Filter>
+    </ClCompile>
+    <ClCompile Include="FuncImp\WlanTestSysSongShanW6.cpp">
+      <Filter>02.Impl\Wlan\Action</Filter>
+    </ClCompile>
+    <ClCompile Include="FuncImp\WlanLoadXMLSongShanW6.cpp">
+      <Filter>02.Impl\Wlan\FileConfig</Filter>
+    </ClCompile>
+    <ClCompile Include="FuncImp\WlanMeasSongShanW6.cpp">
+      <Filter>02.Impl\Wlan\Process\SongShanW6</Filter>
+    </ClCompile>
+    <ClCompile Include="FuncImp\BTMeasBLE_BLE53.cpp">
+      <Filter>02.Impl\BlueTooth\Process\5.3</Filter>
+    </ClCompile>
+    <ClCompile Include="FuncImp\BTLoadXML_BLE53.cpp">
+      <Filter>02.Impl\BlueTooth\FileConfig\5.3</Filter>
+    </ClCompile>
+    <ClCompile Include="FuncImp\BTTestSysSongShan.cpp">
+      <Filter>02.Impl\BlueTooth\Action\5.3</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\Common\API\BTApiHCI.cpp">
+      <Filter>02.Impl\BlueTooth\Api</Filter>
+    </ClCompile>
+    <ClCompile Include="FuncImp\BTTestSysHCI.cpp">
+      <Filter>02.Impl\BlueTooth\Action\General</Filter>
+    </ClCompile>
+    <ClCompile Include="FuncImp\HciBtCheckAddr.cpp">
+      <Filter>02.Impl\BlueTooth\Action\General</Filter>
+    </ClCompile>
+    <ClCompile Include="FuncImp\HciBtWriteAddr.cpp">
+      <Filter>02.Impl\BlueTooth\Action\General</Filter>
+    </ClCompile>
+    <ClCompile Include="FuncImp\WlanTestSysAntLossSC266X.cpp">
+      <Filter>02.Impl\Wlan\Action</Filter>
+    </ClCompile>
+    <ClCompile Include="FuncImp\BTTestSysCW.cpp">
+      <Filter>02.Impl\BlueTooth\Action\General</Filter>
+    </ClCompile>
+    <ClCompile Include="FuncImp\BTLoadXMLCW.cpp">
+      <Filter>02.Impl\BlueTooth\FileConfig\General</Filter>
+    </ClCompile>
+    <ClCompile Include="FuncImp\BTMeasCW.cpp">
+      <Filter>02.Impl\BlueTooth\Process\General</Filter>
+    </ClCompile>
+    <ClCompile Include="FuncImp\WcnTestSysWearCW.cpp">
+      <Filter>02.Impl\Wlan\Action</Filter>
+    </ClCompile>
+    <ClCompile Include="FuncImp\CheckWcnUid.cpp">
+      <Filter>02.Impl</Filter>
+    </ClCompile>
+    <ClCompile Include="FuncImp\GPSTestSysGlonass.cpp">
+      <Filter>02.Impl\GPS\Action</Filter>
+    </ClCompile>
+    <ClCompile Include="FuncImp\GPSTestSysV3.cpp">
+      <Filter>02.Impl\GPS\Action</Filter>
+    </ClCompile>
+    <ClCompile Include="FuncImp\GPSAutoModeTestSys.cpp">
+      <Filter>02.Impl\GPS\Action</Filter>
+    </ClCompile>
+    <ClCompile Include="FuncImp\WlanTestSysByBtTxOn.cpp">
+      <Filter>02.Impl\Wlan\Action</Filter>
+    </ClCompile> 
+    <ClCompile Include="FuncImp\WlanTestSysSongShanW6DL.cpp">
+      <Filter>02.Impl\Wlan\Action</Filter>
+    </ClCompile>
+    <ClCompile Include="FuncImp\WlanMeasSongShanW6DL.cpp">
+      <Filter>02.Impl\Wlan\Process\SongShanW6</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="WcnFT.rc">
+      <Filter>09.RC</Filter>
+    </ResourceCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="XML\BlueToothFT.XML">
+      <Filter>04.XML</Filter>
+    </None>
+    <None Include="XML\Dummy.XML">
+      <Filter>04.XML</Filter>
+    </None>
+    <None Include="XML\GPSFT.XML">
+      <Filter>04.XML</Filter>
+    </None>
+    <None Include="XML\WcnFT.XML">
+      <Filter>04.XML</Filter>
+    </None>
+    <None Include="ReadMe.txt" />
+    <None Include="XML\LogEnable.XML">
+      <Filter>04.XML</Filter>
+    </None>
+    <None Include="XML\WCNFT_ANDROID80.XML">
+      <Filter>04.XML</Filter>
+    </None>
+    <None Include="XML\WCNFT_PROBE.XML">
+      <Filter>04.XML</Filter>
+    </None>
+    <None Include="XML\BlueToothFTGeneral.XML">
+      <Filter>04.XML</Filter>
+    </None>
+    <None Include="XML\WCNFT_ANDROID80_Mimo.XML">
+      <Filter>04.XML</Filter>
+    </None>
+    <None Include="XML\WCNFT_CW.XML">
+      <Filter>04.XML</Filter>
+    </None>
+    <None Include="XML\BlueToothProbe.XML">
+      <Filter>04.XML</Filter>
+    </None>
+    <None Include="XML\WCNFT_DEV.XML">
+      <Filter>04.XML</Filter>
+    </None>
+    <None Include="XML\WCNFT_WEAR.XML">
+      <Filter>04.XML</Filter>
+    </None>
+    <None Include="XML\WCNFT_WEAR_AT.XML">
+      <Filter>04.XML</Filter>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Xml Include="XML\GPSFT_Loss.XML">
+      <Filter>04.XML</Filter>
+    </Xml>
+    <Xml Include="XML\WCNFT_Loss.XML">
+      <Filter>04.XML</Filter>
+    </Xml>
+    <Xml Include="XML\BlueToothFTGeneral_Loss.XML">
+      <Filter>04.XML</Filter>
+    </Xml>
+    <Xml Include="XML\WCNFT_UDS710.XML">
+      <Filter>04.XML</Filter>
+    </Xml>
+    <Xml Include="XML\BlueToothFTUDS710.XML">
+      <Filter>04.XML</Filter>
+    </Xml>
+    <Xml Include="XML\WCNFT_ANDROID80_Loss.XML">
+      <Filter>04.XML</Filter>
+    </Xml>
+    <Xml Include="XML\GPSFT_V2.XML">
+      <Filter>04.XML</Filter>
+    </Xml>
+    <Xml Include="XML\GPSFT_BeiDou.XML">
+      <Filter>04.XML</Filter>
+    </Xml>
+    <Xml Include="XML\GPSFT_V2.XML">
+      <Filter>04.XML</Filter>
+    </Xml>
+    <Xml Include="XML\GPSFT_MSLT.XML">
+      <Filter>04.XML</Filter>
+    </Xml>
+    <Xml Include="XML\WCNFT_WEAR_AT_Ex.XML">
+      <Filter>04.XML</Filter>
+    </Xml>
+    <Xml Include="XML\WCNFT_SONGSHAN_W6.XML">
+      <Filter>04.XML</Filter>
+    </Xml>
+    <Xml Include="XML\BlueToothFT_BLE53.XML">
+      <Filter>04.XML</Filter>
+    </Xml>
+    <Xml Include="XML\BlueToothHCIFT.XML">
+      <Filter>04.XML</Filter>
+    </Xml>
+    <Xml Include="XML\HciBtCheckAddr.XML">
+      <Filter>04.XML</Filter>
+    </Xml>
+    <Xml Include="XML\HciBtWriteAddr.XML">
+      <Filter>04.XML</Filter>
+    </Xml>
+    <Xml Include="XML\BlueToothFTV2EX.XML">
+      <Filter>04.XML</Filter>
+    </Xml>
+    <Xml Include="XML\WCNFT_Loss_SC266X(W6).XML">
+      <Filter>04.XML</Filter>
+    </Xml>
+    <Xml Include="XML\BlueToothFTCW.XML">
+      <Filter>04.XML</Filter>
+    </Xml>
+    <Xml Include="XML\WCNFT_WEAR_CW.XML">
+      <Filter>04.XML</Filter>
+    </Xml>
+    <Xml Include="XML\CheckWcnUid.XML">
+      <Filter>04.XML</Filter>
+    </Xml>
+    <Xml Include="XML\GPSFT_GLO.XML">
+      <Filter>04.XML</Filter>
+    </Xml>
+    <Xml Include="XML\GPSFT_V3.XML">
+      <Filter>04.XML</Filter>
+    </Xml>
+    <Xml Include="XML\GPSFT_Auto.XML">
+      <Filter>04.XML</Filter>
+    </Xml>
+    <Xml Include="XML\WCNFT_BT_INF_WIFI.XML">
+      <Filter>04.XML</Filter>
+    </Xml>
+  </ItemGroup>
+</Project>

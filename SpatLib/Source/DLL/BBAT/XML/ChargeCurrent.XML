@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Node>
+  <Option>
+	<PowerVoltage Control="ComboBox" Description="电压" Elements="4V,12V">4V</PowerVoltage>
+	<CurrentType Control="ComboBox" Description="测试电流类型" Elements="PowerOnCurrent,ChargeCurrent,SleepCurrent">PowerOnCurrent</CurrentType>
+	<UpCurrent Description="电流上限" Control="EditBox">300</UpCurrent>
+	<DownCurrent Description="电流下限" Control="EditBox">40</DownCurrent>
+</Option>
+  <Param>
+	<DeepSleep_Delay Description="进入休眠状态延时，单位ms" Control="EditBox">6000</DeepSleep_Delay>
+  </Param>
+</Node>

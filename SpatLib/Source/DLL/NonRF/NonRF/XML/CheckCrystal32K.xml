@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Node>
+	<Option>
+		<LowLimit Description="Fer Low limit (Unit:Hz)">-6</LowLimit>
+		<HighLimit Description="Fer High limit (Unit:Hz)">6</HighLimit>
+	</Option>
+	<Param>
+	</Param>
+</Node>

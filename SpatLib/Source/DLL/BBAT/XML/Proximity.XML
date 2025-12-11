@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Node>
+  <Option>
+      <SpecUp Control="EditBox" Description="接近等级上限">5</SpecUp>
+      <SpecDown Control="EditBox" Description="接近等级下限">1</SpecDown>
+  </Option>
+  <Param>
+  </Param>
+</Node>

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Node>
+  <Option>
+	<AdcChannel Control="ComboBox" Description="G3的Common ADC通道" Elements="0,1,2,3,4,5,6,7">0</AdcChannel>
+	<UpSpec Description="电压上限" Control="EditBox">2900</UpSpec>
+	<DownSpec Description="电压下限" Control="EditBox">2700</DownSpec>
+</Option>
+  <Param>
+  </Param>
+</Node>

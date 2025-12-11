@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Node>
+	<FlowControl>
+        <RunMode Control="ComboBox" Elements="NORMAL,ALWAYS">ALWAYS</RunMode>
+        <LoopCount>1</LoopCount>
+        <BreakCondition Control="ComboBox" Elements="FAIL,PASS,SKIP" Description="Break condition while loop testing.">PASS</BreakCondition>
+	</FlowControl>
+	<Option>
+		<Station></Station>
+	</Option>
+	<Param>
+	</Param>
+</Node>

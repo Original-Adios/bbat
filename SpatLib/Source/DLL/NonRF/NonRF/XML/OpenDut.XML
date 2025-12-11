@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Node>
+	<Option>
+    <TestMode Control="ComboBox" Elements="GSM Calibration,WCDMA Calibration,LTE Calibration,TD Calibration,C2K Calibration,BBAT">GSM Calibration</TestMode>
+    <Port Control="BoolComboBox" CtrlNode="Setting">
+      <Setting Control="ComboBox" Elements="Auto,Uart,Socket" Description="Auto: 设置中的端口配置">Auto</Setting>
+      <Uart>
+        <Port>1</Port>
+        <Baudrate>115200</Baudrate>
+       </Uart>
+      <Socket>
+        <IP>127.0.0.1</IP>
+        <Port>37777</Port>
+      </Socket>
+    </Port>
+  </Option>
+	<Param>
+  </Param>
+</Node>

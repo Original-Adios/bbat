@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Node>
+  <Option>  	
+    <GPIO_Number Control="EditBox" Description="GPIO号码">0</GPIO_Number>
+</Option>
+  <Param>
+  </Param>
+</Node>

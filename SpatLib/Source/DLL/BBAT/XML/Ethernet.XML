@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Node>
+  <Option>
+    <RGMII Control="CheckBox" Description="1G_RGMII网口回环测试">1</RGMII>
+    <USXGMII Control="CheckBox" Description="10G_USXGMII网口回环测试">1</USXGMII>
+</Option>
+  <Param>
+  </Param>
+</Node>

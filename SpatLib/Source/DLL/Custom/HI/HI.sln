@@ -1,0 +1,29 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2010
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "HI", "HI.vcxproj", "{BCD948D4-F8DE-4FD4-A6AE-2184B2DB1280}"
+	ProjectSection(ProjectDependencies) = postProject
+		{C4879BD7-E8D7-46FB-BDD7-30BA1A171802} = {C4879BD7-E8D7-46FB-BDD7-30BA1A171802}
+	EndProjectSection
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "CallHiMesDll", "CallHiMesDll\CallHiMesDll.vcxproj", "{C4879BD7-E8D7-46FB-BDD7-30BA1A171802}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Win32 = Debug|Win32
+		Release|Win32 = Release|Win32
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{BCD948D4-F8DE-4FD4-A6AE-2184B2DB1280}.Debug|Win32.ActiveCfg = Debug|Win32
+		{BCD948D4-F8DE-4FD4-A6AE-2184B2DB1280}.Debug|Win32.Build.0 = Debug|Win32
+		{BCD948D4-F8DE-4FD4-A6AE-2184B2DB1280}.Release|Win32.ActiveCfg = Release|Win32
+		{BCD948D4-F8DE-4FD4-A6AE-2184B2DB1280}.Release|Win32.Build.0 = Release|Win32
+		{C4879BD7-E8D7-46FB-BDD7-30BA1A171802}.Debug|Win32.ActiveCfg = Debug|Win32
+		{C4879BD7-E8D7-46FB-BDD7-30BA1A171802}.Debug|Win32.Build.0 = Debug|Win32
+		{C4879BD7-E8D7-46FB-BDD7-30BA1A171802}.Release|Win32.ActiveCfg = Release|Win32
+		{C4879BD7-E8D7-46FB-BDD7-30BA1A171802}.Release|Win32.Build.0 = Release|Win32
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

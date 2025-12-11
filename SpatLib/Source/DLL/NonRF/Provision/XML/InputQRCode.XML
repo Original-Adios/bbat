@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Node>
+	<Option>
+    <QRCode Control="BoolComboBox" CtrlNode="GenerateType">
+      <Format Control="ComboBox" Elements="V1,V2,V3" Description="[V1]: Key1=Value1;Key2=Value2     [e.g]: IMEI1=xxxx;IMEI2=yyyy;SN1=zzzzz&#x0D;&#x0A;[V2]: IMEI;SN     [e.g]:86486702999650;2009117T0102N0000001&#x0D;&#x0A;[V3]: sn,ip,port">V1</Format>
+      <GenerateType Control="ComboBox" Elements="ScanCode,FixCode">ScanCode</GenerateType>
+      <FixCode></FixCode>
+    </QRCode>
+	</Option>
+	<Param>
+	</Param>
+</Node>

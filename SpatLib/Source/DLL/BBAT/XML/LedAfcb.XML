@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Node>
+  <Option>
+</Option>
+  <Param>
+	  <LED Control="Group">
+		  <GroupCount>3</GroupCount>
+		  <Group1>
+			  <PhoneLedType Control="ComboBox" Elements="FlashCold,FlashWarm,FP_Flash,FrontFlash,KeypadLight,LedRed,LedGreen,LedBlue,Torch,GPIO">FlashCold</PhoneLedType>
+			  <G3LedId Description="G3 LED通道" Control="ComboBox" Elements="0,1,2,3,4,5,6,7">0</G3LedId>
+			  <GPIONumber Description="GPIO号，选择GPIO时需要填写此项">0</GPIONumber>
+			  <VoltageUpSpec Control="EditBox" Description="电压上限">3300</VoltageUpSpec>
+			  <VoltageDownSpec Control="EditBox" Description="电压下限">1000</VoltageDownSpec>
+		  </Group1>
+		  <Group2>
+			  <PhoneLedType Control="ComboBox" Elements="FlashCold,FlashWarm,FP_Flash,FrontFlash,KeypadLight,LedRed,LedGreen,LedBlue,Torch,GPIO">FlashWarm</PhoneLedType>
+			  <G3LedId Description="G3 LED通道" Control="ComboBox" Elements="0,1,2,3,4,5,6,7">0</G3LedId>
+			  <GPIONumber Description="GPIO号，选择GPIO时需要填写此项">0</GPIONumber>
+			  <VoltageUpSpec Control="EditBox" Description="电压上限">3300</VoltageUpSpec>
+			  <VoltageDownSpec Control="EditBox" Description="电压下限">1000</VoltageDownSpec>
+		  </Group2>
+		  <Group3>
+			  <PhoneLedType Control="ComboBox" Elements="FlashCold,FlashWarm,FP_Flash,FrontFlash,KeypadLight,LedRed,LedGreen,LedBlue,Torch,GPIO">LedRed</PhoneLedType>
+			  <G3LedId Description="G3 LED通道" Control="ComboBox" Elements="0,1,2,3,4,5,6,7">2</G3LedId>
+			  <GPIONumber Description="GPIO号，选择GPIO时需要填写此项">0</GPIONumber>
+			  <VoltageUpSpec Control="EditBox" Description="电压上限">3300</VoltageUpSpec>
+			  <VoltageDownSpec Control="EditBox" Description="电压下限">500</VoltageDownSpec>
+		  </Group3>
+	  </LED>
+  </Param>
+</Node>

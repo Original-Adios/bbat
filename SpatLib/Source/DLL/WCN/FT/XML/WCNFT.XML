@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Node>
+  <Option>
+    <ManualPwrLvl Description="Manual Set Power Level" Control="CheckBox">0</ManualPwrLvl>
+    <Band>
+      <Wlan11b Description="802.11b measurement switcher, if checkbox is enabled, measurement will be performed or not" Control="CheckBox">1</Wlan11b>
+      <Wlan11g Description="802.11g measurement switcher, if checkbox is enabled, measurement will be performed or not" Control="CheckBox">1</Wlan11g>
+      <Wlan11n Description="802.11n measurement switcher, if checkbox is enabled, measurement will be performed or not" Control="CheckBox">1</Wlan11n>
+      <WlanCW Description="CW power measurement switcher, if checkbox is enabled, measurement will be performed or not" Control="CheckBox">0</WlanCW>
+    </Band>
+  </Option>
+  <Param>
+    <TimeOut >
+      <WaitTime Description="Unit: millisecond">60000</WaitTime>
+      <CmdSleep Description="Unit: millisecond">3000</CmdSleep>
+    </TimeOut>
+    <WlanCW Description="Transmit CW power measurement">
+      <TCH Description="Transmit channel 1~13 is available">1</TCH>
+      <RefLVL Description="Reference level for tx measure. Unit:dBm">20</RefLVL>
+      <Specification Description="Configure the test tolerance and specification">
+        <TXP Description="TX Power, Unit: dBm">
+          <TXP>8,20</TXP>
+        </TXP>
+      </Specification>
+    </WlanCW>
+    <Wlan11b Description="802.11b Band" Control="Group">
+      <GroupCount>1</GroupCount>
+      <Group1>
+        <TCH Description="Transmit channel 1~13 is available">1,7,13</TCH>
+        <Modulation Description="Different modulation type with differrent data rate, the matching map is DSSS-1:1.0Mbps,DSSS-2:2.0Mbps,CCK-5.5:5.5Mbps,CCK-11:11.0Mbps" Control="ComboBox" Elements="DSSS-1,DSSS-2,CCK-5.5,CCK-11">CCK-11</Modulation>
+        <RXLVL Description="Rx level for per measurement. Unit:dBm">-65</RXLVL>
+        <RefLVL Description="Reference level for tx measure. Unit:dBm">20</RefLVL>
+        <TestItem>
+          <TXP Description="Transmit power level" Control="CheckBox">1</TXP>
+          <TCFT Description="Transmit center frequency tolerance" Control="CheckBox">1</TCFT>
+          <EVM Description="Error vector maganitude" Control="CheckBox">1</EVM>
+          <SPECMASK Description="Transmit spectrum mask" Control="CheckBox">1</SPECMASK>
+          <PER Description="Receiver sensitivity" Control="CheckBox">1</PER>
+          <RSSI Description="Received Signal Strength Indicator" Control="CheckBox">0</RSSI>
+        </TestItem>
+      </Group1>
+      <Specification Description="Configure the test tolerance and specification">
+        <TXP Description="TX Power, Unit: dBm">
+          <TXP>8,20</TXP>
+        </TXP>
+        <EVM Description="Error Vector Magnitude, Unit: %">
+          <EVM>35,35,35,35</EVM>
+        </EVM>
+        <TCFT Description="Transmit Center Frequency Tolerance, Unit: PPM">
+          <TCFT>-15,15</TCFT>
+        </TCFT>
+        <PER>
+          <PER>8</PER>
+        </PER>
+        <RSSI Description="Received Signal Strength Indicator.RXLVL+/-Limit">
+          <RSSI>-4,4</RSSI>
+        </RSSI>
+      </Specification>
+    </Wlan11b>
+    <Wlan11g Description="802.11g Band" Control="Group">
+      <GroupCount>1 </GroupCount>
+      <Group1>
+        <TCH Description="Transmit channel 1~13 is available">1,7,13</TCH>
+        <Modulation Control="ComboBox" Elements="OFDM-6,OFDM-9,OFDM-12,OFDM-18,OFDM-24,OFDM-36,OFDM-48,OFDM-54">OFDM-54</Modulation>
+        <RXLVL Description="Rx level for per measurement. Unit:dBm">-65</RXLVL>
+        <RefLVL Description="Reference level for tx measure. Unit:dBm">20</RefLVL>
+        <TestItem>
+          <TXP Description="Transmit power level" Control="CheckBox">1</TXP>
+          <TCFT Description="Transmit center frequency tolerance" Control="CheckBox">1</TCFT>
+          <EVM Description="Error vector maganitude" Control="CheckBox">1</EVM>
+          <SPECMASK Description="Transmit spectrum mask" Control="CheckBox">1</SPECMASK>
+          <PER Description="Receiver sensitivity" Control="CheckBox">1</PER>
+          <RSSI Description="Received Signal Strength Indicator" Control="CheckBox">0</RSSI>
+        </TestItem>
+      </Group1>
+      <Specification Description="Configure the test tolerance and specification">
+        <TXP Description="TX Power, Unit: dBm">
+          <TXP>8,20</TXP>
+        </TXP>
+        <TCFT Description="Transmit Center Freq Tolerance, Unit: PPM">
+          <TCFT>-15,15</TCFT>
+        </TCFT>
+        <EVM Description="Error Vector Magnitude, Unit: %">
+          <EVM>-5,-8,-10,-13,-16,-19,-22,-25</EVM>
+        </EVM>
+        <PER>
+          <PER>10</PER>
+        </PER>
+        <RSSI Description="Received Signal Strength Indicator.RXLVL+/-Limit">
+          <RSSI>-4,4</RSSI>
+        </RSSI>
+      </Specification>
+    </Wlan11g>
+    <Wlan11n Description="802.11n Band" Control="Group">
+      <GroupCount>1</GroupCount>
+      <Group1>
+        <TCH Description="Transmit channel 1~13 is available">1,7,13</TCH>
+        <Modulation Control="ComboBox" Elements="MCS-0,MCS-1,MCS-2,MCS-3,MCS-4,MCS-5,MCS-6,MCS-7">MCS-7</Modulation>
+        <RXLVL Description="Rx level for per measurement. Unit:dBm">-65</RXLVL>
+        <RefLVL Description="Reference level for tx measure. Unit:dBm">20</RefLVL>
+        <TestItem>
+          <TXP Description="Transmit power level" Control="CheckBox">1</TXP>
+          <TCFT Description="Transmit center frequency tolerance" Control="CheckBox">1</TCFT>
+          <EVM Description="Error vector maganitude" Control="CheckBox">1</EVM>
+          <SPECMASK Description="Transmit spectrum mask" Control="CheckBox">1</SPECMASK>
+          <PER Description="Receiver sensitivity" Control="CheckBox">1</PER>
+          <RSSI Description="Received Signal Strength Indicator" Control="CheckBox">0</RSSI>
+        </TestItem>
+      </Group1>
+      <Specification Description="Configure the test tolerance and specification">
+        <TXP Description="TX Power, Unit: dBm">
+          <TXP>8,20</TXP>
+        </TXP>
+        <EVM Description="Error Vector Magnitude, Unit: %">
+          <EVM>-5,-10,-13,-16,-19,-22,-25,-28</EVM>
+        </EVM>
+        <TCFT Description="Transmit Center Frequency Tolerance, Unit: PPM">
+          <TCFT>-15,15</TCFT>
+        </TCFT>
+        <PER>
+          <PER>10</PER>
+        </PER>
+        <RSSI Description="Received Signal Strength Indicator.RXLVL+/-Limit">
+          <RSSI>-4,4</RSSI>
+        </RSSI>
+      </Specification>
+    </Wlan11n>
+  </Param>
+</Node>

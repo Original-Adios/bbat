@@ -1,0 +1,301 @@
+// Microsoft Visual C++ generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#include "afxres.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// 中文(简体，中国) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_CHS)
+LANGUAGE LANG_CHINESE, SUBLANG_CHINESE_SIMPLIFIED
+#pragma code_page(936)
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE 
+BEGIN
+    "#include ""afxres.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE 
+BEGIN
+    "\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Version
+//
+
+VS_VERSION_INFO VERSIONINFO
+ FILEVERSION 9,25,20,53
+ PRODUCTVERSION 9,25,20,53
+ FILEFLAGSMASK 0x17L
+#ifdef _DEBUG
+ FILEFLAGS 0x1L
+#else
+ FILEFLAGS 0x0L
+#endif
+ FILEOS 0x4L
+ FILETYPE 0x2L
+ FILESUBTYPE 0x0L
+BEGIN
+    BLOCK "StringFileInfo"
+    BEGIN
+        BLOCK "080404b0"
+        BEGIN
+            VALUE "CompanyName", "UNISOC TECHNOLOGIES INC."
+            VALUE "FileDescription", "SpatLib BBAT Dynamic Link Library"
+            VALUE "FileVersion", "9, 25, 20, 53"
+            VALUE "InternalName", "BBAT"
+            VALUE "LegalCopyright", "COPYRIGHT (C) 2019 UNISOC TECHNOLOGIES INC."
+            VALUE "OriginalFilename", "BBAT.dll"
+            VALUE "ProductVersion", "9, 25, 20, 53"
+        END
+    END
+    BLOCK "VarFileInfo"
+    BEGIN
+        VALUE "Translation", 0x804, 1200
+    END
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// XML
+//
+
+IDR_XML_DUMMY           XML                     "XML\\Dummy.XML"
+
+IDR_XML_UIS6760_GPIO    XML                     "XML\\UIS6760_GPIO.XML"
+
+IDR_XML_RTC             XML                     "XML\\RTC.XML"
+
+IDR_XML_CHECKX_FAST_CHARGE XML                     "XML\\CheckXFastCharge.XML"
+
+IDR_XML_WIFI            XML                     "XML\\Wifi.XML"
+
+IDR_XML_AudioLoop       XML                     "XML\\AudioLoop.XML"
+
+IDR_XML_B2B             XML                     "XML\\B2B.XML"
+
+IDR_XML_Sensor          XML                     "XML\\Sensor.XML"
+
+IDR_XML_Gps             XML                     "XML\\GPS.XML"
+
+IDR_XML_MISC            XML                     "XML\\Misc.XML"
+
+IDR_XML_Camera          XML                     "XML\\Camera.XML"
+
+IDR_XML_Fm              XML                     "XML\\FM.XML"
+
+IDR_XML_MakeCall        XML                     "XML\\MakeCall.XML"
+
+IDR_XML_Nfc             XML                     "XML\\Nfc.XML"
+
+IDR_XML_AccSensor       XML                     "XML\\AccSensor.XML"
+
+IDR_XML_MagSensor       XML                     "XML\\MagSensor.XML"
+
+IDR_XML_ProSensor       XML                     "XML\\Proximity.XML"
+
+IDR_XML_LigSensor       XML                     "XML\\LigSensor.XML"
+
+IDR_XML_KeypadLightAfcb XML                     "XML\\KeypadLightAfcb.XML"
+
+IDR_XML_LcdAfcb         XML                     "XML\\LcdAfcb.XML"
+
+IDR_XML_Keypad          XML                     "XML\\Keypad.XML"
+
+IDR_XML_TempSensor      XML                     "XML\\TempSensor.XML"
+
+IDR_XML_AdcAfcb         XML                     "XML\\AdcAfcb.XML"
+
+IDR_XML_LedAfcb         XML                     "XML\\LedAfcb.XML"
+
+IDR_XML_Vibrator        XML                     "XML\\VibratorAfcb.XML"
+
+IDR_XML_TypeCHeadset    XML                     "XML\\TypeCHeadset.XML"
+
+IDR_XML_ORCA            XML                     "XML\\ORCA.XML"
+
+IDR_XML_ChargeCurrent   XML                     "XML\\ChargeCurrent.XML"
+
+IDR_XML_Cob             XML                     "XML\\CobAfcb.XML"
+
+IDR_XML_AudioLoopAfcb   XML                     "XML\\AudioLoopAfcb.XML"
+
+IDR_XML_AudioLoopPa     XML                     "XML\\AudioLoopPa.XML"
+
+IDR_XML_G3Mic           XML                     "XML\\AudioLoopG3Mic.XML"
+
+IDR_XML_HallSensor      XML                     "XML\\HallSensor.XML"
+
+IDR_XML_Headset         XML                     "XML\\Headset.XML"
+
+IDR_XML_HeadsetNoMic    XML                     "XML\\Headset_NoMic.XML"
+
+IDR_XML_PreSensor       XML                     "XML\\PreSensor.XML"
+
+IDR_XML_CameraOper      XML                     "XML\\CameraOper.XML"
+
+IDR_XML_GpioAfcb        XML                     "XML\\GPIO_AFCB.XML"
+
+IDR_XML_EnterMode       XML                     "XML\\EnterMode.XML"
+
+IDR_XML_Power           XML                     "XML\\PowerOff.XML"
+
+IDR_XML_OTG             XML                     "XML\\OTG.XML"
+
+IDR_XML_FingerPrint     XML                     "XML\\FingerPrint.XML"
+
+IDR_XML_GrySensor       XML                     "XML\\GyrSensor.XML"
+
+IDR_XML_OriSensor       XML                     "XML\\OriSensor.XML"
+
+IDR_XML_Pcie            XML                     "XML\\Pcie.XML"
+
+IDR_XML_GPIO_SMP        XML                     "XML\\GPIO_SMP.XML"
+
+IDR_XML_FM_TRANSMIT     XML                     "XML\\FM_TRANSMIT.XML"
+
+IDR_XML_SarSensor       XML                     "XML\\SarSensor.XML"
+
+IDR_XML_Ethernet        XML                     "XML\\Ethernet.XML"
+
+IDR_XML_ENABLEARMLOG    XML                     "XML\\EnableArmlog.XML"
+
+IDR_XML_PreEthernet     XML                     "XML\\PreEthernet.XML"
+
+IDR_XML_GpioAfcbControl XML                     "XML\\GPIO_AFCB_CONTROL.XML"
+
+IDR_XML_AfcbCtrlVol     XML                     "XML\\AfcbCtrlVol.XML"
+
+IDR_XML_VibratorPa      XML                     "XML\\VibratorPa.XML"
+
+IDR_XML_BT_MCU          XML                     "XML\\BT_MCU.XML"
+
+#endif    // 中文(简体，中国) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+/////////////////////////////////////////////////////////////////////////////
+// 英语(美国) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)
+LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
+#pragma code_page(1252)
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// XML
+//
+
+IDR_XML_891X_ADC        XML                     "XML\\891x_ADC.XML"
+
+IDR_XML_AMU_CAMERA      XML                     "XML\\AMU_CAMERA.XML"
+
+IDR_XML_AMU_KEYPAD      XML                     "XML\\AMU_KEYPAD.XML"
+
+IDR_XML_AMU_LED         XML                     "XML\\AMU_LED.XML"
+
+IDR_XML_AMU_SENSOR_GALI XML                     "XML\\AMU_SENSOR_GALI.XML"
+
+IDR_XML_AMU_SENSOR_TEST XML                     "XML\\AMU_SENSOR_TEST.XML"
+
+IDR_XML_GPIO_READ       XML                     "XML\\GPIO_READ.XML"
+
+IDR_XML_GPIO_WRITE      XML                     "XML\\GPIO_WRITE.XML"
+
+IDR_XML_UMW5621_GPIO_ALL_PULL XML                     "XML\\UMW5621_GPIO_ALL_PULL.XML"
+
+IDR_XML_UMW5621_GPIO_SINGLE_PULL XML                     "XML\\UMW5621_GPIO_SINGLE_PULL.XML"
+
+IDR_XML_UMW5621_GPIO_ALL_SET XML                     "XML\\UMW5621_GPIO_ALL_SETINOUT.XML"
+
+IDR_XML_UMW5621_GPIO_SINGLE_SETINPUT XML                     "XML\\UMW5621_GPIO_SINGLE_SET_INPUT.XML"
+
+IDR_UMW5621_TEST_UART   XML                     "XML\\UMW5621_TEST_UART.XML"
+
+IDR_XML_UMW5621_GPIO_PINTEST XML                     "XML\\UMW5621_GPIO_PINTEST.XML"
+
+IDR_XML_TYPEC_CCTEST    XML                     "XML\\TYPEC_CCTEST.XML"
+
+IDR_XML_6760_TEST_RESET XML                     "XML\\6760_TEST_RESET.XML"
+
+IDR_XML_ECELL_5G_TEST_LAN XML                     "XML\\ECELL_5G_TEST_LAN.XML"
+
+IDR_XML_GET_ADC         XML                     "XML\\BBAT_GET_ADC.XML"
+
+IDR_XML_UART0_TEST      XML                     "XML\\UART0_TEST.XML"
+
+IDR_XML_RELAY           XML                     "XML\\RELAY.XML"
+
+IDR_XML_NTC             XML                     "XML\\NTC.XML"
+
+IDR_XML_InterConnect    XML                     "XML\\InterConnect.XML"
+
+IDR_XML_ShortCircuit    XML                     "XML\\ShortCircuit.XML"
+
+IDR_XML_ECELL_KEYPAD_RELAY XML                     "XML\\ECELL_KEYPAD_RELAY.XML"
+
+IDR_XML_5G_ADC          XML                     "XML\\5G_ADC.XML"
+
+IDR_XML_RGB_ADC         XML                     "XML\\RGB_ADC.XML"
+
+IDR_XML_NTC_ADC         XML                     "XML\\NTC_ADC.XML"
+
+IDR_XML_UMP5865_KEYPAD  XML                     "XML\\UMP5865_KEYPAD.XML"
+
+IDR_XML_UMP5865_MIC     XML                     "XML\\UMP5865_MIC.XML"
+
+IDR_XML_UMP5865_GPIO_GETLEVEL XML                     "XML\\UMP5865_GPIO_GETLEVEL.XML"
+
+IDR_XML_UMP5865_GPIO_SETLEVEL XML                     "XML\\UMP5865_GPIO_SETLEVEL.XML"
+
+IDR_XML_BT              XML                     "XML\\BT.XML"
+
+IDR_XML_SIMCARD         XML                     "XML\\SIMCARD.XML"
+
+IDR_XML_FASTCHARGE      XML                     "XML\\FASTCHARGE.XML"
+
+IDR_XML_CHIPCONNECT     XML                     "XML\\ChipConnect.XML"
+
+#endif    // 英语(美国) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+

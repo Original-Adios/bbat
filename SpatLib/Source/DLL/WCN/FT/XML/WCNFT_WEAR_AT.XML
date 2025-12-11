@@ -1,0 +1,187 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Node>
+  <Option>
+    <Band>
+      <Wlan11b Property="InVisible" Description="802.11b measurement switcher, if checkbox is enabled, measurement will be performed or not" Control="CheckBox">0</Wlan11b>
+      <Wlan11g Property="InVisible" Description="802.11g measurement switcher, if checkbox is enabled, measurement will be performed or not" Control="CheckBox">0</Wlan11g>
+      <Wlan11n Description="802.11n measurement switcher, if checkbox is enabled, measurement will be performed or not" Control="CheckBox">1</Wlan11n>
+      <Wlan11ac Property="InVisible" Description="802.11ac measurement switcher, if checkbox is enabled, measurement will be performed or not" Control="CheckBox">0</Wlan11ac>
+      <BDR Property="InVisible" Description="BDR measurement switcher, if checkbox is enabled, measurement will be performed or not" Control="CheckBox">0</BDR>
+      <EDR Property="InVisible" Description="EDR measurement switcher, if checkbox is enabled, measurement will be performed or not" Control="CheckBox">0</EDR>
+      <BLE  Description="BLE measurement switcher, if checkbox is enabled, measurement will be performed or not" Control="CheckBox">1</BLE>
+    </Band>
+    <TimeOffset>
+      <EnterWlanMode Description="Wait for test begin, unit: ms">1000</EnterWlanMode>
+      <LeaveWlanMode Description="Wait for test begin, unit: ms">1000</LeaveWlanMode>
+      <EnterBtMode Description="Wait for test timeout, unit: ms">2000</EnterBtMode>
+    </TimeOffset>  
+    <TimeOut>
+      <WaitForBegin Description="Wait for test begin, unit: s">30</WaitForBegin>
+      <WaitForTest Description="Wait for test timeout, unit: s">3</WaitForTest>
+      <WaitForConnect Description="Wait for DUT reconnect, unit: s">30</WaitForConnect>
+    </TimeOut>
+  </Option>
+  <Param>
+    <Common Property="InVisible">
+      <DeviceFilePath Description="Wait for test begin, unit: s">/mnt/vendor</DeviceFilePath>
+    </Common>
+    <Wlan11b Property="InVisible" Description="802.11b Band" Control="Group">
+      <GroupCount>1</GroupCount>
+      <Group1>
+        <CenChan Description="Center channel 1~13 is available">13</CenChan>
+        <Modulation Description="Different modulation type with different data rate, the matching map is DSSS-1:1.0Mbps,DSSS-2:2.0Mbps,CCK-5.5:5.5Mbps,CCK-11:11.0Mbps" Control="ComboBox" Elements="DSSS-1,DSSS-2,CCK-5.5,CCK-11">CCK-11</Modulation>
+        <RXLVL Description="Rx level for per measurement. Unit:dBm">
+          <DSSS-1>-80</DSSS-1>
+          <DSSS-2>-80</DSSS-2>
+          <CCK-5.5>-80</CCK-5.5>
+          <CCK-11>-76</CCK-11>
+        </RXLVL>
+        <PacketCount Description="Total packets count for RX configuration!">200</PacketCount>
+        <RefLVL Description="Reference level for tx measure. Unit:dBm">20</RefLVL>
+        <ChanCoding Description="Channel coding type selected: BCC, LDPC"  Control="ComboBox" Elements="0:BCC, 1:LDPC">0</ChanCoding>
+        <TestItem>
+          <TXP Property="ReadOnly" Description="Transmit power level" Control="CheckBox">1</TXP>
+          <PER Description="Receiver sensitivity" Control="CheckBox">1</PER>
+        </TestItem>
+      </Group1>
+      <Specification Description="Configure the test tolerance and specification">
+        <TXP Description="TX Power, Unit: dBm">8,20</TXP>
+        <PER>8</PER>
+      </Specification>
+    </Wlan11b>
+    <Wlan11g Property="InVisible" Description="802.11g Band" Control="Group">
+      <GroupCount>1</GroupCount>
+      <Group1>
+        <CenChan Description="Center channel 1~13 is available">13</CenChan>
+        <Modulation Control="ComboBox" Elements="OFDM-6,OFDM-9,OFDM-12,OFDM-18,OFDM-24,OFDM-36,OFDM-48,OFDM-54">OFDM-54</Modulation>
+        <RXLVL Description="Rx level for per measurement. Unit:dBm">
+          <OFDM-6>-82</OFDM-6>
+          <OFDM-9>-81</OFDM-9>
+          <OFDM-12>-79</OFDM-12>
+          <OFDM-18>-77</OFDM-18>
+          <OFDM-24>-74</OFDM-24>
+          <OFDM-36>-70</OFDM-36>
+          <OFDM-48>-66</OFDM-48>
+          <OFDM-54>-65</OFDM-54>
+        </RXLVL>
+        <PacketCount Description="Total packets count for RX configuration!">200</PacketCount>
+        <RefLVL Description="Reference level for tx measure. Unit:dBm">20</RefLVL>
+        <ChanCoding Description="Channel coding type selected: BCC, LDPC"  Control="ComboBox" Elements="0:BCC, 1:LDPC">0</ChanCoding>
+        <TestItem>
+          <TXP Description="Transmit power level" Control="CheckBox">1</TXP>
+          <PER Description="Receiver sensitivity" Control="CheckBox">1</PER>
+        </TestItem>
+      </Group1>
+      <Specification Description="Configure the test tolerance and specification">
+        <TXP Property="ReadOnly" Description="TX Power, Unit: dBm">8,20</TXP>
+        <PER>10</PER>
+      </Specification>
+    </Wlan11g>
+    <Wlan11n Description="802.11n Band" Control="Group">
+      <GroupCount>1</GroupCount>
+      <Group1>
+        <CenChan Description="Center channel 1~13 is available">13</CenChan>
+        <Modulation Control="ComboBox" Elements="MCS-0,MCS-1,MCS-2,MCS-3,MCS-4,MCS-5,MCS-6,MCS-7">MCS-7</Modulation>
+        <RXLVL Description="Rx level for per measurement. Unit:dBm">
+          <MCS-0>-82</MCS-0>
+          <MCS-1>-79</MCS-1>
+          <MCS-2>-77</MCS-2>
+          <MCS-3>-74</MCS-3>
+          <MCS-4>-70</MCS-4>
+          <MCS-5>-66</MCS-5>
+          <MCS-6>-65</MCS-6>
+          <MCS-7>-64</MCS-7>
+        </RXLVL>
+        <PacketCount Description="Total packets count for RX configuration!">200</PacketCount>
+        <RefLVL Description="Reference level for tx measure. Unit:dBm">20</RefLVL>
+        <ChanCoding Description="Channel coding type selected: BCC, LDPC"  Control="ComboBox" Elements="0:BCC, 1:LDPC">0</ChanCoding>
+        <TestItem>
+          <TXP Property="ReadOnly" Description="Transmit power level" Control="CheckBox">1</TXP>
+          <PER Description="Receiver sensitivity" Control="CheckBox">1</PER>
+        </TestItem>
+      </Group1>
+      <Specification Description="Configure the test tolerance and specification">
+        <TXP Description="TX Power, Unit: dBm">8,20</TXP>
+        <PER>10</PER>
+      </Specification>
+    </Wlan11n>
+    <Wlan11ac Property="InVisible" Description="802.11ac Band" Control="Group">
+       <GroupCount>1</GroupCount>
+        <Group1>
+          <CenChan Description="Center channel 36~64 100~144 149~161(Channel step:4) is available">100</CenChan>
+          <PriChan Property="InVisible" Description="Primary channel position. 1:+10M,0:0,-1:-10M" Control="ComboBox" Elements="1,0,-1">0</PriChan>
+          <Modulation Control="ComboBox" Elements="MCS0_1SS,MCS1_1SS,MCS2_1SS,MCS3_1SS,MCS4_1SS,MCS5_1SS,MCS6_1SS,MCS7_1SS,MCS8_1SS">MCS8_1SS</Modulation>
+          <RXLVL Description="Rx level for per measurement. Unit:dBm">
+            <MCS0_1SS>-57</MCS0_1SS>
+            <MCS1_1SS>-57</MCS1_1SS>
+            <MCS2_1SS>-57</MCS2_1SS>
+            <MCS3_1SS>-57</MCS3_1SS>
+            <MCS4_1SS>-57</MCS4_1SS>
+            <MCS5_1SS>-57</MCS5_1SS>
+            <MCS6_1SS>-57</MCS6_1SS>
+            <MCS7_1SS>-57</MCS7_1SS>
+            <MCS8_1SS>-57</MCS8_1SS>
+          </RXLVL>
+          <PacketCount Description="Total packets count for RX configuration!">200</PacketCount>
+          <RefLVL Description="Reference level for tx measure. Unit:dBm">20</RefLVL>
+          <ChanCoding Description="Channel coding type selected: BCC, LDPC"  Control="ComboBox" Elements="0:BCC, 1:LDPC">0</ChanCoding>
+          <TestItem>
+            <TXP Description="Transmit power level" Control="CheckBox">1</TXP>
+            <PER Description="Receiver sensitivity" Control="CheckBox">1</PER>
+          </TestItem>
+        </Group1>
+      </Wlan11ac>    
+    <BDR Property="InVisible" Description="BDR" Control="Group">
+      <GroupCount>1</GroupCount>
+      <Group1>
+        <TCH Description="Transmit channel 0~78 is available">78</TCH>
+        <PacketType Description="Different packet type with differrent packet length, the matching map is DH1,DH3,DH5" Control="ComboBox" Elements="DH1,DH3,DH5">DH5</PacketType>
+        <RXLVL Description="Rx level for per measurement. Unit:dBm">-65</RXLVL>
+        <RefLVL Description="Reference level for tx measure. Unit:dBm">5</RefLVL>
+        <TestItem>
+          <TXP Property="ReadOnly" Description="Output power" Control="CheckBox">1</TXP>
+          <BER Description="Receiver sensitivity" Control="CheckBox">0</BER>
+        </TestItem>
+      </Group1>
+      <Specification Description="Configure the test tolerance and specification">
+        <TXP  Description="TX Power, Unit: dBm">2,12</TXP>
+        <BER Description="Receiver sensitivity">0.1</BER>
+      </Specification>
+    </BDR>
+    <EDR Property="InVisible" Description="EDR Band" Control="Group">
+      <GroupCount>1 </GroupCount>
+      <Group1>
+        <TCH Description="Transmit channel 0~78 is available">78</TCH>
+        <PacketType Description="Different packet type with different packet length, the matching map is 2-DH1,2-DH3,2-DH5,3-DH1,3-DH3,3-DH5" Control="ComboBox" Elements="2-DH1,2-DH3,2-DH5,3-DH1,3-DH3,3-DH5">2-DH5</PacketType>
+        <RXLVL Description="Rx level for per measurement. Unit:dBm">-65</RXLVL>
+        <RefLVL Description="Reference level for tx measure. Unit:dBm">10</RefLVL>
+        <TestItem>
+          <TXP Property="ReadOnly" Description="Output power" Control="CheckBox">1</TXP>
+          <BER Description="Receiver sensitivity" Control="CheckBox">0</BER>
+        </TestItem>
+      </Group1>
+      <Specification Description="Configure the test tolerance and specification">
+        <TXP Description="TX Power, Unit: dBm">2,12</TXP>
+        <BER Description="Receiver sensitivity">0.01</BER>
+      </Specification>
+    </EDR>
+    <BLE Description="BLE Band" Control="Group">
+      <GroupCount>1</GroupCount>
+      <Group1>
+        <TCH Description="Transmit channel 0~38 is available">38</TCH>
+        <PacketType Description="Packet type" Control="ComboBox" Elements="RF_PHY_Test_Ref">RF_PHY_Test_Ref</PacketType>
+        <RXLVL Description="Rx level for per measurement. Unit:dBm">-65</RXLVL>
+        <RefLVL Description="Reference level for tx measure. Unit:dBm">5</RefLVL>
+        <RxCount Description="Total packets count for RX configuration!">100</RxCount>
+        <TestItem>
+          <TXP Property="ReadOnly" Description="Output power" Control="CheckBox">1</TXP>
+          <BER Description="Receiver sensitivity" Control="CheckBox">0</BER>
+        </TestItem>
+      </Group1>
+      <Specification Description="Configure the test tolerance and specification">
+        <TXP Description="TX Power, Unit: dBm">-20,10</TXP>
+        <BER>30.8</BER>
+      </Specification>
+    </BLE>
+  </Param>
+</Node>

@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Node>
+  <Option>
+    <FilePath Control="FileDialog" Filter="ini(*.ini)|*.ini|All Files (*.*)|*.*">.\UserData\gsdata.ini</FilePath>
+  </Option>
+  <Param>
+  </Param>
+</Node>

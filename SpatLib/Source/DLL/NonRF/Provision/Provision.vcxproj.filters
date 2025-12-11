@@ -1,0 +1,338 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="02.Imp">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+      <ParseFiles>false</ParseFiles>
+    </Filter>
+    <Filter Include="02.Imp\01.InputCodes">
+      <UniqueIdentifier>{786c3b1d-1709-41c2-af85-e2002c593275}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="02.Imp\02.WriteCodes">
+      <UniqueIdentifier>{fac83f26-79cb-4b2b-ab0d-b5a8041342d0}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="01.Interface">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="09.RC">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav</Extensions>
+    </Filter>
+    <Filter Include="03.App">
+      <UniqueIdentifier>{3542b6ec-2e41-41ab-bdde-d23f965374f1}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="05.Utility">
+      <UniqueIdentifier>{18db4479-8a23-4e72-9699-7471157513c2}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="04.XML">
+      <UniqueIdentifier>{d70f881e-04c4-4a41-8797-7fd1bfaae1e5}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="02.Imp\03.CheckCodes">
+      <UniqueIdentifier>{2cd247fe-fd24-4268-9069-b1f8562bf0f9}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="05.Utility\UnisocMesDrv">
+      <UniqueIdentifier>{b961fede-3edd-4c3c-b53d-3c15706ed15e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="02.Imp\04.Ethernet">
+      <UniqueIdentifier>{0e7dd9e5-f9e6-492c-a459-795c7fa86aea}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="02.Imp\05.WriteRtc">
+      <UniqueIdentifier>{dbd34762-129b-4e1a-8d14-a4b1e58b2a47}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="02.Imp\06.HciBtAddr">
+      <UniqueIdentifier>{14d1e263-3587-46d3-ae50-5bb645f4bc0c}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="Impl\ImpBase.cpp">
+      <Filter>02.Imp</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Common\SpatBase.cpp">
+      <Filter>02.Imp</Filter>
+    </ClCompile>
+    <ClCompile Include="Impl\InputCodes.cpp">
+      <Filter>02.Imp\01.InputCodes</Filter>
+    </ClCompile>
+    <ClCompile Include="Impl\WriteCodes.cpp">
+      <Filter>02.Imp\02.WriteCodes</Filter>
+    </ClCompile>
+    <ClCompile Include="stdafx.cpp">
+      <Filter>09.RC</Filter>
+    </ClCompile>
+    <ClCompile Include="Impl\ActionApp.cpp">
+      <Filter>03.App</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Common\ApiExport.cpp">
+      <Filter>03.App</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Common\SpatRuntimeClass.cpp">
+      <Filter>03.App</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\Common\UtilFn\AppVer.cpp">
+      <Filter>05.Utility</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\Common\lock\CLocks.cpp">
+      <Filter>05.Utility</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\Common\lock\CSimpleLock.cpp">
+      <Filter>05.Utility</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\Common\Json\JsonUtil.cpp">
+      <Filter>05.Utility</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Common\ModeSwitch.cpp">
+      <Filter>05.Utility</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\Common\Tr\Tr.cpp">
+      <Filter>05.Utility</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\Common\UtilFn\Utility.cpp">
+      <Filter>05.Utility</Filter>
+    </ClCompile>
+    <ClCompile Include="Impl\CheckCodes.cpp">
+      <Filter>02.Imp\03.CheckCodes</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\Common\UtilFn\BarCodeUtility.cpp">
+      <Filter>05.Utility</Filter>
+    </ClCompile>
+    <ClCompile Include="Impl\WriteSNFromRobot.cpp">
+      <Filter>02.Imp\02.WriteCodes</Filter>
+    </ClCompile>
+    <ClCompile Include="Impl\WriteSN_MGB_GSM.cpp">
+      <Filter>02.Imp\02.WriteCodes</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Common\GenCodes.cpp">
+      <Filter>05.Utility</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Common\ScanConfig.cpp">
+      <Filter>05.Utility</Filter>
+    </ClCompile>
+    <ClCompile Include="Impl\WriteCodesEx.cpp">
+      <Filter>02.Imp\02.WriteCodes</Filter>
+    </ClCompile>
+    <ClCompile Include="DBHelper.cpp">
+      <Filter>02.Imp</Filter>
+    </ClCompile>
+    <ClCompile Include="Impl\WCNInputCodes.cpp">
+      <Filter>02.Imp\01.InputCodes</Filter>
+    </ClCompile>
+    <ClCompile Include="Impl\InputQRCode.cpp">
+      <Filter>02.Imp\01.InputCodes</Filter>
+    </ClCompile>
+    <ClCompile Include="Impl\UeHelper.cpp">
+      <Filter>02.Imp</Filter>
+    </ClCompile>
+    <ClCompile Include="Impl\CheckCodesEx.cpp">
+      <Filter>02.Imp\03.CheckCodes</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\Common\UnisocMesDrv\MesDriver.cpp">
+      <Filter>05.Utility\UnisocMesDrv</Filter>
+    </ClCompile>
+    <ClCompile Include="Impl\Ethernet_CheckCodes.cpp">
+      <Filter>02.Imp\04.Ethernet</Filter>
+    </ClCompile>
+    <ClCompile Include="Impl\Ethernet_WriteCodes.cpp">
+      <Filter>02.Imp\04.Ethernet</Filter>
+    </ClCompile>
+    <ClCompile Include="Impl\WriteRtc.cpp">
+      <Filter>02.Imp\05.WriteRtc</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\Common\UnisocMesDrv\MesHelper.cpp">
+      <Filter>05.Utility\UnisocMesDrv</Filter>
+    </ClCompile>
+    <ClCompile Include="Impl\InputCodesV2.cpp">
+      <Filter>02.Imp\01.InputCodes</Filter>
+    </ClCompile>
+    <ClCompile Include="Impl\CustomizeQRCode.cpp">
+      <Filter>02.Imp\01.InputCodes</Filter>
+    </ClCompile>
+    <ClCompile Include="Impl\Timer.cpp">
+      <Filter>05.Utility</Filter>
+    </ClCompile>
+    <ClCompile Include="Impl\HciBtInputCode.cpp">
+      <Filter>02.Imp\06.HciBtAddr</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Impl\ImpBase.h">
+      <Filter>02.Imp</Filter>
+    </ClInclude>
+    <ClInclude Include="Impl\InputCodes.h">
+      <Filter>02.Imp\01.InputCodes</Filter>
+    </ClInclude>
+    <ClInclude Include="Impl\WriteCodes.h">
+      <Filter>02.Imp\02.WriteCodes</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\Common\Include\SpatLibExport.h">
+      <Filter>01.Interface</Filter>
+    </ClInclude>
+    <ClInclude Include="resource.h">
+      <Filter>09.RC</Filter>
+    </ClInclude>
+    <ClInclude Include="stdafx.h">
+      <Filter>09.RC</Filter>
+    </ClInclude>
+    <ClInclude Include="targetver.h">
+      <Filter>09.RC</Filter>
+    </ClInclude>
+    <ClInclude Include="Impl\ActionApp.h">
+      <Filter>03.App</Filter>
+    </ClInclude>
+    <ClInclude Include="Impl\ActionList.h">
+      <Filter>03.App</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Common\SpatRuntimeClass.h">
+      <Filter>03.App</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\Common\UtilFn\AppVer.h">
+      <Filter>05.Utility</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\Common\lock\CLocks.h">
+      <Filter>05.Utility</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\Common\lock\CSimpleLock.h">
+      <Filter>05.Utility</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\Common\Json\JsonUtil.h">
+      <Filter>05.Utility</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Common\ModeSwitch.h">
+      <Filter>05.Utility</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\Common\Tr\Tr.h">
+      <Filter>05.Utility</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\Common\UtilFn\Utility.h">
+      <Filter>05.Utility</Filter>
+    </ClInclude>
+    <ClInclude Include="Impl\CheckCodes.h">
+      <Filter>02.Imp\03.CheckCodes</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\Common\UtilFn\BarCodeUtility.h">
+      <Filter>05.Utility</Filter>
+    </ClInclude>
+    <ClInclude Include="Impl\WriteSNFromRobot.h">
+      <Filter>02.Imp\02.WriteCodes</Filter>
+    </ClInclude>
+    <ClInclude Include="Impl\WriteSN_MGB_GSM.h">
+      <Filter>02.Imp\02.WriteCodes</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Common\GenCodes.h">
+      <Filter>05.Utility</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Common\ScanConfig.h">
+      <Filter>05.Utility</Filter>
+    </ClInclude>
+    <ClInclude Include="Impl\WriteCodesEx.h">
+      <Filter>02.Imp\02.WriteCodes</Filter>
+    </ClInclude>
+    <ClInclude Include="DBHelper.h">
+      <Filter>02.Imp</Filter>
+    </ClInclude>
+    <ClInclude Include="Impl\WCNInputCodes.h">
+      <Filter>02.Imp\01.InputCodes</Filter>
+    </ClInclude>
+    <ClInclude Include="Impl\InputQRCode.h">
+      <Filter>02.Imp\01.InputCodes</Filter>
+    </ClInclude>
+    <ClInclude Include="Impl\UeHelper.h">
+      <Filter>02.Imp</Filter>
+    </ClInclude>
+    <ClInclude Include="Impl\CheckCodesEx.h">
+      <Filter>02.Imp\03.CheckCodes</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\Common\UnisocMesDrv\drvdef.h">
+      <Filter>05.Utility\UnisocMesDrv</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\Common\UnisocMesDrv\MesDriver.h">
+      <Filter>05.Utility\UnisocMesDrv</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\Common\UnisocMesDrv\Unisoc_Solution_MES.h">
+      <Filter>05.Utility\UnisocMesDrv</Filter>
+    </ClInclude>
+    <ClInclude Include="Impl\Ethernet_CheckCodes.h">
+      <Filter>02.Imp\04.Ethernet</Filter>
+    </ClInclude>
+    <ClInclude Include="Impl\Ethernet_WriteCodes.h">
+      <Filter>02.Imp\04.Ethernet</Filter>
+    </ClInclude>
+    <ClInclude Include="Impl\WriteRtc.h">
+      <Filter>02.Imp\05.WriteRtc</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\Common\UnisocMesDrv\MesHelper.h">
+      <Filter>05.Utility\UnisocMesDrv</Filter>
+    </ClInclude>
+    <ClInclude Include="Impl\InputCodesV2.h">
+      <Filter>02.Imp\01.InputCodes</Filter>
+    </ClInclude>
+    <ClInclude Include="Impl\CustomizeQRCode.h">
+      <Filter>02.Imp\01.InputCodes</Filter>
+    </ClInclude>
+    <ClInclude Include="Impl\Timer.h">
+      <Filter>05.Utility</Filter>
+    </ClInclude>
+    <ClInclude Include="Impl\HciBtInputCode.h">
+      <Filter>02.Imp\06.HciBtAddr</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Common\SpatBase.h">
+      <Filter>02.Imp</Filter>
+    </ClInclude>
+    <ClInclude Include="Impl\ActionContainer.h">
+      <Filter>03.App</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="Provision.rc">
+      <Filter>09.RC</Filter>
+    </ResourceCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="XML\Dummy.XML">
+      <Filter>04.XML</Filter>
+    </None>
+    <None Include="ReadMe.txt" />
+    <None Include="XML\CheckCodes.XML">
+      <Filter>04.XML</Filter>
+    </None>
+    <None Include="XML\CheckXInputCodes.XML">
+      <Filter>04.XML</Filter>
+    </None>
+    <None Include="XML\WriteXInputCodes.XML">
+      <Filter>04.XML</Filter>
+    </None>
+    <None Include="XML\WriteX.XML">
+      <Filter>04.XML</Filter>
+    </None>
+    <None Include="XML\WCNInputCodes.XML">
+      <Filter>04.XML</Filter>
+    </None>
+    <None Include="XML\WriteCodeEx.XML">
+      <Filter>04.XML</Filter>
+    </None>
+    <None Include="XML\InputQRCode.XML">
+      <Filter>04.XML</Filter>
+    </None>
+    <None Include="XML\Ethernet_WriteCodes.XML">
+      <Filter>04.XML</Filter>
+    </None>
+    <None Include="XML\Ethernet_InputCodes.XML">
+      <Filter>04.XML</Filter>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Xml Include="XML\WriteXInputCodes2.XML">
+      <Filter>04.XML</Filter>
+    </Xml>
+    <Xml Include="..\Security\XML\WriteImei.XML">
+      <Filter>04.XML</Filter>
+    </Xml>
+    <Xml Include="XML\CustomizeQRCode.XML">
+      <Filter>04.XML</Filter>
+    </Xml>
+    <Xml Include="XML\HciBtInputCode.XML">
+      <Filter>04.XML</Filter>
+    </Xml>
+  </ItemGroup>
+</Project>

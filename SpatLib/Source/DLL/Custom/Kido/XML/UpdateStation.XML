@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Node>
+	<Option>
+    <UpdateStation Description="Input Range: [1 - 120]"> 1 </UpdateStation>
+	</Option>
+	<Param>       
+	</Param>
+</Node>

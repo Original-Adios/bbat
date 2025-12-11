@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Node>
+    <Option>
+      <PreLoss>0</PreLoss>
+      <Tolernece>2</Tolernece>
+      <Band>
+          <BDR Description="BDR measurement switcher, if checkbox is enabled, measurement will be performed or not" Control="CheckBox">1</BDR>
+      </Band>
+    </Option>
+    <Param>
+        <TimeOut >
+            <WaitTime Description="Unit: millisecond">60000</WaitTime>
+            <CmdSleep Description="Unit: millisecond">3000</CmdSleep>
+        </TimeOut>
+      <Specification>
+        <TxLoss>0,30</TxLoss>
+        <RxLoss>0,30</RxLoss>
+      </Specification>
+        <BDR Description="BDR" Control="Group">
+           <GroupCount>1</GroupCount>
+            <Group1>
+                <TCH Description="Transmit channel 0~78 is available">0,39,78</TCH>
+                <PacketType Description="Different packet type with differrent packet length, the matching map is DH1,DH3,DH5" Control="ComboBox" Elements="DH1,DH3,DH5">DH5</PacketType>
+                <RXLVL Description="Rx level for per measurement. Unit:dBm">-65</RXLVL>
+                <RefLVL Description="Reference level for tx measure. Unit:dBm">5</RefLVL>
+                <RxCount Description="Total bits count for RX configuration!">816800</RxCount>
+                <TestItem>
+                    <TXP Description="Output power" Control="CheckBox">1</TXP>
+                </TestItem>
+            </Group1>
+            <Specification Description="Configure the test tolerance and specification">
+                <TXP Description="TX Power, Unit: dBm">
+                    <TXP>2,12</TXP>
+                </TXP>
+            </Specification>
+        </BDR>
+    </Param>
+</Node>

@@ -1,0 +1,138 @@
+// Microsoft Visual C++ generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#include "afxres.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// Chinese (Simplified, PRC) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_CHS)
+LANGUAGE LANG_CHINESE, SUBLANG_CHINESE_SIMPLIFIED
+#pragma code_page(936)
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE 
+BEGIN
+    "#include ""afxres.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE 
+BEGIN
+    "\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Version
+//
+
+VS_VERSION_INFO VERSIONINFO
+ FILEVERSION 9,25,20,53
+ PRODUCTVERSION 9,25,20,53
+ FILEFLAGSMASK 0x17L
+#ifdef _DEBUG
+ FILEFLAGS 0x1L
+#else
+ FILEFLAGS 0x0L
+#endif
+ FILEOS 0x4L
+ FILETYPE 0x2L
+ FILESUBTYPE 0x0L
+BEGIN
+    BLOCK "StringFileInfo"
+    BEGIN
+        BLOCK "080404b0"
+        BEGIN
+            VALUE "CompanyName", "UNISOC TECHNOLOGIES INC."
+            VALUE "FileDescription", "SpatLib WCDMA Calibration Dynamic Link Library"
+            VALUE "FileVersion", "9, 25, 20, 53"
+            VALUE "InternalName", "LossCal"
+            VALUE "LegalCopyright", "COPYRIGHT (C) 2019 UNISOC TECHNOLOGIES INC."
+            VALUE "OriginalFilename", "LossCal.dll"
+            VALUE "ProductName", "SpatLib WCDMA Calibration Dynamic Link Library"
+            VALUE "ProductVersion", "9, 25, 20, 53"
+        END
+    END
+    BLOCK "VarFileInfo"
+    BEGIN
+        VALUE "Translation", 0x804, 1200
+    END
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// XML
+//
+
+IDR_XML_DUMMY           XML                     "XML\\Dummy.XML"
+IDR_XML_MAKE            XML                     "XML\\MakeGS.XML"
+IDR_XML_CALC            XML                     "XML\\CalcLS.XML"
+IDR_XML_MAKE_DMR        XML                     "XML\\MakeGS_DMR.XML"
+IDR_XML_CALC_DMR        XML                     "XML\\CalcLS_DMR.XML"
+IDR_XML_MAKE_MARLIN2    XML                     "XML\\MakeGS_Marlin2.XML"
+IDR_XML_MAKE_MARLIN3    XML                     "XML\\MakeGS_Marlin3.XML"
+IDR_XML_CALC_MARLIN2    XML                     "XML\\CalcLS_Marlin2.XML"
+IDR_XML_CALC_MARLIN3    XML                     "XML\\CalcLS_Marlin3.XML"
+IDR_XML_MAKE_CELLULAR   XML                     "XML\\MakeGS_Cellular.XML"
+IDR_XML_CALC_CELLULAR   XML                     "XML\\CalcLS_Cellular.XML"
+IDR_XML_MAKE_CELL_ROC1  XML                     "XML\\MakeGS_Cellular_Roc1.XML"
+IDR_XML_MAKE_UMW266X    XML						"XML\\MakeGS_Umw266x.XML"
+IDR_XML_CALC_UMW266X    XML						"XML\\CalcLS_Umw266x.XML"
+#endif    // 中文(简体，中国) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+/////////////////////////////////////////////////////////////////////////////
+// 英语(美国) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)
+LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
+#pragma code_page(1252)
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// XML
+//
+
+IDR_XML_EXPORT_GS       XML                     "XML\\ExportGoldenSample.XML"
+IDR_XML_IMPORT_GS       XML                     "XML\\ImportGoldenSample.XML"
+#endif    // 英语(美国) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+

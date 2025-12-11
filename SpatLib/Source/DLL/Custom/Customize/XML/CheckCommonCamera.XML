@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Node>
+  <Option>
+  </Option>
+  <Param>
+    <Camera Control="Group">
+      <GroupCount>1</GroupCount>
+      <Group1>
+        <CameraType></CameraType>
+        <CameraSize></CameraSize>
+      </Group1>
+    </Camera>    
+  </Param>
+</Node>

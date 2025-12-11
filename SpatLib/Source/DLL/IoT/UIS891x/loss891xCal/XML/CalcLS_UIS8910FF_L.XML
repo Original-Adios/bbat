@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Node>
+  <Option>
+    <DUTType Property="InVisible">
+      <UEType Description="UE type code.">0x8910</UEType>
+    </DUTType>
+    <NetMode Tag="Show">
+      <GSM Property="InVisible" Control="CheckBox">0</GSM>
+      <LTE Control="CheckBox">1</LTE>
+      <WLAN Property="InVisible" Control="CheckBox">0</WLAN>
+      <BT Property="InVisible" Control="CheckBox">0</BT>
+      <GPS Property="InVisible" Control="CheckBox">0</GPS>
+    </NetMode>
+    <LossCheck Control="CheckBox">0</LossCheck>
+    <LossCheckSpec>0.3</LossCheckSpec>
+  </Option>
+  <Param>
+	  <PreLoss>0.0</PreLoss>
+	  <Loss_Val_Spec>5.0</Loss_Val_Spec>
+	<FrequencyList Description="Frequency list splited by comma"></FrequencyList>
+	<LossLimitList Description="Loss upper limit list splited by comma"></LossLimitList>
+    <LTE>
+      <TestNum>1</TestNum>
+    </LTE>
+  </Param>
+</Node>

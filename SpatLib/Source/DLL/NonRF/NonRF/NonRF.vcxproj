@@ -1,0 +1,400 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{C32A8B4A-0BAC-4E4E-969A-0B84748FE598}</ProjectGuid>
+    <RootNamespace>NonRF</RootNamespace>
+    <Keyword>Win32Proj</Keyword>
+    <WindowsTargetPlatformVersion>10.0.17763.0</WindowsTargetPlatformVersion>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <CharacterSet>Unicode</CharacterSet>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <PlatformToolset>v142</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <CharacterSet>Unicode</CharacterSet>
+    <PlatformToolset>v142</PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <_ProjectFileVersion>10.0.30319.1</_ProjectFileVersion>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">../../../../../../Bin/App/SpatLib\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(Configuration)\</IntDir>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</LinkIncremental>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">../../../../../../Bin/App/SpatLib\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(Configuration)\</IntDir>
+    <CodeAnalysisRuleSet Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">AllRules.ruleset</CodeAnalysisRuleSet>
+    <CodeAnalysisRules Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" />
+    <CodeAnalysisRuleAssemblies Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" />
+    <CodeAnalysisRuleSet Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">AllRules.ruleset</CodeAnalysisRuleSet>
+    <CodeAnalysisRules Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" />
+    <CodeAnalysisRuleAssemblies Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" />
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <Optimization>Disabled</Optimization>
+      <AdditionalIncludeDirectories>$(ProjectDir);../../../Common;../../../../../Common/Include;../../../../../Common/Tr;../../../../../Common/dlmalloc;../../../../../Common/lock;../../../../../Common/UtilFn;../../../../../Common/Include/device;../../../../../Common/UnisocMesDrv;../../../../../Common/Uni_Define;../../../../../Common/Uni_Dependence;../../../../../Common/Uni_Include</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_WINDOWS;_USRDLL;_SPATLIB_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <MinimalRebuild>false</MinimalRebuild>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <WarningLevel>Level4</WarningLevel>
+      <DebugInformationFormat>EditAndContinue</DebugInformationFormat>
+    </ClCompile>
+    <Link>
+      <OutputFile>$(OutDir)NonRF.dll</OutputFile>
+      <AdditionalLibraryDirectories>../../../../../Common/Lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <ImportLibrary>$(OutDir)NonRF.lib</ImportLibrary>
+      <ProgramDatabaseFile>../../../../../../Source\Common\pdb\$(TargetName).pdb</ProgramDatabaseFile>
+      <AdditionalDependencies>Channel9.lib;DiagChan9.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>$(ProjectDir);../../../Common;../../../../../Common/Include;../../../../../Common/Tr;../../../../../Common/dlmalloc;../../../../../Common/lock;../../../../../Common/UtilFn;../../../../../Common/Include/device;../../../../../Common/UnisocMesDrv;../../../../../Common/Uni_Define;../../../../../Common/Uni_Dependence;../../../../../Common/Uni_Include</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_WINDOWS;_USRDLL;_SPATLIB_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <WarningLevel>Level4</WarningLevel>
+    </ClCompile>
+    <Link>
+      <OutputFile>$(OutDir)NonRF.dll</OutputFile>
+      <AdditionalLibraryDirectories>../../../../../Common/Lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <ImportLibrary>$(OutDir)NonRF.lib</ImportLibrary>
+      <ProgramDatabaseFile>../../../../../../Source\Common\pdb\$(TargetName).pdb</ProgramDatabaseFile>
+      <AdditionalDependencies>Channel9.lib;DiagChan9.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="..\..\..\..\..\Common\dlmalloc\dlmalloc.c">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">NotUsing</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\Common\thread\Thread.cpp" />
+    <ClCompile Include="..\..\..\..\..\Common\UnisocMesDrv\MesDriver.cpp" />
+    <ClCompile Include="..\..\..\..\..\Common\UnisocMesDrv\MesHelper.cpp" />
+    <ClCompile Include="..\..\..\..\..\Common\UtilFn\BarCodeUtility.cpp" />
+    <ClCompile Include="..\..\..\..\..\Common\UtilFn\LogFile.cpp" />
+    <ClCompile Include="..\..\..\..\..\Common\UtilFn\LteUtility.cpp" />
+    <ClCompile Include="..\..\..\..\..\Common\UtilFn\NetUtility.cpp" />
+    <ClCompile Include="..\..\..\..\..\Common\UtilFn\NrUtility.cpp" />
+    <ClCompile Include="..\..\..\..\..\Common\UtilFn\RunMode.cpp" />
+    <ClCompile Include="..\..\..\Common\ExtraLogFile.cpp" />
+    <ClCompile Include="Impl\ActiveArmLog.cpp" />
+    <ClCompile Include="Impl\AssertUE.cpp" />
+    <ClCompile Include="Impl\AT.cpp" />
+    <ClCompile Include="Impl\AudioSaveRecorder.cpp" />
+    <ClCompile Include="Impl\ChargeOff.cpp" />
+    <ClCompile Include="Impl\ChargeOn.cpp" />
+    <ClCompile Include="Impl\CheckBatteryCapacity.cpp" />
+    <ClCompile Include="Impl\CheckBenchMark.cpp" />
+    <ClCompile Include="Impl\CheckCaliFlagV3.cpp" />
+    <ClCompile Include="Impl\CheckCaliFlagV5.cpp" />
+    <ClCompile Include="Impl\CheckCaliMMIFlagUIS8811.cpp" />
+    <ClCompile Include="Impl\CheckCaliMMIFlagUIS8910.cpp" />
+    <ClCompile Include="Impl\CheckCrystal32K.cpp" />
+    <ClCompile Include="Impl\CheckDiagConnect.cpp" />
+    <ClCompile Include="Impl\CheckGoldenSample.cpp" />
+    <ClCompile Include="Impl\CheckGoldenSampleUIS8910.cpp" />
+    <ClCompile Include="Impl\CheckMemory.cpp" />
+    <ClCompile Include="Impl\CheckCaliMMIFlag.cpp" />
+    <ClCompile Include="Impl\CheckMemoryRange.cpp" />
+    <ClCompile Include="Impl\CheckNonTCard.cpp" />
+    <ClCompile Include="Impl\CheckPacName.cpp" />
+    <ClCompile Include="Impl\Check32kCrystalFreqOffset.cpp" />
+    <ClCompile Include="Impl\CheckSimCard.cpp" />
+    <ClCompile Include="Impl\CheckSimCato.cpp" />
+    <ClCompile Include="Impl\CheckTCard.cpp" />
+    <ClCompile Include="Impl\CheckUID.cpp" />
+    <ClCompile Include="Impl\ClearAllCaliCrc.cpp" />
+    <ClCompile Include="Impl\ClosePort.cpp" />
+    <ClCompile Include="Impl\CustomControl.cpp" />
+    <ClCompile Include="Impl\CustomMiscData.cpp" />
+    <ClCompile Include="Impl\Finalize.cpp" />
+    <ClCompile Include="Impl\ImpBase.cpp" />
+    <ClCompile Include="Impl\LoadBBID.cpp" />
+    <ClCompile Include="Impl\LoadEID.cpp" />
+    <ClCompile Include="Impl\LoadICCID.cpp" />
+    <ClCompile Include="Impl\LoadIMSI.cpp" />
+    <ClCompile Include="Impl\LoadMacAddr.cpp" />
+    <ClCompile Include="Impl\LoadMIPI.cpp" />
+    <ClCompile Include="Impl\LoadPMICID.cpp" />
+    <ClCompile Include="Impl\LoadWCNID.cpp" />
+    <ClCompile Include="Impl\LoadWidevineDeviceID.cpp" />
+    <ClCompile Include="Impl\lockSeq.cpp" />
+    <ClCompile Include="Impl\ReadHwVer.cpp" />
+    <ClCompile Include="Impl\ReadMcuVer.cpp" />
+    <ClCompile Include="Impl\ReadModemVersion.cpp" />
+    <ClCompile Include="Impl\NormalModeToCalMode.cpp" />
+    <ClCompile Include="Impl\OpenDut.cpp" />
+    <ClCompile Include="Impl\OpenPortByParity.cpp" />
+    <ClCompile Include="Impl\OpenSocket.cpp" />
+    <ClCompile Include="Impl\PhaseCheck\CheckStationExist.cpp" />
+    <ClCompile Include="Impl\PhaseCheck\InitPhase.cpp" />
+    <ClCompile Include="Impl\PhaseCheck\ResetStations.cpp" />
+    <ClCompile Include="Impl\QueryCurrMode.cpp" />
+    <ClCompile Include="Impl\ReadNVID.cpp" />
+    <ClCompile Include="Impl\ReadSN.cpp" />
+    <ClCompile Include="Impl\RestartPhone.cpp" />
+    <ClCompile Include="Impl\SaveAntennaFlag.cpp" />
+    <ClCompile Include="Impl\FactoryReset.cpp" />
+    <ClCompile Include="..\..\..\Common\SpatBase.cpp" />
+    <ClCompile Include="Impl\ReadSwVer.cpp" />
+    <ClCompile Include="Impl\EnterMode.cpp" />
+    <ClCompile Include="Impl\ModeChange.cpp" />
+    <ClCompile Include="Impl\SaveToFlash.cpp" />
+    <ClCompile Include="Impl\SaveUEInfo.cpp" />
+    <ClCompile Include="Impl\SetMode.cpp" />
+    <ClCompile Include="Impl\SetSSID.cpp" />
+    <ClCompile Include="Impl\SetupConnMode.cpp" />
+    <ClCompile Include="Impl\SetupNextMode.cpp" />
+    <ClCompile Include="Impl\SwitchDC.cpp" />
+    <ClCompile Include="Impl\SwitchOff.cpp" />
+    <ClCompile Include="Impl\Sleep.cpp" />
+    <ClCompile Include="Impl\ReadIMEI.cpp" />
+    <ClCompile Include="Impl\CheckCalFlag.cpp" />
+    <ClCompile Include="Impl\PhaseCheck\CheckAllStation.cpp" />
+    <ClCompile Include="Impl\PhaseCheck\CheckStation.cpp" />
+    <ClCompile Include="Impl\PhaseCheck\UpdateStation.cpp" />
+    <ClCompile Include="Impl\OpenPort.cpp" />
+    <ClCompile Include="Impl\DeActiveArmLog.cpp" />
+    <ClCompile Include="Impl\SyncTime.cpp" />
+    <ClCompile Include="Impl\UnlockSeq.cpp" />
+    <ClCompile Include="Impl\WaitForAT.cpp" />
+    <ClCompile Include="Impl\WaitOpenPort.cpp" />
+    <ClCompile Include="stdafx.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Create</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Create</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="Impl\ActionApp.cpp" />
+    <ClCompile Include="..\..\..\Common\ApiExport.cpp" />
+    <ClCompile Include="..\..\..\Common\ModeSwitch.cpp" />
+    <ClCompile Include="..\..\..\Common\SpatRuntimeClass.cpp" />
+    <ClCompile Include="..\..\..\..\..\Common\UtilFn\AppVer.cpp" />
+    <ClCompile Include="..\..\..\..\..\Common\lock\CLocks.cpp" />
+    <ClCompile Include="..\..\..\..\..\Common\lock\CSimpleLock.cpp" />
+    <ClCompile Include="..\..\..\..\..\Common\Tr\Tr.cpp" />
+    <ClCompile Include="..\..\..\..\..\Common\UtilFn\Utility.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\..\..\..\..\Common\dlmalloc\dlmalloc.h" />
+    <ClInclude Include="..\..\..\..\..\Common\thread\Thread.h" />
+    <ClInclude Include="..\..\..\..\..\Common\UnisocMesDrv\MesDriver.h" />
+    <ClInclude Include="..\..\..\..\..\Common\UnisocMesDrv\MesHelper.h" />
+    <ClInclude Include="..\..\..\..\..\Common\UtilFn\BarCodeUtility.h" />
+    <ClInclude Include="..\..\..\..\..\Common\UtilFn\LogFile.h" />
+    <ClInclude Include="..\..\..\..\..\Common\UtilFn\LteUtility.h" />
+    <ClInclude Include="..\..\..\..\..\Common\UtilFn\NetUtility.h" />
+    <ClInclude Include="..\..\..\..\..\Common\UtilFn\NrUtility.h" />
+    <ClInclude Include="..\..\..\..\..\Common\UtilFn\RunMode.h" />
+    <ClInclude Include="..\..\..\Common\ExtraLogFile.h" />
+    <ClInclude Include="..\..\..\Common\RuntimeContainer.hpp" />
+    <ClInclude Include="..\..\..\Common\SpatContainer.hpp" />
+    <ClInclude Include="Impl\ActionContainer.h" />
+    <ClInclude Include="Impl\ActiveArmlog.h" />
+    <ClInclude Include="Impl\AssertUE.h" />
+    <ClInclude Include="Impl\AT.h" />
+    <ClInclude Include="Impl\AudioSaveRecorder.h" />
+    <ClInclude Include="Impl\ChargeOff.h" />
+    <ClInclude Include="Impl\ChargeOn.h" />
+    <ClInclude Include="Impl\CheckBatteryCapacity.h" />
+    <ClInclude Include="Impl\CheckBenchMark.h" />
+    <ClInclude Include="Impl\CheckCaliFlagV3.h" />
+    <ClInclude Include="Impl\CheckCaliFlagV5.h" />
+    <ClInclude Include="Impl\CheckCaliMMIFlagUIS8811.h" />
+    <ClInclude Include="Impl\CheckCaliMMIFlagUIS8910.h" />
+    <ClInclude Include="Impl\CheckCrystal32K.h" />
+    <ClInclude Include="Impl\CheckDiagConnect.h" />
+    <ClInclude Include="Impl\CheckGoldenSample.h" />
+    <ClInclude Include="Impl\CheckGoldenSampleUIS8910.h" />
+    <ClInclude Include="Impl\CheckMemory.h" />
+    <ClInclude Include="Impl\CheckCaliMMIFlag.h" />
+    <ClInclude Include="Impl\CheckMemoryRange.h" />
+    <ClInclude Include="Impl\CheckNonTCard.h" />
+    <ClInclude Include="Impl\CheckPacName.h" />
+    <ClInclude Include="Impl\Check32kCrystalFreqOffset.h" />
+    <ClInclude Include="Impl\CheckSimCard.h" />
+    <ClInclude Include="Impl\CheckSimCato.h" />
+    <ClInclude Include="Impl\CheckTCard.h" />
+    <ClInclude Include="Impl\CheckUID.h" />
+    <ClInclude Include="Impl\ClearAllCaliCrc.h" />
+    <ClInclude Include="Impl\ClosePort.h" />
+    <ClInclude Include="Impl\CustomControl.h" />
+    <ClInclude Include="Impl\CustomMiscData.h" />
+    <ClInclude Include="Impl\Finalize.h" />
+    <ClInclude Include="Impl\ImpBase.h" />
+    <ClInclude Include="Impl\LoadBBID.h" />
+    <ClInclude Include="Impl\LoadEID.h" />
+    <ClInclude Include="Impl\LoadICCID.h" />
+    <ClInclude Include="Impl\LoadIMSI.h" />
+    <ClInclude Include="Impl\LoadMacAddr.h" />
+    <ClInclude Include="Impl\LoadMIPI.h" />
+    <ClInclude Include="Impl\LoadPMICID.h" />
+    <ClInclude Include="Impl\LoadWCNID.h" />
+    <ClInclude Include="Impl\LoadWidevineDeviceID.h" />
+    <ClInclude Include="Impl\lockSeq.h" />
+    <ClInclude Include="Impl\ReadHwVer.h" />
+    <ClInclude Include="Impl\ReadMcuVer.h" />
+    <ClInclude Include="Impl\ReadModemVersion.h" />
+    <ClInclude Include="Impl\NormalModeToCalMode.h" />
+    <ClInclude Include="Impl\OpenDut.h" />
+    <ClInclude Include="Impl\OpenPortByParity.h" />
+    <ClInclude Include="Impl\OpenSocket.h" />
+    <ClInclude Include="Impl\PhaseCheck\CheckStationExist.h" />
+    <ClInclude Include="Impl\PhaseCheck\InitPhase.h" />
+    <ClInclude Include="Impl\PhaseCheck\ResetStations.h" />
+    <ClInclude Include="Impl\QueryCurrMode.h" />
+    <ClInclude Include="Impl\ReadNVID.h" />
+    <ClInclude Include="Impl\ReadSN.h" />
+    <ClInclude Include="Impl\RestartPhone.h" />
+    <ClInclude Include="Impl\SaveAntennaFlag.h" />
+    <ClInclude Include="Impl\FactoryReset.h" />
+    <ClInclude Include="..\..\..\Common\SpatBase.h" />
+    <ClInclude Include="Impl\ReadSwVer.h" />
+    <ClInclude Include="Impl\EnterMode.h" />
+    <ClInclude Include="Impl\ModeChange.h" />
+    <ClInclude Include="Impl\SaveToFlash.h" />
+    <ClInclude Include="Impl\SaveUEInfo.h" />
+    <ClInclude Include="Impl\SetMode.h" />
+    <ClInclude Include="Impl\SetSSID.h" />
+    <ClInclude Include="Impl\SetupConnMode.h" />
+    <ClInclude Include="Impl\SetupNextMode.h" />
+    <ClInclude Include="Impl\SwitchDC.h" />
+    <ClInclude Include="Impl\SwitchOff.h" />
+    <ClInclude Include="Impl\Sleep.h" />
+    <ClInclude Include="Impl\ReadIMEI.h" />
+    <ClInclude Include="Impl\CheckCalFlag.h" />
+    <ClInclude Include="Impl\PhaseCheck\CheckAllStation.h" />
+    <ClInclude Include="Impl\PhaseCheck\CheckStation.h" />
+    <ClInclude Include="Impl\PhaseCheck\UpdateStation.h" />
+    <ClInclude Include="Impl\OpenPort.h" />
+    <ClInclude Include="..\..\..\..\..\Common\Include\SpatLibExport.h" />
+    <ClInclude Include="Impl\DeActiveArmlog.h" />
+    <ClInclude Include="Impl\SyncTime.h" />
+    <ClInclude Include="Impl\UnlockSeq.h" />
+    <ClInclude Include="Impl\WaitForAT.h" />
+    <ClInclude Include="Impl\WaitOpenPort.h" />
+    <ClInclude Include="resource.h" />
+    <ClInclude Include="stdafx.h" />
+    <ClInclude Include="targetver.h" />
+    <ClInclude Include="Impl\ActionApp.h" />
+    <ClInclude Include="Impl\ActionList.h" />
+    <ClInclude Include="..\..\..\Common\ModeSwitch.h" />
+    <ClInclude Include="..\..\..\Common\SpatRuntimeClass.h" />
+    <ClInclude Include="..\..\..\..\..\Common\UtilFn\AppVer.h" />
+    <ClInclude Include="..\..\..\..\..\Common\lock\CLocks.h" />
+    <ClInclude Include="..\..\..\..\..\Common\lock\CSimpleLock.h" />
+    <ClInclude Include="..\..\..\..\..\Common\Tr\Tr.h" />
+    <ClInclude Include="..\..\..\..\..\Common\UtilFn\Utility.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="NonRF.rc" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="XML\AtCmd.XML" />
+    <None Include="XML\AudioSaveRecorder.xml">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="XML\CalToNormalMode.XML" />
+    <None Include="XML\Charger.XML" />
+    <None Include="XML\CheckAllStation.XML" />
+    <None Include="XML\CheckBatteryCapacity.XML" />
+    <None Include="XML\CheckBBID.XML" />
+    <None Include="XML\CheckBenchMark.XML" />
+    <None Include="XML\CheckCalFlag.XML" />
+    <None Include="XML\CheckCalFlagV3.XML">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="XML\CheckCalFlag_DMR.XML" />
+    <None Include="XML\CheckCaliMMIFlag.XML">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="XML\CheckCaliMMIFlagUIS1930.XML" />
+    <None Include="XML\CheckCaliMMIFlagUIS8910.XML" />
+    <None Include="XML\CheckCrystal32K.xml" />
+    <None Include="XML\CheckDiagConnect.XML" />
+    <None Include="XML\CheckICCID.XML" />
+    <None Include="XML\CheckMemory.XML" />
+    <None Include="XML\CheckMemoryRange.XML" />
+    <None Include="XML\CheckPackName.XML" />
+    <None Include="XML\CheckPeripheral.XML" />
+    <None Include="XML\CheckPMICID.XML" />
+    <None Include="XML\CheckSimCard.xml" />
+    <None Include="XML\CheckStationExist.XML" />
+    <None Include="XML\CheckUID.XML" />
+    <None Include="XML\CheckWCNID.xml" />
+    <None Include="XML\CustomControl.XML" />
+    <None Include="XML\CustomerMiscData.XML">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="XML\EID.XML" />
+    <None Include="XML\Finalize.XML" />
+    <None Include="XML\LoadWidevineDeviceID.XML" />
+    <None Include="XML\MacAddr.XML" />
+    <None Include="XML\NormalToCalMode.XML" />
+    <None Include="XML\OpenDut.XML">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="XML\OpenPort.XML" />
+    <None Include="XML\Dummy.XML" />
+    <None Include="XML\OpenSocket.XML" />
+    <None Include="XML\PhaseCheck.XML">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="XML\ReadIMEI.XML" />
+    <None Include="XML\ReadNVID.XML" />
+    <None Include="XML\ReadSN.XML" />
+    <None Include="XML\ReadSwVer.XML" />
+    <None Include="XML\ResetStations.XML" />
+    <None Include="XML\RunMode.XML" />
+    <None Include="XML\SaveToFlash.XML" />
+    <None Include="XML\SaveUEInfo.XML" />
+    <None Include="XML\SetupConnMode.XML" />
+    <None Include="XML\Sleep.XML" />
+    <None Include="XML\SSID.XML" />
+    <None Include="XML\SwitchOff.XML" />
+    <None Include="XML\TestModeX.XML" />
+    <None Include="ReadMe.txt" />
+    <None Include="XML\UpdatePhase.XML" />
+    <None Include="XML\WaitForAT.XML" />
+  </ItemGroup>
+  <ItemGroup>
+    <Xml Include="XML\ChangeMode.XML" />
+    <Xml Include="XML\CheckCaliMMIFlagUIS8811.XML" />
+    <Xml Include="XML\CheckCaliMMIFlagUIS8850.XML" />
+    <Xml Include="XML\CheckCaliMMIFlagUIS8910FF_L.XML" />
+    <Xml Include="XML\CheckCaliMMIFlagUIS891C.XML" />
+    <Xml Include="XML\CheckGoldenUIS8850.XML" />
+    <Xml Include="XML\CheckGoldenUIS8910.XML" />
+    <Xml Include="XML\Check32kCrystalFreqOffset.XML" />
+    <Xml Include="XML\ImpReadVersion.XML" />
+    <Xml Include="XML\OpenPortByParity.XML" />
+    <Xml Include="XML\ReadHwVer.XML" />
+    <Xml Include="XML\ReadMcuVer.XML" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>
